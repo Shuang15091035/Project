@@ -1,0 +1,3224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="1.4.1" xmlns="http://www.collada.org/2005/11/COLLADASchema">
+  <asset>
+    <up_axis>Y_UP</up_axis>
+    <unit meter="1" />
+  </asset>
+  <library_images>
+    <image id="t_ce_bathroom_ld-tex">
+      <init_from>../texture/t_ce_bathroom_ld.jpg</init_from>
+    </image>
+    <image id="t_fl_washhouse_ld-tex">
+      <init_from>../texture/t_fl_washhouse_ld.jpg</init_from>
+    </image>
+    <image id="t_ce_kitchen_ld-tex">
+      <init_from>../texture/t_ce_kitchen_ld.jpg</init_from>
+    </image>
+    <image id="t_fl_living_room_ld-tex">
+      <init_from>../texture/t_fl_living_room_ld.jpg</init_from>
+    </image>
+    <image id="t_fl_kitchen_ld-tex">
+      <init_from>../texture/t_fl_kitchen_ld.jpg</init_from>
+    </image>
+    <image id="t_outer_wa_ld-tex">
+      <init_from>../texture/t_outer_wa_ld.png</init_from>
+    </image>
+    <image id="t_wa_living_room4_ld-tex">
+      <init_from>../texture/t_wa_living_room4_ld.jpg</init_from>
+    </image>
+    <image id="t_wa_living_room1_ld-tex">
+      <init_from>../texture/t_wa_living_room1_ld.jpg</init_from>
+    </image>
+  </library_images>
+  <library_effects>
+    <effect id="t_ce_living_room_ld_mat">
+      <profile_COMMON>
+        <newparam sid="t_ce_bathroom_ld-surface">
+          <surface type="2D">
+            <init_from>t_ce_bathroom_ld-tex</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="t_ce_bathroom_ld-sampler">
+          <sampler2D>
+            <source>t_ce_bathroom_ld-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <phong>
+            <diffuse>
+              <texture texture="t_ce_bathroom_ld-sampler" texcoord="CHANNEL1" />
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="t_wa_bathroom3_ld_mat">
+      <profile_COMMON>
+        <newparam sid="t_fl_washhouse_ld-surface">
+          <surface type="2D">
+            <init_from>t_fl_washhouse_ld-tex</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="t_fl_washhouse_ld-sampler">
+          <sampler2D>
+            <source>t_fl_washhouse_ld-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <phong>
+            <diffuse>
+              <texture texture="t_fl_washhouse_ld-sampler" texcoord="CHANNEL1" />
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="t_ce_kitchen_ld_mat">
+      <profile_COMMON>
+        <newparam sid="t_ce_kitchen_ld-surface">
+          <surface type="2D">
+            <init_from>t_ce_kitchen_ld-tex</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="t_ce_kitchen_ld-sampler">
+          <sampler2D>
+            <source>t_ce_kitchen_ld-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <phong>
+            <diffuse>
+              <texture texture="t_ce_kitchen_ld-sampler" texcoord="CHANNEL1" />
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="t_fl_living_room_ld_mat">
+      <profile_COMMON>
+        <newparam sid="t_fl_living_room_ld-surface">
+          <surface type="2D">
+            <init_from>t_fl_living_room_ld-tex</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="t_fl_living_room_ld-sampler">
+          <sampler2D>
+            <source>t_fl_living_room_ld-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <phong>
+            <diffuse>
+              <texture texture="t_fl_living_room_ld-sampler" texcoord="CHANNEL1" />
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="t_wa_kitchen6_ld_mat">
+      <profile_COMMON>
+        <newparam sid="t_fl_kitchen_ld-surface">
+          <surface type="2D">
+            <init_from>t_fl_kitchen_ld-tex</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="t_fl_kitchen_ld-sampler">
+          <sampler2D>
+            <source>t_fl_kitchen_ld-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <phong>
+            <diffuse>
+              <texture texture="t_fl_kitchen_ld-sampler" texcoord="CHANNEL1" />
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="t_outer_wa_ld_mat">
+      <profile_COMMON>
+        <newparam sid="t_outer_wa_ld-surface">
+          <surface type="2D">
+            <init_from>t_outer_wa_ld-tex</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="t_outer_wa_ld-sampler">
+          <sampler2D>
+            <source>t_outer_wa_ld-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="t_outer_wa_ld-surface">
+          <surface type="2D">
+            <init_from>t_outer_wa_ld-tex</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="t_outer_wa_ld-sampler">
+          <sampler2D>
+            <source>t_outer_wa_ld-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <phong>
+            <diffuse>
+              <texture texture="t_outer_wa_ld-sampler" texcoord="CHANNEL1" />
+            </diffuse>
+            <transparent>
+              <texture texture="t_outer_wa_ld-sampler" texcoord="CHANNEL1" />
+            </transparent>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="t_wa_living_room4_ld_mat">
+      <profile_COMMON>
+        <newparam sid="t_wa_living_room4_ld-surface">
+          <surface type="2D">
+            <init_from>t_wa_living_room4_ld-tex</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="t_wa_living_room4_ld-sampler">
+          <sampler2D>
+            <source>t_wa_living_room4_ld-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <phong>
+            <diffuse>
+              <texture texture="t_wa_living_room4_ld-sampler" texcoord="CHANNEL1" />
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="t_wa_living_room1_ld_mat">
+      <profile_COMMON>
+        <newparam sid="t_wa_living_room1_ld-surface">
+          <surface type="2D">
+            <init_from>t_wa_living_room1_ld-tex</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="t_wa_living_room1_ld-sampler">
+          <sampler2D>
+            <source>t_wa_living_room1_ld-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <phong>
+            <diffuse>
+              <texture texture="t_wa_living_room1_ld-sampler" texcoord="CHANNEL1" />
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="t_wall_thickness_ld_mat">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <diffuse>
+              <color>1 1 1 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="t_ce_living_room_ld_mat-material" name="t_ce_living_room_ld_mat">
+      <instance_effect url="#t_ce_living_room_ld_mat" />
+    </material>
+    <material id="t_wa_bathroom3_ld_mat-material" name="t_wa_bathroom3_ld_mat">
+      <instance_effect url="#t_wa_bathroom3_ld_mat" />
+    </material>
+    <material id="t_ce_kitchen_ld_mat-material" name="t_ce_kitchen_ld_mat">
+      <instance_effect url="#t_ce_kitchen_ld_mat" />
+    </material>
+    <material id="t_fl_living_room_ld_mat-material" name="t_fl_living_room_ld_mat">
+      <instance_effect url="#t_fl_living_room_ld_mat" />
+    </material>
+    <material id="t_wa_kitchen6_ld_mat-material" name="t_wa_kitchen6_ld_mat">
+      <instance_effect url="#t_wa_kitchen6_ld_mat" />
+    </material>
+    <material id="t_outer_wa_ld_mat-material" name="t_outer_wa_ld_mat">
+      <instance_effect url="#t_outer_wa_ld_mat" />
+    </material>
+    <material id="t_wa_living_room4_ld_mat-material" name="t_wa_living_room4_ld_mat">
+      <instance_effect url="#t_wa_living_room4_ld_mat" />
+    </material>
+    <material id="t_wa_living_room1_ld_mat-material" name="t_wa_living_room1_ld_mat">
+      <instance_effect url="#t_wa_living_room1_ld_mat" />
+    </material>
+    <material id="t_wall_thickness_ld_mat-material" name="t_wall_thickness_ld_mat">
+      <instance_effect url="#t_wall_thickness_ld_mat" />
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="geom-ce_balcony_ld" name="ce_balcony_ld">
+      <mesh>
+        <source id="geom-ce_balcony_ld-positions">
+          <float_array id="geom-ce_balcony_ld-positions-array" count="12">49.625 27.175 -15.708 49.625 27.175 -8.564 49.625 10.863 -8.564 49.625 10.863 -15.708</float_array>
+          <technique_common>
+            <accessor source="#geom-ce_balcony_ld-positions-array" count="4" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-ce_balcony_ld-normals">
+          <float_array id="geom-ce_balcony_ld-normals-array" count="12">0 -1 0 0 -1 0 0 -1 0 0 -1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-ce_balcony_ld-normals-array" count="4" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-ce_balcony_ld-tangents">
+          <float_array id="geom-ce_balcony_ld-tangents-array" count="16">1 0 0 1 1 0 0 1 1 0 0 1 1 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#geom-ce_balcony_ld-tangents-array" count="4" stride="4">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+              <param name="W" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-ce_balcony_ld-map1">
+          <float_array id="geom-ce_balcony_ld-map1-array" count="8">-3.268 -2.119 -1.603 -2.119 -1.603 -0.156 -3.268 -0.156</float_array>
+          <technique_common>
+            <accessor source="#geom-ce_balcony_ld-map1-array" count="4" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-ce_balcony_ld-vertices">
+          <input semantic="POSITION" source="#geom-ce_balcony_ld-positions" />
+        </vertices>
+        <triangles material="t_ce_living_room_ld_mat" count="2">
+          <input semantic="VERTEX" source="#geom-ce_balcony_ld-vertices" offset="0" />
+          <input semantic="NORMAL" source="#geom-ce_balcony_ld-normals" offset="0" />
+          <input semantic="TANGENT" source="#geom-ce_balcony_ld-tangents" offset="0" />
+          <input semantic="TEXCOORD" source="#geom-ce_balcony_ld-map1" offset="0" set="0" />
+          <p>2 1 3 3 1 4</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-ce_bathroom_ld" name="ce_bathroom_ld">
+      <mesh>
+        <source id="geom-ce_bathroom_ld-positions">
+          <float_array id="geom-ce_bathroom_ld-positions-array" count="12">49.625 -13.708 1.452 49.625 10.863 1.452 49.625 10.863 10.813 49.625 -13.708 10.813</float_array>
+          <technique_common>
+            <accessor source="#geom-ce_bathroom_ld-positions-array" count="4" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-ce_bathroom_ld-normals">
+          <float_array id="geom-ce_bathroom_ld-normals-array" count="12">0 -1 0 0 -1 0 0 -1 0 0 -1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-ce_bathroom_ld-normals-array" count="4" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-ce_bathroom_ld-tangents">
+          <float_array id="geom-ce_bathroom_ld-tangents-array" count="16">1 0 0 1 1 0 0 1 1 0 0 1 1 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#geom-ce_bathroom_ld-tangents-array" count="4" stride="4">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+              <param name="W" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-ce_bathroom_ld-map1">
+          <float_array id="geom-ce_bathroom_ld-map1-array" count="8">0.732 2.801 0.732 -0.156 2.915 -0.156 2.915 2.801</float_array>
+          <technique_common>
+            <accessor source="#geom-ce_bathroom_ld-map1-array" count="4" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-ce_bathroom_ld-vertices">
+          <input semantic="POSITION" source="#geom-ce_bathroom_ld-positions" />
+        </vertices>
+        <triangles material="t_wa_bathroom3_ld_mat" count="2">
+          <input semantic="VERTEX" source="#geom-ce_bathroom_ld-vertices" offset="0" />
+          <input semantic="NORMAL" source="#geom-ce_bathroom_ld-normals" offset="0" />
+          <input semantic="TANGENT" source="#geom-ce_bathroom_ld-tangents" offset="0" />
+          <input semantic="TEXCOORD" source="#geom-ce_bathroom_ld-map1" offset="0" set="0" />
+          <p>2 1 3 3 1 4</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-ce_first_bedroom_ld" name="ce_first_bedroom_ld">
+      <mesh>
+        <source id="geom-ce_first_bedroom_ld-positions">
+          <float_array id="geom-ce_first_bedroom_ld-positions-array" count="12">49.625 44.108 -8.564 49.625 44.108 10.813 49.625 10.863 10.813 49.625 10.863 -8.564</float_array>
+          <technique_common>
+            <accessor source="#geom-ce_first_bedroom_ld-positions-array" count="4" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-ce_first_bedroom_ld-normals">
+          <float_array id="geom-ce_first_bedroom_ld-normals-array" count="12">0 -1 0 0 -1 0 0 -1 0 0 -1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-ce_first_bedroom_ld-normals-array" count="4" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-ce_first_bedroom_ld-tangents">
+          <float_array id="geom-ce_first_bedroom_ld-tangents-array" count="16">1 0 0 1 1 0 0 1 1 0 0 1 1 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#geom-ce_first_bedroom_ld-tangents-array" count="4" stride="4">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+              <param name="W" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-ce_first_bedroom_ld-map1">
+          <float_array id="geom-ce_first_bedroom_ld-map1-array" count="8">-1.603 -4.156 2.915 -4.156 2.915 -0.156 -1.603 -0.156</float_array>
+          <technique_common>
+            <accessor source="#geom-ce_first_bedroom_ld-map1-array" count="4" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-ce_first_bedroom_ld-vertices">
+          <input semantic="POSITION" source="#geom-ce_first_bedroom_ld-positions" />
+        </vertices>
+        <triangles material="t_ce_living_room_ld_mat" count="2">
+          <input semantic="VERTEX" source="#geom-ce_first_bedroom_ld-vertices" offset="0" />
+          <input semantic="NORMAL" source="#geom-ce_first_bedroom_ld-normals" offset="0" />
+          <input semantic="TANGENT" source="#geom-ce_first_bedroom_ld-tangents" offset="0" />
+          <input semantic="TEXCOORD" source="#geom-ce_first_bedroom_ld-map1" offset="0" set="0" />
+          <p>2 1 3 3 1 4</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-ce_kitchen_ld" name="ce_kitchen_ld">
+      <mesh>
+        <source id="geom-ce_kitchen_ld-positions">
+          <float_array id="geom-ce_kitchen_ld-positions-array" count="12">49.625 -31.349 16.293 49.625 -31.349 1.452 49.625 -13.708 1.452 49.625 -13.708 16.293</float_array>
+          <technique_common>
+            <accessor source="#geom-ce_kitchen_ld-positions-array" count="4" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-ce_kitchen_ld-normals">
+          <float_array id="geom-ce_kitchen_ld-normals-array" count="12">0 -1 0 0 -1 0 0 -1 0 0 -1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-ce_kitchen_ld-normals-array" count="4" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-ce_kitchen_ld-tangents">
+          <float_array id="geom-ce_kitchen_ld-tangents-array" count="16">1 0 0 1 1 0 0 1 1 0 0 1 1 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#geom-ce_kitchen_ld-tangents-array" count="4" stride="4">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+              <param name="W" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-ce_kitchen_ld-map1">
+          <float_array id="geom-ce_kitchen_ld-map1-array" count="8">4.192 4.924 0.732 4.924 0.732 2.801 4.192 2.801</float_array>
+          <technique_common>
+            <accessor source="#geom-ce_kitchen_ld-map1-array" count="4" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-ce_kitchen_ld-vertices">
+          <input semantic="POSITION" source="#geom-ce_kitchen_ld-positions" />
+        </vertices>
+        <triangles material="t_ce_kitchen_ld_mat" count="2">
+          <input semantic="VERTEX" source="#geom-ce_kitchen_ld-vertices" offset="0" />
+          <input semantic="NORMAL" source="#geom-ce_kitchen_ld-normals" offset="0" />
+          <input semantic="TANGENT" source="#geom-ce_kitchen_ld-tangents" offset="0" />
+          <input semantic="TEXCOORD" source="#geom-ce_kitchen_ld-map1" offset="0" set="0" />
+          <p>2 1 3 3 1 4</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-ce_living_room_ld" name="ce_living_room_ld">
+      <mesh>
+        <source id="geom-ce_living_room_ld-positions">
+          <float_array id="geom-ce_living_room_ld-positions-array" count="12">49.625 -31.349 -15.708 49.625 10.863 -15.708 49.625 10.863 1.452 49.625 -31.349 1.452</float_array>
+          <technique_common>
+            <accessor source="#geom-ce_living_room_ld-positions-array" count="4" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-ce_living_room_ld-normals">
+          <float_array id="geom-ce_living_room_ld-normals-array" count="12">0 -1 0 0 -1 0 0 -1 0 0 -1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-ce_living_room_ld-normals-array" count="4" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-ce_living_room_ld-tangents">
+          <float_array id="geom-ce_living_room_ld-tangents-array" count="16">1 0 0 1 1 0 0 1 1 0 0 1 1 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#geom-ce_living_room_ld-tangents-array" count="4" stride="4">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+              <param name="W" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-ce_living_room_ld-map1">
+          <float_array id="geom-ce_living_room_ld-map1-array" count="8">-3.268 4.924 -3.268 -0.156 0.732 -0.156 0.732 4.924</float_array>
+          <technique_common>
+            <accessor source="#geom-ce_living_room_ld-map1-array" count="4" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-ce_living_room_ld-vertices">
+          <input semantic="POSITION" source="#geom-ce_living_room_ld-positions" />
+        </vertices>
+        <triangles material="t_ce_living_room_ld_mat" count="2">
+          <input semantic="VERTEX" source="#geom-ce_living_room_ld-vertices" offset="0" />
+          <input semantic="NORMAL" source="#geom-ce_living_room_ld-normals" offset="0" />
+          <input semantic="TANGENT" source="#geom-ce_living_room_ld-tangents" offset="0" />
+          <input semantic="TEXCOORD" source="#geom-ce_living_room_ld-map1" offset="0" set="0" />
+          <p>2 1 3 3 1 4</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-ce_washhouse_ld" name="ce_washhouse_ld">
+      <mesh>
+        <source id="geom-ce_washhouse_ld-positions">
+          <float_array id="geom-ce_washhouse_ld-positions-array" count="12">49.625 -13.708 16.293 49.625 -13.708 10.813 49.625 10.863 10.813 49.625 10.863 16.293</float_array>
+          <technique_common>
+            <accessor source="#geom-ce_washhouse_ld-positions-array" count="4" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-ce_washhouse_ld-normals">
+          <float_array id="geom-ce_washhouse_ld-normals-array" count="12">0 -1 0 0 -1 0 0 -1 0 0 -1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-ce_washhouse_ld-normals-array" count="4" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-ce_washhouse_ld-tangents">
+          <float_array id="geom-ce_washhouse_ld-tangents-array" count="16">1 0 0 1 1 0 0 1 1 0 0 1 1 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#geom-ce_washhouse_ld-tangents-array" count="4" stride="4">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+              <param name="W" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-ce_washhouse_ld-map1">
+          <float_array id="geom-ce_washhouse_ld-map1-array" count="8">4.192 2.801 2.915 2.801 2.915 -0.156 4.192 -0.156</float_array>
+          <technique_common>
+            <accessor source="#geom-ce_washhouse_ld-map1-array" count="4" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-ce_washhouse_ld-vertices">
+          <input semantic="POSITION" source="#geom-ce_washhouse_ld-positions" />
+        </vertices>
+        <triangles material="t_wa_bathroom3_ld_mat" count="2">
+          <input semantic="VERTEX" source="#geom-ce_washhouse_ld-vertices" offset="0" />
+          <input semantic="NORMAL" source="#geom-ce_washhouse_ld-normals" offset="0" />
+          <input semantic="TANGENT" source="#geom-ce_washhouse_ld-tangents" offset="0" />
+          <input semantic="TEXCOORD" source="#geom-ce_washhouse_ld-map1" offset="0" set="0" />
+          <p>2 1 3 3 1 4</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-fl_balcony_ld" name="fl_balcony_ld">
+      <mesh>
+        <source id="geom-fl_balcony_ld-positions">
+          <float_array id="geom-fl_balcony_ld-positions-array" count="24">0 26.545 -14.91 0 11.595 -14.91 0 11.595 -14.202 0 26.545 -8.979 0 11.595 -11.325 0 10.863 -14.202 0 10.863 -11.325 0 11.595 -8.979</float_array>
+          <technique_common>
+            <accessor source="#geom-fl_balcony_ld-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-fl_balcony_ld-normals">
+          <float_array id="geom-fl_balcony_ld-normals-array" count="24">0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-fl_balcony_ld-normals-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-fl_balcony_ld-tangents">
+          <float_array id="geom-fl_balcony_ld-tangents-array" count="32">1 0 0 -1 1 0 -0.001 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1</float_array>
+          <technique_common>
+            <accessor source="#geom-fl_balcony_ld-tangents-array" count="8" stride="4">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+              <param name="W" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-fl_balcony_ld-map1">
+          <float_array id="geom-fl_balcony_ld-map1-array" count="16">-3.082 -2.043 -3.082 -0.244 -2.917 -0.244 -1.699 -2.042 -2.246 -0.244 -2.917 -0.156 -2.246 -0.156 -1.699 -0.244</float_array>
+          <technique_common>
+            <accessor source="#geom-fl_balcony_ld-map1-array" count="8" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-fl_balcony_ld-vertices">
+          <input semantic="POSITION" source="#geom-fl_balcony_ld-positions" />
+        </vertices>
+        <triangles material="t_fl_living_room_ld_mat" count="6">
+          <input semantic="VERTEX" source="#geom-fl_balcony_ld-vertices" offset="0" />
+          <input semantic="NORMAL" source="#geom-fl_balcony_ld-normals" offset="0" />
+          <input semantic="TANGENT" source="#geom-fl_balcony_ld-tangents" offset="0" />
+          <input semantic="TEXCOORD" source="#geom-fl_balcony_ld-map1" offset="0" set="0" />
+          <p>2 1 3 4 3 1 5 3 4 3 5 6 6 5 7 8 5 4</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-fl_bathroom_ld" name="fl_bathroom_ld">
+      <mesh>
+        <source id="geom-fl_bathroom_ld-positions">
+          <float_array id="geom-fl_bathroom_ld-positions-array" count="36">0 -1.994 10.507 0 -7.57 10.507 0 -7.57 10.813 0 -1.994 10.813 0 2.189 1.875 0 7.764 1.875 0 2.189 1.452 0 7.764 1.452 0 -13.086 1.875 0 -13.086 10.507 0 10.05 1.875 0 10.05 10.507</float_array>
+          <technique_common>
+            <accessor source="#geom-fl_bathroom_ld-positions-array" count="12" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-fl_bathroom_ld-normals">
+          <float_array id="geom-fl_bathroom_ld-normals-array" count="36">0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-fl_bathroom_ld-normals-array" count="12" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-fl_bathroom_ld-tangents">
+          <float_array id="geom-fl_bathroom_ld-tangents-array" count="48">1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 -0.002 -1 1 0 -0.004 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1</float_array>
+          <technique_common>
+            <accessor source="#geom-fl_bathroom_ld-tangents-array" count="12" stride="4">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+              <param name="W" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-fl_bathroom_ld-map1">
+          <float_array id="geom-fl_bathroom_ld-map1-array" count="24">2.911 1.399 2.911 2.157 2.992 2.157 2.992 1.399 0.637 0.831 0.638 0.073 0.526 0.831 0.527 0.073 0.638 2.908 2.911 2.907 0.637 -0.238 2.912 -0.237</float_array>
+          <technique_common>
+            <accessor source="#geom-fl_bathroom_ld-map1-array" count="12" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-fl_bathroom_ld-vertices">
+          <input semantic="POSITION" source="#geom-fl_bathroom_ld-positions" />
+        </vertices>
+        <triangles material="t_wa_bathroom3_ld_mat" count="10">
+          <input semantic="VERTEX" source="#geom-fl_bathroom_ld-vertices" offset="0" />
+          <input semantic="NORMAL" source="#geom-fl_bathroom_ld-normals" offset="0" />
+          <input semantic="TANGENT" source="#geom-fl_bathroom_ld-tangents" offset="0" />
+          <input semantic="TEXCOORD" source="#geom-fl_bathroom_ld-map1" offset="0" set="0" />
+          <p>2 1 3 3 1 4 5 1 2 6 1 5 7 6 5 8 6 7 2 9 5 10 9 2 11 1 6 12 1 11</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-fl_first_bedroom_ld" name="fl_first_bedroom_ld">
+      <mesh>
+        <source id="geom-fl_first_bedroom_ld-positions">
+          <float_array id="geom-fl_first_bedroom_ld-positions-array" count="24">0 42.563 -8.182 0 11.586 -8.182 0 11.586 -6.409 0 42.563 10.507 0 11.586 -3.532 0 10.863 -6.409 0 10.863 -3.532 0 11.586 10.507</float_array>
+          <technique_common>
+            <accessor source="#geom-fl_first_bedroom_ld-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-fl_first_bedroom_ld-normals">
+          <float_array id="geom-fl_first_bedroom_ld-normals-array" count="24">0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-fl_first_bedroom_ld-normals-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-fl_first_bedroom_ld-tangents">
+          <float_array id="geom-fl_first_bedroom_ld-tangents-array" count="32">1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1</float_array>
+          <technique_common>
+            <accessor source="#geom-fl_first_bedroom_ld-tangents-array" count="8" stride="4">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+              <param name="W" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-fl_first_bedroom_ld-map1">
+          <float_array id="geom-fl_first_bedroom_ld-map1-array" count="16">-1.513 -3.97 -1.513 -0.243 -1.1 -0.243 2.844 -3.97 -0.429 -0.243 -1.1 -0.156 -0.429 -0.156 2.844 -0.243</float_array>
+          <technique_common>
+            <accessor source="#geom-fl_first_bedroom_ld-map1-array" count="8" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-fl_first_bedroom_ld-vertices">
+          <input semantic="POSITION" source="#geom-fl_first_bedroom_ld-positions" />
+        </vertices>
+        <triangles material="t_fl_living_room_ld_mat" count="6">
+          <input semantic="VERTEX" source="#geom-fl_first_bedroom_ld-vertices" offset="0" />
+          <input semantic="NORMAL" source="#geom-fl_first_bedroom_ld-normals" offset="0" />
+          <input semantic="TANGENT" source="#geom-fl_first_bedroom_ld-tangents" offset="0" />
+          <input semantic="TEXCOORD" source="#geom-fl_first_bedroom_ld-map1" offset="0" set="0" />
+          <p>2 1 3 4 3 1 5 3 4 3 5 6 6 5 7 8 5 4</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-fl_kitchen_ld" name="fl_kitchen_ld">
+      <mesh>
+        <source id="geom-fl_kitchen_ld-positions">
+          <float_array id="geom-fl_kitchen_ld-positions-array" count="24">0 -14.631 15.983 0 -18.02 1.875 0 -23.54 1.875 0 -29.802 15.983 0 -18.02 1.452 0 -23.54 1.452 0 -29.802 1.875 0 -14.631 1.875</float_array>
+          <technique_common>
+            <accessor source="#geom-fl_kitchen_ld-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-fl_kitchen_ld-normals">
+          <float_array id="geom-fl_kitchen_ld-normals-array" count="24">0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-fl_kitchen_ld-normals-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-fl_kitchen_ld-tangents">
+          <float_array id="geom-fl_kitchen_ld-tangents-array" count="32">1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1</float_array>
+          <technique_common>
+            <accessor source="#geom-fl_kitchen_ld-tangents-array" count="8" stride="4">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+              <param name="W" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-fl_kitchen_ld-map1">
+          <float_array id="geom-fl_kitchen_ld-map1-array" count="16">4.12 2.912 0.831 3.32 0.831 3.984 4.12 4.738 0.732 3.32 0.732 3.984 0.831 4.738 0.831 2.912</float_array>
+          <technique_common>
+            <accessor source="#geom-fl_kitchen_ld-map1-array" count="8" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-fl_kitchen_ld-vertices">
+          <input semantic="POSITION" source="#geom-fl_kitchen_ld-positions" />
+        </vertices>
+        <triangles material="t_wa_kitchen6_ld_mat" count="6">
+          <input semantic="VERTEX" source="#geom-fl_kitchen_ld-vertices" offset="0" />
+          <input semantic="NORMAL" source="#geom-fl_kitchen_ld-normals" offset="0" />
+          <input semantic="TANGENT" source="#geom-fl_kitchen_ld-tangents" offset="0" />
+          <input semantic="TEXCOORD" source="#geom-fl_kitchen_ld-map1" offset="0" set="0" />
+          <p>2 1 3 3 1 4 3 5 2 6 5 3 7 3 4 8 1 2</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-fl_living_room_ld" name="fl_living_room_ld">
+      <mesh>
+        <source id="geom-fl_living_room_ld-positions">
+          <float_array id="geom-fl_living_room_ld-positions-array" count="60">0 -29.804 -14.91 0 -29.804 1.077 0 10.05 -14.202 0 10.05 -14.91 0 -23.54 1.077 0 10.05 -11.325 0 10.863 -11.325 0 10.863 -14.202 0 10.05 -6.409 0 -18.02 1.077 0 -18.02 1.452 0 -23.54 1.452 0 2.189 1.077 0 10.05 -3.532 0 10.863 -6.409 0 10.863 -3.532 0 7.764 1.077 0 7.764 1.452 0 2.189 1.452 0 10.05 1.077</float_array>
+          <technique_common>
+            <accessor source="#geom-fl_living_room_ld-positions-array" count="20" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-fl_living_room_ld-normals">
+          <float_array id="geom-fl_living_room_ld-normals-array" count="60">0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-fl_living_room_ld-normals-array" count="20" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-fl_living_room_ld-tangents">
+          <float_array id="geom-fl_living_room_ld-tangents-array" count="80">1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1</float_array>
+          <technique_common>
+            <accessor source="#geom-fl_living_room_ld-tangents-array" count="20" stride="4">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+              <param name="W" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-fl_living_room_ld-map1">
+          <float_array id="geom-fl_living_room_ld-map1-array" count="40">-3.082 4.738 0.645 4.738 -2.917 -0.058 -3.082 -0.058 0.645 3.984 -2.246 -0.058 -2.246 -0.156 -2.917 -0.156 -1.1 -0.058 0.645 3.32 0.732 3.32 0.732 3.984 0.645 0.888 -0.429 -0.058 -1.1 -0.156 -0.429 -0.156 0.645 0.217 0.733 0.217 0.732 0.888 0.645 -0.058</float_array>
+          <technique_common>
+            <accessor source="#geom-fl_living_room_ld-map1-array" count="20" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-fl_living_room_ld-vertices">
+          <input semantic="POSITION" source="#geom-fl_living_room_ld-positions" />
+        </vertices>
+        <triangles material="t_fl_living_room_ld_mat" count="18">
+          <input semantic="VERTEX" source="#geom-fl_living_room_ld-vertices" offset="0" />
+          <input semantic="NORMAL" source="#geom-fl_living_room_ld-normals" offset="0" />
+          <input semantic="TANGENT" source="#geom-fl_living_room_ld-tangents" offset="0" />
+          <input semantic="TEXCOORD" source="#geom-fl_living_room_ld-map1" offset="0" set="0" />
+          <p>2 1 3 3 1 4 3 5 2 6 5 3 3 7 6 8 7 3 6 9 5 5 9 10 11 5 10 12 5 11 9 13 10 14 13 9 9 15 14 14 15 16 14 17 13 18 13 17 19 13 18 20 17 14</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-fl_washhouse_ld" name="fl_washhouse_ld">
+      <mesh>
+        <source id="geom-fl_washhouse_ld-positions">
+          <float_array id="geom-fl_washhouse_ld-positions-array" count="24">0 -1.994 10.813 0 -7.57 10.813 0 -7.57 11.304 0 -1.994 11.304 0 10.05 15.983 0 -13.086 15.983 0 -13.086 11.304 0 10.05 11.304</float_array>
+          <technique_common>
+            <accessor source="#geom-fl_washhouse_ld-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-fl_washhouse_ld-normals">
+          <float_array id="geom-fl_washhouse_ld-normals-array" count="24">0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-fl_washhouse_ld-normals-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-fl_washhouse_ld-tangents">
+          <float_array id="geom-fl_washhouse_ld-tangents-array" count="32">1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1</float_array>
+          <technique_common>
+            <accessor source="#geom-fl_washhouse_ld-tangents-array" count="8" stride="4">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+              <param name="W" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-fl_washhouse_ld-map1">
+          <float_array id="geom-fl_washhouse_ld-map1-array" count="16">2.783 1.399 2.782 2.157 2.912 2.157 2.912 1.399 4.144 -0.239 4.144 2.907 2.912 2.907 2.912 -0.239</float_array>
+          <technique_common>
+            <accessor source="#geom-fl_washhouse_ld-map1-array" count="8" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-fl_washhouse_ld-vertices">
+          <input semantic="POSITION" source="#geom-fl_washhouse_ld-positions" />
+        </vertices>
+        <triangles material="t_wa_bathroom3_ld_mat" count="6">
+          <input semantic="VERTEX" source="#geom-fl_washhouse_ld-vertices" offset="0" />
+          <input semantic="NORMAL" source="#geom-fl_washhouse_ld-normals" offset="0" />
+          <input semantic="TANGENT" source="#geom-fl_washhouse_ld-tangents" offset="0" />
+          <input semantic="TEXCOORD" source="#geom-fl_washhouse_ld-map1" offset="0" set="0" />
+          <p>2 1 3 3 1 4 4 5 3 3 5 6 7 3 6 8 5 4</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-outer_wa_ld" name="outer_wa_ld">
+      <mesh>
+        <source id="geom-outer_wa_ld-positions">
+          <float_array id="geom-outer_wa_ld-positions-array" count="144">0 11.595 11.304 49.625 11.595 11.304 49.625 11.595 16.78 0 11.595 16.78 0 -31.349 16.78 0 11.595 16.78 19.85 -19.293 16.78 19.85 -25.08 16.78 49.625 -31.349 16.78 39.7 -25.08 16.78 49.625 11.595 16.78 39.7 -19.293 16.78 40.494 -31.349 -10.645 49.625 -31.349 -15.708 0 -31.349 -15.708 0 -31.349 -10.645 40.494 -31.349 -7.767 49.625 -31.349 16.78 0 -31.349 16.78 0 -31.349 -7.767 0 28.09 -15.708 0 -31.349 -15.708 19.85 18.101 -15.708 19.85 23.888 -15.708 39.7 23.888 -15.708 49.625 28.09 -15.708 49.625 -31.349 -15.708 39.7 18.101 -15.708 0 28.09 -15.708 49.625 28.09 -15.708 49.625 28.09 -8.979 0 28.09 -8.979 0 44.108 11.304 49.625 44.108 11.304 49.625 11.595 11.304 0 11.595 11.304 19.85 44.108 -1.33 19.85 44.108 5.316 0 44.108 11.304 0 44.108 -8.979 49.625 44.108 -8.979 39.7 44.108 -1.33 39.7 44.108 5.316 49.625 44.108 11.304 49.625 28.09 -8.979 49.625 44.108 -8.979 0 44.108 -8.979 0 28.09 -8.979</float_array>
+          <technique_common>
+            <accessor source="#geom-outer_wa_ld-positions-array" count="48" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-outer_wa_ld-normals">
+          <float_array id="geom-outer_wa_ld-normals-array" count="144">0 0 1 0 0 1 0 0 1 0 0 1 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 0 0 1 0 0 1 0 0 1 0 0 1 1 0 0 1 0 0 1 0 0 1 0 0 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 -1 0 0 -1 0 0 -1 0 0 -1 0 0</float_array>
+          <technique_common>
+            <accessor source="#geom-outer_wa_ld-normals-array" count="48" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-outer_wa_ld-tangents">
+          <float_array id="geom-outer_wa_ld-tangents-array" count="192">1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 0 1 0 -1 0 1 0 -1 0 1 0 -1 0 1 0 -1 0 1 0 -1 0 1 0 -1 0 1 0 -1 0 1 0 -1 0 1 0 -1 0 1 0 -1 0 1 0 -1 0 1 0 -1 0 1 0 -1 0 1 0 -1 0 1 0 -1 0 1 0 -1 0 1 0 -1 0 1 0 -1 0 1 0 -1 0 1 0 -1 0 1 0 -1 0 1 0 -1 0 1 0 -1 0 1 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 0 1 0 -1 0 1 0 -1 0 1 0 -1 0 1 0 -1 0 1 0 -1 0 1 0 -1 0 1 0 -1 0 1 0 -1 0 1 0 -1 0 1 0 -1 0 1 0 -1 0 1 0 -1 0 1 0 -1 0 1 0 -1 0 1 0 -1 0 1 0 -1</float_array>
+          <technique_common>
+            <accessor source="#geom-outer_wa_ld-tangents-array" count="48" stride="4">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+              <param name="W" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-outer_wa_ld-map1">
+          <float_array id="geom-outer_wa_ld-map1-array" count="96">0.208 0.788 0.208 0.991 0.347 0.991 0.347 0.788 0.417 0.002 0.417 0.565 0.498 0.16 0.498 0.084 0.619 0.002 0.579 0.084 0.619 0.565 0.579 0.16 0.167 0.133 0.204 0.004 0.002 0.004 0.002 0.133 0.167 0.206 0.204 0.83 0.002 0.83 0.002 0.206 0.208 0.002 0.208 0.782 0.289 0.133 0.289 0.058 0.37 0.058 0.411 0.002 0.411 0.782 0.37 0.133 0.417 0.572 0.417 0.784 0.581 0.784 0.581 0.572 0.625 0.951 0.828 0.951 0.828 0.524 0.625 0.524 0.706 0.323 0.706 0.154 0.625 0.002 0.625 0.518 0.828 0.518 0.787 0.323 0.787 0.154 0.828 0.002 0.589 0.998 0.589 0.788 0.386 0.788 0.386 0.998</float_array>
+          <technique_common>
+            <accessor source="#geom-outer_wa_ld-map1-array" count="48" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-outer_wa_ld-vertices">
+          <input semantic="POSITION" source="#geom-outer_wa_ld-positions" />
+        </vertices>
+        <triangles material="t_outer_wa_ld_mat" count="38">
+          <input semantic="VERTEX" source="#geom-outer_wa_ld-vertices" offset="0" />
+          <input semantic="NORMAL" source="#geom-outer_wa_ld-normals" offset="0" />
+          <input semantic="TANGENT" source="#geom-outer_wa_ld-tangents" offset="0" />
+          <input semantic="TEXCOORD" source="#geom-outer_wa_ld-map1" offset="0" set="0" />
+          <p>2 1 3 3 1 4 6 5 7 7 5 8 9 8 5 10 8 9 9 11 10 10 11 12 11 6 12 12 6 7 14 13 15 15 13 16 14 17 13 18 17 14 19 17 18 20 17 19 22 21 23 23 21 24 24 21 25 25 21 26 26 27 25 25 27 28 27 22 28 28 22 23 30 29 31 31 29 32 34 33 35 35 33 36 38 37 39 39 37 40 37 41 40 42 41 37 43 41 42 44 41 43 43 38 44 44 38 39 46 45 47 47 45 48</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-wa_balcony1_ld" name="wa_balcony1_ld">
+      <mesh>
+        <source id="geom-wa_balcony1_ld-positions">
+          <float_array id="geom-wa_balcony1_ld-positions-array" count="12">0 26.545 -8.979 49.625 26.545 -8.979 49.625 26.545 -14.91 0 26.545 -14.91</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_balcony1_ld-positions-array" count="4" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_balcony1_ld-normals">
+          <float_array id="geom-wa_balcony1_ld-normals-array" count="12">0 0 -1 0 0 -1 0 0 -1 0 0 -1</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_balcony1_ld-normals-array" count="4" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_balcony1_ld-tangents">
+          <float_array id="geom-wa_balcony1_ld-tangents-array" count="16">-1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_balcony1_ld-tangents-array" count="4" stride="4">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+              <param name="W" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_balcony1_ld-map1">
+          <float_array id="geom-wa_balcony1_ld-map1-array" count="8">-0.307 -0.519 -0.307 1.575 1.251 1.575 1.251 -0.519</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_balcony1_ld-map1-array" count="4" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_balcony1_ld-colors">
+          <float_array id="geom-wa_balcony1_ld-colors-array" count="16">0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_balcony1_ld-colors-array" count="4" stride="4">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+              <param name="A" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-wa_balcony1_ld-vertices">
+          <input semantic="POSITION" source="#geom-wa_balcony1_ld-positions" />
+        </vertices>
+        <triangles material="t_wa_living_room4_ld_mat" count="2">
+          <input semantic="VERTEX" source="#geom-wa_balcony1_ld-vertices" offset="0" />
+          <input semantic="NORMAL" source="#geom-wa_balcony1_ld-normals" offset="0" />
+          <input semantic="TANGENT" source="#geom-wa_balcony1_ld-tangents" offset="0" />
+          <input semantic="TEXCOORD" source="#geom-wa_balcony1_ld-map1" offset="0" set="0" />
+          <input semantic="COLOR" source="#geom-wa_balcony1_ld-colors" offset="0" />
+          <p>2 1 3 3 1 4</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-wa_balcony2_ld" name="wa_balcony2_ld">
+      <mesh>
+        <source id="geom-wa_balcony2_ld-positions">
+          <float_array id="geom-wa_balcony2_ld-positions-array" count="12">49.625 11.595 -8.979 49.625 26.545 -8.979 0 26.545 -8.979 0 11.595 -8.979</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_balcony2_ld-positions-array" count="4" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_balcony2_ld-normals">
+          <float_array id="geom-wa_balcony2_ld-normals-array" count="12">-1 0 0 -1 0 0 -1 0 0 -1 0 0</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_balcony2_ld-normals-array" count="4" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_balcony2_ld-tangents">
+          <float_array id="geom-wa_balcony2_ld-tangents-array" count="16">0 0 1 -1 0 0 1 -1 0 0 1 -1 0 0 1 -1</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_balcony2_ld-tangents-array" count="4" stride="4">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+              <param name="W" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_balcony2_ld-map1">
+          <float_array id="geom-wa_balcony2_ld-map1-array" count="8">-0.541 1.575 1.485 1.575 1.485 -0.519 -0.541 -0.519</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_balcony2_ld-map1-array" count="4" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-wa_balcony2_ld-vertices">
+          <input semantic="POSITION" source="#geom-wa_balcony2_ld-positions" />
+        </vertices>
+        <triangles material="t_wa_living_room4_ld_mat" count="2">
+          <input semantic="VERTEX" source="#geom-wa_balcony2_ld-vertices" offset="0" />
+          <input semantic="NORMAL" source="#geom-wa_balcony2_ld-normals" offset="0" />
+          <input semantic="TANGENT" source="#geom-wa_balcony2_ld-tangents" offset="0" />
+          <input semantic="TEXCOORD" source="#geom-wa_balcony2_ld-map1" offset="0" set="0" />
+          <p>2 1 3 3 1 4</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-wa_balcony3_ld" name="wa_balcony3_ld">
+      <mesh>
+        <source id="geom-wa_balcony3_ld-positions">
+          <float_array id="geom-wa_balcony3_ld-positions-array" count="24">40.494 11.595 -11.325 49.625 11.595 -8.979 0 11.595 -8.979 0 11.595 -11.325 40.494 11.595 -14.202 49.625 11.595 -14.91 0 11.595 -14.91 0 11.595 -14.202</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_balcony3_ld-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_balcony3_ld-normals">
+          <float_array id="geom-wa_balcony3_ld-normals-array" count="24">0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_balcony3_ld-normals-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_balcony3_ld-tangents">
+          <float_array id="geom-wa_balcony3_ld-tangents-array" count="32">1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_balcony3_ld-tangents-array" count="8" stride="4">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+              <param name="W" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_balcony3_ld-map1">
+          <float_array id="geom-wa_balcony3_ld-map1-array" count="16">0.635 1.19 1.251 1.575 1.251 -0.519 0.635 -0.519 -0.121 1.19 -0.307 1.575 -0.307 -0.519 -0.121 -0.519</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_balcony3_ld-map1-array" count="8" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_balcony3_ld-colors">
+          <float_array id="geom-wa_balcony3_ld-colors-array" count="32">0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_balcony3_ld-colors-array" count="8" stride="4">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+              <param name="A" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-wa_balcony3_ld-vertices">
+          <input semantic="POSITION" source="#geom-wa_balcony3_ld-positions" />
+        </vertices>
+        <triangles material="t_wa_living_room4_ld_mat" count="6">
+          <input semantic="VERTEX" source="#geom-wa_balcony3_ld-vertices" offset="0" />
+          <input semantic="NORMAL" source="#geom-wa_balcony3_ld-normals" offset="0" />
+          <input semantic="TANGENT" source="#geom-wa_balcony3_ld-tangents" offset="0" />
+          <input semantic="TEXCOORD" source="#geom-wa_balcony3_ld-map1" offset="0" set="0" />
+          <input semantic="COLOR" source="#geom-wa_balcony3_ld-colors" offset="0" />
+          <p>2 1 3 3 1 4 1 2 5 5 2 6 7 5 6 8 5 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-wa_balcony4_ld" name="wa_balcony4_ld">
+      <mesh>
+        <source id="geom-wa_balcony4_ld-positions">
+          <float_array id="geom-wa_balcony4_ld-positions-array" count="24">39.7 18.101 -14.91 39.7 23.888 -14.91 49.625 26.545 -14.91 49.625 11.595 -14.91 19.85 23.888 -14.91 0 26.545 -14.91 0 11.595 -14.91 19.85 18.101 -14.91</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_balcony4_ld-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_balcony4_ld-normals">
+          <float_array id="geom-wa_balcony4_ld-normals-array" count="24">1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_balcony4_ld-normals-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_balcony4_ld-tangents">
+          <float_array id="geom-wa_balcony4_ld-tangents-array" count="32">0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_balcony4_ld-tangents-array" count="8" stride="4">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+              <param name="W" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_balcony4_ld-map1">
+          <float_array id="geom-wa_balcony4_ld-map1-array" count="16">0.603 1.156 -0.181 1.156 -0.541 1.575 1.485 1.575 -0.181 0.318 -0.541 -0.519 1.485 -0.519 0.603 0.318</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_balcony4_ld-map1-array" count="8" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-wa_balcony4_ld-vertices">
+          <input semantic="POSITION" source="#geom-wa_balcony4_ld-positions" />
+        </vertices>
+        <triangles material="t_wa_living_room4_ld_mat" count="8">
+          <input semantic="VERTEX" source="#geom-wa_balcony4_ld-vertices" offset="0" />
+          <input semantic="NORMAL" source="#geom-wa_balcony4_ld-normals" offset="0" />
+          <input semantic="TANGENT" source="#geom-wa_balcony4_ld-tangents" offset="0" />
+          <input semantic="TEXCOORD" source="#geom-wa_balcony4_ld-map1" offset="0" set="0" />
+          <p>2 1 3 3 1 4 3 5 2 6 5 3 1 7 4 6 7 5 8 7 1 5 7 8</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-wa_bathroom1_ld" name="wa_bathroom1_ld">
+      <mesh>
+        <source id="geom-wa_bathroom1_ld-positions">
+          <float_array id="geom-wa_bathroom1_ld-positions-array" count="24">49.625 -13.086 10.507 40.494 -7.57 10.507 0 -7.57 10.507 0 -13.086 10.507 40.494 -1.994 10.507 49.625 10.05 10.507 0 10.05 10.507 0 -1.994 10.507</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_bathroom1_ld-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_bathroom1_ld-normals">
+          <float_array id="geom-wa_bathroom1_ld-normals-array" count="24">-1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_bathroom1_ld-normals-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_bathroom1_ld-tangents">
+          <float_array id="geom-wa_bathroom1_ld-tangents-array" count="32">0 0 1 -1 0 0 1 -1 0 0 1 -1 0 0 1 -1 0 0 1 -1 0 0 1 -1 0 0 1 -1 0 0 1 -1</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_bathroom1_ld-tangents-array" count="8" stride="4">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+              <param name="W" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_bathroom1_ld-map1">
+          <float_array id="geom-wa_bathroom1_ld-map1-array" count="16">-1.03 1.591 -0.283 1.205 -0.283 -0.506 -1.03 -0.506 0.472 1.205 2.103 1.591 2.103 -0.506 0.472 -0.506</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_bathroom1_ld-map1-array" count="8" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-wa_bathroom1_ld-vertices">
+          <input semantic="POSITION" source="#geom-wa_bathroom1_ld-positions" />
+        </vertices>
+        <triangles material="t_wa_bathroom3_ld_mat" count="6">
+          <input semantic="VERTEX" source="#geom-wa_bathroom1_ld-vertices" offset="0" />
+          <input semantic="NORMAL" source="#geom-wa_bathroom1_ld-normals" offset="0" />
+          <input semantic="TANGENT" source="#geom-wa_bathroom1_ld-tangents" offset="0" />
+          <input semantic="TEXCOORD" source="#geom-wa_bathroom1_ld-map1" offset="0" set="0" />
+          <p>2 1 3 3 1 4 2 5 1 1 5 6 5 7 6 8 7 5</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-wa_bathroom2_ld" name="wa_bathroom2_ld">
+      <mesh>
+        <source id="geom-wa_bathroom2_ld-positions">
+          <float_array id="geom-wa_bathroom2_ld-positions-array" count="12">0 -13.086 1.875 49.625 -13.086 1.875 49.625 -13.086 10.507 0 -13.086 10.507</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_bathroom2_ld-positions-array" count="4" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_bathroom2_ld-normals">
+          <float_array id="geom-wa_bathroom2_ld-normals-array" count="12">0 0 1 0 0 1 0 0 1 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_bathroom2_ld-normals-array" count="4" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_bathroom2_ld-tangents">
+          <float_array id="geom-wa_bathroom2_ld-tangents-array" count="16">1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_bathroom2_ld-tangents-array" count="4" stride="4">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+              <param name="W" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_bathroom2_ld-map1">
+          <float_array id="geom-wa_bathroom2_ld-map1-array" count="8">-0.67 -0.505 -0.67 1.59 1.597 1.59 1.597 -0.505</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_bathroom2_ld-map1-array" count="4" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_bathroom2_ld-colors">
+          <float_array id="geom-wa_bathroom2_ld-colors-array" count="16">0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_bathroom2_ld-colors-array" count="4" stride="4">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+              <param name="A" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-wa_bathroom2_ld-vertices">
+          <input semantic="POSITION" source="#geom-wa_bathroom2_ld-positions" />
+        </vertices>
+        <triangles material="t_wa_bathroom3_ld_mat" count="2">
+          <input semantic="VERTEX" source="#geom-wa_bathroom2_ld-vertices" offset="0" />
+          <input semantic="NORMAL" source="#geom-wa_bathroom2_ld-normals" offset="0" />
+          <input semantic="TANGENT" source="#geom-wa_bathroom2_ld-tangents" offset="0" />
+          <input semantic="TEXCOORD" source="#geom-wa_bathroom2_ld-map1" offset="0" set="0" />
+          <input semantic="COLOR" source="#geom-wa_bathroom2_ld-colors" offset="0" />
+          <p>2 1 3 3 1 4</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-wa_bathroom3_ld" name="wa_bathroom3_ld">
+      <mesh>
+        <source id="geom-wa_bathroom3_ld-positions">
+          <float_array id="geom-wa_bathroom3_ld-positions-array" count="24">40.494 2.189 1.875 49.625 -13.086 1.875 0 -13.086 1.875 0 2.189 1.875 40.494 7.764 1.875 49.625 10.05 1.875 0 10.05 1.875 0 7.764 1.875</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_bathroom3_ld-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_bathroom3_ld-normals">
+          <float_array id="geom-wa_bathroom3_ld-normals-array" count="24">1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_bathroom3_ld-normals-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_bathroom3_ld-tangents">
+          <float_array id="geom-wa_bathroom3_ld-tangents-array" count="32">0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_bathroom3_ld-tangents-array" count="8" stride="4">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+              <param name="W" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_bathroom3_ld-map1">
+          <float_array id="geom-wa_bathroom3_ld-map1-array" count="16">-0.039 1.203 2.031 1.589 2.031 -0.506 -0.039 -0.506 -0.795 1.203 -1.105 1.589 -1.105 -0.506 -0.795 -0.506</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_bathroom3_ld-map1-array" count="8" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-wa_bathroom3_ld-vertices">
+          <input semantic="POSITION" source="#geom-wa_bathroom3_ld-positions" />
+        </vertices>
+        <triangles material="t_wa_bathroom3_ld_mat" count="6">
+          <input semantic="VERTEX" source="#geom-wa_bathroom3_ld-vertices" offset="0" />
+          <input semantic="NORMAL" source="#geom-wa_bathroom3_ld-normals" offset="0" />
+          <input semantic="TANGENT" source="#geom-wa_bathroom3_ld-tangents" offset="0" />
+          <input semantic="TEXCOORD" source="#geom-wa_bathroom3_ld-map1" offset="0" set="0" />
+          <p>2 1 3 3 1 4 1 2 5 5 2 6 7 5 6 8 5 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-wa_bathroom4_ld" name="wa_bathroom4_ld">
+      <mesh>
+        <source id="geom-wa_bathroom4_ld-positions">
+          <float_array id="geom-wa_bathroom4_ld-positions-array" count="12">49.625 10.05 10.507 49.625 10.05 1.875 0 10.05 1.875 0 10.05 10.507</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_bathroom4_ld-positions-array" count="4" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_bathroom4_ld-normals">
+          <float_array id="geom-wa_bathroom4_ld-normals-array" count="12">0 0 -1 0 0 -1 0 0 -1 0 0 -1</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_bathroom4_ld-normals-array" count="4" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_bathroom4_ld-tangents">
+          <float_array id="geom-wa_bathroom4_ld-tangents-array" count="16">-1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_bathroom4_ld-tangents-array" count="4" stride="4">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+              <param name="W" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_bathroom4_ld-map1">
+          <float_array id="geom-wa_bathroom4_ld-map1-array" count="8">-0.661 1.59 1.606 1.59 1.606 -0.505 -0.661 -0.505</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_bathroom4_ld-map1-array" count="4" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_bathroom4_ld-colors">
+          <float_array id="geom-wa_bathroom4_ld-colors-array" count="16">0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_bathroom4_ld-colors-array" count="4" stride="4">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+              <param name="A" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-wa_bathroom4_ld-vertices">
+          <input semantic="POSITION" source="#geom-wa_bathroom4_ld-positions" />
+        </vertices>
+        <triangles material="t_wa_bathroom3_ld_mat" count="2">
+          <input semantic="VERTEX" source="#geom-wa_bathroom4_ld-vertices" offset="0" />
+          <input semantic="NORMAL" source="#geom-wa_bathroom4_ld-normals" offset="0" />
+          <input semantic="TANGENT" source="#geom-wa_bathroom4_ld-tangents" offset="0" />
+          <input semantic="TEXCOORD" source="#geom-wa_bathroom4_ld-map1" offset="0" set="0" />
+          <input semantic="COLOR" source="#geom-wa_bathroom4_ld-colors" offset="0" />
+          <p>2 1 3 3 1 4</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-wa_first_bedroom1_ld" name="wa_first_bedroom1_ld">
+      <mesh>
+        <source id="geom-wa_first_bedroom1_ld-positions">
+          <float_array id="geom-wa_first_bedroom1_ld-positions-array" count="24">49.625 11.595 -8.182 49.625 11.595 10.507 40.494 11.595 -3.532 40.494 11.595 -6.409 0 11.595 -6.409 0 11.595 -8.182 0 11.595 -3.532 0 11.595 10.507</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_first_bedroom1_ld-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_first_bedroom1_ld-normals">
+          <float_array id="geom-wa_first_bedroom1_ld-normals-array" count="24">0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_first_bedroom1_ld-normals-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_first_bedroom1_ld-tangents">
+          <float_array id="geom-wa_first_bedroom1_ld-tangents-array" count="32">1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_first_bedroom1_ld-tangents-array" count="8" stride="4">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+              <param name="W" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_first_bedroom1_ld-map1">
+          <float_array id="geom-wa_first_bedroom1_ld-map1-array" count="16">-1.982 1.575 2.926 1.575 -0.761 1.19 -1.516 1.19 -1.516 -0.519 -1.982 -0.519 -0.761 -0.519 2.926 -0.519</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_first_bedroom1_ld-map1-array" count="8" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_first_bedroom1_ld-colors">
+          <float_array id="geom-wa_first_bedroom1_ld-colors-array" count="32">0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_first_bedroom1_ld-colors-array" count="8" stride="4">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+              <param name="A" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-wa_first_bedroom1_ld-vertices">
+          <input semantic="POSITION" source="#geom-wa_first_bedroom1_ld-positions" />
+        </vertices>
+        <triangles material="t_wa_living_room1_ld_mat" count="6">
+          <input semantic="VERTEX" source="#geom-wa_first_bedroom1_ld-vertices" offset="0" />
+          <input semantic="NORMAL" source="#geom-wa_first_bedroom1_ld-normals" offset="0" />
+          <input semantic="TANGENT" source="#geom-wa_first_bedroom1_ld-tangents" offset="0" />
+          <input semantic="TEXCOORD" source="#geom-wa_first_bedroom1_ld-map1" offset="0" set="0" />
+          <input semantic="COLOR" source="#geom-wa_first_bedroom1_ld-colors" offset="0" />
+          <p>2 1 3 3 1 4 4 1 5 5 1 6 7 2 3 8 2 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-wa_first_bedroom2_ld" name="wa_first_bedroom2_ld">
+      <mesh>
+        <source id="geom-wa_first_bedroom2_ld-positions">
+          <float_array id="geom-wa_first_bedroom2_ld-positions-array" count="12">49.625 42.563 -8.182 49.625 11.595 -8.182 0 11.595 -8.182 0 42.563 -8.182</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_first_bedroom2_ld-positions-array" count="4" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_first_bedroom2_ld-normals">
+          <float_array id="geom-wa_first_bedroom2_ld-normals-array" count="12">1 0 0 1 0 0 1 0 0 1 0 0</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_first_bedroom2_ld-normals-array" count="4" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_first_bedroom2_ld-tangents">
+          <float_array id="geom-wa_first_bedroom2_ld-tangents-array" count="16">0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_first_bedroom2_ld-tangents-array" count="4" stride="4">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+              <param name="W" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_first_bedroom2_ld-map1">
+          <float_array id="geom-wa_first_bedroom2_ld-map1-array" count="8">-1.627 1.575 2.571 1.575 2.571 -0.519 -1.627 -0.519</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_first_bedroom2_ld-map1-array" count="4" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-wa_first_bedroom2_ld-vertices">
+          <input semantic="POSITION" source="#geom-wa_first_bedroom2_ld-positions" />
+        </vertices>
+        <triangles material="t_wa_living_room1_ld_mat" count="2">
+          <input semantic="VERTEX" source="#geom-wa_first_bedroom2_ld-vertices" offset="0" />
+          <input semantic="NORMAL" source="#geom-wa_first_bedroom2_ld-normals" offset="0" />
+          <input semantic="TANGENT" source="#geom-wa_first_bedroom2_ld-tangents" offset="0" />
+          <input semantic="TEXCOORD" source="#geom-wa_first_bedroom2_ld-map1" offset="0" set="0" />
+          <p>2 1 3 3 1 4</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-wa_first_bedroom3_ld" name="wa_first_bedroom3_ld">
+      <mesh>
+        <source id="geom-wa_first_bedroom3_ld-positions">
+          <float_array id="geom-wa_first_bedroom3_ld-positions-array" count="24">19.85 42.563 -1.33 39.7 42.563 -1.33 49.625 42.563 -8.182 0 42.563 -8.182 49.625 42.563 10.507 39.7 42.563 5.316 19.85 42.563 5.316 0 42.563 10.507</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_first_bedroom3_ld-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_first_bedroom3_ld-normals">
+          <float_array id="geom-wa_first_bedroom3_ld-normals-array" count="24">0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_first_bedroom3_ld-normals-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_first_bedroom3_ld-tangents">
+          <float_array id="geom-wa_first_bedroom3_ld-tangents-array" count="32">-1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_first_bedroom3_ld-tangents-array" count="8" stride="4">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+              <param name="W" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_first_bedroom3_ld-map1">
+          <float_array id="geom-wa_first_bedroom3_ld-map1-array" count="16">1.127 0.318 1.127 1.156 2.926 1.575 2.926 -0.52 -1.982 1.575 -0.619 1.156 -0.619 0.318 -1.982 -0.52</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_first_bedroom3_ld-map1-array" count="8" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_first_bedroom3_ld-colors">
+          <float_array id="geom-wa_first_bedroom3_ld-colors-array" count="32">0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_first_bedroom3_ld-colors-array" count="8" stride="4">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+              <param name="A" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-wa_first_bedroom3_ld-vertices">
+          <input semantic="POSITION" source="#geom-wa_first_bedroom3_ld-positions" />
+        </vertices>
+        <triangles material="t_wa_living_room1_ld_mat" count="8">
+          <input semantic="VERTEX" source="#geom-wa_first_bedroom3_ld-vertices" offset="0" />
+          <input semantic="NORMAL" source="#geom-wa_first_bedroom3_ld-normals" offset="0" />
+          <input semantic="TANGENT" source="#geom-wa_first_bedroom3_ld-tangents" offset="0" />
+          <input semantic="TEXCOORD" source="#geom-wa_first_bedroom3_ld-map1" offset="0" set="0" />
+          <input semantic="COLOR" source="#geom-wa_first_bedroom3_ld-colors" offset="0" />
+          <p>2 1 3 3 1 4 5 2 3 6 2 5 7 4 1 6 5 7 8 4 7 7 5 8</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-wa_first_bedroom4_ld" name="wa_first_bedroom4_ld">
+      <mesh>
+        <source id="geom-wa_first_bedroom4_ld-positions">
+          <float_array id="geom-wa_first_bedroom4_ld-positions-array" count="12">0 11.595 10.507 49.625 11.595 10.507 49.625 42.563 10.507 0 42.563 10.507</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_first_bedroom4_ld-positions-array" count="4" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_first_bedroom4_ld-normals">
+          <float_array id="geom-wa_first_bedroom4_ld-normals-array" count="12">-1 0 0 -1 0 0 -1 0 0 -1 0 0</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_first_bedroom4_ld-normals-array" count="4" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_first_bedroom4_ld-tangents">
+          <float_array id="geom-wa_first_bedroom4_ld-tangents-array" count="16">0 0 1 -1 0 0 1 -1 0 0 1 -1 0 0 1 -1</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_first_bedroom4_ld-tangents-array" count="4" stride="4">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+              <param name="W" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_first_bedroom4_ld-map1">
+          <float_array id="geom-wa_first_bedroom4_ld-map1-array" count="8">-1.627 -0.519 -1.627 1.575 2.571 1.575 2.571 -0.519</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_first_bedroom4_ld-map1-array" count="4" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-wa_first_bedroom4_ld-vertices">
+          <input semantic="POSITION" source="#geom-wa_first_bedroom4_ld-positions" />
+        </vertices>
+        <triangles material="t_wa_living_room1_ld_mat" count="2">
+          <input semantic="VERTEX" source="#geom-wa_first_bedroom4_ld-vertices" offset="0" />
+          <input semantic="NORMAL" source="#geom-wa_first_bedroom4_ld-normals" offset="0" />
+          <input semantic="TANGENT" source="#geom-wa_first_bedroom4_ld-tangents" offset="0" />
+          <input semantic="TEXCOORD" source="#geom-wa_first_bedroom4_ld-map1" offset="0" set="0" />
+          <p>2 1 3 3 1 4</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-wa_kitchen1_ld" name="wa_kitchen1_ld">
+      <mesh>
+        <source id="geom-wa_kitchen1_ld-positions">
+          <float_array id="geom-wa_kitchen1_ld-positions-array" count="24">39.7 -25.08 15.983 49.625 -29.804 15.983 49.625 -14.631 15.983 39.7 -19.293 15.983 24.164 -14.631 15.983 24.12 -19.293 15.983 24.128 -29.804 15.983 24.131 -25.08 15.983</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_kitchen1_ld-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_kitchen1_ld-normals">
+          <float_array id="geom-wa_kitchen1_ld-normals-array" count="24">-1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_kitchen1_ld-normals-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_kitchen1_ld-tangents">
+          <float_array id="geom-wa_kitchen1_ld-tangents-array" count="32">0 0 1 -1 0 0 1 -1 0 0 1 -1 0 0 1 -1 0 0 1 -1 0 0 1 -1 0 0 1 -1 0 0 1 -1</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_kitchen1_ld-tangents-array" count="8" stride="4">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+              <param name="W" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_kitchen1_ld-map1">
+          <float_array id="geom-wa_kitchen1_ld-map1-array" count="16">0.084 1.19 -0.555 1.609 1.499 1.609 0.868 1.19 1.499 0.534 0.868 0.532 -0.555 0.532 0.084 0.532</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_kitchen1_ld-map1-array" count="8" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-wa_kitchen1_ld-vertices">
+          <input semantic="POSITION" source="#geom-wa_kitchen1_ld-positions" />
+        </vertices>
+        <triangles material="t_ce_kitchen_ld_mat" count="6">
+          <input semantic="VERTEX" source="#geom-wa_kitchen1_ld-vertices" offset="0" />
+          <input semantic="NORMAL" source="#geom-wa_kitchen1_ld-normals" offset="0" />
+          <input semantic="TANGENT" source="#geom-wa_kitchen1_ld-tangents" offset="0" />
+          <input semantic="TEXCOORD" source="#geom-wa_kitchen1_ld-map1" offset="0" set="0" />
+          <p>2 1 3 3 1 4 3 4 5 5 4 6 2 7 1 1 7 8</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-wa_kitchen2_ld" name="wa_kitchen2_ld">
+      <mesh>
+        <source id="geom-wa_kitchen2_ld-positions">
+          <float_array id="geom-wa_kitchen2_ld-positions-array" count="12">24.136 -29.804 15.983 24.136 -29.802 1.876 49.625 -29.802 1.876 49.625 -29.804 15.983</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_kitchen2_ld-positions-array" count="4" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_kitchen2_ld-normals">
+          <float_array id="geom-wa_kitchen2_ld-normals-array" count="12">0 0 1 0 0 1 0 0 1 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_kitchen2_ld-normals-array" count="4" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_kitchen2_ld-tangents">
+          <float_array id="geom-wa_kitchen2_ld-tangents-array" count="16">1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_kitchen2_ld-tangents-array" count="4" stride="4">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+              <param name="W" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_kitchen2_ld-map1">
+          <float_array id="geom-wa_kitchen2_ld-map1-array" count="8">2.325 0.532 -1.38 0.532 -1.38 1.608 2.325 1.608</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_kitchen2_ld-map1-array" count="4" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_kitchen2_ld-colors">
+          <float_array id="geom-wa_kitchen2_ld-colors-array" count="16">0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_kitchen2_ld-colors-array" count="4" stride="4">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+              <param name="A" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-wa_kitchen2_ld-vertices">
+          <input semantic="POSITION" source="#geom-wa_kitchen2_ld-positions" />
+        </vertices>
+        <triangles material="t_ce_kitchen_ld_mat" count="2">
+          <input semantic="VERTEX" source="#geom-wa_kitchen2_ld-vertices" offset="0" />
+          <input semantic="NORMAL" source="#geom-wa_kitchen2_ld-normals" offset="0" />
+          <input semantic="TANGENT" source="#geom-wa_kitchen2_ld-tangents" offset="0" />
+          <input semantic="TEXCOORD" source="#geom-wa_kitchen2_ld-map1" offset="0" set="0" />
+          <input semantic="COLOR" source="#geom-wa_kitchen2_ld-colors" offset="0" />
+          <p>2 1 3 3 1 4</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-wa_kitchen3_ld" name="wa_kitchen3_ld">
+      <mesh>
+        <source id="geom-wa_kitchen3_ld-positions">
+          <float_array id="geom-wa_kitchen3_ld-positions-array" count="12">24.14 -14.631 1.875 24.14 -14.631 15.983 49.625 -14.631 15.983 49.625 -14.631 1.875</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_kitchen3_ld-positions-array" count="4" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_kitchen3_ld-normals">
+          <float_array id="geom-wa_kitchen3_ld-normals-array" count="12">0 0 -1 0 0 -1 0 0 -1 0 0 -1</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_kitchen3_ld-normals-array" count="4" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_kitchen3_ld-tangents">
+          <float_array id="geom-wa_kitchen3_ld-tangents-array" count="16">-1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_kitchen3_ld-tangents-array" count="4" stride="4">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+              <param name="W" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_kitchen3_ld-map1">
+          <float_array id="geom-wa_kitchen3_ld-map1-array" count="8">2.325 0.533 -1.38 0.533 -1.38 1.608 2.325 1.608</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_kitchen3_ld-map1-array" count="4" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_kitchen3_ld-colors">
+          <float_array id="geom-wa_kitchen3_ld-colors-array" count="16">0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_kitchen3_ld-colors-array" count="4" stride="4">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+              <param name="A" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-wa_kitchen3_ld-vertices">
+          <input semantic="POSITION" source="#geom-wa_kitchen3_ld-positions" />
+        </vertices>
+        <triangles material="t_ce_kitchen_ld_mat" count="2">
+          <input semantic="VERTEX" source="#geom-wa_kitchen3_ld-vertices" offset="0" />
+          <input semantic="NORMAL" source="#geom-wa_kitchen3_ld-normals" offset="0" />
+          <input semantic="TANGENT" source="#geom-wa_kitchen3_ld-tangents" offset="0" />
+          <input semantic="TEXCOORD" source="#geom-wa_kitchen3_ld-map1" offset="0" set="0" />
+          <input semantic="COLOR" source="#geom-wa_kitchen3_ld-colors" offset="0" />
+          <p>2 1 3 3 1 4</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-wa_kitchen4_ld" name="wa_kitchen4_ld">
+      <mesh>
+        <source id="geom-wa_kitchen4_ld-positions">
+          <float_array id="geom-wa_kitchen4_ld-positions-array" count="24">40.494 -23.54 1.875 49.625 -29.802 1.876 24.109 -29.802 1.875 24.118 -23.54 1.875 40.494 -18.02 1.875 49.625 -14.631 1.875 24.161 -18.02 1.875 24.12 -14.631 1.875</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_kitchen4_ld-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_kitchen4_ld-normals">
+          <float_array id="geom-wa_kitchen4_ld-normals-array" count="24">1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_kitchen4_ld-normals-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_kitchen4_ld-tangents">
+          <float_array id="geom-wa_kitchen4_ld-tangents-array" count="32">0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_kitchen4_ld-tangents-array" count="8" stride="4">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+              <param name="W" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_kitchen4_ld-map1">
+          <float_array id="geom-wa_kitchen4_ld-map1-array" count="16">0.651 1.223 1.5 1.608 1.5 0.531 0.651 0.532 -0.097 1.223 -0.556 1.608 -0.097 0.533 -0.556 0.532</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_kitchen4_ld-map1-array" count="8" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-wa_kitchen4_ld-vertices">
+          <input semantic="POSITION" source="#geom-wa_kitchen4_ld-positions" />
+        </vertices>
+        <triangles material="t_ce_kitchen_ld_mat" count="6">
+          <input semantic="VERTEX" source="#geom-wa_kitchen4_ld-vertices" offset="0" />
+          <input semantic="NORMAL" source="#geom-wa_kitchen4_ld-normals" offset="0" />
+          <input semantic="TANGENT" source="#geom-wa_kitchen4_ld-tangents" offset="0" />
+          <input semantic="TEXCOORD" source="#geom-wa_kitchen4_ld-map1" offset="0" set="0" />
+          <p>2 1 3 3 1 4 1 2 5 5 2 6 5 6 7 7 6 8</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-wa_kitchen5_ld" name="wa_kitchen5_ld">
+      <mesh>
+        <source id="geom-wa_kitchen5_ld-positions">
+          <float_array id="geom-wa_kitchen5_ld-positions-array" count="24">24.109 -29.802 1.875 0 -29.802 1.875 0 -23.54 1.875 24.118 -23.54 1.875 24.161 -18.02 1.875 0 -18.02 1.875 0 -14.631 1.875 24.12 -14.631 1.875</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_kitchen5_ld-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_kitchen5_ld-normals">
+          <float_array id="geom-wa_kitchen5_ld-normals-array" count="24">1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_kitchen5_ld-normals-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_kitchen5_ld-tangents">
+          <float_array id="geom-wa_kitchen5_ld-tangents-array" count="32">0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_kitchen5_ld-tangents-array" count="8" stride="4">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+              <param name="W" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_kitchen5_ld-map1">
+          <float_array id="geom-wa_kitchen5_ld-map1-array" count="16">1.5 0.498 1.5 -0.52 0.651 -0.52 0.651 0.498 -0.097 0.5 -0.097 -0.52 -0.556 -0.52 -0.556 0.498</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_kitchen5_ld-map1-array" count="8" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-wa_kitchen5_ld-vertices">
+          <input semantic="POSITION" source="#geom-wa_kitchen5_ld-positions" />
+        </vertices>
+        <triangles material="t_wa_kitchen6_ld_mat" count="4">
+          <input semantic="VERTEX" source="#geom-wa_kitchen5_ld-vertices" offset="0" />
+          <input semantic="NORMAL" source="#geom-wa_kitchen5_ld-normals" offset="0" />
+          <input semantic="TANGENT" source="#geom-wa_kitchen5_ld-tangents" offset="0" />
+          <input semantic="TEXCOORD" source="#geom-wa_kitchen5_ld-map1" offset="0" set="0" />
+          <p>2 1 3 3 1 4 6 5 7 7 5 8</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-wa_kitchen6_ld" name="wa_kitchen6_ld">
+      <mesh>
+        <source id="geom-wa_kitchen6_ld-positions">
+          <float_array id="geom-wa_kitchen6_ld-positions-array" count="12">0 -14.631 1.875 0 -14.631 15.983 24.14 -14.631 15.983 24.14 -14.631 1.875</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_kitchen6_ld-positions-array" count="4" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_kitchen6_ld-normals">
+          <float_array id="geom-wa_kitchen6_ld-normals-array" count="12">0 0 -1 0 0 -1 0 0 -1 0 0 -1</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_kitchen6_ld-normals-array" count="4" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_kitchen6_ld-tangents">
+          <float_array id="geom-wa_kitchen6_ld-tangents-array" count="16">-1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_kitchen6_ld-tangents-array" count="4" stride="4">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+              <param name="W" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_kitchen6_ld-map1">
+          <float_array id="geom-wa_kitchen6_ld-map1-array" count="8">2.325 -0.52 -1.38 -0.52 -1.38 0.499 2.325 0.499</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_kitchen6_ld-map1-array" count="4" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_kitchen6_ld-colors">
+          <float_array id="geom-wa_kitchen6_ld-colors-array" count="16">0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_kitchen6_ld-colors-array" count="4" stride="4">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+              <param name="A" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-wa_kitchen6_ld-vertices">
+          <input semantic="POSITION" source="#geom-wa_kitchen6_ld-positions" />
+        </vertices>
+        <triangles material="t_wa_kitchen6_ld_mat" count="2">
+          <input semantic="VERTEX" source="#geom-wa_kitchen6_ld-vertices" offset="0" />
+          <input semantic="NORMAL" source="#geom-wa_kitchen6_ld-normals" offset="0" />
+          <input semantic="TANGENT" source="#geom-wa_kitchen6_ld-tangents" offset="0" />
+          <input semantic="TEXCOORD" source="#geom-wa_kitchen6_ld-map1" offset="0" set="0" />
+          <input semantic="COLOR" source="#geom-wa_kitchen6_ld-colors" offset="0" />
+          <p>2 1 3 3 1 4</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-wa_kitchen7_ld" name="wa_kitchen7_ld">
+      <mesh>
+        <source id="geom-wa_kitchen7_ld-positions">
+          <float_array id="geom-wa_kitchen7_ld-positions-array" count="24">24.164 -14.631 15.983 0 -14.631 15.983 19.85 -19.293 15.983 24.12 -19.293 15.983 0 -29.804 15.983 19.85 -25.08 15.983 24.128 -29.804 15.983 24.131 -25.08 15.983</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_kitchen7_ld-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_kitchen7_ld-normals">
+          <float_array id="geom-wa_kitchen7_ld-normals-array" count="24">-1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_kitchen7_ld-normals-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_kitchen7_ld-tangents">
+          <float_array id="geom-wa_kitchen7_ld-tangents-array" count="32">0 0 1 -1 0 0 1 -1 0 0 1 -1 0 0 1 -1 0 0 1 -1 0 0 1 -1 0 0 1 -1 0 0 1 -1</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_kitchen7_ld-tangents-array" count="8" stride="4">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+              <param name="W" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_kitchen7_ld-map1">
+          <float_array id="geom-wa_kitchen7_ld-map1-array" count="16">1.499 0.5 1.499 -0.521 0.868 0.318 0.868 0.498 -0.555 -0.521 0.084 0.318 -0.555 0.499 0.084 0.499</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_kitchen7_ld-map1-array" count="8" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-wa_kitchen7_ld-vertices">
+          <input semantic="POSITION" source="#geom-wa_kitchen7_ld-positions" />
+        </vertices>
+        <triangles material="t_wa_kitchen6_ld_mat" count="6">
+          <input semantic="VERTEX" source="#geom-wa_kitchen7_ld-vertices" offset="0" />
+          <input semantic="NORMAL" source="#geom-wa_kitchen7_ld-normals" offset="0" />
+          <input semantic="TANGENT" source="#geom-wa_kitchen7_ld-tangents" offset="0" />
+          <input semantic="TEXCOORD" source="#geom-wa_kitchen7_ld-map1" offset="0" set="0" />
+          <p>2 1 3 3 1 4 3 5 2 6 5 3 6 7 5 8 7 6</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-wa_kitchen8_ld" name="wa_kitchen8_ld">
+      <mesh>
+        <source id="geom-wa_kitchen8_ld-positions">
+          <float_array id="geom-wa_kitchen8_ld-positions-array" count="12">0 -29.804 15.983 0 -29.802 1.875 24.136 -29.802 1.876 24.136 -29.804 15.983</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_kitchen8_ld-positions-array" count="4" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_kitchen8_ld-normals">
+          <float_array id="geom-wa_kitchen8_ld-normals-array" count="12">0 0 1 0 0 1 0 0 1 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_kitchen8_ld-normals-array" count="4" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_kitchen8_ld-tangents">
+          <float_array id="geom-wa_kitchen8_ld-tangents-array" count="16">1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_kitchen8_ld-tangents-array" count="4" stride="4">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+              <param name="W" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_kitchen8_ld-map1">
+          <float_array id="geom-wa_kitchen8_ld-map1-array" count="8">2.325 -0.52 -1.38 -0.52 -1.38 0.499 2.325 0.499</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_kitchen8_ld-map1-array" count="4" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_kitchen8_ld-colors">
+          <float_array id="geom-wa_kitchen8_ld-colors-array" count="16">0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_kitchen8_ld-colors-array" count="4" stride="4">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+              <param name="A" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-wa_kitchen8_ld-vertices">
+          <input semantic="POSITION" source="#geom-wa_kitchen8_ld-positions" />
+        </vertices>
+        <triangles material="t_wa_kitchen6_ld_mat" count="2">
+          <input semantic="VERTEX" source="#geom-wa_kitchen8_ld-vertices" offset="0" />
+          <input semantic="NORMAL" source="#geom-wa_kitchen8_ld-normals" offset="0" />
+          <input semantic="TANGENT" source="#geom-wa_kitchen8_ld-tangents" offset="0" />
+          <input semantic="TEXCOORD" source="#geom-wa_kitchen8_ld-map1" offset="0" set="0" />
+          <input semantic="COLOR" source="#geom-wa_kitchen8_ld-colors" offset="0" />
+          <p>2 1 3 3 1 4</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-wa_living_room1_ld" name="wa_living_room1_ld">
+      <mesh>
+        <source id="geom-wa_living_room1_ld-positions">
+          <float_array id="geom-wa_living_room1_ld-positions-array" count="24">49.625 -29.804 -14.91 40.494 -29.804 -10.645 0 -29.804 -10.645 0 -29.804 -14.91 40.494 -29.804 -7.767 49.625 -29.802 1.077 0 -29.802 1.077 0 -29.804 -7.767</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_living_room1_ld-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_living_room1_ld-normals">
+          <float_array id="geom-wa_living_room1_ld-normals-array" count="24">0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_living_room1_ld-normals-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_living_room1_ld-tangents">
+          <float_array id="geom-wa_living_room1_ld-tangents-array" count="32">1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_living_room1_ld-tangents-array" count="8" stride="4">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+              <param name="W" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_living_room1_ld-map1">
+          <float_array id="geom-wa_living_room1_ld-map1-array" count="16">-1.627 1.575 -0.507 1.19 -0.507 -0.519 -1.627 -0.519 0.249 1.19 2.571 1.575 2.571 -0.519 0.249 -0.519</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_living_room1_ld-map1-array" count="8" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_living_room1_ld-colors">
+          <float_array id="geom-wa_living_room1_ld-colors-array" count="32">0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_living_room1_ld-colors-array" count="8" stride="4">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+              <param name="A" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-wa_living_room1_ld-vertices">
+          <input semantic="POSITION" source="#geom-wa_living_room1_ld-positions" />
+        </vertices>
+        <triangles material="t_wa_living_room1_ld_mat" count="6">
+          <input semantic="VERTEX" source="#geom-wa_living_room1_ld-vertices" offset="0" />
+          <input semantic="NORMAL" source="#geom-wa_living_room1_ld-normals" offset="0" />
+          <input semantic="TANGENT" source="#geom-wa_living_room1_ld-tangents" offset="0" />
+          <input semantic="TEXCOORD" source="#geom-wa_living_room1_ld-map1" offset="0" set="0" />
+          <input semantic="COLOR" source="#geom-wa_living_room1_ld-colors" offset="0" />
+          <p>2 1 3 3 1 4 2 5 1 1 5 6 6 5 7 7 5 8</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-wa_living_room2_ld" name="wa_living_room2_ld">
+      <mesh>
+        <source id="geom-wa_living_room2_ld-positions">
+          <float_array id="geom-wa_living_room2_ld-positions-array" count="36">49.625 -29.802 1.077 40.494 -23.54 1.077 0 -23.54 1.077 0 -29.802 1.077 49.625 10.05 1.077 40.494 -18.02 1.077 40.494 2.189 1.077 0 2.189 1.077 0 -18.02 1.077 40.494 7.764 1.077 0 10.05 1.077 0 7.764 1.077</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_living_room2_ld-positions-array" count="12" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_living_room2_ld-normals">
+          <float_array id="geom-wa_living_room2_ld-normals-array" count="36">-1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_living_room2_ld-normals-array" count="12" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_living_room2_ld-tangents">
+          <float_array id="geom-wa_living_room2_ld-tangents-array" count="48">0 0 1 -1 0 0 1 -1 0 0 1 -1 0 0 1 -1 0 0 1 -1 0 0 1 -1 0 0 1 -1 0 0 1 -1 0 0 1 -1 0 0 1 -1 0 0 1 -1 0 0 1 -1</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_living_room2_ld-tangents-array" count="12" stride="4">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+              <param name="W" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_living_room2_ld-map1">
+          <float_array id="geom-wa_living_room2_ld-map1-array" count="24">-2.229 1.575 -1.38 1.19 -1.38 -0.519 -2.229 -0.519 3.173 1.575 -0.632 1.19 2.108 1.19 2.108 -0.519 -0.632 -0.519 2.863 1.19 3.173 -0.519 2.863 -0.519</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_living_room2_ld-map1-array" count="12" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-wa_living_room2_ld-vertices">
+          <input semantic="POSITION" source="#geom-wa_living_room2_ld-positions" />
+        </vertices>
+        <triangles material="t_wa_living_room1_ld_mat" count="10">
+          <input semantic="VERTEX" source="#geom-wa_living_room2_ld-vertices" offset="0" />
+          <input semantic="NORMAL" source="#geom-wa_living_room2_ld-normals" offset="0" />
+          <input semantic="TANGENT" source="#geom-wa_living_room2_ld-tangents" offset="0" />
+          <input semantic="TEXCOORD" source="#geom-wa_living_room2_ld-map1" offset="0" set="0" />
+          <p>2 1 3 3 1 4 2 5 1 6 5 2 7 5 6 6 8 7 9 8 6 10 5 7 5 10 11 11 10 12</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-wa_living_room3_ld" name="wa_living_room3_ld">
+      <mesh>
+        <source id="geom-wa_living_room3_ld-positions">
+          <float_array id="geom-wa_living_room3_ld-positions-array" count="36">0 10.05 -11.325 0 10.05 -6.409 40.494 10.05 -6.409 40.494 10.05 -11.325 49.625 10.05 -14.91 49.625 10.05 1.077 40.494 10.05 -3.532 40.494 10.05 -14.202 0 10.05 -14.91 0 10.05 -14.202 0 10.05 1.077 0 10.05 -3.532</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_living_room3_ld-positions-array" count="12" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_living_room3_ld-normals">
+          <float_array id="geom-wa_living_room3_ld-normals-array" count="36">0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_living_room3_ld-normals-array" count="12" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_living_room3_ld-tangents">
+          <float_array id="geom-wa_living_room3_ld-tangents-array" count="48">-1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_living_room3_ld-tangents-array" count="12" stride="4">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+              <param name="W" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_living_room3_ld-map1">
+          <float_array id="geom-wa_living_room3_ld-map1-array" count="24">1.668 -0.519 0.378 -0.519 0.378 1.19 1.668 1.19 2.61 1.575 -1.589 1.575 -0.378 1.19 2.424 1.19 2.61 -0.519 2.424 -0.519 -1.589 -0.519 -0.378 -0.519</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_living_room3_ld-map1-array" count="12" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_living_room3_ld-colors">
+          <float_array id="geom-wa_living_room3_ld-colors-array" count="48">0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_living_room3_ld-colors-array" count="12" stride="4">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+              <param name="A" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-wa_living_room3_ld-vertices">
+          <input semantic="POSITION" source="#geom-wa_living_room3_ld-positions" />
+        </vertices>
+        <triangles material="t_wa_living_room1_ld_mat" count="10">
+          <input semantic="VERTEX" source="#geom-wa_living_room3_ld-vertices" offset="0" />
+          <input semantic="NORMAL" source="#geom-wa_living_room3_ld-normals" offset="0" />
+          <input semantic="TANGENT" source="#geom-wa_living_room3_ld-tangents" offset="0" />
+          <input semantic="TEXCOORD" source="#geom-wa_living_room3_ld-map1" offset="0" set="0" />
+          <input semantic="COLOR" source="#geom-wa_living_room3_ld-colors" offset="0" />
+          <p>2 1 3 3 1 4 4 5 3 5 6 3 3 6 7 8 5 4 8 9 5 10 9 8 11 7 6 12 7 11</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-wa_living_room4_ld" name="wa_living_room4_ld">
+      <mesh>
+        <source id="geom-wa_living_room4_ld-positions">
+          <float_array id="geom-wa_living_room4_ld-positions-array" count="12">49.625 -29.804 -14.91 0 -29.804 -14.91 0 10.05 -14.91 49.625 10.05 -14.91</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_living_room4_ld-positions-array" count="4" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_living_room4_ld-normals">
+          <float_array id="geom-wa_living_room4_ld-normals-array" count="12">1 0 0 1 0 0 1 0 0 1 0 0</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_living_room4_ld-normals-array" count="4" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_living_room4_ld-tangents">
+          <float_array id="geom-wa_living_room4_ld-tangents-array" count="16">0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_living_room4_ld-tangents-array" count="4" stride="4">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+              <param name="W" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_living_room4_ld-map1">
+          <float_array id="geom-wa_living_room4_ld-map1-array" count="8">3.173 1.575 3.173 -0.519 -2.229 -0.519 -2.229 1.575</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_living_room4_ld-map1-array" count="4" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-wa_living_room4_ld-vertices">
+          <input semantic="POSITION" source="#geom-wa_living_room4_ld-positions" />
+        </vertices>
+        <triangles material="t_wa_living_room4_ld_mat" count="2">
+          <input semantic="VERTEX" source="#geom-wa_living_room4_ld-vertices" offset="0" />
+          <input semantic="NORMAL" source="#geom-wa_living_room4_ld-normals" offset="0" />
+          <input semantic="TANGENT" source="#geom-wa_living_room4_ld-tangents" offset="0" />
+          <input semantic="TEXCOORD" source="#geom-wa_living_room4_ld-map1" offset="0" set="0" />
+          <p>2 1 3 3 1 4</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-wa_washhouse1_ld" name="wa_washhouse1_ld">
+      <mesh>
+        <source id="geom-wa_washhouse1_ld-positions">
+          <float_array id="geom-wa_washhouse1_ld-positions-array" count="12">49.625 -13.086 11.304 49.625 -13.086 15.983 0 -13.086 15.983 0 -13.086 11.304</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_washhouse1_ld-positions-array" count="4" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_washhouse1_ld-normals">
+          <float_array id="geom-wa_washhouse1_ld-normals-array" count="12">0 0 1 0 0 1 0 0 1 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_washhouse1_ld-normals-array" count="4" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_washhouse1_ld-tangents">
+          <float_array id="geom-wa_washhouse1_ld-tangents-array" count="16">1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_washhouse1_ld-tangents-array" count="4" stride="4">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+              <param name="W" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_washhouse1_ld-map1">
+          <float_array id="geom-wa_washhouse1_ld-map1-array" count="8">-0.087 1.575 1.142 1.575 1.142 -0.519 -0.087 -0.519</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_washhouse1_ld-map1-array" count="4" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_washhouse1_ld-colors">
+          <float_array id="geom-wa_washhouse1_ld-colors-array" count="16">0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_washhouse1_ld-colors-array" count="4" stride="4">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+              <param name="A" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-wa_washhouse1_ld-vertices">
+          <input semantic="POSITION" source="#geom-wa_washhouse1_ld-positions" />
+        </vertices>
+        <triangles material="t_wa_bathroom3_ld_mat" count="2">
+          <input semantic="VERTEX" source="#geom-wa_washhouse1_ld-vertices" offset="0" />
+          <input semantic="NORMAL" source="#geom-wa_washhouse1_ld-normals" offset="0" />
+          <input semantic="TANGENT" source="#geom-wa_washhouse1_ld-tangents" offset="0" />
+          <input semantic="TEXCOORD" source="#geom-wa_washhouse1_ld-map1" offset="0" set="0" />
+          <input semantic="COLOR" source="#geom-wa_washhouse1_ld-colors" offset="0" />
+          <p>2 1 3 3 1 4</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-wa_washhouse2_ld" name="wa_washhouse2_ld">
+      <mesh>
+        <source id="geom-wa_washhouse2_ld-positions">
+          <float_array id="geom-wa_washhouse2_ld-positions-array" count="12">0 -13.086 15.983 49.625 -13.086 15.983 49.625 10.05 15.983 0 10.05 15.983</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_washhouse2_ld-positions-array" count="4" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_washhouse2_ld-normals">
+          <float_array id="geom-wa_washhouse2_ld-normals-array" count="12">-1 0 0 -1 0 0 -1 0 0 -1 0 0</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_washhouse2_ld-normals-array" count="4" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_washhouse2_ld-tangents">
+          <float_array id="geom-wa_washhouse2_ld-tangents-array" count="16">0 0 1 -1 0 0 1 -1 0 0 1 -1 0 0 1 -1</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_washhouse2_ld-tangents-array" count="4" stride="4">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+              <param name="W" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_washhouse2_ld-map1">
+          <float_array id="geom-wa_washhouse2_ld-map1-array" count="8">-1.029 -0.519 -1.029 1.575 2.108 1.575 2.108 -0.519</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_washhouse2_ld-map1-array" count="4" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-wa_washhouse2_ld-vertices">
+          <input semantic="POSITION" source="#geom-wa_washhouse2_ld-positions" />
+        </vertices>
+        <triangles material="t_wa_bathroom3_ld_mat" count="2">
+          <input semantic="VERTEX" source="#geom-wa_washhouse2_ld-vertices" offset="0" />
+          <input semantic="NORMAL" source="#geom-wa_washhouse2_ld-normals" offset="0" />
+          <input semantic="TANGENT" source="#geom-wa_washhouse2_ld-tangents" offset="0" />
+          <input semantic="TEXCOORD" source="#geom-wa_washhouse2_ld-map1" offset="0" set="0" />
+          <p>2 1 3 3 1 4</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-wa_washhouse3_ld" name="wa_washhouse3_ld">
+      <mesh>
+        <source id="geom-wa_washhouse3_ld-positions">
+          <float_array id="geom-wa_washhouse3_ld-positions-array" count="24">40.494 -7.57 11.304 49.625 -13.086 11.304 0 -13.086 11.304 0 -7.57 11.304 40.494 -1.994 11.304 49.625 10.05 11.304 0 10.05 11.304 0 -1.994 11.304</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_washhouse3_ld-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_washhouse3_ld-normals">
+          <float_array id="geom-wa_washhouse3_ld-normals-array" count="24">1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_washhouse3_ld-normals-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_washhouse3_ld-tangents">
+          <float_array id="geom-wa_washhouse3_ld-tangents-array" count="32">0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_washhouse3_ld-tangents-array" count="8" stride="4">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+              <param name="W" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_washhouse3_ld-map1">
+          <float_array id="geom-wa_washhouse3_ld-map1-array" count="16">1.277 1.19 2.024 1.575 2.024 -0.519 1.277 -0.519 0.521 1.19 -1.112 1.575 -1.112 -0.519 0.521 -0.519</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_washhouse3_ld-map1-array" count="8" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-wa_washhouse3_ld-vertices">
+          <input semantic="POSITION" source="#geom-wa_washhouse3_ld-positions" />
+        </vertices>
+        <triangles material="t_wa_bathroom3_ld_mat" count="6">
+          <input semantic="VERTEX" source="#geom-wa_washhouse3_ld-vertices" offset="0" />
+          <input semantic="NORMAL" source="#geom-wa_washhouse3_ld-normals" offset="0" />
+          <input semantic="TANGENT" source="#geom-wa_washhouse3_ld-tangents" offset="0" />
+          <input semantic="TEXCOORD" source="#geom-wa_washhouse3_ld-map1" offset="0" set="0" />
+          <p>2 1 3 3 1 4 2 5 1 6 5 2 7 5 6 8 5 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-wa_washhouse4_ld" name="wa_washhouse4_ld">
+      <mesh>
+        <source id="geom-wa_washhouse4_ld-positions">
+          <float_array id="geom-wa_washhouse4_ld-positions-array" count="12">0 10.05 15.983 49.625 10.05 15.983 49.625 10.05 11.304 0 10.05 11.304</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_washhouse4_ld-positions-array" count="4" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_washhouse4_ld-normals">
+          <float_array id="geom-wa_washhouse4_ld-normals-array" count="12">0 0 -1 0 0 -1 0 0 -1 0 0 -1</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_washhouse4_ld-normals-array" count="4" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_washhouse4_ld-tangents">
+          <float_array id="geom-wa_washhouse4_ld-tangents-array" count="16">-1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_washhouse4_ld-tangents-array" count="4" stride="4">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+              <param name="W" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_washhouse4_ld-map1">
+          <float_array id="geom-wa_washhouse4_ld-map1-array" count="8">-0.142 -0.519 -0.142 1.575 1.086 1.575 1.086 -0.519</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_washhouse4_ld-map1-array" count="4" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_washhouse4_ld-colors">
+          <float_array id="geom-wa_washhouse4_ld-colors-array" count="16">0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_washhouse4_ld-colors-array" count="4" stride="4">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+              <param name="A" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-wa_washhouse4_ld-vertices">
+          <input semantic="POSITION" source="#geom-wa_washhouse4_ld-positions" />
+        </vertices>
+        <triangles material="t_wa_bathroom3_ld_mat" count="2">
+          <input semantic="VERTEX" source="#geom-wa_washhouse4_ld-vertices" offset="0" />
+          <input semantic="NORMAL" source="#geom-wa_washhouse4_ld-normals" offset="0" />
+          <input semantic="TANGENT" source="#geom-wa_washhouse4_ld-tangents" offset="0" />
+          <input semantic="TEXCOORD" source="#geom-wa_washhouse4_ld-map1" offset="0" set="0" />
+          <input semantic="COLOR" source="#geom-wa_washhouse4_ld-colors" offset="0" />
+          <p>2 1 3 3 1 4</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-wall_thickness_ld" name="wall_thickness_ld">
+      <mesh>
+        <source id="geom-wall_thickness_ld-positions">
+          <float_array id="geom-wall_thickness_ld-positions-array" count="624">0 -29.804 -10.645 40.494 -29.804 -10.645 40.494 -31.349 -10.645 0 -31.349 -10.645 40.494 -29.804 -7.767 0 -29.804 -7.767 0 -31.349 -7.767 40.494 -31.349 -7.767 40.494 -31.349 -10.645 40.494 -29.804 -10.645 40.494 -29.804 -7.767 40.494 -31.349 -7.767 19.85 -25.08 15.983 19.85 -25.08 16.78 19.85 -19.293 16.78 19.85 -19.293 15.983 19.85 -19.293 15.983 19.85 -19.293 16.78 39.7 -19.293 16.78 39.7 -19.293 15.983 39.7 -25.08 15.983 39.7 -25.08 16.78 19.85 -25.08 16.78 19.85 -25.08 15.983 39.7 -25.08 16.78 39.7 -25.08 15.983 39.7 -19.293 15.983 39.7 -19.293 16.78 19.85 42.563 -1.33 19.85 44.108 -1.33 39.7 44.108 -1.33 39.7 42.563 -1.33 19.85 42.563 5.316 19.85 44.108 5.316 19.85 44.108 -1.33 19.85 42.563 -1.33 39.7 42.563 5.316 39.7 44.108 5.316 19.85 44.108 5.316 19.85 42.563 5.316 39.7 42.563 -1.33 39.7 44.108 -1.33 39.7 44.108 5.316 39.7 42.563 5.316 39.7 23.888 -14.91 39.7 23.888 -15.708 19.85 23.888 -15.708 19.85 23.888 -14.91 19.85 18.101 -14.91 19.85 23.888 -14.91 19.85 23.888 -15.708 19.85 18.101 -15.708 39.7 18.101 -15.708 39.7 18.101 -14.91 19.85 18.101 -14.91 19.85 18.101 -15.708 39.7 23.888 -15.708 39.7 23.888 -14.91 39.7 18.101 -14.91 39.7 18.101 -15.708 40.494 -18.02 1.077 0 -18.02 1.077 0 -18.02 1.875 40.494 -18.02 1.875 0 -23.54 1.077 40.494 -23.54 1.077 40.494 -23.54 1.875 0 -23.54 1.875 40.494 -23.54 1.875 40.494 -23.54 1.077 40.494 -18.02 1.077 40.494 -18.02 1.875 0 -7.57 10.507 40.494 -7.57 10.507 40.494 -7.57 11.304 0 -7.57 11.304 40.494 -1.994 10.507 0 -1.994 10.507 0 -1.994 11.304 40.494 -1.994 11.304 40.494 -1.994 10.507 40.494 -1.994 11.304 40.494 -7.57 11.304 40.494 -7.57 10.507 0 2.189 1.077 40.494 2.189 1.077 40.494 2.189 1.875 0 2.189 1.875 40.494 7.764 1.077 0 7.764 1.077 0 7.764 1.875 40.494 7.764 1.875 40.494 7.764 1.875 40.494 2.189 1.875 40.494 2.189 1.077 40.494 7.764 1.077 0 10.05 -3.532 40.494 10.05 -3.532 40.494 11.595 -3.532 0 11.595 -3.532 40.494 10.05 -6.409 0 10.05 -6.409 0 11.595 -6.409 40.494 11.595 -6.409 40.494 11.595 -3.532 40.494 10.05 -3.532 40.494 10.05 -6.409 40.494 11.595 -6.409 0 10.05 -11.325 40.494 10.05 -11.325 40.494 11.595 -11.325 0 11.595 -11.325 40.494 10.05 -14.202 0 10.05 -14.202 0 11.595 -14.202 40.494 11.595 -14.202 40.494 11.595 -14.202 40.494 11.595 -11.325 40.494 10.05 -11.325 40.494 10.05 -14.202 49.625 10.05 1.077 49.625 -13.086 1.875 49.625 10.05 1.875 49.625 11.595 10.507 49.625 10.05 10.507 49.625 10.05 11.304 49.625 -13.086 10.507 49.625 -13.086 11.304 49.625 -14.631 1.875 49.625 -14.631 15.983 49.625 -13.086 15.983 49.625 -31.349 16.78 49.625 -29.804 15.983 49.625 11.595 16.78 49.625 11.595 11.304 49.625 10.05 15.983 49.625 42.563 10.507 49.625 44.108 11.304 49.625 42.563 -8.182 49.625 44.108 -8.979 49.625 28.09 -8.979 49.625 26.545 -8.979 49.625 26.545 -14.91 49.625 28.09 -15.708 49.625 11.595 -14.91 49.625 -31.349 -15.708 49.625 -29.802 1.077 49.625 -29.802 1.876 49.625 10.05 -14.91 49.625 11.595 -8.182 49.625 11.595 -8.979 49.625 -29.804 -14.91 0 -14.631 1.875 0 -18.02 1.077 0 -18.02 1.875 0 -13.086 1.875 0 -13.086 10.507 0 -13.086 11.304 0 -7.57 11.304 0 -7.57 10.507 0 -14.631 15.983 0 -13.086 15.983 0 -31.349 16.78 0 -29.804 15.983 0 -29.802 1.875 0 -29.802 1.077 0 -23.54 1.875 0 -23.54 1.077 0 -31.349 -7.767 0 -29.804 -7.767 0 11.595 16.78 0 10.05 15.983 0 11.595 11.304 0 10.05 11.304 0 11.595 10.507 0 10.05 10.507 0 -1.994 10.507 0 -1.994 11.304 0 44.108 11.304 0 42.563 10.507 0 44.108 -8.979 0 42.563 -8.182 0 28.09 -8.979 0 26.545 -8.979 0 28.09 -15.708 0 26.545 -14.91 0 11.595 -8.182 0 11.595 -8.979 0 10.05 -11.325 0 10.05 -6.409 0 11.595 -6.409 0 11.595 -11.325 0 11.595 -14.91 0 10.05 -14.91 0 10.05 -14.202 0 11.595 -14.202 0 -31.349 -15.708 0 -29.804 -14.91 0 -31.349 -10.645 0 -29.804 -10.645 0 11.595 -3.532 0 10.05 -3.532 0 10.05 1.077 0 10.05 1.875 0 7.764 1.077 0 7.764 1.875 0 2.189 1.875 0 2.189 1.077</float_array>
+          <technique_common>
+            <accessor source="#geom-wall_thickness_ld-positions-array" count="208" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wall_thickness_ld-normals">
+          <float_array id="geom-wall_thickness_ld-normals-array" count="624">1 0 0 1 0 0 1 0 0 1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 1 0 0 1 0 0 1 0 0 1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 1 0 0 1 0 0 1 0 0 1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 1 0 0 1 0 0 1 0 0 1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 1 0 0 1 0 0 1 0 0 1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-wall_thickness_ld-normals-array" count="208" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wall_thickness_ld-tangents">
+          <float_array id="geom-wall_thickness_ld-tangents-array" count="832">0 0 1 -1 0 0 1 -1 0 0 1 -1 0 0 1 -1 0 0 1 -1 0 0 1 -1 0 0 1 -1 0 0 1 -1 0 0 1 -1 0 0 1 -1 0 0 1 -1 0 0 1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0.919 -0.395 0 -1 0.826 -0.564 0 -1 0.934 0.357 0 -1 0.888 0.46 0 -1 -0.915 -0.404 0 -1 -0.82 -0.572 0 -1 -0.937 0.349 0 -1 -0.892 0.453 0 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 1 0 -1 0 1 0 -1 0 1 0 -1 0 1 0 -1 0.253 0 -0.967 -1 0.293 0 -0.956 -1 -0.268 0 -0.963 -1 -0.314 0 -0.949 -1 0 1 0 -1 0 1 0 -1 0 1 0 -1 0 1 0 -1 0.253 0 0.967 -1 0.293 0 0.956 -1 -0.268 0 0.963 -1 -0.314 0 0.949 -1 -0.898 0.44 0 -1 -0.791 0.612 0 -1 -0.94 -0.342 0 -1 -0.894 -0.448 0 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0.921 -0.391 0 -1 0.87 -0.493 0 -1 0.922 0.388 0 -1 0.826 0.564 0 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 1 -1 0 0 1 -1 0 0 1 -1 0 0 1 -1 0 0 1 -1 0 0 1 -1 0 0 1 -1 0 0 1 -1 0 0 1 -1 0 0 1 -1 0 0 1 -1 0 0 1 -1 1 0 -0.008 -1 1 0 -0.015 -1 1 0 -0.008 -1 1 0 -0.005 -1 1 0 -0.007 -1 1 0 -0.007 -1 1 0 -0.013 -1 1 0 -0.012 -1 1 0 -0.004 -1 1 0 -0.01 -1 1 0 -0.002 -1 1 0 -0.009 -1 1 0 -0.009 -1 1 0 -0.008 -1 1 0 -0.004 -1 1 0 -0.009 -1 1 0 -0.007 -1 1 0 -0.006 -1 1 0 -0.023 -1 1 0 -0.024 -1 0.999 0 -0.038 -1 1 0 -0.008 -1 0.999 0 -0.033 -1 1 0 -0.027 -1 1 0 -0.001 -1 1 0 -0.012 -1 1 0 -0.015 -1 1 0 -0.015 -1 1 0 -0.004 -1 1 0 -0.006 -1 1 0 -0.008 -1 1 0 -0.012 -1 1 0 0.012 -1 1 0 0.001 -1 1 0 -0.002 -1 1 0 0.008 -1 1 0 0.015 -1 1 0 0.017 -1 1 0 0.002 -1 1 0 -0.001 -1 1 0 0.015 -1 1 0 0.004 -1 1 0 0.009 -1 1 0 0.011 -1 1 0 0.006 -1 1 0 0.006 -1 1 0 0.001 -1 1 0 0 -1 1 0 0.006 -1 1 0 0.006 -1 1 0 -0.008 -1 1 0 -0.009 -1 1 0 0 -1 1 0 -0.004 -1 1 0 0.014 -1 1 0 0.02 -1 1 0 0 -1 1 0 0 -1 0.999 0 -0.035 -1 0.999 0 -0.038 -1 1 0 -0.024 -1 1 0 -0.023 -1 1 0 -0.002 -1 1 0 0.001 -1 1 0 -0.004 -1 1 0 -0.007 -1 1 0 0.002 -1 1 0 0.001 -1 1 0 0 -1 1 0 0.005 -1 1 0 0.006 -1 1 0 -0.001 -1 1 0 0 -1 1 0 0.001 -1 1 0 0.015 -1 1 0 0.024 -1 1 0 0.002 -1 1 0 0.002 -1 1 0 -0.007 -1 1 0 -0.006 -1 0.999 0 0.034 -1 0.999 0 0.034 -1 0.999 0 0.035 -1 0.999 0 0.035 -1 0.999 0 0.035 -1 0.999 0 0.035 -1 1 0 0 -1 1 0 0 -1</float_array>
+          <technique_common>
+            <accessor source="#geom-wall_thickness_ld-tangents-array" count="208" stride="4">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+              <param name="W" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wall_thickness_ld-map1">
+          <float_array id="geom-wall_thickness_ld-map1-array" count="416">0.298 0.744 0.298 0.592 0.279 0.592 0.279 0.744 0.298 0.525 0.298 0.373 0.279 0.373 0.279 0.525 0.279 0.592 0.298 0.592 0.298 0.525 0.279 0.525 0.623 0.951 0.613 0.941 0.557 0.941 0.546 0.951 0.546 0.951 0.557 0.941 0.557 0.879 0.546 0.869 0.623 0.869 0.613 0.879 0.613 0.941 0.623 0.951 0.613 0.879 0.623 0.869 0.546 0.869 0.557 0.879 0.409 0.538 0.401 0.545 0.453 0.545 0.446 0.538 0.409 0.378 0.401 0.372 0.401 0.545 0.409 0.538 0.446 0.378 0.453 0.372 0.401 0.372 0.409 0.378 0.446 0.538 0.453 0.545 0.453 0.372 0.446 0.378 0.459 0.952 0.47 0.94 0.47 0.879 0.459 0.869 0.538 0.869 0.459 0.869 0.47 0.879 0.527 0.879 0.527 0.94 0.538 0.952 0.538 0.869 0.527 0.879 0.47 0.94 0.459 0.952 0.538 0.952 0.527 0.94 0.375 0.596 0.375 0.748 0.394 0.748 0.394 0.596 0.375 0.378 0.375 0.53 0.394 0.53 0.394 0.378 0.394 0.53 0.375 0.53 0.375 0.596 0.394 0.596 0.336 0.751 0.336 0.599 0.317 0.599 0.317 0.751 0.336 0.531 0.336 0.379 0.317 0.379 0.317 0.531 0.336 0.531 0.317 0.531 0.317 0.599 0.336 0.599 0.346 0.377 0.346 0.529 0.365 0.529 0.365 0.377 0.346 0.596 0.346 0.748 0.365 0.748 0.365 0.596 0.365 0.596 0.365 0.529 0.346 0.529 0.346 0.596 0.272 0.793 0.272 0.641 0.253 0.641 0.253 0.793 0.272 0.574 0.272 0.422 0.253 0.422 0.253 0.574 0.253 0.641 0.272 0.641 0.272 0.574 0.253 0.574 0.253 0.313 0.253 0.465 0.272 0.465 0.272 0.313 0.253 0.532 0.253 0.684 0.272 0.684 0.272 0.532 0.272 0.532 0.272 0.465 0.253 0.465 0.253 0.532 0.549 0.477 0.567 0.749 0.567 0.476 0.77 0.456 0.77 0.475 0.789 0.475 0.77 0.746 0.789 0.746 0.567 0.767 0.899 0.763 0.899 0.745 0.918 0.959 0.899 0.941 0.917 0.455 0.789 0.456 0.899 0.473 0.77 0.072 0.789 0.053 0.331 0.081 0.312 0.063 0.312 0.258 0.312 0.277 0.173 0.284 0.154 0.266 0.173 0.461 0.154 0.97 0.548 0.946 0.567 0.946 0.173 0.48 0.331 0.46 0.312 0.46 0.173 0.952 0.532 0.706 0.513 0.748 0.532 0.748 0.532 0.687 0.734 0.69 0.753 0.69 0.753 0.622 0.734 0.622 0.862 0.711 0.862 0.693 0.881 0.912 0.862 0.893 0.532 0.891 0.513 0.891 0.532 0.813 0.513 0.813 0.306 0.908 0.307 0.889 0.881 0.397 0.862 0.415 0.752 0.398 0.753 0.417 0.735 0.398 0.734 0.417 0.734 0.561 0.753 0.561 0.752 0.03 0.734 0.049 0.278 0.03 0.297 0.049 0.278 0.234 0.278 0.254 0.12 0.232 0.139 0.251 0.297 0.446 0.278 0.446 0.223 0.465 0.339 0.465 0.338 0.446 0.223 0.446 0.139 0.44 0.139 0.459 0.156 0.459 0.156 0.44 0.12 0.979 0.139 0.96 0.239 0.978 0.239 0.959 0.406 0.386 0.405 0.405 0.513 0.409 0.532 0.409 0.513 0.436 0.532 0.437 0.532 0.497 0.513 0.497</float_array>
+          <technique_common>
+            <accessor source="#geom-wall_thickness_ld-map1-array" count="208" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wall_thickness_ld-colors">
+          <float_array id="geom-wall_thickness_ld-colors-array" count="832">0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#geom-wall_thickness_ld-colors-array" count="208" stride="4">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+              <param name="A" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-wall_thickness_ld-vertices">
+          <input semantic="POSITION" source="#geom-wall_thickness_ld-positions" />
+        </vertices>
+        <triangles material="t_wall_thickness_ld_mat" count="156">
+          <input semantic="VERTEX" source="#geom-wall_thickness_ld-vertices" offset="0" />
+          <input semantic="NORMAL" source="#geom-wall_thickness_ld-normals" offset="0" />
+          <input semantic="TANGENT" source="#geom-wall_thickness_ld-tangents" offset="0" />
+          <input semantic="TEXCOORD" source="#geom-wall_thickness_ld-map1" offset="0" set="0" />
+          <input semantic="COLOR" source="#geom-wall_thickness_ld-colors" offset="0" />
+          <p>2 1 3 3 1 4 6 5 7 7 5 8 10 9 11 11 9 12 14 13 15 15 13 16 18 17 19 19 17 20 22 21 23 23 21 24 26 25 27 27 25 28 30 29 31 31 29 32 34 33 35 35 33 36 38 37 39 39 37 40 42 41 43 43 41 44 46 45 47 47 45 48 50 49 51 51 49 52 54 53 55 55 53 56 58 57 59 59 57 60 62 61 63 63 61 64 66 65 67 67 65 68 70 69 71 71 69 72 74 73 75 75 73 76 78 77 79 79 77 80 82 81 83 83 81 84 86 85 87 87 85 88 90 89 91 91 89 92 94 93 95 95 93 96 98 97 99 99 97 100 102 101 103 103 101 104 106 105 107 107 105 108 110 109 111 111 109 112 114 113 115 115 113 116 118 117 119 119 117 120 122 121 123 123 121 124 125 123 124 125 124 126 125 126 127 127 126 128 122 127 129 129 121 122 128 130 127 127 130 129 131 130 128 131 132 130 130 132 133 134 132 131 135 134 126 126 124 135 126 134 136 136 134 131 124 137 135 135 137 138 137 139 138 138 139 140 140 139 141 139 142 141 142 143 141 141 143 144 143 145 144 144 145 146 146 147 132 132 147 148 146 145 149 150 142 139 151 142 150 145 151 149 152 146 149 152 147 146 150 121 151 151 121 149 124 121 150 148 147 129 147 121 129 133 132 148 154 153 155 154 156 153 157 153 156 157 158 153 158 157 159 159 157 160 153 158 161 161 158 162 162 163 161 161 163 164 163 165 164 163 166 165 165 166 167 167 166 168 169 166 163 169 170 166 171 163 162 171 162 172 172 173 171 174 173 172 173 174 175 175 174 176 174 177 176 178 177 174 173 175 179 179 175 180 180 181 179 182 181 180 181 182 183 183 182 184 183 184 185 185 184 186 184 182 187 184 187 188 188 187 189 189 187 190 191 190 187 188 189 192 193 185 186 194 185 193 193 195 194 196 195 193 197 185 194 197 194 198 197 198 199 199 198 200 202 201 203 203 201 204 203 204 205 205 204 206 204 201 175 204 175 176 207 156 208 208 156 154</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="single_room_apartment">
+      <node id="node-single_room_apartment" name="single_room_apartment">
+        <scale>1 1 1</scale>
+        <node id="node-ce_balcony_ld" name="ce_balcony_ld">
+          <translate>0 0 0</translate>
+          <rotate>1 0 0 0</rotate>
+          <scale>1 1 1</scale>
+          <instance_geometry url="#geom-ce_balcony_ld">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="t_ce_living_room_ld_mat" target="#t_ce_living_room_ld_mat-material" />
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="node-ce_bathroom_ld" name="ce_bathroom_ld">
+          <translate>0 0 0</translate>
+          <rotate>1 0 0 0</rotate>
+          <scale>1 1 1</scale>
+          <instance_geometry url="#geom-ce_bathroom_ld">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="t_wa_bathroom3_ld_mat" target="#t_wa_bathroom3_ld_mat-material" />
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="node-ce_first_bedroom_ld" name="ce_first_bedroom_ld">
+          <translate>0 0 0</translate>
+          <rotate>1 0 0 0</rotate>
+          <scale>1 1 1</scale>
+          <instance_geometry url="#geom-ce_first_bedroom_ld">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="t_ce_living_room_ld_mat" target="#t_ce_living_room_ld_mat-material" />
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="node-ce_kitchen_ld" name="ce_kitchen_ld">
+          <translate>0 0 0</translate>
+          <rotate>1 0 0 0</rotate>
+          <scale>1 1 1</scale>
+          <instance_geometry url="#geom-ce_kitchen_ld">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="t_ce_kitchen_ld_mat" target="#t_ce_kitchen_ld_mat-material" />
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="node-ce_living_room_ld" name="ce_living_room_ld">
+          <translate>0 0 0</translate>
+          <rotate>1 0 0 0</rotate>
+          <scale>1 1 1</scale>
+          <instance_geometry url="#geom-ce_living_room_ld">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="t_ce_living_room_ld_mat" target="#t_ce_living_room_ld_mat-material" />
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="node-ce_washhouse_ld" name="ce_washhouse_ld">
+          <translate>0 0 0</translate>
+          <rotate>1 0 0 0</rotate>
+          <scale>1 1 1</scale>
+          <instance_geometry url="#geom-ce_washhouse_ld">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="t_wa_bathroom3_ld_mat" target="#t_wa_bathroom3_ld_mat-material" />
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="node-fl_balcony_ld" name="fl_balcony_ld">
+          <translate>0 0 0</translate>
+          <rotate>1 0 0 0</rotate>
+          <scale>1 1 1</scale>
+          <instance_geometry url="#geom-fl_balcony_ld">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="t_fl_living_room_ld_mat" target="#t_fl_living_room_ld_mat-material" />
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="node-fl_bathroom_ld" name="fl_bathroom_ld">
+          <translate>0 0 0</translate>
+          <rotate>1 0 0 0</rotate>
+          <scale>1 1 1</scale>
+          <instance_geometry url="#geom-fl_bathroom_ld">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="t_wa_bathroom3_ld_mat" target="#t_wa_bathroom3_ld_mat-material" />
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="node-fl_first_bedroom_ld" name="fl_first_bedroom_ld">
+          <translate>0 0 0</translate>
+          <rotate>1 0 0 0</rotate>
+          <scale>1 1 1</scale>
+          <instance_geometry url="#geom-fl_first_bedroom_ld">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="t_fl_living_room_ld_mat" target="#t_fl_living_room_ld_mat-material" />
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="node-fl_kitchen_ld" name="fl_kitchen_ld">
+          <translate>0 0 0</translate>
+          <rotate>1 0 0 0</rotate>
+          <scale>1 1 1</scale>
+          <instance_geometry url="#geom-fl_kitchen_ld">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="t_wa_kitchen6_ld_mat" target="#t_wa_kitchen6_ld_mat-material" />
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="node-fl_living_room_ld" name="fl_living_room_ld">
+          <translate>0 0 0</translate>
+          <rotate>1 0 0 0</rotate>
+          <scale>1 1 1</scale>
+          <instance_geometry url="#geom-fl_living_room_ld">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="t_fl_living_room_ld_mat" target="#t_fl_living_room_ld_mat-material" />
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="node-fl_washhouse_ld" name="fl_washhouse_ld">
+          <translate>0 0 0</translate>
+          <rotate>1 0 0 0</rotate>
+          <scale>1 1 1</scale>
+          <instance_geometry url="#geom-fl_washhouse_ld">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="t_wa_bathroom3_ld_mat" target="#t_wa_bathroom3_ld_mat-material" />
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="node-outer_wa_ld" name="outer_wa_ld">
+          <translate>0 0 0</translate>
+          <rotate>1 0 0 0</rotate>
+          <scale>1 1 1</scale>
+          <instance_geometry url="#geom-outer_wa_ld">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="t_outer_wa_ld_mat" target="#t_outer_wa_ld_mat-material">
+                  <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0" />
+                  <bind_vertex_input semantic="CHANNEL2" input_semantic="TEXCOORD" input_set="1" />
+                  <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0" />
+                </instance_material>
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="node-wa_balcony1_ld" name="wa_balcony1_ld">
+          <translate>0 0 0</translate>
+          <rotate>1 0 0 0</rotate>
+          <scale>1 1 1</scale>
+          <instance_geometry url="#geom-wa_balcony1_ld">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="t_wa_living_room4_ld_mat" target="#t_wa_living_room4_ld_mat-material" />
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="node-wa_balcony2_ld" name="wa_balcony2_ld">
+          <translate>0 0 0</translate>
+          <rotate>1 0 0 0</rotate>
+          <scale>1 1 1</scale>
+          <instance_geometry url="#geom-wa_balcony2_ld">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="t_wa_living_room4_ld_mat" target="#t_wa_living_room4_ld_mat-material" />
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="node-wa_balcony3_ld" name="wa_balcony3_ld">
+          <translate>0 0 0</translate>
+          <rotate>1 0 0 0</rotate>
+          <scale>1 1 1</scale>
+          <instance_geometry url="#geom-wa_balcony3_ld">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="t_wa_living_room4_ld_mat" target="#t_wa_living_room4_ld_mat-material" />
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="node-wa_balcony4_ld" name="wa_balcony4_ld">
+          <translate>0 0 0</translate>
+          <rotate>1 0 0 0</rotate>
+          <scale>1 1 1</scale>
+          <instance_geometry url="#geom-wa_balcony4_ld">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="t_wa_living_room4_ld_mat" target="#t_wa_living_room4_ld_mat-material" />
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="node-wa_bathroom1_ld" name="wa_bathroom1_ld">
+          <translate>0 0 0</translate>
+          <rotate>1 0 0 0</rotate>
+          <scale>1 1 1</scale>
+          <instance_geometry url="#geom-wa_bathroom1_ld">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="t_wa_bathroom3_ld_mat" target="#t_wa_bathroom3_ld_mat-material" />
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="node-wa_bathroom2_ld" name="wa_bathroom2_ld">
+          <translate>0 0 0</translate>
+          <rotate>1 0 0 0</rotate>
+          <scale>1 1 1</scale>
+          <instance_geometry url="#geom-wa_bathroom2_ld">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="t_wa_bathroom3_ld_mat" target="#t_wa_bathroom3_ld_mat-material" />
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="node-wa_bathroom3_ld" name="wa_bathroom3_ld">
+          <translate>0 0 0</translate>
+          <rotate>1 0 0 0</rotate>
+          <scale>1 1 1</scale>
+          <instance_geometry url="#geom-wa_bathroom3_ld">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="t_wa_bathroom3_ld_mat" target="#t_wa_bathroom3_ld_mat-material" />
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="node-wa_bathroom4_ld" name="wa_bathroom4_ld">
+          <translate>0 0 0</translate>
+          <rotate>1 0 0 0</rotate>
+          <scale>1 1 1</scale>
+          <instance_geometry url="#geom-wa_bathroom4_ld">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="t_wa_bathroom3_ld_mat" target="#t_wa_bathroom3_ld_mat-material" />
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="node-wa_first_bedroom1_ld" name="wa_first_bedroom1_ld">
+          <translate>0 0 0</translate>
+          <rotate>1 0 0 0</rotate>
+          <scale>1 1 1</scale>
+          <instance_geometry url="#geom-wa_first_bedroom1_ld">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="t_wa_living_room1_ld_mat" target="#t_wa_living_room1_ld_mat-material" />
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="node-wa_first_bedroom2_ld" name="wa_first_bedroom2_ld">
+          <translate>0 0 0</translate>
+          <rotate>1 0 0 0</rotate>
+          <scale>1 1 1</scale>
+          <instance_geometry url="#geom-wa_first_bedroom2_ld">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="t_wa_living_room1_ld_mat" target="#t_wa_living_room1_ld_mat-material" />
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="node-wa_first_bedroom3_ld" name="wa_first_bedroom3_ld">
+          <translate>0 0 0</translate>
+          <rotate>1 0 0 0</rotate>
+          <scale>1 1 1</scale>
+          <instance_geometry url="#geom-wa_first_bedroom3_ld">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="t_wa_living_room1_ld_mat" target="#t_wa_living_room1_ld_mat-material" />
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="node-wa_first_bedroom4_ld" name="wa_first_bedroom4_ld">
+          <translate>0 0 0</translate>
+          <rotate>1 0 0 0</rotate>
+          <scale>1 1 1</scale>
+          <instance_geometry url="#geom-wa_first_bedroom4_ld">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="t_wa_living_room1_ld_mat" target="#t_wa_living_room1_ld_mat-material" />
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="node-wa_kitchen1_ld" name="wa_kitchen1_ld">
+          <translate>0 0 0</translate>
+          <rotate>1 0 0 0</rotate>
+          <scale>1 1 1</scale>
+          <instance_geometry url="#geom-wa_kitchen1_ld">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="t_ce_kitchen_ld_mat" target="#t_ce_kitchen_ld_mat-material" />
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="node-wa_kitchen2_ld" name="wa_kitchen2_ld">
+          <translate>0 0 0</translate>
+          <rotate>1 0 0 0</rotate>
+          <scale>1 1 1</scale>
+          <instance_geometry url="#geom-wa_kitchen2_ld">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="t_ce_kitchen_ld_mat" target="#t_ce_kitchen_ld_mat-material" />
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="node-wa_kitchen3_ld" name="wa_kitchen3_ld">
+          <translate>0 0 0</translate>
+          <rotate>1 0 0 0</rotate>
+          <scale>1 1 1</scale>
+          <instance_geometry url="#geom-wa_kitchen3_ld">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="t_ce_kitchen_ld_mat" target="#t_ce_kitchen_ld_mat-material" />
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="node-wa_kitchen4_ld" name="wa_kitchen4_ld">
+          <translate>0 0 0</translate>
+          <rotate>1 0 0 0</rotate>
+          <scale>1 1 1</scale>
+          <instance_geometry url="#geom-wa_kitchen4_ld">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="t_ce_kitchen_ld_mat" target="#t_ce_kitchen_ld_mat-material" />
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="node-wa_kitchen5_ld" name="wa_kitchen5_ld">
+          <translate>0 0 0</translate>
+          <rotate>1 0 0 0</rotate>
+          <scale>1 1 1</scale>
+          <instance_geometry url="#geom-wa_kitchen5_ld">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="t_wa_kitchen6_ld_mat" target="#t_wa_kitchen6_ld_mat-material" />
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="node-wa_kitchen6_ld" name="wa_kitchen6_ld">
+          <translate>0 0 0</translate>
+          <rotate>1 0 0 0</rotate>
+          <scale>1 1 1</scale>
+          <instance_geometry url="#geom-wa_kitchen6_ld">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="t_wa_kitchen6_ld_mat" target="#t_wa_kitchen6_ld_mat-material" />
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="node-wa_kitchen7_ld" name="wa_kitchen7_ld">
+          <translate>0 0 0</translate>
+          <rotate>1 0 0 0</rotate>
+          <scale>1 1 1</scale>
+          <instance_geometry url="#geom-wa_kitchen7_ld">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="t_wa_kitchen6_ld_mat" target="#t_wa_kitchen6_ld_mat-material" />
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="node-wa_kitchen8_ld" name="wa_kitchen8_ld">
+          <translate>0 0 0</translate>
+          <rotate>1 0 0 0</rotate>
+          <scale>1 1 1</scale>
+          <instance_geometry url="#geom-wa_kitchen8_ld">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="t_wa_kitchen6_ld_mat" target="#t_wa_kitchen6_ld_mat-material" />
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="node-wa_living_room1_ld" name="wa_living_room1_ld">
+          <translate>0 0 0</translate>
+          <rotate>1 0 0 0</rotate>
+          <scale>1 1 1</scale>
+          <instance_geometry url="#geom-wa_living_room1_ld">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="t_wa_living_room1_ld_mat" target="#t_wa_living_room1_ld_mat-material" />
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="node-wa_living_room2_ld" name="wa_living_room2_ld">
+          <translate>0 0 0</translate>
+          <rotate>1 0 0 0</rotate>
+          <scale>1 1 1</scale>
+          <instance_geometry url="#geom-wa_living_room2_ld">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="t_wa_living_room1_ld_mat" target="#t_wa_living_room1_ld_mat-material" />
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="node-wa_living_room3_ld" name="wa_living_room3_ld">
+          <translate>0 0 0</translate>
+          <rotate>1 0 0 0</rotate>
+          <scale>1 1 1</scale>
+          <instance_geometry url="#geom-wa_living_room3_ld">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="t_wa_living_room1_ld_mat" target="#t_wa_living_room1_ld_mat-material" />
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="node-wa_living_room4_ld" name="wa_living_room4_ld">
+          <translate>0 0 0</translate>
+          <rotate>1 0 0 0</rotate>
+          <scale>1 1 1</scale>
+          <instance_geometry url="#geom-wa_living_room4_ld">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="t_wa_living_room4_ld_mat" target="#t_wa_living_room4_ld_mat-material" />
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="node-wa_washhouse1_ld" name="wa_washhouse1_ld">
+          <translate>0 0 0</translate>
+          <rotate>1 0 0 0</rotate>
+          <scale>1 1 1</scale>
+          <instance_geometry url="#geom-wa_washhouse1_ld">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="t_wa_bathroom3_ld_mat" target="#t_wa_bathroom3_ld_mat-material" />
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="node-wa_washhouse2_ld" name="wa_washhouse2_ld">
+          <translate>0 0 0</translate>
+          <rotate>1 0 0 0</rotate>
+          <scale>1 1 1</scale>
+          <instance_geometry url="#geom-wa_washhouse2_ld">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="t_wa_bathroom3_ld_mat" target="#t_wa_bathroom3_ld_mat-material" />
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="node-wa_washhouse3_ld" name="wa_washhouse3_ld">
+          <translate>0 0 0</translate>
+          <rotate>1 0 0 0</rotate>
+          <scale>1 1 1</scale>
+          <instance_geometry url="#geom-wa_washhouse3_ld">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="t_wa_bathroom3_ld_mat" target="#t_wa_bathroom3_ld_mat-material" />
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="node-wa_washhouse4_ld" name="wa_washhouse4_ld">
+          <translate>0 0 0</translate>
+          <rotate>1 0 0 0</rotate>
+          <scale>1 1 1</scale>
+          <instance_geometry url="#geom-wa_washhouse4_ld">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="t_wa_bathroom3_ld_mat" target="#t_wa_bathroom3_ld_mat-material" />
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="node-wall_thickness_ld" name="wall_thickness_ld">
+          <translate>0 0 0</translate>
+          <rotate>1 0 0 0</rotate>
+          <scale>1 1 1</scale>
+          <instance_geometry url="#geom-wall_thickness_ld">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="t_wall_thickness_ld_mat" target="#t_wall_thickness_ld_mat-material" />
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#single_room_apartment" />
+  </scene>
+</COLLADA>

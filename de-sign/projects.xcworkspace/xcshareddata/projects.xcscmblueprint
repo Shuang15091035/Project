@@ -1,0 +1,44 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "2C157DE751E24212F9DFF895A389BD2E43B042D3+++A49A94F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "2DFE1139BB4AFAE84B9DA85111D0B274348BF5C3+++B254AD0" : 0,
+    "2DFE1139BB4AFAE84B9DA85111D0B274348BF5C3+++A8CA4E6" : 0,
+    "2DFE1139BB4AFAE84B9DA85111D0B274348BF5C3+++640232E" : 0,
+    "2C157DE751E24212F9DFF895A389BD2E43B042D3+++A49A94F" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "9636502F-2D5B-4864-8C31-ED9BBD6AD389",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "2DFE1139BB4AFAE84B9DA85111D0B274348BF5C3+++B254AD0" : "ios\/",
+    "2DFE1139BB4AFAE84B9DA85111D0B274348BF5C3+++A8CA4E6" : "..\/IOS",
+    "2DFE1139BB4AFAE84B9DA85111D0B274348BF5C3+++640232E" : "..\/IOS",
+    "2C157DE751E24212F9DFF895A389BD2E43B042D3+++A49A94F" : "Project\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "projects",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "de-sign\/projects.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Shuang15091035\/Project.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2C157DE751E24212F9DFF895A389BD2E43B042D3+++A49A94F"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "192.168.0.128:\/Users\/ddeyes\/Documents\/workspace\/Git\/de-sign-public\/iOS\/bare",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2DFE1139BB4AFAE84B9DA85111D0B274348BF5C3+++640232E"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "192.168.1.128:\/Users\/ddeyes\/Documents\/workspace\/Git\/de-sign-public\/iOS\/bare",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2DFE1139BB4AFAE84B9DA85111D0B274348BF5C3+++A8CA4E6"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "192.168.1.128:\/Users\/ddeyes\/Documents\/workspace\/Git\/de-sign-public\/iOS\/bare",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2DFE1139BB4AFAE84B9DA85111D0B274348BF5C3+++B254AD0"
+    }
+  ]
+}

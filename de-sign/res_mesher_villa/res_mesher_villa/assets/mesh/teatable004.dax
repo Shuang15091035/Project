@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="1.4.1" xmlns="http://www.collada.org/2005/11/COLLADASchema">
+  <asset>
+    <up_axis>Y_UP</up_axis>
+    <unit meter="1" />
+  </asset>
+  <library_images>
+    <image id="sd_shadow001-tex">
+      <init_from>../texture/sd_shadow001.png</init_from>
+    </image>
+    <image id="t_wood003-tex">
+      <init_from>../texture/t_wood003.png</init_from>
+    </image>
+    <image id="r_aosiman_sprinkler005-tex">
+      <init_from>../texture/r_aosiman_sprinkler005.png</init_from>
+    </image>
+    <image id="n_zhuhaikechuang001-tex">
+      <init_from>../texture/n_zhuhaikechuang001.png</init_from>
+    </image>
+    <image id="a_zhuhaikechuang001-tex">
+      <init_from>../texture/a_zhuhaikechuang001.png</init_from>
+    </image>
+  </library_images>
+  <library_effects>
+    <effect id="sd_shadow001">
+      <profile_COMMON>
+        <newparam sid="sd_shadow001-surface">
+          <surface type="2D">
+            <init_from>sd_shadow001-tex</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="sd_shadow001-sampler">
+          <sampler2D>
+            <source>sd_shadow001-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="sd_shadow001-surface">
+          <surface type="2D">
+            <init_from>sd_shadow001-tex</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="sd_shadow001-sampler">
+          <sampler2D>
+            <source>sd_shadow001-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <phong>
+            <diffuse>
+              <texture texture="sd_shadow001-sampler" texcoord="CHANNEL1" />
+            </diffuse>
+            <transparent>
+              <texture texture="sd_shadow001-sampler" texcoord="CHANNEL1" />
+            </transparent>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="t_wood001">
+      <profile_COMMON>
+        <newparam sid="t_wood003-surface">
+          <surface type="2D">
+            <init_from>t_wood003-tex</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="t_wood003-sampler">
+          <sampler2D>
+            <source>t_wood003-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="r_aosiman_sprinkler005-surface">
+          <surface type="2D">
+            <init_from>r_aosiman_sprinkler005-tex</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="r_aosiman_sprinkler005-sampler">
+          <sampler2D>
+            <source>r_aosiman_sprinkler005-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="n_zhuhaikechuang001-surface">
+          <surface type="2D">
+            <init_from>n_zhuhaikechuang001-tex</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="n_zhuhaikechuang001-sampler">
+          <sampler2D>
+            <source>n_zhuhaikechuang001-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="a_zhuhaikechuang001-surface">
+          <surface type="2D">
+            <init_from>a_zhuhaikechuang001-tex</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="a_zhuhaikechuang001-sampler">
+          <sampler2D>
+            <source>a_zhuhaikechuang001-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <phong>
+            <diffuse>
+              <texture texture="t_wood003-sampler" texcoord="CHANNEL1" />
+            </diffuse>
+            <reflective>
+              <texture texture="r_aosiman_sprinkler005-sampler" texcoord="CHANNEL1" />
+            </reflective>
+          </phong>
+          <extra>
+            <technique profile="FCOLLADA">
+              <bump>
+                <texture texture="n_zhuhaikechuang001-sampler" texcoord="CHANNEL1" />
+              </bump>
+            </technique>
+            <technique profile="UCOLLADA">
+              <ao>
+                <texture texture="a_zhuhaikechuang001-sampler" texcoord="CHANNEL1" />
+              </ao>
+            </technique>
+            <technique profile="UCOLLADA">
+              <diffuse_st>15 15 0 0</diffuse_st>
+              <refl_amount>0.1</refl_amount>
+              <rim_color>0.1 0.1 0.1 0</rim_color>
+              <rim_power>8</rim_power>
+            </technique>
+          </extra>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="sd_shadow001-material" name="sd_shadow001">
+      <instance_effect url="#sd_shadow001" />
+    </material>
+    <material id="t_wood001-material" name="t_wood001">
+      <instance_effect url="#t_wood001" />
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="geom-sd_teatable004" name="sd_teatable004">
+      <mesh>
+        <source id="geom-sd_teatable004-positions">
+          <float_array id="geom-sd_teatable004-positions-array" count="12">0 0.026 -0.019 0 -0.026 0.019 0 0.026 0.019 0 -0.026 -0.019</float_array>
+          <technique_common>
+            <accessor source="#geom-sd_teatable004-positions-array" count="4" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-sd_teatable004-normals">
+          <float_array id="geom-sd_teatable004-normals-array" count="12">0 1 0 0 1 0 0 1 0 0 1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-sd_teatable004-normals-array" count="4" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-sd_teatable004-map1">
+          <float_array id="geom-sd_teatable004-map1-array" count="8">0.905 0.91 0.973 0.961 0.973 0.91 0.905 0.961</float_array>
+          <technique_common>
+            <accessor source="#geom-sd_teatable004-map1-array" count="4" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-sd_teatable004-vertices">
+          <input semantic="POSITION" source="#geom-sd_teatable004-positions" />
+        </vertices>
+        <triangles material="sd_shadow001" count="2">
+          <input semantic="VERTEX" source="#geom-sd_teatable004-vertices" offset="0" />
+          <input semantic="NORMAL" source="#geom-sd_teatable004-normals" offset="0" />
+          <input semantic="TEXCOORD" source="#geom-sd_teatable004-map1" offset="0" set="0" />
+          <p>2 1 3 1 2 4</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-teatable004" name="teatable004">
+      <mesh>
+        <source id="geom-teatable004-positions">
+          <float_array id="geom-teatable004-positions-array" count="504">0.064 0.018 0.015 0.064 -0.018 -0.015 0.064 0.018 -0.015 0.064 -0.018 0.015 0.068 0.018 0.015 0.068 -0.018 -0.015 0.068 -0.018 0.015 0.068 0.018 -0.015 0.064 0.018 0.015 0.068 -0.018 0.015 0.064 -0.018 0.015 0.068 0.018 0.015 0.064 -0.018 0.015 0.068 -0.018 -0.015 0.064 -0.018 -0.015 0.068 -0.018 0.015 0.064 -0.018 -0.015 0.068 0.018 -0.015 0.064 0.018 -0.015 0.068 -0.018 -0.015 0.064 0.018 -0.015 0.068 0.018 0.015 0.064 0.018 0.015 0.068 0.018 -0.015 0 0.018 -0.011 0 0.016 -0.015 0 0.018 -0.015 0 0.016 -0.011 0.064 0.018 -0.011 0.064 0.016 -0.015 0.064 0.016 -0.011 0.064 0.018 -0.015 0 0.018 -0.011 0.064 0.016 -0.011 0 0.016 -0.011 0.064 0.018 -0.011 0 0.016 -0.011 0.064 0.016 -0.015 0 0.016 -0.015 0.064 0.016 -0.011 0 0.016 -0.015 0.064 0.018 -0.015 0 0.018 -0.015 0.064 0.016 -0.015 0 0.018 -0.015 0.064 0.018 -0.011 0 0.018 -0.011 0.064 0.018 -0.015 0.064 0.016 -0.014 0.048 0.016 -0.013 0.048 0.016 -0.014 0.064 0.016 -0.013 0.064 -0.016 -0.014 0.048 -0.016 -0.013 0.064 -0.016 -0.013 0.048 -0.016 -0.014 0.064 0.016 -0.014 0.064 -0.016 -0.013 0.064 0.016 -0.013 0.064 -0.016 -0.014 0.064 0.016 -0.013 0.048 -0.016 -0.013 0.048 0.016 -0.013 0.064 -0.016 -0.013 0.048 0.016 -0.013 0.048 -0.016 -0.014 0.048 0.016 -0.014 0.048 -0.016 -0.013 0.048 0.016 -0.014 0.064 -0.016 -0.014 0.064 0.016 -0.014 0.048 -0.016 -0.014 0 -0.018 -0.011 0 -0.016 -0.015 0 -0.016 -0.011 0 -0.018 -0.015 0.064 -0.018 -0.011 0.064 -0.016 -0.015 0.064 -0.018 -0.015 0.064 -0.016 -0.011 0 -0.018 -0.011 0.064 -0.016 -0.011 0.064 -0.018 -0.011 0 -0.016 -0.011 0 -0.016 -0.011 0.064 -0.016 -0.015 0.064 -0.016 -0.011 0 -0.016 -0.015 0 -0.016 -0.015 0.064 -0.018 -0.015 0.064 -0.016 -0.015 0 -0.018 -0.015 0 -0.018 -0.015 0.064 -0.018 -0.011 0.064 -0.018 -0.015 0 -0.018 -0.011 0 0.018 0.011 0 0.016 0.015 0 0.016 0.011 0 0.018 0.015 0.064 0.018 0.011 0.064 0.016 0.015 0.064 0.018 0.015 0.064 0.016 0.011 0 0.018 0.011 0.064 0.016 0.011 0.064 0.018 0.011 0 0.016 0.011 0 0.016 0.011 0.064 0.016 0.015 0.064 0.016 0.011 0 0.016 0.015 0 0.016 0.015 0.064 0.018 0.015 0.064 0.016 0.015 0 0.018 0.015 0 0.018 0.015 0.064 0.018 0.011 0.064 0.018 0.015 0 0.018 0.011 0.064 0.016 0.014 0.048 0.016 0.013 0.064 0.016 0.013 0.048 0.016 0.014 0.064 -0.016 0.014 0.048 -0.016 0.013 0.048 -0.016 0.014 0.064 -0.016 0.013 0.064 0.016 0.014 0.064 -0.016 0.013 0.064 -0.016 0.014 0.064 0.016 0.013 0.064 0.016 0.013 0.048 -0.016 0.013 0.064 -0.016 0.013 0.048 0.016 0.013 0.048 0.016 0.013 0.048 -0.016 0.014 0.048 -0.016 0.013 0.048 0.016 0.014 0.048 0.016 0.014 0.064 -0.016 0.014 0.048 -0.016 0.014 0.064 0.016 0.014 0 -0.018 0.011 0 -0.016 0.015 0 -0.018 0.015 0 -0.016 0.011 0.064 -0.018 0.011 0.064 -0.016 0.015 0.064 -0.016 0.011 0.064 -0.018 0.015 0 -0.018 0.011 0.064 -0.016 0.011 0 -0.016 0.011 0.064 -0.018 0.011 0 -0.016 0.011 0.064 -0.016 0.015 0 -0.016 0.015 0.064 -0.016 0.011 0 -0.016 0.015 0.064 -0.018 0.015 0 -0.018 0.015 0.064 -0.016 0.015 0 -0.018 0.015 0.064 -0.018 0.011 0 -0.018 0.011 0.064 -0.018 0.015</float_array>
+          <technique_common>
+            <accessor source="#geom-teatable004-positions-array" count="168" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-teatable004-normals">
+          <float_array id="geom-teatable004-normals-array" count="504">0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 1 0 0 1 0 0 1 0 0 1 0 1 0 0 1 0 0 1 0 0 1 0 0 0 0 -1 0 0 -1 0 0 -1 0 0 -1 -1 0 0 -1 0 0 -1 0 0 -1 0 0 0 0 1 0 0 1 0 0 1 0 0 1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 1 0 0 1 0 0 1 0 0 1 0 1 0 0 1 0 0 1 0 0 1 0 0 0 0 -1 0 0 -1 0 0 -1 0 0 -1 -1 0 0 -1 0 0 -1 0 0 -1 0 0 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 1 0 0 1 0 0 1 0 0 1 0 1 0 0 1 0 0 1 0 0 1 0 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 1 0 0 1 0 0 1 0 0 1 0 1 0 0 1 0 0 1 0 0 1 0 0 0 0 1 0 0 1 0 0 1 0 0 1 -1 0 0 -1 0 0 -1 0 0 -1 0 0 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 1 0 0 1 0 0 1 0 0 1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 0 0 -1 0 0 -1 0 0 -1 0 0 -1 1 0 0 1 0 0 1 0 0 1 0 0 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 1 0 0 1 0 0 1 0 0 1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 1 0 0 1 0 0 1 0 0 1 0 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 1 0 0 1 0 0 1 0 0 1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 0 0 1 0 0 1 0 0 1 0 0 1 1 0 0 1 0 0 1 0 0 1 0 0 0 0 -1 0 0 -1 0 0 -1 0 0 -1</float_array>
+          <technique_common>
+            <accessor source="#geom-teatable004-normals-array" count="168" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-teatable004-map1">
+          <float_array id="geom-teatable004-map1-array" count="336">0.296 0.844 0.352 0.754 0.296 0.754 0.352 0.844 0.355 0.754 0.496 0.994 0.496 0.754 0.355 0.994 0.269 0.881 0.273 0.755 0.269 0.755 0.273 0.881 0.255 0.958 0.259 0.755 0.255 0.755 0.259 0.958 0.276 0.995 0.28 0.869 0.276 0.869 0.28 0.995 0.262 0.958 0.266 0.755 0.262 0.755 0.266 0.958 0.316 0.994 0.321 0.969 0.316 0.969 0.321 0.994 0.308 0.969 0.313 0.994 0.313 0.969 0.308 0.994 0.299 0.847 0.304 0.917 0.304 0.847 0.299 0.917 0.327 0.848 0.352 0.918 0.352 0.848 0.327 0.918 0.299 0.92 0.304 0.99 0.304 0.92 0.299 0.99 0.327 0.921 0.352 0.991 0.352 0.921 0.327 0.991 0.268 0.925 0.273 0.907 0.268 0.907 0.273 0.925 0.274 0.903 0.269 0.885 0.269 0.903 0.274 0.885 0.297 0.987 0.292 0.871 0.292 0.987 0.297 0.871 0.293 0.865 0.276 0.754 0.276 0.865 0.293 0.754 0.289 0.987 0.284 0.871 0.284 0.987 0.289 0.871 0.307 0.848 0.324 0.964 0.324 0.848 0.307 0.964 1.316 0.994 1.321 0.969 1.321 0.994 1.316 0.969 1.308 0.969 1.313 0.994 1.308 0.994 1.313 0.969 1.299 0.847 1.304 0.917 1.299 0.917 1.304 0.847 1.327 0.848 1.352 0.918 1.327 0.918 1.352 0.848 1.299 0.92 1.304 0.99 1.299 0.99 1.304 0.92 1.327 0.921 1.352 0.991 1.327 0.991 1.352 0.921 1.316 0.994 1.321 0.969 1.321 0.994 1.316 0.969 1.308 0.969 1.313 0.994 1.308 0.994 1.313 0.969 1.299 0.847 1.304 0.917 1.299 0.917 1.304 0.847 1.327 0.848 1.352 0.918 1.327 0.918 1.352 0.848 1.299 0.92 1.304 0.99 1.299 0.99 1.304 0.92 1.327 0.921 1.352 0.991 1.327 0.991 1.352 0.921 1.268 0.925 1.273 0.907 1.273 0.925 1.268 0.907 1.274 0.903 1.269 0.885 1.274 0.885 1.269 0.903 1.297 0.987 1.292 0.871 1.297 0.871 1.292 0.987 1.293 0.865 1.276 0.754 1.293 0.754 1.276 0.865 1.289 0.987 1.284 0.871 1.289 0.871 1.284 0.987 1.307 0.848 1.324 0.964 1.307 0.964 1.324 0.848 1.316 0.994 1.321 0.969 1.316 0.969 1.321 0.994 1.308 0.969 1.313 0.994 1.313 0.969 1.308 0.994 1.299 0.847 1.304 0.917 1.304 0.847 1.299 0.917 1.327 0.848 1.352 0.918 1.352 0.848 1.327 0.918 1.299 0.92 1.304 0.99 1.304 0.92 1.299 0.99 1.327 0.921 1.352 0.991 1.352 0.921 1.327 0.991</float_array>
+          <technique_common>
+            <accessor source="#geom-teatable004-map1-array" count="168" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-teatable004-map2">
+          <float_array id="geom-teatable004-map2-array" count="336">0.024 0.424 0.694 0.824 0.694 0.424 0.024 0.824 0.024 0.41 0.694 0.01 0.024 0.01 0.694 0.41 0.024 0.424 0.01 0.824 0.024 0.824 0.01 0.424 0.024 0.824 0.694 0.837 0.694 0.824 0.024 0.837 0.694 0.824 0.708 0.424 0.694 0.424 0.708 0.824 0.694 0.424 0.024 0.41 0.024 0.424 0.694 0.41 0.736 0.106 0.719 0.187 0.736 0.187 0.719 0.106 0.967 0.106 0.984 0.187 0.984 0.106 0.967 0.187 0.736 0.106 0.967 0.09 0.736 0.09 0.967 0.106 0.736 0.09 0.967 0.01 0.736 0.01 0.967 0.09 0.736 0.203 0.967 0.187 0.736 0.187 0.967 0.203 0.736 0.187 0.967 0.106 0.736 0.106 0.967 0.187 0.466 0.974 0.486 0.919 0.466 0.919 0.486 0.974 0.029 0.974 0.01 0.919 0.01 0.974 0.029 0.919 0.466 0.974 0.029 0.99 0.466 0.99 0.029 0.974 0.466 0.848 0.029 0.903 0.466 0.903 0.029 0.848 0.466 0.903 0.029 0.919 0.466 0.919 0.029 0.903 0.466 0.919 0.029 0.974 0.466 0.974 0.029 0.919 0.736 0.609 0.719 0.529 0.719 0.609 0.736 0.529 0.967 0.609 0.984 0.529 0.967 0.529 0.984 0.609 0.736 0.416 0.967 0.433 0.967 0.416 0.736 0.433 0.736 0.433 0.967 0.513 0.967 0.433 0.736 0.513 0.736 0.513 0.967 0.529 0.967 0.513 0.736 0.529 0.736 0.529 0.967 0.609 0.967 0.529 0.736 0.609 0.736 0.796 0.719 0.716 0.719 0.796 0.736 0.716 0.967 0.796 0.984 0.716 0.967 0.716 0.984 0.796 0.736 0.796 0.967 0.812 0.967 0.796 0.736 0.812 0.736 0.619 0.967 0.7 0.967 0.619 0.736 0.7 0.736 0.7 0.967 0.716 0.967 0.7 0.736 0.716 0.736 0.716 0.967 0.796 0.967 0.716 0.736 0.796 0.517 0.974 0.498 0.919 0.498 0.974 0.517 0.919 0.954 0.974 0.973 0.919 0.954 0.919 0.973 0.974 0.517 0.974 0.954 0.99 0.954 0.974 0.517 0.99 0.517 0.848 0.954 0.903 0.954 0.848 0.517 0.903 0.517 0.903 0.954 0.919 0.954 0.903 0.517 0.919 0.517 0.919 0.954 0.974 0.954 0.919 0.517 0.974 0.736 0.31 0.719 0.39 0.736 0.39 0.719 0.31 0.967 0.31 0.984 0.39 0.984 0.31 0.967 0.39 0.736 0.31 0.967 0.293 0.736 0.293 0.967 0.31 0.736 0.293 0.967 0.213 0.736 0.213 0.967 0.293 0.736 0.406 0.967 0.39 0.736 0.39 0.967 0.406 0.736 0.39 0.967 0.31 0.736 0.31 0.967 0.39</float_array>
+          <technique_common>
+            <accessor source="#geom-teatable004-map2-array" count="168" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-teatable004-vertices">
+          <input semantic="POSITION" source="#geom-teatable004-positions" />
+        </vertices>
+        <triangles material="t_wood001" count="84">
+          <input semantic="VERTEX" source="#geom-teatable004-vertices" offset="0" />
+          <input semantic="NORMAL" source="#geom-teatable004-normals" offset="0" />
+          <input semantic="TEXCOORD" source="#geom-teatable004-map1" offset="0" set="0" />
+          <input semantic="TEXCOORD" source="#geom-teatable004-map2" offset="0" set="1" />
+          <p>2 1 3 4 1 2 6 5 7 8 5 6 10 9 11 12 9 10 14 13 15 16 13 14 18 17 19 20 17 18 22 21 23 24 21 22 26 25 27 28 25 26 30 29 31 32 29 30 34 33 35 36 33 34 38 37 39 40 37 38 42 41 43 44 41 42 46 45 47 48 45 46 50 49 51 52 49 50 54 53 55 56 53 54 58 57 59 60 57 58 62 61 63 64 61 62 66 65 67 68 65 66 70 69 71 72 69 70 74 73 75 76 73 74 78 77 79 80 77 78 82 81 83 84 81 82 86 85 87 88 85 86 90 89 91 92 89 90 94 93 95 96 93 94 98 97 99 100 97 98 102 101 103 104 101 102 106 105 107 108 105 106 110 109 111 112 109 110 114 113 115 116 113 114 118 117 119 120 117 118 122 121 123 124 121 122 126 125 127 128 125 126 130 129 131 132 129 130 134 133 135 136 133 134 138 137 139 140 137 138 142 141 143 144 141 142 146 145 147 148 145 146 150 149 151 152 149 150 154 153 155 156 153 154 158 157 159 160 157 158 162 161 163 164 161 162 166 165 167 168 165 166</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="teatable004">
+      <node id="node-teatable004" name="teatable004">
+        <scale>1 1 1</scale>
+        <node id="node-sd_teatable004" name="sd_teatable004">
+          <translate>0 0 0</translate>
+          <rotate>1 0 0 0</rotate>
+          <scale>100 100 100</scale>
+          <instance_geometry url="#geom-sd_teatable004">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="sd_shadow001" target="#sd_shadow001-material">
+                  <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0" />
+                  <bind_vertex_input semantic="CHANNEL2" input_semantic="TEXCOORD" input_set="1" />
+                  <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0" />
+                </instance_material>
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="node-teatable004 1" name="teatable004 1">
+          <translate>0 0 0</translate>
+          <rotate>1 0 0 0</rotate>
+          <scale>100 100 100</scale>
+          <instance_geometry url="#geom-teatable004">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="t_wood001" target="#t_wood001-material" />
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#teatable004" />
+  </scene>
+</COLLADA>

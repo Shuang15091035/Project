@@ -1,0 +1,1056 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>Administrator</author>
+      <authoring_tool>OpenCOLLADA2015</authoring_tool>
+      <comments>
+			ColladaMaya export options: 
+			bakeTransforms=0;relativePaths=1;preserveSourceTree=0;copyTextures=0;exportTriangles=0;exportCgfxFileReferences=0;
+			isSampling=0;curveConstrainSampling=0;removeStaticCurves=0;exportPhysics=0;exportPolygonMeshes=1;exportLights=0;
+			exportCameras=0;exportJointsAndSkin=0;exportAnimations=0;exportInvisibleNodes=0;exportDefaultCameras=0;
+			exportTexCoords=1;exportNormals=0;exportNormalsPerVertex=1;exportVertexColors=1;exportVertexColorsPerVertex=1;
+			exportTexTangents=1;exportTangents=0;exportReferencedMaterials=0;exportMaterialsOnly=0;
+			exportXRefs=0;dereferenceXRefs=1;exportCameraAsLookat=0;cameraXFov=0;cameraYFov=0;doublePrecision=0
+		</comments>
+      <source_data>file:///E:/testhome/workspace/maya/first_bedroom_frame.mb</source_data>
+    </contributor>
+    <created>2015-10-28T10:41:36</created>
+    <modified>2015-10-28T10:41:36</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_materials>
+    <material id="t_outer_wa_ld_mat" name="t_outer_wa_ld_mat">
+      <instance_effect url="#t_outer_wa_ld_mat-fx"/>
+    </material>
+    <material id="t_ce_bathroom_ld_mat1" name="t_ce_bathroom_ld_mat1">
+      <instance_effect url="#t_ce_bathroom_ld_mat1-fx"/>
+    </material>
+    <material id="t_fl_living_room_ld_mat" name="t_fl_living_room_ld_mat">
+      <instance_effect url="#t_fl_living_room_ld_mat-fx"/>
+    </material>
+    <material id="t_wa_living_room1_ld_mat" name="t_wa_living_room1_ld_mat">
+      <instance_effect url="#t_wa_living_room1_ld_mat-fx"/>
+    </material>
+    <material id="t_wall_thickness_ld_mat" name="t_wall_thickness_ld_mat">
+      <instance_effect url="#t_wall_thickness_ld_mat-fx"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="t_ce_bathroom_ld_mat1-fx">
+      <profile_COMMON>
+        <newparam sid="t_ce_bathroom_ld_file1-surface">
+          <surface type="2D">
+            <init_from>t_ce_bathroom_ld_file1</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="t_ce_bathroom_ld_file1-sampler">
+          <sampler2D>
+            <source>t_ce_bathroom_ld_file1-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="t_ce_bathroom_ld_file1-sampler" texcoord="TEX0">
+                <extra>
+                  <technique profile="OpenCOLLADAMaya">
+                    <blend_mode type="string">NONE</blend_mode>
+                    <coverageU type="float">1</coverageU>
+                    <coverageV type="float">1</coverageV>
+                    <fast type="bool">0</fast>
+                    <mirrorU type="bool">0</mirrorU>
+                    <mirrorV type="bool">0</mirrorV>
+                    <noiseU type="float">0</noiseU>
+                    <noiseV type="float">0</noiseV>
+                    <offsetU type="float">0</offsetU>
+                    <offsetV type="float">0</offsetV>
+                    <repeatU type="float">1</repeatU>
+                    <repeatV type="float">1</repeatV>
+                    <rotateFrame type="float">0</rotateFrame>
+                    <rotateUV type="float">0</rotateUV>
+                    <stagger type="bool">0</stagger>
+                    <translateFrameU type="float">0</translateFrameU>
+                    <translateFrameV type="float">0</translateFrameV>
+                    <wrapU type="bool">1</wrapU>
+                    <wrapV type="bool">1</wrapV>
+                  </technique>
+                </extra>
+              </texture>
+            </diffuse>
+            <transparent opaque="RGB_ZERO">
+              <color>0 0 0 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="t_fl_living_room_ld_mat-fx">
+      <profile_COMMON>
+        <newparam sid="t_fl_living_room_ld_file-surface">
+          <surface type="2D">
+            <init_from>t_fl_living_room_ld_file</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="t_fl_living_room_ld_file-sampler">
+          <sampler2D>
+            <source>t_fl_living_room_ld_file-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="t_fl_living_room_ld_file-sampler" texcoord="TEX0">
+                <extra>
+                  <technique profile="OpenCOLLADAMaya">
+                    <blend_mode type="string">NONE</blend_mode>
+                    <coverageU type="float">1</coverageU>
+                    <coverageV type="float">1</coverageV>
+                    <fast type="bool">0</fast>
+                    <mirrorU type="bool">0</mirrorU>
+                    <mirrorV type="bool">0</mirrorV>
+                    <noiseU type="float">0</noiseU>
+                    <noiseV type="float">0</noiseV>
+                    <offsetU type="float">0</offsetU>
+                    <offsetV type="float">0</offsetV>
+                    <repeatU type="float">1</repeatU>
+                    <repeatV type="float">1</repeatV>
+                    <rotateFrame type="float">0</rotateFrame>
+                    <rotateUV type="float">0</rotateUV>
+                    <stagger type="bool">0</stagger>
+                    <translateFrameU type="float">0</translateFrameU>
+                    <translateFrameV type="float">0</translateFrameV>
+                    <wrapU type="bool">1</wrapU>
+                    <wrapV type="bool">1</wrapV>
+                  </technique>
+                </extra>
+              </texture>
+            </diffuse>
+            <transparent opaque="RGB_ZERO">
+              <color>0 0 0 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="t_outer_wa_ld_mat-fx">
+      <profile_COMMON>
+        <newparam sid="t_outer_wa_ld_file-surface">
+          <surface type="2D">
+            <init_from>t_outer_wa_ld_file</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="t_outer_wa_ld_file-sampler">
+          <sampler2D>
+            <source>t_outer_wa_ld_file-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="t_outer_wa_ld_file-sampler" texcoord="TEX0">
+                <extra>
+                  <technique profile="OpenCOLLADAMaya">
+                    <blend_mode type="string">NONE</blend_mode>
+                    <coverageU type="float">1</coverageU>
+                    <coverageV type="float">1</coverageV>
+                    <fast type="bool">0</fast>
+                    <mirrorU type="bool">0</mirrorU>
+                    <mirrorV type="bool">0</mirrorV>
+                    <noiseU type="float">0</noiseU>
+                    <noiseV type="float">0</noiseV>
+                    <offsetU type="float">0</offsetU>
+                    <offsetV type="float">0</offsetV>
+                    <repeatU type="float">1</repeatU>
+                    <repeatV type="float">1</repeatV>
+                    <rotateFrame type="float">0</rotateFrame>
+                    <rotateUV type="float">0</rotateUV>
+                    <stagger type="bool">0</stagger>
+                    <translateFrameU type="float">0</translateFrameU>
+                    <translateFrameV type="float">0</translateFrameV>
+                    <wrapU type="bool">1</wrapU>
+                    <wrapV type="bool">1</wrapV>
+                  </technique>
+                </extra>
+              </texture>
+            </diffuse>
+            <transparent opaque="A_ONE">
+              <texture texture="t_outer_wa_ld_file-sampler" texcoord="TEX1">
+                <extra>
+                  <technique profile="OpenCOLLADAMaya">
+                    <blend_mode type="string">NONE</blend_mode>
+                    <coverageU type="float">1</coverageU>
+                    <coverageV type="float">1</coverageV>
+                    <fast type="bool">0</fast>
+                    <mirrorU type="bool">0</mirrorU>
+                    <mirrorV type="bool">0</mirrorV>
+                    <noiseU type="float">0</noiseU>
+                    <noiseV type="float">0</noiseV>
+                    <offsetU type="float">0</offsetU>
+                    <offsetV type="float">0</offsetV>
+                    <repeatU type="float">1</repeatU>
+                    <repeatV type="float">1</repeatV>
+                    <rotateFrame type="float">0</rotateFrame>
+                    <rotateUV type="float">0</rotateUV>
+                    <stagger type="bool">0</stagger>
+                    <translateFrameU type="float">0</translateFrameU>
+                    <translateFrameV type="float">0</translateFrameV>
+                    <wrapU type="bool">1</wrapU>
+                    <wrapV type="bool">1</wrapV>
+                  </technique>
+                </extra>
+              </texture>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="t_wa_living_room1_ld_mat-fx">
+      <profile_COMMON>
+        <newparam sid="t_wa_living_room1_ld_file-surface">
+          <surface type="2D">
+            <init_from>t_wa_living_room1_ld_file</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="t_wa_living_room1_ld_file-sampler">
+          <sampler2D>
+            <source>t_wa_living_room1_ld_file-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="t_wa_living_room1_ld_file-sampler" texcoord="TEX0">
+                <extra>
+                  <technique profile="OpenCOLLADAMaya">
+                    <blend_mode type="string">NONE</blend_mode>
+                    <coverageU type="float">1</coverageU>
+                    <coverageV type="float">1</coverageV>
+                    <fast type="bool">0</fast>
+                    <mirrorU type="bool">0</mirrorU>
+                    <mirrorV type="bool">0</mirrorV>
+                    <noiseU type="float">0</noiseU>
+                    <noiseV type="float">0</noiseV>
+                    <offsetU type="float">0</offsetU>
+                    <offsetV type="float">0</offsetV>
+                    <repeatU type="float">1</repeatU>
+                    <repeatV type="float">1</repeatV>
+                    <rotateFrame type="float">0</rotateFrame>
+                    <rotateUV type="float">0</rotateUV>
+                    <stagger type="bool">0</stagger>
+                    <translateFrameU type="float">0</translateFrameU>
+                    <translateFrameV type="float">0</translateFrameV>
+                    <wrapU type="bool">1</wrapU>
+                    <wrapV type="bool">1</wrapV>
+                  </technique>
+                </extra>
+              </texture>
+            </diffuse>
+            <transparent opaque="RGB_ZERO">
+              <color>0 0 0 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="t_wall_thickness_ld_mat-fx">
+      <profile_COMMON>
+        <newparam sid="t_wall_thickness_ld_file-surface">
+          <surface type="2D">
+            <init_from>t_wall_thickness_ld_file</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="t_wall_thickness_ld_file-sampler">
+          <sampler2D>
+            <source>t_wall_thickness_ld_file-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="t_wall_thickness_ld_file-sampler" texcoord="TEX0">
+                <extra>
+                  <technique profile="OpenCOLLADAMaya">
+                    <blend_mode type="string">NONE</blend_mode>
+                    <coverageU type="float">1</coverageU>
+                    <coverageV type="float">1</coverageV>
+                    <fast type="bool">0</fast>
+                    <mirrorU type="bool">0</mirrorU>
+                    <mirrorV type="bool">0</mirrorV>
+                    <noiseU type="float">0</noiseU>
+                    <noiseV type="float">0</noiseV>
+                    <offsetU type="float">0</offsetU>
+                    <offsetV type="float">0</offsetV>
+                    <repeatU type="float">1</repeatU>
+                    <repeatV type="float">1</repeatV>
+                    <rotateFrame type="float">0</rotateFrame>
+                    <rotateUV type="float">0</rotateUV>
+                    <stagger type="bool">0</stagger>
+                    <translateFrameU type="float">0</translateFrameU>
+                    <translateFrameV type="float">0</translateFrameV>
+                    <wrapU type="bool">1</wrapU>
+                    <wrapV type="bool">1</wrapV>
+                  </technique>
+                </extra>
+              </texture>
+            </diffuse>
+            <transparent opaque="RGB_ZERO">
+              <color>0 0 0 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_images>
+    <image id="t_ce_bathroom_ld_file1" name="t_ce_bathroom_ld_file1">
+      <init_from>../texture/t_ce_bathroom_ld.jpg</init_from>
+      <extra>
+        <technique profile="OpenCOLLADAMaya">
+          <dgnode_type type="string">kFile</dgnode_type>
+          <image_sequence type="bool">0</image_sequence>
+          <originalMayaNodeId type="string">t_ce_bathroom_ld_file1</originalMayaNodeId>
+        </technique>
+      </extra>
+    </image>
+    <image id="t_fl_living_room_ld_file" name="t_fl_living_room_ld_file">
+      <init_from>../texture/t_fl_living_room_ld.jpg</init_from>
+      <extra>
+        <technique profile="OpenCOLLADAMaya">
+          <dgnode_type type="string">kFile</dgnode_type>
+          <image_sequence type="bool">0</image_sequence>
+          <originalMayaNodeId type="string">t_fl_living_room_ld_file</originalMayaNodeId>
+        </technique>
+      </extra>
+    </image>
+    <image id="t_outer_wa_ld_file" name="t_outer_wa_ld_file">
+      <init_from>../texture/t_outer_wa_ld.png</init_from>
+      <extra>
+        <technique profile="OpenCOLLADAMaya">
+          <dgnode_type type="string">kFile</dgnode_type>
+          <image_sequence type="bool">0</image_sequence>
+          <originalMayaNodeId type="string">t_outer_wa_ld_file</originalMayaNodeId>
+        </technique>
+      </extra>
+    </image>
+    <image id="t_wa_living_room1_ld_file" name="t_wa_living_room1_ld_file">
+      <init_from>../texture/t_wa_living_room1_ld.jpg</init_from>
+      <extra>
+        <technique profile="OpenCOLLADAMaya">
+          <dgnode_type type="string">kFile</dgnode_type>
+          <image_sequence type="bool">0</image_sequence>
+          <originalMayaNodeId type="string">t_wa_living_room1_ld_file</originalMayaNodeId>
+        </technique>
+      </extra>
+    </image>
+    <image id="t_wall_thickness_ld_file" name="t_wall_thickness_ld_file">
+      <init_from>../texture/t_wall_thickness_ld.jpg</init_from>
+      <extra>
+        <technique profile="OpenCOLLADAMaya">
+          <dgnode_type type="string">kFile</dgnode_type>
+          <image_sequence type="bool">0</image_sequence>
+          <originalMayaNodeId type="string">t_wall_thickness_ld_file</originalMayaNodeId>
+        </technique>
+      </extra>
+    </image>
+  </library_images>
+  <library_geometries>
+    <geometry id="outer_wa_ldShape" name="outer_wa_ldShape">
+      <mesh>
+        <source id="outer_wa_ldShape-positions" name="outer_wa_ldShape-positions">
+          <float_array id="outer_wa_ldShape-positions-array" count="48">3.179185 2.499995 -2.75547 3.179185 0 -2.75547 -3.179185 2.499995 -2.75547 -3.179185 0 -2.75547 -2.373624 2.039989 -2.75547 -2.373623 0 -2.75547 -1.471483 2.039989 -2.75547 -1.471483 0 -2.75547 -3.179185 2.499995 2.75547 -3.179185 0 2.75547 3.179185 2.499995 2.75547 3.179185 0 2.75547 1.302019 2.000007 2.75547 1.302019 1.000007 2.75547 -0.781312 2.000007 2.75547 -0.781312 1.000007 2.75547</float_array>
+          <technique_common>
+            <accessor source="#outer_wa_ldShape-positions-array" count="16" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="outer_wa_ldShape-map1" name="outer_wa_ldShape-map1">
+          <float_array id="outer_wa_ldShape-map1-array" count="48">0 0 1 0 0 1 1 1 0.1866156 0.8742108 1 0.8742108 0.1866156 0.7313545 1 0.7313545 0 0 1 0 1 1 0 1 0.5991639 0.705264 1 1 0 1 0.1904117 0.705264 0.1904117 0.3783255 0 0 1 0 0.599164 0.3783255 0 0 1 0 1 1 0 1</float_array>
+          <technique_common>
+            <accessor source="#outer_wa_ldShape-map1-array" count="24" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="outer_wa_ldShape-textangents">
+          <float_array id="outer_wa_ldShape-textangents-array" count="162">0 -1 0 0 -1 0 0.008113714 -0.9999671 0 0.008113714 -0.9999671 0 0 -1 0 0.007790693 -0.9999697 0 0.008113714 -0.9999671 0 0.007790693 -0.9999697 0 0.005842953 -0.999983 0 0.005842953 -0.999983 0 0.007790693 -0.9999697 0 -4.8438e-4 -0.9999999 0 -4.8438e-4 -0.9999999 0 0 -1 0 0.005842953 -0.999983 0 0.005842953 -0.999983 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0.00223233 -0.9999974 0 -0.003348319 -0.9999944 0 -3.21011e-4 -0.9999999 0 -3.21011e-4 -0.9999999 0 -0.003348319 -0.9999944 0 9.63061e-4 -0.9999995 0 9.63061e-4 -0.9999995 0 -0.003348319 -0.9999944 0 -0.00446445 -0.99999 0 -0.00446445 -0.99999 0 -0.003348319 -0.9999944 0 -0.00510649 -0.9999869 0 0.003830015 -0.9999927 0 0.001674245 -0.9999986 0 -0.00510649 -0.9999869 0 -0.00510649 -0.9999869 0 0.001674245 -0.9999986 0 -0.00446445 -0.99999 0 0.003830015 -0.9999927 0 0.00223233 -0.9999974 0 0.001674245 -0.9999986 0 0.001674245 -0.9999986 0 0.00223233 -0.9999974 0 -3.21011e-4 -0.9999999 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0</float_array>
+          <technique_common>
+            <accessor source="#outer_wa_ldShape-textangents-array" count="54" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="outer_wa_ldShape-texbinormals">
+          <float_array id="outer_wa_ldShape-texbinormals-array" count="162">-1 0 0 -1 0 0 -0.9999672 -0.008113714 0 -0.9999672 -0.008113714 0 -1 0 0 -0.9999697 -0.007790693 0 -0.9999672 -0.008113714 0 -0.9999697 -0.007790693 0 -0.999983 -0.005842953 0 -0.999983 -0.005842953 0 -0.9999697 -0.007790693 0 -0.9999999 4.8438e-4 0 -0.9999999 4.8438e-4 0 -1 0 0 -0.999983 -0.005842953 0 -0.999983 -0.005842953 0 -1 0 0 -1 0 0 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0.9999976 0.00223233 0 0.9999944 -0.003348319 0 0.9999999 -3.21011e-4 0 0.9999999 -3.21011e-4 0 0.9999944 -0.003348319 0 0.9999996 9.63061e-4 0 0.9999996 9.63061e-4 0 0.9999944 -0.003348319 0 0.99999 -0.00446445 0 0.99999 -0.00446445 0 0.9999944 -0.003348319 0 0.9999871 -0.005106491 0 0.9999927 0.003830015 0 0.9999986 0.001674245 0 0.9999871 -0.005106491 0 0.9999871 -0.005106491 0 0.9999986 0.001674245 0 0.99999 -0.00446445 0 0.9999927 0.003830015 0 0.9999976 0.00223233 0 0.9999986 0.001674245 0 0.9999986 0.001674245 0 0.9999976 0.00223233 0 0.9999999 -3.21011e-4 0 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1</float_array>
+          <technique_common>
+            <accessor source="#outer_wa_ldShape-texbinormals-array" count="54" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="outer_wa_ldShape-vertices" name="outer_wa_ldShape-vertices">
+          <input semantic="POSITION" source="#outer_wa_ldShape-positions"/>
+        </vertices>
+        <triangles material="lambert59SG" count="18">
+          <input semantic="VERTEX" source="#outer_wa_ldShape-vertices" offset="0"/>
+          <input semantic="TEXCOORD" source="#outer_wa_ldShape-map1" offset="1" set="0"/>
+          <input semantic="TEXTANGENT" source="#outer_wa_ldShape-textangents" offset="2" set="0"/>
+          <input semantic="TEXBINORMAL" source="#outer_wa_ldShape-texbinormals" offset="2" set="0"/>
+          <p>5 5 0 3 3 1 4 4 2 4 4 3 3 3 4 2 2 5 4 4 6 2 2 7 6 6 8 6 6 9 2 2 10 0 0 11 0 0 12 1 1 13 6 6 14 6 6 15 1 1 16 7 7 17 2 8 18 3 9 19 8 11 20 8 11 21 3 9 22 9 10 23 11 13 24 10 14 25 13 12 26 13 12 27 10 14 28 12 15 29 12 15 30 10 14 31 14 16 32 14 16 33 10 14 34 8 17 35 9 18 36 15 19 37 8 17 38 8 17 39 15 19 40 14 16 41 9 18 42 11 13 43 15 19 44 15 19 45 11 13 46 13 12 47 10 20 48 11 21 49 0 23 50 0 23 51 11 21 52 1 22 53</p>
+        </triangles>
+      </mesh>
+      <extra>
+        <technique profile="OpenCOLLADAMaya">
+          <originalMayaNodeId>outer_wa_ldShape</originalMayaNodeId>
+          <double_sided>1</double_sided>
+        </technique>
+      </extra>
+    </geometry>
+    <geometry id="ce_first_bedroom_ldShape" name="ce_first_bedroom_ldShape">
+      <mesh>
+        <source id="ce_first_bedroom_ldShape-positions" name="ce_first_bedroom_ldShape-positions">
+          <float_array id="ce_first_bedroom_ldShape-positions-array" count="12">2.929185 2.499995 2.50547 2.929185 2.499995 -2.505471 -2.929185 2.499995 2.50547 -2.929185 2.499995 -2.505471</float_array>
+          <technique_common>
+            <accessor source="#ce_first_bedroom_ldShape-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="ce_first_bedroom_ldShape-map1" name="ce_first_bedroom_ldShape-map1">
+          <float_array id="ce_first_bedroom_ldShape-map1-array" count="8">2.914744 -4.156277 2.914744 -0.1556883 -1.602529 -0.1556887 -1.602529 -4.156277</float_array>
+          <technique_common>
+            <accessor source="#ce_first_bedroom_ldShape-map1-array" count="4" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="ce_first_bedroom_ldShape-textangents">
+          <float_array id="ce_first_bedroom_ldShape-textangents-array" count="18">1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0</float_array>
+          <technique_common>
+            <accessor source="#ce_first_bedroom_ldShape-textangents-array" count="6" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="ce_first_bedroom_ldShape-texbinormals">
+          <float_array id="ce_first_bedroom_ldShape-texbinormals-array" count="18">0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1</float_array>
+          <technique_common>
+            <accessor source="#ce_first_bedroom_ldShape-texbinormals-array" count="6" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="ce_first_bedroom_ldShape-vertices" name="ce_first_bedroom_ldShape-vertices">
+          <input semantic="POSITION" source="#ce_first_bedroom_ldShape-positions"/>
+        </vertices>
+        <triangles material="lambert57SG" count="2">
+          <input semantic="VERTEX" source="#ce_first_bedroom_ldShape-vertices" offset="0"/>
+          <input semantic="TEXCOORD" source="#ce_first_bedroom_ldShape-map1" offset="1" set="0"/>
+          <input semantic="TEXTANGENT" source="#ce_first_bedroom_ldShape-textangents" offset="2" set="0"/>
+          <input semantic="TEXBINORMAL" source="#ce_first_bedroom_ldShape-texbinormals" offset="2" set="0"/>
+          <p>2 3 0 3 2 1 0 0 2 0 0 3 3 2 4 1 1 5</p>
+        </triangles>
+      </mesh>
+      <extra>
+        <technique profile="OpenCOLLADAMaya">
+          <originalMayaNodeId>ce_first_bedroom_ldShape</originalMayaNodeId>
+          <double_sided>1</double_sided>
+        </technique>
+      </extra>
+    </geometry>
+    <geometry id="fl_first_bedroom_ldShape" name="fl_first_bedroom_ldShape">
+      <mesh>
+        <source id="fl_first_bedroom_ldShape-positions" name="fl_first_bedroom_ldShape-positions">
+          <float_array id="fl_first_bedroom_ldShape-positions-array" count="12">2.929185 0 2.50547 -2.929185 0 2.50547 -2.929185 0 -2.505471 2.929185 0 -2.505471</float_array>
+          <technique_common>
+            <accessor source="#fl_first_bedroom_ldShape-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="fl_first_bedroom_ldShape-map1" name="fl_first_bedroom_ldShape-map1">
+          <float_array id="fl_first_bedroom_ldShape-map1-array" count="8">2.843633 -3.970306 -1.51347 -3.970307 -1.51347 -0.2439738 2.843633 -0.2439734</float_array>
+          <technique_common>
+            <accessor source="#fl_first_bedroom_ldShape-map1-array" count="4" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="fl_first_bedroom_ldShape-textangents">
+          <float_array id="fl_first_bedroom_ldShape-textangents-array" count="18">1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0</float_array>
+          <technique_common>
+            <accessor source="#fl_first_bedroom_ldShape-textangents-array" count="6" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="fl_first_bedroom_ldShape-texbinormals">
+          <float_array id="fl_first_bedroom_ldShape-texbinormals-array" count="18">0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1</float_array>
+          <technique_common>
+            <accessor source="#fl_first_bedroom_ldShape-texbinormals-array" count="6" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="fl_first_bedroom_ldShape-vertices" name="fl_first_bedroom_ldShape-vertices">
+          <input semantic="POSITION" source="#fl_first_bedroom_ldShape-positions"/>
+        </vertices>
+        <triangles material="lambert55SG" count="2">
+          <input semantic="VERTEX" source="#fl_first_bedroom_ldShape-vertices" offset="0"/>
+          <input semantic="TEXCOORD" source="#fl_first_bedroom_ldShape-map1" offset="1" set="0"/>
+          <input semantic="TEXTANGENT" source="#fl_first_bedroom_ldShape-textangents" offset="2" set="0"/>
+          <input semantic="TEXBINORMAL" source="#fl_first_bedroom_ldShape-texbinormals" offset="2" set="0"/>
+          <p>1 1 0 0 0 1 2 2 2 2 2 3 0 0 4 3 3 5</p>
+        </triangles>
+      </mesh>
+      <extra>
+        <technique profile="OpenCOLLADAMaya">
+          <originalMayaNodeId>fl_first_bedroom_ldShape</originalMayaNodeId>
+          <double_sided>1</double_sided>
+        </technique>
+      </extra>
+    </geometry>
+    <geometry id="wa_first_bedroom4_ldShape" name="wa_first_bedroom4_ldShape">
+      <mesh>
+        <source id="wa_first_bedroom4_ldShape-positions" name="wa_first_bedroom4_ldShape-positions">
+          <float_array id="wa_first_bedroom4_ldShape-positions-array" count="12">2.929185 2.499995 -2.505471 2.929185 0 -2.505471 2.929185 0 2.50547 2.929185 2.499995 2.50547</float_array>
+          <technique_common>
+            <accessor source="#wa_first_bedroom4_ldShape-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="wa_first_bedroom4_ldShape-map1" name="wa_first_bedroom4_ldShape-map1">
+          <float_array id="wa_first_bedroom4_ldShape-map1-array" count="8">-1.626917 -0.5192872 2.571082 -0.5192865 2.571082 1.575131 -1.626917 1.575131</float_array>
+          <technique_common>
+            <accessor source="#wa_first_bedroom4_ldShape-map1-array" count="4" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="wa_first_bedroom4_ldShape-textangents">
+          <float_array id="wa_first_bedroom4_ldShape-textangents-array" count="18">0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#wa_first_bedroom4_ldShape-textangents-array" count="6" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="wa_first_bedroom4_ldShape-texbinormals">
+          <float_array id="wa_first_bedroom4_ldShape-texbinormals-array" count="18">0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0</float_array>
+          <technique_common>
+            <accessor source="#wa_first_bedroom4_ldShape-texbinormals-array" count="6" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="wa_first_bedroom4_ldShape-vertices" name="wa_first_bedroom4_ldShape-vertices">
+          <input semantic="POSITION" source="#wa_first_bedroom4_ldShape-positions"/>
+        </vertices>
+        <triangles material="lambert50SG" count="2">
+          <input semantic="VERTEX" source="#wa_first_bedroom4_ldShape-vertices" offset="0"/>
+          <input semantic="TEXCOORD" source="#wa_first_bedroom4_ldShape-map1" offset="1" set="0"/>
+          <input semantic="TEXTANGENT" source="#wa_first_bedroom4_ldShape-textangents" offset="2" set="0"/>
+          <input semantic="TEXBINORMAL" source="#wa_first_bedroom4_ldShape-texbinormals" offset="2" set="0"/>
+          <p>1 0 0 2 1 1 0 3 2 0 3 3 2 1 4 3 2 5</p>
+        </triangles>
+      </mesh>
+      <extra>
+        <technique profile="OpenCOLLADAMaya">
+          <originalMayaNodeId>wa_first_bedroom4_ldShape</originalMayaNodeId>
+          <double_sided>1</double_sided>
+        </technique>
+      </extra>
+    </geometry>
+    <geometry id="wa_first_bedroom3_ldShape" name="wa_first_bedroom3_ldShape">
+      <mesh>
+        <source id="wa_first_bedroom3_ldShape-positions" name="wa_first_bedroom3_ldShape-positions">
+          <float_array id="wa_first_bedroom3_ldShape-positions-array" count="24">2.929185 0 2.50547 2.929185 2.499995 2.50547 -0.781311 1.000007 2.50547 -0.7813113 2.000007 2.50547 1.302019 1.000007 2.50547 1.302019 2.000007 2.50547 -2.929185 0 2.50547 -2.929185 2.499995 2.50547</float_array>
+          <technique_common>
+            <accessor source="#wa_first_bedroom3_ldShape-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="wa_first_bedroom3_ldShape-map1" name="wa_first_bedroom3_ldShape-map1">
+          <float_array id="wa_first_bedroom3_ldShape-map1-array" count="16">1.126725 0.3184219 2.926459 -0.5196418 2.926459 1.575486 1.126725 1.156496 -1.982293 1.575486 -0.6189025 1.156496 -0.6189025 0.3184219 -1.982293 -0.5196418</float_array>
+          <technique_common>
+            <accessor source="#wa_first_bedroom3_ldShape-map1-array" count="8" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="wa_first_bedroom3_ldShape-colorSet1" name="wa_first_bedroom3_ldShape-colorSet1">
+          <float_array id="wa_first_bedroom3_ldShape-colorSet1-array" count="64">0.5 0.5 0.5 1 0.5 0.5 0.5 1 0.5 0.5 0.5 1 0.5 0.5 0.5 1 0.5 0.5 0.5 1 0.5 0.5 0.5 1 0.5 0.5 0.5 1 0.5 0.5 0.5 1 0.5 0.5 0.5 1 0.5 0.5 0.5 1 0.5 0.5 0.5 1 0.5 0.5 0.5 1 0.5 0.5 0.5 1 0.5 0.5 0.5 1 0.5 0.5 0.5 1 0.5 0.5 0.5 1</float_array>
+          <technique_common>
+            <accessor source="#wa_first_bedroom3_ldShape-colorSet1-array" count="16" stride="4">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+              <param name="A" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="wa_first_bedroom3_ldShape-textangents">
+          <float_array id="wa_first_bedroom3_ldShape-textangents-array" count="72">-1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0</float_array>
+          <technique_common>
+            <accessor source="#wa_first_bedroom3_ldShape-textangents-array" count="24" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="wa_first_bedroom3_ldShape-texbinormals">
+          <float_array id="wa_first_bedroom3_ldShape-texbinormals-array" count="72">0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0</float_array>
+          <technique_common>
+            <accessor source="#wa_first_bedroom3_ldShape-texbinormals-array" count="24" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="wa_first_bedroom3_ldShape-vertices" name="wa_first_bedroom3_ldShape-vertices">
+          <input semantic="POSITION" source="#wa_first_bedroom3_ldShape-positions"/>
+        </vertices>
+        <triangles material="lambert50SG" count="8">
+          <input semantic="VERTEX" source="#wa_first_bedroom3_ldShape-vertices" offset="0"/>
+          <input semantic="TEXCOORD" source="#wa_first_bedroom3_ldShape-map1" offset="1" set="0"/>
+          <input semantic="COLOR" source="#wa_first_bedroom3_ldShape-colorSet1" offset="2" set="0"/>
+          <input semantic="TEXTANGENT" source="#wa_first_bedroom3_ldShape-textangents" offset="3" set="0"/>
+          <input semantic="TEXBINORMAL" source="#wa_first_bedroom3_ldShape-texbinormals" offset="3" set="0"/>
+          <p>6 1 1 0 7 2 2 1 2 0 0 2 2 0 0 3 7 2 2 4 3 3 3 5 7 2 5 6 1 4 6 7 3 3 4 8 3 3 4 9 1 4 6 10 5 5 7 11 6 1 8 12 2 0 9 13 0 7 11 14 0 7 11 15 2 0 9 16 4 6 10 17 0 7 13 18 4 6 14 19 1 4 12 20 1 4 12 21 4 6 14 22 5 5 15 23</p>
+        </triangles>
+      </mesh>
+      <extra>
+        <technique profile="OpenCOLLADAMaya">
+          <originalMayaNodeId>wa_first_bedroom3_ldShape</originalMayaNodeId>
+          <double_sided>1</double_sided>
+        </technique>
+      </extra>
+    </geometry>
+    <geometry id="wa_first_bedroom2_ldShape" name="wa_first_bedroom2_ldShape">
+      <mesh>
+        <source id="wa_first_bedroom2_ldShape-positions" name="wa_first_bedroom2_ldShape-positions">
+          <float_array id="wa_first_bedroom2_ldShape-positions-array" count="12">-2.929185 0 2.50547 -2.929185 2.499995 2.50547 -2.929185 2.499995 -2.505471 -2.929185 0 -2.505471</float_array>
+          <technique_common>
+            <accessor source="#wa_first_bedroom2_ldShape-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="wa_first_bedroom2_ldShape-map1" name="wa_first_bedroom2_ldShape-map1">
+          <float_array id="wa_first_bedroom2_ldShape-map1-array" count="8">-1.626928 1.57513 -1.626927 -0.5192865 2.571093 -0.5192865 2.571093 1.57513</float_array>
+          <technique_common>
+            <accessor source="#wa_first_bedroom2_ldShape-map1-array" count="4" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="wa_first_bedroom2_ldShape-textangents">
+          <float_array id="wa_first_bedroom2_ldShape-textangents-array" count="18">0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1</float_array>
+          <technique_common>
+            <accessor source="#wa_first_bedroom2_ldShape-textangents-array" count="6" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="wa_first_bedroom2_ldShape-texbinormals">
+          <float_array id="wa_first_bedroom2_ldShape-texbinormals-array" count="18">0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0</float_array>
+          <technique_common>
+            <accessor source="#wa_first_bedroom2_ldShape-texbinormals-array" count="6" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="wa_first_bedroom2_ldShape-vertices" name="wa_first_bedroom2_ldShape-vertices">
+          <input semantic="POSITION" source="#wa_first_bedroom2_ldShape-positions"/>
+        </vertices>
+        <triangles material="lambert50SG" count="2">
+          <input semantic="VERTEX" source="#wa_first_bedroom2_ldShape-vertices" offset="0"/>
+          <input semantic="TEXCOORD" source="#wa_first_bedroom2_ldShape-map1" offset="1" set="0"/>
+          <input semantic="TEXTANGENT" source="#wa_first_bedroom2_ldShape-textangents" offset="2" set="0"/>
+          <input semantic="TEXBINORMAL" source="#wa_first_bedroom2_ldShape-texbinormals" offset="2" set="0"/>
+          <p>1 0 0 0 1 1 2 3 2 2 3 3 0 1 4 3 2 5</p>
+        </triangles>
+      </mesh>
+      <extra>
+        <technique profile="OpenCOLLADAMaya">
+          <originalMayaNodeId>wa_first_bedroom2_ldShape</originalMayaNodeId>
+          <double_sided>1</double_sided>
+        </technique>
+      </extra>
+    </geometry>
+    <geometry id="wa_first_bedroom1_ldShape" name="wa_first_bedroom1_ldShape">
+      <mesh>
+        <source id="wa_first_bedroom1_ldShape-positions" name="wa_first_bedroom1_ldShape-positions">
+          <float_array id="wa_first_bedroom1_ldShape-positions-array" count="24">-1.471483 0 -2.505471 -2.373624 0 -2.505471 -2.373624 2.039992 -2.505471 -1.471483 2.039989 -2.505471 -2.929185 2.499995 -2.505471 -2.929185 0 -2.505471 2.929185 0 -2.505471 2.929185 2.499995 -2.505471</float_array>
+          <technique_common>
+            <accessor source="#wa_first_bedroom1_ldShape-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="wa_first_bedroom1_ldShape-map1" name="wa_first_bedroom1_ldShape-map1">
+          <float_array id="wa_first_bedroom1_ldShape-map1-array" count="16">-1.981897 1.575131 -1.516459 1.189754 -0.7606872 1.189734 2.926063 1.575131 -1.981895 -0.5192868 -1.516459 -0.5192868 -0.7606872 -0.5192872 2.926063 -0.5192868</float_array>
+          <technique_common>
+            <accessor source="#wa_first_bedroom1_ldShape-map1-array" count="8" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="wa_first_bedroom1_ldShape-colorSet1" name="wa_first_bedroom1_ldShape-colorSet1">
+          <float_array id="wa_first_bedroom1_ldShape-colorSet1-array" count="48">0.5 0.5 0.5 1 0.5 0.5 0.5 1 0.5 0.5 0.5 1 0.5 0.5 0.5 1 0.5 0.5 0.5 1 0.5 0.5 0.5 1 0.5 0.5 0.5 1 0.5 0.5 0.5 1 0.5 0.5 0.5 1 0.5 0.5 0.5 1 0.5 0.5 0.5 1 0.5 0.5 0.5 1</float_array>
+          <technique_common>
+            <accessor source="#wa_first_bedroom1_ldShape-colorSet1-array" count="12" stride="4">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+              <param name="A" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="wa_first_bedroom1_ldShape-textangents">
+          <float_array id="wa_first_bedroom1_ldShape-textangents-array" count="54">1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0</float_array>
+          <technique_common>
+            <accessor source="#wa_first_bedroom1_ldShape-textangents-array" count="18" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="wa_first_bedroom1_ldShape-texbinormals">
+          <float_array id="wa_first_bedroom1_ldShape-texbinormals-array" count="54">0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0</float_array>
+          <technique_common>
+            <accessor source="#wa_first_bedroom1_ldShape-texbinormals-array" count="18" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="wa_first_bedroom1_ldShape-vertices" name="wa_first_bedroom1_ldShape-vertices">
+          <input semantic="POSITION" source="#wa_first_bedroom1_ldShape-positions"/>
+        </vertices>
+        <triangles material="lambert50SG" count="6">
+          <input semantic="VERTEX" source="#wa_first_bedroom1_ldShape-vertices" offset="0"/>
+          <input semantic="TEXCOORD" source="#wa_first_bedroom1_ldShape-map1" offset="1" set="0"/>
+          <input semantic="COLOR" source="#wa_first_bedroom1_ldShape-colorSet1" offset="2" set="0"/>
+          <input semantic="TEXTANGENT" source="#wa_first_bedroom1_ldShape-textangents" offset="3" set="0"/>
+          <input semantic="TEXBINORMAL" source="#wa_first_bedroom1_ldShape-texbinormals" offset="3" set="0"/>
+          <p>2 1 1 0 3 2 2 1 4 0 0 2 4 0 0 3 3 2 2 4 7 3 3 5 4 0 4 6 5 4 5 7 2 1 7 8 2 1 7 9 5 4 5 10 1 5 6 11 7 3 8 12 3 2 9 13 6 7 11 14 6 7 11 15 3 2 9 16 0 6 10 17</p>
+        </triangles>
+      </mesh>
+      <extra>
+        <technique profile="OpenCOLLADAMaya">
+          <originalMayaNodeId>wa_first_bedroom1_ldShape</originalMayaNodeId>
+          <double_sided>1</double_sided>
+        </technique>
+      </extra>
+    </geometry>
+    <geometry id="wall_thickness_ldShape" name="wall_thickness_ldShape">
+      <mesh>
+        <source id="wall_thickness_ldShape-positions" name="wall_thickness_ldShape-positions">
+          <float_array id="wall_thickness_ldShape-positions-array" count="105">-0.7813113 2.000007 2.75547 -0.781311 1.000007 2.75547 1.302019 1.000007 2.75547 1.302019 2.000007 2.75547 -0.781311 1.000007 2.50547 -0.7813113 2.000007 2.50547 1.302019 1.000007 2.50547 1.302019 2.000007 2.50547 -1.471482 0 -2.75547 -2.373624 0 -2.75547 -2.373624 2.039992 -2.75547 -1.471482 2.039989 -2.75547 -1.471483 0 -2.505471 -1.471483 2.039989 -2.505471 -2.373624 2.039992 -2.505471 -2.373624 0 -2.505471 3.179185 2.499995 2.75547 -3.179185 2.499995 2.75547 3.179185 2.499995 -2.75547 2.929185 2.499995 -2.505471 2.929185 2.499995 2.50547 -2.929185 2.499995 2.50547 -3.179185 2.499995 -2.75547 -2.929185 2.499995 -2.505471 3.179185 0 2.75547 -3.179185 0 2.75547 3.179185 0 -2.75547 2.929185 0 2.50547 2.929185 0 -2.505471 -2.929185 0 2.50547 -2.929185 0 -2.505471 -3.179185 0 -2.75547 -1.471482 0 -2.75547 -2.373624 0 -2.75547 -2.373624 0 -2.505471</float_array>
+          <technique_common>
+            <accessor source="#wall_thickness_ldShape-positions-array" count="35" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="wall_thickness_ldShape-map1" name="wall_thickness_ldShape-map1">
+          <float_array id="wall_thickness_ldShape-map1-array" count="76">0.408785 0.5383472 0.4455643 0.5383472 0.4531692 0.5447092 0.4011792 0.5447092 0.408785 0.3779745 0.4011792 0.3716143 0.4455643 0.3779745 0.4531692 0.3716143 0.2719277 0.7930323 0.2532983 0.7930323 0.2532983 0.6410135 0.2719276 0.6410135 0.2719277 0.5737861 0.2532983 0.573786 0.2532983 0.4217654 0.2719277 0.4217654 0.5486413 0.4765622 0.788882 0.4746481 0.7701189 0.07166401 0.7889784 0.05268368 0.7698496 0.456325 0.331127 0.08127666 0.3119445 0.06298327 0.3309247 0.4598969 0.3120985 0.4600231 0.7527168 0.4166478 0.7351112 0.3978263 0.7343896 0.04855089 0.7516526 0.02953438 0.2776394 0.03030114 0.2974097 0.04854815 0.297244 0.4458265 0.2780795 0.4458005 0.4060554 0.3861251 0.405381 0.4050766 0.3385109 0.4649961 0.3384144 0.4460864 0.3164412 0.4547441</float_array>
+          <technique_common>
+            <accessor source="#wall_thickness_ldShape-map1-array" count="38" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="wall_thickness_ldShape-textangents">
+          <float_array id="wall_thickness_ldShape-textangents-array" count="288">0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0.3137958 0 -0.9494905 0.01098769 0 -0.9999397 0.01098769 0 -0.9999397 0.01098769 0 -0.9999397 0.01098769 0 -0.9999397 -0.2928559 0 -0.9561566 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0.3138753 0 0.9494642 0.01106892 0 0.9999388 0.01106892 0 0.9999388 0.01106892 0 0.9999388 0.01106892 0 0.9999388 -0.2927807 0 0.9561797 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0.9997597 0 -0.02192689 0.9997611 0 -0.02186137 0.9997611 0 -0.02186137 0.9997611 0 -0.02186137 0.9997611 0 -0.02186137 0.9997625 0 -0.02179585 0.7094744 0 0.7047312 0.9215089 0 0.3883573 0.9215089 0 0.3883573 0.9215089 0 0.3883573 0.9215089 0 0.3883573 0.9998775 0 0.01565169 0.999643 0 -0.02671809 0.9999234 0 -0.01238018 0.9999796 0 -0.006392977 0.9999796 0 -0.006392977 0.9999234 0 -0.01238018 0.9999898 0 -0.004536161 0.9993854 0 0.0350541 0.9987642 0 0.04970011 0.9994011 0 0.03460592 0.9994011 0 0.03460592 0.9987642 0 0.04970011 0.999945 0 0.01049819 0.9987642 0 0.04970011 0.999999 0 -0.001373018 0.999945 0 0.01049819 0.999945 0 0.01049819 0.999999 0 -0.001373018 0.9965836 0 -0.08259144 0.9999986 0 -0.001649458 0.9999998 0 -8.21653e-4 0.9999998 0 -8.21653e-4 0.9999998 0 -8.21653e-4 0.9999998 0 -8.21653e-4 1 0 0 0.7066442 0 0.707569 0.9297486 0 0.3681948 0.9297486 0 0.3681948 0.9297486 0 0.3681948 0.9297486 0 0.3681948 0.9994907 0 -0.03191325 -0.9671214 0 -0.254315 -0.9671214 0 -0.254315 -0.9671214 0 -0.254315 0.9999809 0 0.00618415 0.9999809 0 0.00618415 0.9999809 0 0.00618415 0.9999643 0 0.008452334 0.9999234 0 -0.01238018 0.9998313 0 -0.01836909 0.9998313 0 -0.01836909 0.9999234 0 -0.01238018 0.999643 0 -0.02671809</float_array>
+          <technique_common>
+            <accessor source="#wall_thickness_ldShape-textangents-array" count="96" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="wall_thickness_ldShape-texbinormals">
+          <float_array id="wall_thickness_ldShape-texbinormals-array" count="288">0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 -0.9494905 0 -0.3137958 -0.9999397 0 -0.01098769 -0.9999397 0 -0.01098769 -0.9999397 0 -0.01098769 -0.9999397 0 -0.01098769 -0.9561566 0 0.2928559 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 -0.9494642 0 0.3138753 -0.9999388 0 0.01106892 -0.9999388 0 0.01106892 -0.9999388 0 0.01106892 -0.9999388 0 0.01106892 -0.9561796 0 -0.2927806 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 -0.02192688 0 -0.9997596 -0.02186137 0 -0.999761 -0.02186137 0 -0.999761 -0.02186137 0 -0.999761 -0.02186137 0 -0.999761 -0.02179585 0 -0.9997624 0.7047312 0 -0.7094744 0.3883573 0 -0.9215089 0.3883573 0 -0.9215089 0.3883573 0 -0.9215089 0.3883573 0 -0.9215089 0.01565169 0 -0.9998775 -0.02671809 0 -0.9996431 -0.01238018 0 -0.9999235 -0.006392977 0 -0.9999796 -0.006392977 0 -0.9999796 -0.01238018 0 -0.9999235 -0.00453616 0 -0.9999897 0.0350541 0 -0.9993854 0.04970012 0 -0.9987643 0.03460592 0 -0.9994011 0.03460592 0 -0.9994011 0.04970012 0 -0.9987643 0.01049819 0 -0.9999449 0.04970012 0 -0.9987643 -0.001373018 0 -0.999999 0.01049819 0 -0.9999449 0.01049819 0 -0.9999449 -0.001373018 0 -0.999999 -0.08259143 0 -0.9965835 -0.001649458 0 -0.9999986 -8.21653e-4 0 -0.9999996 -8.21653e-4 0 -0.9999996 -8.21653e-4 0 -0.9999996 -8.21653e-4 0 -0.9999996 0 0 -1 0.707569 0 -0.7066442 0.3681949 0 -0.9297487 0.3681949 0 -0.9297487 0.3681949 0 -0.9297487 0.3681949 0 -0.9297487 -0.03191325 0 -0.9994907 0.254315 0 -0.9671214 0.254315 0 -0.9671214 0.254315 0 -0.9671214 0.00618415 0 -0.9999809 0.00618415 0 -0.9999809 0.00618415 0 -0.9999809 0.008452334 0 -0.9999643 -0.01238018 0 -0.9999235 -0.01836909 0 -0.9998313 -0.01836909 0 -0.9998313 -0.01238018 0 -0.9999235 -0.02671809 0 -0.9996431</float_array>
+          <technique_common>
+            <accessor source="#wall_thickness_ldShape-texbinormals-array" count="96" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="wall_thickness_ldShape-vertices" name="wall_thickness_ldShape-vertices">
+          <input semantic="POSITION" source="#wall_thickness_ldShape-positions"/>
+        </vertices>
+        <triangles material="lambert58SG" count="32">
+          <input semantic="VERTEX" source="#wall_thickness_ldShape-vertices" offset="0"/>
+          <input semantic="TEXCOORD" source="#wall_thickness_ldShape-map1" offset="1" set="0"/>
+          <input semantic="TEXTANGENT" source="#wall_thickness_ldShape-textangents" offset="2" set="0"/>
+          <input semantic="TEXBINORMAL" source="#wall_thickness_ldShape-texbinormals" offset="2" set="0"/>
+          <p>4 0 0 5 1 1 1 3 2 1 3 3 5 1 4 0 2 5 6 4 6 4 0 7 2 5 8 2 5 9 4 0 10 1 3 11 7 6 12 6 4 13 3 7 14 3 7 15 6 4 16 2 5 17 5 1 18 7 6 19 0 2 20 0 2 21 7 6 22 3 7 23 8 8 24 12 9 25 11 11 26 11 11 27 12 9 28 13 10 29 10 12 30 14 13 31 9 15 32 9 15 33 14 13 34 15 14 35 13 10 36 14 13 37 11 11 38 11 11 39 14 13 40 10 12 41 21 21 42 17 22 43 20 18 44 20 18 45 17 22 46 16 19 47 23 23 48 22 24 49 21 21 50 21 21 51 22 24 52 17 22 53 19 20 54 18 17 55 23 23 56 23 23 57 18 17 58 22 16 59 12 33 60 28 26 61 32 34 62 32 34 63 28 26 64 26 25 65 28 26 66 27 27 67 26 25 68 26 25 69 27 27 70 24 28 71 25 29 72 24 28 73 29 30 74 29 30 75 24 28 76 27 27 77 30 31 78 31 32 79 29 30 80 29 30 81 31 32 82 25 29 83 31 37 84 30 31 85 33 35 86 33 35 87 30 31 88 34 36 89 16 19 90 18 17 91 20 18 92 20 18 93 18 17 94 19 20 95</p>
+        </triangles>
+      </mesh>
+      <extra>
+        <technique profile="OpenCOLLADAMaya">
+          <originalMayaNodeId>wall_thickness_ldShape</originalMayaNodeId>
+          <double_sided>1</double_sided>
+        </technique>
+      </extra>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="VisualSceneNode" name="first_bedroom_frame">
+      <node id="outer_wa_ld" name="outer_wa_ld" type="NODE">
+        <translate sid="translate">0 0 0</translate>
+        <rotate sid="rotateZ">0 0 1 0</rotate>
+        <rotate sid="rotateY">0 1 0 0</rotate>
+        <rotate sid="rotateX">1 0 0 0</rotate>
+        <scale sid="scale">1 1 1</scale>
+        <instance_geometry url="#outer_wa_ldShape">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="lambert59SG" target="#t_outer_wa_ld_mat">
+                <bind_vertex_input semantic="TEX0" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="TEX1" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+        <extra>
+          <technique profile="OpenCOLLADAMaya">
+            <originalMayaNodeId type="string">outer_wa_ld</originalMayaNodeId>
+          </technique>
+        </extra>
+      </node>
+      <node id="ce_first_bedroom_ld" name="ce_first_bedroom_ld" type="NODE">
+        <translate sid="translate">0 0 0</translate>
+        <scale sid="scale">1 1 1</scale>
+        <instance_geometry url="#ce_first_bedroom_ldShape">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="lambert57SG" target="#t_ce_bathroom_ld_mat1">
+                <bind_vertex_input semantic="TEX0" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+        <extra>
+          <technique profile="OpenCOLLADAMaya">
+            <originalMayaNodeId type="string">ce_first_bedroom_ld</originalMayaNodeId>
+          </technique>
+        </extra>
+      </node>
+      <node id="fl_first_bedroom_ld" name="fl_first_bedroom_ld" type="NODE">
+        <translate sid="translate">0 0 0</translate>
+        <scale sid="scale">1 1 1</scale>
+        <instance_geometry url="#fl_first_bedroom_ldShape">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="lambert55SG" target="#t_fl_living_room_ld_mat">
+                <bind_vertex_input semantic="TEX0" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+        <extra>
+          <technique profile="OpenCOLLADAMaya">
+            <originalMayaNodeId type="string">fl_first_bedroom_ld</originalMayaNodeId>
+          </technique>
+        </extra>
+      </node>
+      <node id="wa_first_bedroom4_ld" name="wa_first_bedroom4_ld" type="NODE">
+        <translate sid="translate">0 0 0</translate>
+        <scale sid="scale">1 1 1</scale>
+        <instance_geometry url="#wa_first_bedroom4_ldShape">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="lambert50SG" target="#t_wa_living_room1_ld_mat">
+                <bind_vertex_input semantic="TEX0" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+        <extra>
+          <technique profile="OpenCOLLADAMaya">
+            <originalMayaNodeId type="string">wa_first_bedroom4_ld</originalMayaNodeId>
+          </technique>
+        </extra>
+      </node>
+      <node id="wa_first_bedroom3_ld" name="wa_first_bedroom3_ld" type="NODE">
+        <translate sid="translate">0 0 0</translate>
+        <scale sid="scale">1 1 1</scale>
+        <instance_geometry url="#wa_first_bedroom3_ldShape">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="lambert50SG" target="#t_wa_living_room1_ld_mat">
+                <bind_vertex_input semantic="TEX0" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+        <extra>
+          <technique profile="OpenCOLLADAMaya">
+            <originalMayaNodeId type="string">wa_first_bedroom3_ld</originalMayaNodeId>
+          </technique>
+        </extra>
+      </node>
+      <node id="wa_first_bedroom2_ld" name="wa_first_bedroom2_ld" type="NODE">
+        <translate sid="translate">0 0 0</translate>
+        <scale sid="scale">1 1 1</scale>
+        <instance_geometry url="#wa_first_bedroom2_ldShape">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="lambert50SG" target="#t_wa_living_room1_ld_mat">
+                <bind_vertex_input semantic="TEX0" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+        <extra>
+          <technique profile="OpenCOLLADAMaya">
+            <originalMayaNodeId type="string">wa_first_bedroom2_ld</originalMayaNodeId>
+          </technique>
+        </extra>
+      </node>
+      <node id="wa_first_bedroom1_ld" name="wa_first_bedroom1_ld" type="NODE">
+        <translate sid="translate">0 0 0</translate>
+        <scale sid="scale">1 1 1</scale>
+        <instance_geometry url="#wa_first_bedroom1_ldShape">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="lambert50SG" target="#t_wa_living_room1_ld_mat">
+                <bind_vertex_input semantic="TEX0" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+        <extra>
+          <technique profile="OpenCOLLADAMaya">
+            <originalMayaNodeId type="string">wa_first_bedroom1_ld</originalMayaNodeId>
+          </technique>
+        </extra>
+      </node>
+      <node id="wall_thickness_ld" name="wall_thickness_ld" type="NODE">
+        <translate sid="translate">0 0 0</translate>
+        <scale sid="scale">1 1 1</scale>
+        <instance_geometry url="#wall_thickness_ldShape">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="lambert58SG" target="#t_wall_thickness_ld_mat">
+                <bind_vertex_input semantic="TEX0" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+        <extra>
+          <technique profile="OpenCOLLADAMaya">
+            <originalMayaNodeId type="string">wall_thickness_ld</originalMayaNodeId>
+          </technique>
+        </extra>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#VisualSceneNode"/>
+  </scene>
+</COLLADA>

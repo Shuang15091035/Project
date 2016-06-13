@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:res_v100/res_v100.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:demo_custom_furniture/demo_custom_furniture.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:jw_mojing/jw_mojing.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:jw_game/jw_game.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:jw_exr/jw_exr.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:jw_core/jw_core.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:jw_app/jw_app.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:project_modelviewer/project_modelviewer.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:project_mesher/project_mesher.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:project_mesher_test/project_mesher_test.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:res_mesher_demo/res_mesher_demo.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:res_mesher_villa/res_mesher_villa.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:project_j4/project_j4.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:testShader/testShader.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:res_base/res_base.xcodeproj">
+   </FileRef>
+</Workspace>
