@@ -1,0 +1,279 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B7587B01CB117BF000EC285 /* jw_exr.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7587AB1CB117BF000EC285 /* jw_exr.m */; };
+		1B7587B11CB117BF000EC285 /* JWEXRImage.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1B7587AD1CB117BF000EC285 /* JWEXRImage.mm */; };
+		1B7587B21CB117BF000EC285 /* tinyexr.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1B7587AE1CB117BF000EC285 /* tinyexr.cc */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1BBE3A361C040DC6008CD70D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1B7587AA1CB117BF000EC285 /* jw_exr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = jw_exr.h; path = jw/jw_exr.h; sourceTree = SOURCE_ROOT; };
+		1B7587AB1CB117BF000EC285 /* jw_exr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = jw_exr.m; path = jw/jw_exr.m; sourceTree = SOURCE_ROOT; };
+		1B7587AC1CB117BF000EC285 /* JWEXRImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWEXRImage.h; path = jw/JWEXRImage.h; sourceTree = SOURCE_ROOT; };
+		1B7587AD1CB117BF000EC285 /* JWEXRImage.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = JWEXRImage.mm; path = jw/JWEXRImage.mm; sourceTree = SOURCE_ROOT; };
+		1B7587AE1CB117BF000EC285 /* tinyexr.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tinyexr.cc; path = jw/tinyexr.cc; sourceTree = SOURCE_ROOT; };
+		1B7587AF1CB117BF000EC285 /* tinyexr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tinyexr.h; path = jw/tinyexr.h; sourceTree = SOURCE_ROOT; };
+		1BBE3A381C040DC6008CD70D /* libjw_exr.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libjw_exr.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1BBE3A351C040DC6008CD70D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1BBE3A2F1C040DC6008CD70D = {
+			isa = PBXGroup;
+			children = (
+				1BBE3A3A1C040DC6008CD70D /* jw */,
+				1BBE3A391C040DC6008CD70D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1BBE3A391C040DC6008CD70D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1BBE3A381C040DC6008CD70D /* libjw_exr.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1BBE3A3A1C040DC6008CD70D /* jw */ = {
+			isa = PBXGroup;
+			children = (
+				1B7587AA1CB117BF000EC285 /* jw_exr.h */,
+				1B7587AB1CB117BF000EC285 /* jw_exr.m */,
+				1B7587AC1CB117BF000EC285 /* JWEXRImage.h */,
+				1B7587AD1CB117BF000EC285 /* JWEXRImage.mm */,
+				1B7587AE1CB117BF000EC285 /* tinyexr.cc */,
+				1B7587AF1CB117BF000EC285 /* tinyexr.h */,
+			);
+			name = jw;
+			path = ctrlcv_exr;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1BBE3A371C040DC6008CD70D /* jw_exr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BBE3A411C040DC6008CD70D /* Build configuration list for PBXNativeTarget "jw_exr" */;
+			buildPhases = (
+				1BBE3A341C040DC6008CD70D /* Sources */,
+				1BBE3A351C040DC6008CD70D /* Frameworks */,
+				1BBE3A361C040DC6008CD70D /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = jw_exr;
+			productName = ctrlcv_exr;
+			productReference = 1BBE3A381C040DC6008CD70D /* libjw_exr.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1BBE3A301C040DC6008CD70D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "luojunwen123@gmail.com";
+				TargetAttributes = {
+					1BBE3A371C040DC6008CD70D = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 1BBE3A331C040DC6008CD70D /* Build configuration list for PBXProject "jw_exr" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1BBE3A2F1C040DC6008CD70D;
+			productRefGroup = 1BBE3A391C040DC6008CD70D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1BBE3A371C040DC6008CD70D /* jw_exr */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1BBE3A341C040DC6008CD70D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B7587B21CB117BF000EC285 /* tinyexr.cc in Sources */,
+				1B7587B11CB117BF000EC285 /* JWEXRImage.mm in Sources */,
+				1B7587B01CB117BF000EC285 /* jw_exr.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1BBE3A3F1C040DC6008CD70D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1BBE3A401C040DC6008CD70D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1BBE3A421C040DC6008CD70D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/../jc_core",
+					"$(PROJECT_DIR)/../jc_core/jw",
+					"$(PROJECT_DIR)/../jw_core",
+					"$(PROJECT_DIR)/../jw_core/jw",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = jw_exr;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		1BBE3A431C040DC6008CD70D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/../jc_core",
+					"$(PROJECT_DIR)/../jc_core/jw",
+					"$(PROJECT_DIR)/../jw_core",
+					"$(PROJECT_DIR)/../jw_core/jw",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = jw_exr;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1BBE3A331C040DC6008CD70D /* Build configuration list for PBXProject "jw_exr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BBE3A3F1C040DC6008CD70D /* Debug */,
+				1BBE3A401C040DC6008CD70D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BBE3A411C040DC6008CD70D /* Build configuration list for PBXNativeTarget "jw_exr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BBE3A421C040DC6008CD70D /* Debug */,
+				1BBE3A431C040DC6008CD70D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1BBE3A301C040DC6008CD70D /* Project object */;
+}

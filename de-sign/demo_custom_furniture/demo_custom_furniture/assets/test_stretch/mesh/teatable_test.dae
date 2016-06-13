@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>Administrator</author>
+      <authoring_tool>OpenCOLLADA2015</authoring_tool>
+      <comments>
+			ColladaMaya export options: 
+			bakeTransforms=0;relativePaths=1;preserveSourceTree=0;copyTextures=0;exportTriangles=0;exportCgfxFileReferences=1;
+			isSampling=0;curveConstrainSampling=0;removeStaticCurves=1;exportPhysics=0;exportPolygonMeshes=1;exportLights=0;
+			exportCameras=0;exportJointsAndSkin=0;exportAnimations=0;exportInvisibleNodes=0;exportDefaultCameras=0;
+			exportTexCoords=1;exportNormals=1;exportNormalsPerVertex=1;exportVertexColors=1;exportVertexColorsPerVertex=1;
+			exportTexTangents=0;exportTangents=0;exportReferencedMaterials=0;exportMaterialsOnly=0;
+			exportXRefs=1;dereferenceXRefs=1;exportCameraAsLookat=0;cameraXFov=0;cameraYFov=1;doublePrecision=0
+		</comments>
+      <source_data>file:///C:/Users/Administrator/Documents/maya/projects/default/untitled</source_data>
+    </contributor>
+    <created>2016-05-26T18:16:55</created>
+    <modified>2016-05-26T18:16:55</modified>
+    <unit name="centimeter" meter="0.01"/>
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_materials>
+    <material id="lambert4" name="lambert4">
+      <instance_effect url="#lambert4-fx"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="lambert4-fx">
+      <profile_COMMON>
+        <newparam sid="file2-surface">
+          <surface type="2D">
+            <init_from>file2</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="file2-sampler">
+          <sampler2D>
+            <source>file2-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="file2-sampler" texcoord="TEX0">
+                <extra>
+                  <technique profile="OpenCOLLADAMaya">
+                    <blend_mode type="string">NONE</blend_mode>
+                    <coverageU type="float">1</coverageU>
+                    <coverageV type="float">1</coverageV>
+                    <fast type="bool">0</fast>
+                    <mirrorU type="bool">0</mirrorU>
+                    <mirrorV type="bool">0</mirrorV>
+                    <noiseU type="float">0</noiseU>
+                    <noiseV type="float">0</noiseV>
+                    <offsetU type="float">0</offsetU>
+                    <offsetV type="float">0</offsetV>
+                    <repeatU type="float">1</repeatU>
+                    <repeatV type="float">1</repeatV>
+                    <rotateFrame type="float">0</rotateFrame>
+                    <rotateUV type="float">0</rotateUV>
+                    <stagger type="bool">0</stagger>
+                    <translateFrameU type="float">0</translateFrameU>
+                    <translateFrameV type="float">0</translateFrameV>
+                    <wrapU type="bool">1</wrapU>
+                    <wrapV type="bool">1</wrapV>
+                  </technique>
+                </extra>
+              </texture>
+            </diffuse>
+            <transparent opaque="RGB_ZERO">
+              <color>0 0 0 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_images>
+    <image id="file2" name="file2">
+      <init_from>../texture/t_wood005_notiling.png</init_from>
+      <extra>
+        <technique profile="OpenCOLLADAMaya">
+          <dgnode_type type="string">kFile</dgnode_type>
+          <image_sequence type="bool">0</image_sequence>
+          <originalMayaNodeId type="string">file2</originalMayaNodeId>
+        </technique>
+      </extra>
+    </image>
+  </library_images>
+  <library_geometries>
+    <geometry id="gfsdgsdfShape" name="gfsdgsdfShape">
+      <mesh>
+        <source id="gfsdgsdfShape-positions" name="gfsdgsdfShape-positions">
+          <float_array id="gfsdgsdfShape-positions-array" count="168">46.45855 32.21079 28.8905 46.45855 32.2108 -28.8905 -46.45856 32.21079 28.89051 -46.45856 32.2108 -28.89049 46.45855 34.15299 28.8905 46.45855 34.153 -28.8905 -46.45856 34.15299 28.89051 -46.45856 34.153 -28.89049 -34.87976 0 28.8905 -34.87976 0 26.5417 -46.45855 0 28.8905 -46.45855 0 26.5417 -34.87976 32.13049 28.89051 -34.87976 32.13049 26.54171 -46.45855 32.13049 28.89051 -46.45855 32.13049 26.54171 -44.18421 32.0831 26.41964 -41.83541 32.0831 26.41964 -44.18421 24.16759 26.41964 -41.83541 24.16759 26.41964 -44.18421 32.08311 -26.50507 -41.83541 32.08311 -26.50507 -44.18421 24.1676 -26.50507 -41.83541 24.1676 -26.50507 -34.87976 0 -28.89049 -34.87976 0 -26.54169 -46.45855 0 -28.89049 -46.45855 0 -26.54169 -34.87976 32.1305 -28.89049 -34.87976 32.1305 -26.54169 -46.45855 32.1305 -28.89049 -46.45855 32.1305 -26.54169 34.87976 0 28.8905 34.87976 0 26.5417 46.45856 0 28.8905 46.45856 0 26.5417 34.87976 32.13049 28.89051 34.87976 32.13049 26.54171 46.45856 32.13049 28.89051 46.45856 32.13049 26.54171 44.18422 32.0831 26.41964 41.83542 32.0831 26.41964 44.18422 24.16759 26.41964 41.83542 24.16759 26.41964 44.18422 32.08311 -26.50507 41.83541 32.08311 -26.50507 44.18422 24.1676 -26.50507 41.83542 24.1676 -26.50507 34.87976 0 -28.89049 34.87976 0 -26.54169 46.45856 0 -28.89049 46.45856 0 -26.54169 34.87976 32.1305 -28.89049 34.87976 32.1305 -26.54169 46.45856 32.1305 -28.89049 46.45856 32.1305 -26.54169</float_array>
+          <technique_common>
+            <accessor source="#gfsdgsdfShape-positions-array" count="56" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="gfsdgsdfShape-normals" name="gfsdgsdfShape-normals">
+          <float_array id="gfsdgsdfShape-normals-array" count="456">0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 1 0 0 1 0 0 1 0 0 1 0 1 0 0 1 0 0 1 0 0 1 0 0 0 0 -1 0 0 -1 0 0 -1 0 0 -0.9999999 -1 0 0 -1 0 0 -1 0 0 -1 0 0 0 0 1 0 0 1 0 0 1 0 0 0.9999999 0 1 0 0 0.9999999 0 0 1 0 0 1 0 0.9999999 0 0 1 0 0 1 0 0 1 0 0 0 0 -1 0 0 -1 0 0 -1 0 0 -1 -0.9999999 0 0 -1 0 0 -0.9999999 0 0 -0.9999999 0 0 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 -0.9999999 0 0 -1 0 0 -1 0 0 -0.9999999 0 1 0 0 1 0 0 1 0 0 1 0 1 0 0 1 0 0 1 0 0 1 0 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 0.9999999 0 0 0.9999999 0 0 0.9999999 0 0 0.9999999 0 0 0 0 1 0 0 1 0 0 1 0 0 1 -0.9999999 0 0 -1 0 0 -1 0 0 -1 0 0 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 1 0 0 1 0 0 1 0 0 1 0 -0.9999999 0 0 -1 0 0 -1 0 0 -1 0 0 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0.9999999 0 0 0.9999999 0 0 1 0 0 0.9999999 0 0 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 -1 0 0 -0.9999999 0 0 -1 0 0 -1 0 1 0 0 1 0 0 1 0 0 1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 1 0 0 1 0 0 1 0 0 1 0 0 0 1 0 0 1 0 0 0.9999999 0 0 1 0 -0.9999999 0 0 -0.9999999 0 0 -0.9999999 0 0 -0.9999999 0 0 0 0 1 0 0 1 0 0 1 0 0 1 0.9999999 0 0 1 0 0 1 0 0 1 0 0 0 0 -1 0 0 -1 0 0 -1 0 0 -1</float_array>
+          <technique_common>
+            <accessor source="#gfsdgsdfShape-normals-array" count="152" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="gfsdgsdfShape-map1" name="gfsdgsdfShape-map1">
+          <float_array id="gfsdgsdfShape-map1-array" count="304">0.7296592 0.6496652 0.7296592 0.362834 0.9080274 0.362834 0.9080274 0.6496652 0.001825487 0.004058682 0.4489847 0.004058682 0.4489847 0.7684096 0.001825487 0.7684096 0.5073647 0.4050319 0.5073647 0.002089036 0.5209082 0.002089036 0.5209082 0.4050319 0.4535838 0.6515206 0.4535838 0.003552083 0.4671306 0.003552083 0.4671306 0.6515206 0.4894378 0.4049352 0.4894378 0.001992044 0.5029813 0.001992044 0.5029813 0.4049352 0.4715108 0.6515206 0.4715108 0.003552083 0.4850543 0.003552083 0.4850543 0.6515206 0.8981701 0.6567991 0.9145479 0.6567991 0.9145479 0.7375444 0.8981701 0.7375444 0.5252917 0.3776697 0.5416694 0.3776697 0.5416694 0.6017351 0.5252917 0.6017351 0.6113412 0.3777464 0.6920865 0.3777464 0.6920865 0.6018115 0.6113412 0.6018115 0.6973906 0.3774429 0.7137684 0.3774429 0.7137684 0.601508 0.6973906 0.601508 0.4894378 0.6069838 0.5701831 0.6069838 0.5701831 0.831049 0.4894378 0.831049 0.263558 0.8285623 0.263558 0.7733629 0.2799389 0.7733629 0.2799389 0.8285623 0.3014512 0.8289666 0.2850703 0.8289666 0.2850703 0.7737671 0.3014512 0.7737671 0.5416726 0.3715231 0.5252917 0.3715231 0.5252917 0.002446826 0.5416726 0.002446826 0.7848586 0.3560469 0.7296592 0.3560469 0.7296592 0.003631613 0.7848586 0.003631613 0.5631817 0.3715231 0.5468041 0.3715231 0.5468041 0.002446826 0.5631817 0.002446826 0.5683165 0.003035613 0.623516 0.003035613 0.623516 0.3721119 0.5683165 0.3721119 0.4699617 0.6585919 0.4535838 0.6585919 0.4535838 0.7393371 0.4699617 0.7393371 0.5631819 0.3776697 0.5468041 0.3776697 0.5468041 0.6017351 0.5631819 0.6017351 0.6562357 0.6072177 0.5754872 0.6072177 0.5754872 0.8312829 0.6562357 0.8312829 0.6779145 0.6069142 0.6615367 0.6069142 0.6615367 0.8309793 0.6779145 0.8309793 0.7637975 0.6553879 0.683049 0.6553879 0.683049 0.8794531 0.7637975 0.8794531 0.914548 0.7446436 0.8981701 0.7446436 0.8981701 0.8253889 0.914548 0.8253889 0.5846943 0.3776697 0.5683165 0.3776697 0.5683165 0.6017351 0.5846943 0.6017351 0.849847 0.6556218 0.7690985 0.6556218 0.7690985 0.879687 0.849847 0.879687 0.8715244 0.6553183 0.8551465 0.6553183 0.8551465 0.8793834 0.8715244 0.8793834 0.08257397 0.7737163 0.001825487 0.7737163 0.001825487 0.9977815 0.08257397 0.9977815 0.3229636 0.8285623 0.3229636 0.7733629 0.3065827 0.7733629 0.3065827 0.8285623 0.3280951 0.8289666 0.344476 0.8289666 0.344476 0.7737671 0.3280951 0.7737671 0.6274754 0.3715231 0.6438563 0.3715231 0.6438563 0.002446826 0.6274754 0.002446826 0.7888182 0.3560469 0.8440177 0.3560469 0.8440177 0.003631613 0.7888182 0.003631613 0.6489878 0.3715231 0.6653656 0.3715231 0.6653656 0.002446826 0.6489878 0.002446826 0.7256996 0.003035613 0.6705002 0.003035613 0.6705002 0.3721119 0.7256996 0.3721119 0.4535838 0.7464364 0.4699617 0.7464364 0.4699617 0.8271816 0.4535838 0.8271816 0.5898288 0.3776697 0.6062067 0.3776697 0.6062067 0.6017351 0.5898288 0.6017351 0.08966712 0.7739429 0.1704156 0.7739429 0.1704156 0.9980081 0.08966712 0.9980081 0.8766583 0.6553183 0.8930362 0.6553183 0.8930362 0.8793834 0.8766583 0.8793834 0.1775087 0.7737163 0.2582572 0.7737163 0.2582572 0.9977815 0.1775087 0.9977815</float_array>
+          <technique_common>
+            <accessor source="#gfsdgsdfShape-map1-array" count="152" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="gfsdgsdfShape-vertices" name="gfsdgsdfShape-vertices">
+          <input semantic="POSITION" source="#gfsdgsdfShape-positions"/>
+        </vertices>
+        <triangles material="lambert4SG" count="76">
+          <input semantic="VERTEX" source="#gfsdgsdfShape-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#gfsdgsdfShape-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#gfsdgsdfShape-map1" offset="2" set="0"/>
+          <p>0 0 0 2 1 1 1 2 3 1 2 3 2 1 1 3 3 2 4 4 4 5 5 5 6 6 7 6 6 7 5 5 5 7 7 6 0 8 8 1 9 9 4 10 11 4 10 11 1 9 9 5 11 10 1 12 12 3 13 13 5 14 15 5 14 15 3 13 13 7 15 14 3 16 16 2 17 17 7 18 19 7 18 19 2 17 17 6 19 18 2 20 20 0 21 21 6 22 23 6 22 23 0 21 21 4 23 22 12 24 24 13 25 25 14 26 27 14 26 27 13 25 25 15 27 26 8 28 28 9 29 29 12 30 31 12 30 31 9 29 29 13 31 30 9 32 32 11 33 33 13 34 35 13 34 35 11 33 33 15 35 34 11 36 36 10 37 37 15 38 39 15 38 39 10 37 37 14 39 38 10 40 40 8 41 41 14 42 43 14 42 43 8 41 41 12 43 42 16 44 44 18 45 45 17 46 47 17 46 47 18 45 45 19 47 46 20 48 48 21 49 49 22 50 51 22 50 51 21 49 49 23 51 50 16 52 52 17 53 53 20 54 55 20 54 55 17 53 53 21 55 54 17 56 56 19 57 57 21 58 59 21 58 59 19 57 57 23 59 58 19 60 60 18 61 61 23 62 63 23 62 63 18 61 61 22 63 62 18 64 64 16 65 65 22 66 67 22 66 67 16 65 65 20 67 66 28 68 68 30 69 71 29 70 69 29 70 69 30 69 71 31 71 70 24 72 72 28 73 75 25 74 73 25 74 73 28 73 75 29 75 74 25 76 76 29 77 79 27 78 77 27 78 77 29 77 79 31 79 78 27 80 80 31 81 83 26 82 81 26 82 81 31 81 83 30 83 82 26 84 84 30 85 87 24 86 85 24 86 85 30 85 87 28 87 86 36 88 88 38 89 91 37 90 89 37 90 89 38 89 91 39 91 90 32 92 92 36 93 95 33 94 93 33 94 93 36 93 95 37 95 94 33 96 96 37 97 99 35 98 97 35 98 97 37 97 99 39 99 98 35 100 100 39 101 103 34 102 101 34 102 101 39 101 103 38 103 102 34 104 104 38 105 107 32 106 105 32 106 105 38 105 107 36 107 106 40 108 108 41 109 111 42 110 109 42 110 109 41 109 111 43 111 110 44 112 112 46 113 115 45 114 113 45 114 113 46 113 115 47 115 114 40 116 116 44 117 119 41 118 117 41 118 117 44 117 119 45 119 118 41 120 120 45 121 123 43 122 121 43 122 121 45 121 123 47 123 122 43 124 124 47 125 127 42 126 125 42 126 125 47 125 127 46 127 126 42 128 128 46 129 131 40 130 129 40 130 129 46 129 131 44 131 130 52 132 132 53 133 133 54 134 135 54 134 135 53 133 133 55 135 134 48 136 136 49 137 137 52 138 139 52 138 139 49 137 137 53 139 138 49 140 140 51 141 141 53 142 143 53 142 143 51 141 141 55 143 142 51 144 144 50 145 145 55 146 147 55 146 147 50 145 145 54 147 146 50 148 148 48 149 149 54 150 151 54 150 151 48 149 149 52 151 150</p>
+        </triangles>
+      </mesh>
+      <extra>
+        <technique profile="OpenCOLLADAMaya">
+          <originalMayaNodeId>gfsdgsdfShape</originalMayaNodeId>
+          <double_sided>1</double_sided>
+        </technique>
+      </extra>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="VisualSceneNode" name="untitled">
+      <node id="gfsdgsdf" name="gfsdgsdf" type="NODE">
+        <translate sid="translate">0 0 0</translate>
+        <rotate sid="rotateZ">0 0 1 0</rotate>
+        <rotate sid="rotateY">0 1 0 0</rotate>
+        <rotate sid="rotateX">1 0 0 0</rotate>
+        <scale sid="scale">1 1 1</scale>
+        <instance_geometry url="#gfsdgsdfShape">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="lambert4SG" target="#lambert4">
+                <bind_vertex_input semantic="TEX0" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+        <extra>
+          <technique profile="OpenCOLLADAMaya">
+            <originalMayaNodeId type="string">gfsdgsdf</originalMayaNodeId>
+          </technique>
+        </extra>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#VisualSceneNode"/>
+  </scene>
+</COLLADA>

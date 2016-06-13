@@ -1,0 +1,644 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B26E3C61CC8D7A40066772A /* JWPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B26E3C51CC8D7A40066772A /* JWPageControl.m */; };
+		1B26E3CF1CCA2C980066772A /* JWScrollBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B26E3CE1CCA2C980066772A /* JWScrollBar.m */; };
+		1B26E3D21CCA4E250066772A /* UIScrollView+JWUiCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B26E3D11CCA4E250066772A /* UIScrollView+JWUiCategory.m */; };
+		1B4C22551CC75C7C000BD81D /* JWPagingFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B4C22541CC75C7C000BD81D /* JWPagingFlowLayout.m */; };
+		1B7587C31CB11ACE000EC285 /* JWAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7587B41CB11ACE000EC285 /* JWAdapter.m */; };
+		1B7587C41CB11ACE000EC285 /* JWAdapterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7587B61CB11ACE000EC285 /* JWAdapterView.m */; };
+		1B7587C51CB11ACE000EC285 /* JWAnalogStick.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7587B81CB11ACE000EC285 /* JWAnalogStick.m */; };
+		1B7587C61CB11ACE000EC285 /* JWAppUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7587BA1CB11ACE000EC285 /* JWAppUtils.m */; };
+		1B7587C71CB11ACE000EC285 /* JWCameraLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7587BC1CB11ACE000EC285 /* JWCameraLayer.m */; };
+		1B7587C81CB11ACE000EC285 /* JWCameraView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7587BE1CB11ACE000EC285 /* JWCameraView.m */; };
+		1B7587C91CB11ACE000EC285 /* JWCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7587C01CB11ACE000EC285 /* JWCollectionView.m */; };
+		1B7587CA1CB11ACE000EC285 /* JWDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7587C21CB11ACE000EC285 /* JWDialog.m */; };
+		1B7587D71CB11B08000EC285 /* JWRadioViewGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7587CC1CB11B08000EC285 /* JWRadioViewGroup.m */; };
+		1B7587D81CB11B08000EC285 /* JWScaleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7587CE1CB11B08000EC285 /* JWScaleView.m */; };
+		1B7587D91CB11B08000EC285 /* JWScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7587D01CB11B08000EC285 /* JWScrollView.m */; };
+		1B7587DA1CB11B08000EC285 /* JWViewHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7587D21CB11B08000EC285 /* JWViewHolder.m */; };
+		1B7587DC1CB11B08000EC285 /* UIView+JWAdapterItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7587D61CB11B08000EC285 /* UIView+JWAdapterItemView.m */; };
+		1B7587E91CB11B5A000EC285 /* JWFrameLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7587DE1CB11B5A000EC285 /* JWFrameLayout.m */; };
+		1B7587EA1CB11B5A000EC285 /* JWLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7587E01CB11B5A000EC285 /* JWLayout.m */; };
+		1B7587EB1CB11B5A000EC285 /* JWLayoutParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7587E21CB11B5A000EC285 /* JWLayoutParams.m */; };
+		1B7587EC1CB11B5A000EC285 /* JWLinearLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7587E41CB11B5A000EC285 /* JWLinearLayout.m */; };
+		1B7587ED1CB11B5A000EC285 /* JWRelativeLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7587E61CB11B5A000EC285 /* JWRelativeLayout.m */; };
+		1B7587EE1CB11B5A000EC285 /* UIView+JWUiLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7587E81CB11B5A000EC285 /* UIView+JWUiLayout.m */; };
+		1B7587F11CB11B6E000EC285 /* jw_app.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7587F01CB11B6E000EC285 /* jw_app.m */; };
+		1B7588261CB11B85000EC285 /* AVCaptureDevice+JWAppCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7587F31CB11B85000EC285 /* AVCaptureDevice+JWAppCategory.m */; };
+		1B7588271CB11B85000EC285 /* JWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7587F51CB11B85000EC285 /* JWAppDelegate.m */; };
+		1B7588281CB11B85000EC285 /* JWAppEvents.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7587F71CB11B85000EC285 /* JWAppEvents.m */; };
+		1B7588291CB11B85000EC285 /* JWAppPredef.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7587F91CB11B85000EC285 /* JWAppPredef.m */; };
+		1B75882A1CB11B85000EC285 /* JWAppState.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7587FB1CB11B85000EC285 /* JWAppState.m */; };
+		1B75882B1CB11B85000EC285 /* JWAppStateMachine.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7587FD1CB11B85000EC285 /* JWAppStateMachine.m */; };
+		1B75882C1CB11B85000EC285 /* JWCameraCapturer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7587FF1CB11B85000EC285 /* JWCameraCapturer.m */; };
+		1B75882D1CB11B85000EC285 /* JWCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7588011CB11B85000EC285 /* JWCommand.m */; };
+		1B75882E1CB11B85000EC285 /* JWCommandMachine.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7588031CB11B85000EC285 /* JWCommandMachine.m */; };
+		1B75882F1CB11B85000EC285 /* JWControllerState.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7588051CB11B85000EC285 /* JWControllerState.m */; };
+		1B7588301CB11B85000EC285 /* JWDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7588071CB11B85000EC285 /* JWDataSet.m */; };
+		1B7588311CB11B85000EC285 /* JWGestureEvents.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7588091CB11B85000EC285 /* JWGestureEvents.m */; };
+		1B7588331CB11B85000EC285 /* JWStateController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75880D1CB11B85000EC285 /* JWStateController.m */; };
+		1B7588341CB11B85000EC285 /* JWViewEvents.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75880F1CB11B85000EC285 /* JWViewEvents.m */; };
+		1B7588351CB11B85000EC285 /* NSBundle+JWUiCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7588111CB11B85000EC285 /* NSBundle+JWUiCategory.m */; };
+		1B7588361CB11B85000EC285 /* UIButton+JWUiCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7588131CB11B85000EC285 /* UIButton+JWUiCategory.m */; };
+		1B7588371CB11B85000EC285 /* UIControl+JWUiCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7588151CB11B85000EC285 /* UIControl+JWUiCategory.m */; };
+		1B7588381CB11B85000EC285 /* UIImageView+JWUiCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7588171CB11B85000EC285 /* UIImageView+JWUiCategory.m */; };
+		1B7588391CB11B85000EC285 /* UILabel+JWUiCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7588191CB11B85000EC285 /* UILabel+JWUiCategory.m */; };
+		1B75883A1CB11B85000EC285 /* UILongPressGestureRecognizer+JWAppCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75881B1CB11B85000EC285 /* UILongPressGestureRecognizer+JWAppCategory.m */; };
+		1B75883B1CB11B85000EC285 /* UIPanGestureRecognizer+JWAppCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75881D1CB11B85000EC285 /* UIPanGestureRecognizer+JWAppCategory.m */; };
+		1B75883C1CB11B85000EC285 /* UITapGestureRecognizer+JWAppCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75881F1CB11B85000EC285 /* UITapGestureRecognizer+JWAppCategory.m */; };
+		1B75883D1CB11B85000EC285 /* UITextField+JWUiCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7588211CB11B85000EC285 /* UITextField+JWUiCategory.m */; };
+		1B75883E1CB11B85000EC285 /* UITouch+JWAppCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7588231CB11B85000EC285 /* UITouch+JWAppCategory.m */; };
+		1B75883F1CB11B85000EC285 /* UIView+JWUiCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7588251CB11B85000EC285 /* UIView+JWUiCategory.m */; };
+		1B7800AD1CC0E5E000E8459F /* JWLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7800AC1CC0E5E000E8459F /* JWLabel.m */; };
+		1B7800B71CC0F8BE00E8459F /* UIView+JWUiEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7800B61CC0F8BE00E8459F /* UIView+JWUiEffect.m */; };
+		1B7800EE1CC215C100E8459F /* JWUiCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7800ED1CC215C100E8459F /* JWUiCommon.m */; };
+		1B7800F11CC21F6000E8459F /* JWImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7800F01CC21F6000E8459F /* JWImageView.m */; };
+		1B78011C1CC38D8400E8459F /* JWUiEffectParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B78011B1CC38D8400E8459F /* JWUiEffectParams.m */; };
+		1B90982D1CC3C8AB000CAABF /* UIFont+JWUiCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B90982C1CC3C8AB000CAABF /* UIFont+JWUiCategory.m */; };
+		80449C131CFE94AE002B493A /* UISlider+JWUiCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 80449C121CFE94AE002B493A /* UISlider+JWUiCategory.m */; };
+		D72420CC1A711DFB00BEE609 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D72420CB1A711DFB00BEE609 /* Foundation.framework */; };
+		D72420CE1A711E0000BEE609 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D72420CD1A711E0000BEE609 /* UIKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D7241E5C1A710B6900BEE609 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1B26E3C41CC8D7A40066772A /* JWPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWPageControl.h; path = jw/JWPageControl.h; sourceTree = SOURCE_ROOT; };
+		1B26E3C51CC8D7A40066772A /* JWPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWPageControl.m; path = jw/JWPageControl.m; sourceTree = SOURCE_ROOT; };
+		1B26E3CD1CCA2C980066772A /* JWScrollBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWScrollBar.h; path = jw/JWScrollBar.h; sourceTree = SOURCE_ROOT; };
+		1B26E3CE1CCA2C980066772A /* JWScrollBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWScrollBar.m; path = jw/JWScrollBar.m; sourceTree = SOURCE_ROOT; };
+		1B26E3D01CCA4E250066772A /* UIScrollView+JWUiCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+JWUiCategory.h"; path = "jw/UIScrollView+JWUiCategory.h"; sourceTree = SOURCE_ROOT; };
+		1B26E3D11CCA4E250066772A /* UIScrollView+JWUiCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+JWUiCategory.m"; path = "jw/UIScrollView+JWUiCategory.m"; sourceTree = SOURCE_ROOT; };
+		1B4C22531CC75C7C000BD81D /* JWPagingFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWPagingFlowLayout.h; path = jw/JWPagingFlowLayout.h; sourceTree = SOURCE_ROOT; };
+		1B4C22541CC75C7C000BD81D /* JWPagingFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWPagingFlowLayout.m; path = jw/JWPagingFlowLayout.m; sourceTree = SOURCE_ROOT; };
+		1B7587B31CB11ACE000EC285 /* JWAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWAdapter.h; path = jw/JWAdapter.h; sourceTree = SOURCE_ROOT; };
+		1B7587B41CB11ACE000EC285 /* JWAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWAdapter.m; path = jw/JWAdapter.m; sourceTree = SOURCE_ROOT; };
+		1B7587B51CB11ACE000EC285 /* JWAdapterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWAdapterView.h; path = jw/JWAdapterView.h; sourceTree = SOURCE_ROOT; };
+		1B7587B61CB11ACE000EC285 /* JWAdapterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWAdapterView.m; path = jw/JWAdapterView.m; sourceTree = SOURCE_ROOT; };
+		1B7587B71CB11ACE000EC285 /* JWAnalogStick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWAnalogStick.h; path = jw/JWAnalogStick.h; sourceTree = SOURCE_ROOT; };
+		1B7587B81CB11ACE000EC285 /* JWAnalogStick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWAnalogStick.m; path = jw/JWAnalogStick.m; sourceTree = SOURCE_ROOT; };
+		1B7587B91CB11ACE000EC285 /* JWAppUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWAppUtils.h; path = jw/JWAppUtils.h; sourceTree = SOURCE_ROOT; };
+		1B7587BA1CB11ACE000EC285 /* JWAppUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWAppUtils.m; path = jw/JWAppUtils.m; sourceTree = SOURCE_ROOT; };
+		1B7587BB1CB11ACE000EC285 /* JWCameraLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWCameraLayer.h; path = jw/JWCameraLayer.h; sourceTree = SOURCE_ROOT; };
+		1B7587BC1CB11ACE000EC285 /* JWCameraLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWCameraLayer.m; path = jw/JWCameraLayer.m; sourceTree = SOURCE_ROOT; };
+		1B7587BD1CB11ACE000EC285 /* JWCameraView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWCameraView.h; path = jw/JWCameraView.h; sourceTree = SOURCE_ROOT; };
+		1B7587BE1CB11ACE000EC285 /* JWCameraView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWCameraView.m; path = jw/JWCameraView.m; sourceTree = SOURCE_ROOT; };
+		1B7587BF1CB11ACE000EC285 /* JWCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWCollectionView.h; path = jw/JWCollectionView.h; sourceTree = SOURCE_ROOT; };
+		1B7587C01CB11ACE000EC285 /* JWCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWCollectionView.m; path = jw/JWCollectionView.m; sourceTree = SOURCE_ROOT; };
+		1B7587C11CB11ACE000EC285 /* JWDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWDialog.h; path = jw/JWDialog.h; sourceTree = SOURCE_ROOT; };
+		1B7587C21CB11ACE000EC285 /* JWDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWDialog.m; path = jw/JWDialog.m; sourceTree = SOURCE_ROOT; };
+		1B7587CB1CB11B08000EC285 /* JWRadioViewGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWRadioViewGroup.h; path = jw/JWRadioViewGroup.h; sourceTree = SOURCE_ROOT; };
+		1B7587CC1CB11B08000EC285 /* JWRadioViewGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWRadioViewGroup.m; path = jw/JWRadioViewGroup.m; sourceTree = SOURCE_ROOT; };
+		1B7587CD1CB11B08000EC285 /* JWScaleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWScaleView.h; path = jw/JWScaleView.h; sourceTree = SOURCE_ROOT; };
+		1B7587CE1CB11B08000EC285 /* JWScaleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWScaleView.m; path = jw/JWScaleView.m; sourceTree = SOURCE_ROOT; };
+		1B7587CF1CB11B08000EC285 /* JWScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWScrollView.h; path = jw/JWScrollView.h; sourceTree = SOURCE_ROOT; };
+		1B7587D01CB11B08000EC285 /* JWScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWScrollView.m; path = jw/JWScrollView.m; sourceTree = SOURCE_ROOT; };
+		1B7587D11CB11B08000EC285 /* JWViewHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWViewHolder.h; path = jw/JWViewHolder.h; sourceTree = SOURCE_ROOT; };
+		1B7587D21CB11B08000EC285 /* JWViewHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWViewHolder.m; path = jw/JWViewHolder.m; sourceTree = SOURCE_ROOT; };
+		1B7587D51CB11B08000EC285 /* UIView+JWAdapterItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+JWAdapterItemView.h"; path = "jw/UIView+JWAdapterItemView.h"; sourceTree = SOURCE_ROOT; };
+		1B7587D61CB11B08000EC285 /* UIView+JWAdapterItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+JWAdapterItemView.m"; path = "jw/UIView+JWAdapterItemView.m"; sourceTree = SOURCE_ROOT; };
+		1B7587DD1CB11B5A000EC285 /* JWFrameLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWFrameLayout.h; path = jw/JWFrameLayout.h; sourceTree = SOURCE_ROOT; };
+		1B7587DE1CB11B5A000EC285 /* JWFrameLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWFrameLayout.m; path = jw/JWFrameLayout.m; sourceTree = SOURCE_ROOT; };
+		1B7587DF1CB11B5A000EC285 /* JWLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWLayout.h; path = jw/JWLayout.h; sourceTree = SOURCE_ROOT; };
+		1B7587E01CB11B5A000EC285 /* JWLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWLayout.m; path = jw/JWLayout.m; sourceTree = SOURCE_ROOT; };
+		1B7587E11CB11B5A000EC285 /* JWLayoutParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWLayoutParams.h; path = jw/JWLayoutParams.h; sourceTree = SOURCE_ROOT; };
+		1B7587E21CB11B5A000EC285 /* JWLayoutParams.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWLayoutParams.m; path = jw/JWLayoutParams.m; sourceTree = SOURCE_ROOT; };
+		1B7587E31CB11B5A000EC285 /* JWLinearLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWLinearLayout.h; path = jw/JWLinearLayout.h; sourceTree = SOURCE_ROOT; };
+		1B7587E41CB11B5A000EC285 /* JWLinearLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWLinearLayout.m; path = jw/JWLinearLayout.m; sourceTree = SOURCE_ROOT; };
+		1B7587E51CB11B5A000EC285 /* JWRelativeLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWRelativeLayout.h; path = jw/JWRelativeLayout.h; sourceTree = SOURCE_ROOT; };
+		1B7587E61CB11B5A000EC285 /* JWRelativeLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWRelativeLayout.m; path = jw/JWRelativeLayout.m; sourceTree = SOURCE_ROOT; };
+		1B7587E71CB11B5A000EC285 /* UIView+JWUiLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+JWUiLayout.h"; path = "jw/UIView+JWUiLayout.h"; sourceTree = SOURCE_ROOT; };
+		1B7587E81CB11B5A000EC285 /* UIView+JWUiLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+JWUiLayout.m"; path = "jw/UIView+JWUiLayout.m"; sourceTree = SOURCE_ROOT; };
+		1B7587EF1CB11B6E000EC285 /* jw_app.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = jw_app.h; path = jw/jw_app.h; sourceTree = SOURCE_ROOT; };
+		1B7587F01CB11B6E000EC285 /* jw_app.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = jw_app.m; path = jw/jw_app.m; sourceTree = SOURCE_ROOT; };
+		1B7587F21CB11B85000EC285 /* AVCaptureDevice+JWAppCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AVCaptureDevice+JWAppCategory.h"; path = "jw/AVCaptureDevice+JWAppCategory.h"; sourceTree = SOURCE_ROOT; };
+		1B7587F31CB11B85000EC285 /* AVCaptureDevice+JWAppCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "AVCaptureDevice+JWAppCategory.m"; path = "jw/AVCaptureDevice+JWAppCategory.m"; sourceTree = SOURCE_ROOT; };
+		1B7587F41CB11B85000EC285 /* JWAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWAppDelegate.h; path = jw/JWAppDelegate.h; sourceTree = SOURCE_ROOT; };
+		1B7587F51CB11B85000EC285 /* JWAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWAppDelegate.m; path = jw/JWAppDelegate.m; sourceTree = SOURCE_ROOT; };
+		1B7587F61CB11B85000EC285 /* JWAppEvents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWAppEvents.h; path = jw/JWAppEvents.h; sourceTree = SOURCE_ROOT; };
+		1B7587F71CB11B85000EC285 /* JWAppEvents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWAppEvents.m; path = jw/JWAppEvents.m; sourceTree = SOURCE_ROOT; };
+		1B7587F81CB11B85000EC285 /* JWAppPredef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWAppPredef.h; path = jw/JWAppPredef.h; sourceTree = SOURCE_ROOT; };
+		1B7587F91CB11B85000EC285 /* JWAppPredef.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWAppPredef.m; path = jw/JWAppPredef.m; sourceTree = SOURCE_ROOT; };
+		1B7587FA1CB11B85000EC285 /* JWAppState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWAppState.h; path = jw/JWAppState.h; sourceTree = SOURCE_ROOT; };
+		1B7587FB1CB11B85000EC285 /* JWAppState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWAppState.m; path = jw/JWAppState.m; sourceTree = SOURCE_ROOT; };
+		1B7587FC1CB11B85000EC285 /* JWAppStateMachine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWAppStateMachine.h; path = jw/JWAppStateMachine.h; sourceTree = SOURCE_ROOT; };
+		1B7587FD1CB11B85000EC285 /* JWAppStateMachine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWAppStateMachine.m; path = jw/JWAppStateMachine.m; sourceTree = SOURCE_ROOT; };
+		1B7587FE1CB11B85000EC285 /* JWCameraCapturer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWCameraCapturer.h; path = jw/JWCameraCapturer.h; sourceTree = SOURCE_ROOT; };
+		1B7587FF1CB11B85000EC285 /* JWCameraCapturer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWCameraCapturer.m; path = jw/JWCameraCapturer.m; sourceTree = SOURCE_ROOT; };
+		1B7588001CB11B85000EC285 /* JWCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWCommand.h; path = jw/JWCommand.h; sourceTree = SOURCE_ROOT; };
+		1B7588011CB11B85000EC285 /* JWCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWCommand.m; path = jw/JWCommand.m; sourceTree = SOURCE_ROOT; };
+		1B7588021CB11B85000EC285 /* JWCommandMachine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWCommandMachine.h; path = jw/JWCommandMachine.h; sourceTree = SOURCE_ROOT; };
+		1B7588031CB11B85000EC285 /* JWCommandMachine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWCommandMachine.m; path = jw/JWCommandMachine.m; sourceTree = SOURCE_ROOT; };
+		1B7588041CB11B85000EC285 /* JWControllerState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWControllerState.h; path = jw/JWControllerState.h; sourceTree = SOURCE_ROOT; };
+		1B7588051CB11B85000EC285 /* JWControllerState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWControllerState.m; path = jw/JWControllerState.m; sourceTree = SOURCE_ROOT; };
+		1B7588061CB11B85000EC285 /* JWDataSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWDataSet.h; path = jw/JWDataSet.h; sourceTree = SOURCE_ROOT; };
+		1B7588071CB11B85000EC285 /* JWDataSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWDataSet.m; path = jw/JWDataSet.m; sourceTree = SOURCE_ROOT; };
+		1B7588081CB11B85000EC285 /* JWGestureEvents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWGestureEvents.h; path = jw/JWGestureEvents.h; sourceTree = SOURCE_ROOT; };
+		1B7588091CB11B85000EC285 /* JWGestureEvents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWGestureEvents.m; path = jw/JWGestureEvents.m; sourceTree = SOURCE_ROOT; };
+		1B75880C1CB11B85000EC285 /* JWStateController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWStateController.h; path = jw/JWStateController.h; sourceTree = SOURCE_ROOT; };
+		1B75880D1CB11B85000EC285 /* JWStateController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWStateController.m; path = jw/JWStateController.m; sourceTree = SOURCE_ROOT; };
+		1B75880E1CB11B85000EC285 /* JWViewEvents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWViewEvents.h; path = jw/JWViewEvents.h; sourceTree = SOURCE_ROOT; };
+		1B75880F1CB11B85000EC285 /* JWViewEvents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWViewEvents.m; path = jw/JWViewEvents.m; sourceTree = SOURCE_ROOT; };
+		1B7588101CB11B85000EC285 /* NSBundle+JWUiCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSBundle+JWUiCategory.h"; path = "jw/NSBundle+JWUiCategory.h"; sourceTree = SOURCE_ROOT; };
+		1B7588111CB11B85000EC285 /* NSBundle+JWUiCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSBundle+JWUiCategory.m"; path = "jw/NSBundle+JWUiCategory.m"; sourceTree = SOURCE_ROOT; };
+		1B7588121CB11B85000EC285 /* UIButton+JWUiCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIButton+JWUiCategory.h"; path = "jw/UIButton+JWUiCategory.h"; sourceTree = SOURCE_ROOT; };
+		1B7588131CB11B85000EC285 /* UIButton+JWUiCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIButton+JWUiCategory.m"; path = "jw/UIButton+JWUiCategory.m"; sourceTree = SOURCE_ROOT; };
+		1B7588141CB11B85000EC285 /* UIControl+JWUiCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIControl+JWUiCategory.h"; path = "jw/UIControl+JWUiCategory.h"; sourceTree = SOURCE_ROOT; };
+		1B7588151CB11B85000EC285 /* UIControl+JWUiCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIControl+JWUiCategory.m"; path = "jw/UIControl+JWUiCategory.m"; sourceTree = SOURCE_ROOT; };
+		1B7588161CB11B85000EC285 /* UIImageView+JWUiCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+JWUiCategory.h"; path = "jw/UIImageView+JWUiCategory.h"; sourceTree = SOURCE_ROOT; };
+		1B7588171CB11B85000EC285 /* UIImageView+JWUiCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+JWUiCategory.m"; path = "jw/UIImageView+JWUiCategory.m"; sourceTree = SOURCE_ROOT; };
+		1B7588181CB11B85000EC285 /* UILabel+JWUiCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UILabel+JWUiCategory.h"; path = "jw/UILabel+JWUiCategory.h"; sourceTree = SOURCE_ROOT; };
+		1B7588191CB11B85000EC285 /* UILabel+JWUiCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UILabel+JWUiCategory.m"; path = "jw/UILabel+JWUiCategory.m"; sourceTree = SOURCE_ROOT; };
+		1B75881A1CB11B85000EC285 /* UILongPressGestureRecognizer+JWAppCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UILongPressGestureRecognizer+JWAppCategory.h"; path = "jw/UILongPressGestureRecognizer+JWAppCategory.h"; sourceTree = SOURCE_ROOT; };
+		1B75881B1CB11B85000EC285 /* UILongPressGestureRecognizer+JWAppCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UILongPressGestureRecognizer+JWAppCategory.m"; path = "jw/UILongPressGestureRecognizer+JWAppCategory.m"; sourceTree = SOURCE_ROOT; };
+		1B75881C1CB11B85000EC285 /* UIPanGestureRecognizer+JWAppCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIPanGestureRecognizer+JWAppCategory.h"; path = "jw/UIPanGestureRecognizer+JWAppCategory.h"; sourceTree = SOURCE_ROOT; };
+		1B75881D1CB11B85000EC285 /* UIPanGestureRecognizer+JWAppCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIPanGestureRecognizer+JWAppCategory.m"; path = "jw/UIPanGestureRecognizer+JWAppCategory.m"; sourceTree = SOURCE_ROOT; };
+		1B75881E1CB11B85000EC285 /* UITapGestureRecognizer+JWAppCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UITapGestureRecognizer+JWAppCategory.h"; path = "jw/UITapGestureRecognizer+JWAppCategory.h"; sourceTree = SOURCE_ROOT; };
+		1B75881F1CB11B85000EC285 /* UITapGestureRecognizer+JWAppCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UITapGestureRecognizer+JWAppCategory.m"; path = "jw/UITapGestureRecognizer+JWAppCategory.m"; sourceTree = SOURCE_ROOT; };
+		1B7588201CB11B85000EC285 /* UITextField+JWUiCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UITextField+JWUiCategory.h"; path = "jw/UITextField+JWUiCategory.h"; sourceTree = SOURCE_ROOT; };
+		1B7588211CB11B85000EC285 /* UITextField+JWUiCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UITextField+JWUiCategory.m"; path = "jw/UITextField+JWUiCategory.m"; sourceTree = SOURCE_ROOT; };
+		1B7588221CB11B85000EC285 /* UITouch+JWAppCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UITouch+JWAppCategory.h"; path = "jw/UITouch+JWAppCategory.h"; sourceTree = SOURCE_ROOT; };
+		1B7588231CB11B85000EC285 /* UITouch+JWAppCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UITouch+JWAppCategory.m"; path = "jw/UITouch+JWAppCategory.m"; sourceTree = SOURCE_ROOT; };
+		1B7588241CB11B85000EC285 /* UIView+JWUiCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+JWUiCategory.h"; path = "jw/UIView+JWUiCategory.h"; sourceTree = SOURCE_ROOT; };
+		1B7588251CB11B85000EC285 /* UIView+JWUiCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+JWUiCategory.m"; path = "jw/UIView+JWUiCategory.m"; sourceTree = SOURCE_ROOT; };
+		1B7800AB1CC0E5E000E8459F /* JWLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWLabel.h; path = jw/JWLabel.h; sourceTree = SOURCE_ROOT; };
+		1B7800AC1CC0E5E000E8459F /* JWLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWLabel.m; path = jw/JWLabel.m; sourceTree = SOURCE_ROOT; };
+		1B7800B51CC0F8BE00E8459F /* UIView+JWUiEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+JWUiEffect.h"; path = "jw/UIView+JWUiEffect.h"; sourceTree = SOURCE_ROOT; };
+		1B7800B61CC0F8BE00E8459F /* UIView+JWUiEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+JWUiEffect.m"; path = "jw/UIView+JWUiEffect.m"; sourceTree = SOURCE_ROOT; };
+		1B7800EC1CC215C100E8459F /* JWUiCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWUiCommon.h; path = jw/JWUiCommon.h; sourceTree = SOURCE_ROOT; };
+		1B7800ED1CC215C100E8459F /* JWUiCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWUiCommon.m; path = jw/JWUiCommon.m; sourceTree = SOURCE_ROOT; };
+		1B7800EF1CC21F6000E8459F /* JWImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWImageView.h; path = jw/JWImageView.h; sourceTree = SOURCE_ROOT; };
+		1B7800F01CC21F6000E8459F /* JWImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWImageView.m; path = jw/JWImageView.m; sourceTree = SOURCE_ROOT; };
+		1B78011A1CC38D8400E8459F /* JWUiEffectParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWUiEffectParams.h; path = jw/JWUiEffectParams.h; sourceTree = SOURCE_ROOT; };
+		1B78011B1CC38D8400E8459F /* JWUiEffectParams.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWUiEffectParams.m; path = jw/JWUiEffectParams.m; sourceTree = SOURCE_ROOT; };
+		1B90982B1CC3C8AB000CAABF /* UIFont+JWUiCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIFont+JWUiCategory.h"; path = "jw/UIFont+JWUiCategory.h"; sourceTree = SOURCE_ROOT; };
+		1B90982C1CC3C8AB000CAABF /* UIFont+JWUiCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIFont+JWUiCategory.m"; path = "jw/UIFont+JWUiCategory.m"; sourceTree = SOURCE_ROOT; };
+		80449C111CFE94AE002B493A /* UISlider+JWUiCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UISlider+JWUiCategory.h"; path = "jw/UISlider+JWUiCategory.h"; sourceTree = SOURCE_ROOT; };
+		80449C121CFE94AE002B493A /* UISlider+JWUiCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UISlider+JWUiCategory.m"; path = "jw/UISlider+JWUiCategory.m"; sourceTree = SOURCE_ROOT; };
+		D7241E5E1A710B6900BEE609 /* libjw_app.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libjw_app.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D72420CB1A711DFB00BEE609 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D72420CD1A711E0000BEE609 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D7241E5B1A710B6900BEE609 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D72420CC1A711DFB00BEE609 /* Foundation.framework in Frameworks */,
+				D72420CE1A711E0000BEE609 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B7800AE1CC0EBDA00E8459F /* app.ui.effect */ = {
+			isa = PBXGroup;
+			children = (
+				1B78011A1CC38D8400E8459F /* JWUiEffectParams.h */,
+				1B78011B1CC38D8400E8459F /* JWUiEffectParams.m */,
+				1B7800B51CC0F8BE00E8459F /* UIView+JWUiEffect.h */,
+				1B7800B61CC0F8BE00E8459F /* UIView+JWUiEffect.m */,
+			);
+			name = app.ui.effect;
+			sourceTree = "<group>";
+		};
+		D721AE041A73AAC700DA9ACA /* app */ = {
+			isa = PBXGroup;
+			children = (
+				1B7587F21CB11B85000EC285 /* AVCaptureDevice+JWAppCategory.h */,
+				1B7587F31CB11B85000EC285 /* AVCaptureDevice+JWAppCategory.m */,
+				1B7587F41CB11B85000EC285 /* JWAppDelegate.h */,
+				1B7587F51CB11B85000EC285 /* JWAppDelegate.m */,
+				1B7587F61CB11B85000EC285 /* JWAppEvents.h */,
+				1B7587F71CB11B85000EC285 /* JWAppEvents.m */,
+				1B7587F81CB11B85000EC285 /* JWAppPredef.h */,
+				1B7587F91CB11B85000EC285 /* JWAppPredef.m */,
+				1B7587FA1CB11B85000EC285 /* JWAppState.h */,
+				1B7587FB1CB11B85000EC285 /* JWAppState.m */,
+				1B7587FC1CB11B85000EC285 /* JWAppStateMachine.h */,
+				1B7587FD1CB11B85000EC285 /* JWAppStateMachine.m */,
+				1B7587FE1CB11B85000EC285 /* JWCameraCapturer.h */,
+				1B7587FF1CB11B85000EC285 /* JWCameraCapturer.m */,
+				1B7588001CB11B85000EC285 /* JWCommand.h */,
+				1B7588011CB11B85000EC285 /* JWCommand.m */,
+				1B7588021CB11B85000EC285 /* JWCommandMachine.h */,
+				1B7588031CB11B85000EC285 /* JWCommandMachine.m */,
+				1B7588041CB11B85000EC285 /* JWControllerState.h */,
+				1B7588051CB11B85000EC285 /* JWControllerState.m */,
+				1B7588061CB11B85000EC285 /* JWDataSet.h */,
+				1B7588071CB11B85000EC285 /* JWDataSet.m */,
+				1B7588081CB11B85000EC285 /* JWGestureEvents.h */,
+				1B7588091CB11B85000EC285 /* JWGestureEvents.m */,
+				1B75880C1CB11B85000EC285 /* JWStateController.h */,
+				1B75880D1CB11B85000EC285 /* JWStateController.m */,
+				1B75880E1CB11B85000EC285 /* JWViewEvents.h */,
+				1B75880F1CB11B85000EC285 /* JWViewEvents.m */,
+				1B7588101CB11B85000EC285 /* NSBundle+JWUiCategory.h */,
+				1B7588111CB11B85000EC285 /* NSBundle+JWUiCategory.m */,
+				1B7588121CB11B85000EC285 /* UIButton+JWUiCategory.h */,
+				1B7588131CB11B85000EC285 /* UIButton+JWUiCategory.m */,
+				1B7588141CB11B85000EC285 /* UIControl+JWUiCategory.h */,
+				1B7588151CB11B85000EC285 /* UIControl+JWUiCategory.m */,
+				1B7588161CB11B85000EC285 /* UIImageView+JWUiCategory.h */,
+				1B7588171CB11B85000EC285 /* UIImageView+JWUiCategory.m */,
+				1B7588181CB11B85000EC285 /* UILabel+JWUiCategory.h */,
+				1B7588191CB11B85000EC285 /* UILabel+JWUiCategory.m */,
+				1B75881A1CB11B85000EC285 /* UILongPressGestureRecognizer+JWAppCategory.h */,
+				1B75881B1CB11B85000EC285 /* UILongPressGestureRecognizer+JWAppCategory.m */,
+				1B75881C1CB11B85000EC285 /* UIPanGestureRecognizer+JWAppCategory.h */,
+				1B75881D1CB11B85000EC285 /* UIPanGestureRecognizer+JWAppCategory.m */,
+				80449C111CFE94AE002B493A /* UISlider+JWUiCategory.h */,
+				80449C121CFE94AE002B493A /* UISlider+JWUiCategory.m */,
+				1B75881E1CB11B85000EC285 /* UITapGestureRecognizer+JWAppCategory.h */,
+				1B75881F1CB11B85000EC285 /* UITapGestureRecognizer+JWAppCategory.m */,
+				1B7588201CB11B85000EC285 /* UITextField+JWUiCategory.h */,
+				1B7588211CB11B85000EC285 /* UITextField+JWUiCategory.m */,
+				1B7588221CB11B85000EC285 /* UITouch+JWAppCategory.h */,
+				1B7588231CB11B85000EC285 /* UITouch+JWAppCategory.m */,
+				1B7588241CB11B85000EC285 /* UIView+JWUiCategory.h */,
+				1B7588251CB11B85000EC285 /* UIView+JWUiCategory.m */,
+			);
+			name = app;
+			sourceTree = "<group>";
+		};
+		D721AE051A73AACB00DA9ACA /* app.ui */ = {
+			isa = PBXGroup;
+			children = (
+				1B7587B31CB11ACE000EC285 /* JWAdapter.h */,
+				1B7587B41CB11ACE000EC285 /* JWAdapter.m */,
+				1B7587B51CB11ACE000EC285 /* JWAdapterView.h */,
+				1B7587B61CB11ACE000EC285 /* JWAdapterView.m */,
+				1B7587B71CB11ACE000EC285 /* JWAnalogStick.h */,
+				1B7587B81CB11ACE000EC285 /* JWAnalogStick.m */,
+				1B7587B91CB11ACE000EC285 /* JWAppUtils.h */,
+				1B7587BA1CB11ACE000EC285 /* JWAppUtils.m */,
+				1B7587BB1CB11ACE000EC285 /* JWCameraLayer.h */,
+				1B7587BC1CB11ACE000EC285 /* JWCameraLayer.m */,
+				1B7587BD1CB11ACE000EC285 /* JWCameraView.h */,
+				1B7587BE1CB11ACE000EC285 /* JWCameraView.m */,
+				1B7587BF1CB11ACE000EC285 /* JWCollectionView.h */,
+				1B7587C01CB11ACE000EC285 /* JWCollectionView.m */,
+				1B7587C11CB11ACE000EC285 /* JWDialog.h */,
+				1B7587C21CB11ACE000EC285 /* JWDialog.m */,
+				1B7800EF1CC21F6000E8459F /* JWImageView.h */,
+				1B7800F01CC21F6000E8459F /* JWImageView.m */,
+				1B7800AB1CC0E5E000E8459F /* JWLabel.h */,
+				1B7800AC1CC0E5E000E8459F /* JWLabel.m */,
+				1B26E3C41CC8D7A40066772A /* JWPageControl.h */,
+				1B26E3C51CC8D7A40066772A /* JWPageControl.m */,
+				1B4C22531CC75C7C000BD81D /* JWPagingFlowLayout.h */,
+				1B4C22541CC75C7C000BD81D /* JWPagingFlowLayout.m */,
+				1B7587CB1CB11B08000EC285 /* JWRadioViewGroup.h */,
+				1B7587CC1CB11B08000EC285 /* JWRadioViewGroup.m */,
+				1B7587CD1CB11B08000EC285 /* JWScaleView.h */,
+				1B7587CE1CB11B08000EC285 /* JWScaleView.m */,
+				1B26E3CD1CCA2C980066772A /* JWScrollBar.h */,
+				1B26E3CE1CCA2C980066772A /* JWScrollBar.m */,
+				1B7587CF1CB11B08000EC285 /* JWScrollView.h */,
+				1B7587D01CB11B08000EC285 /* JWScrollView.m */,
+				1B7800EC1CC215C100E8459F /* JWUiCommon.h */,
+				1B7800ED1CC215C100E8459F /* JWUiCommon.m */,
+				1B7587D11CB11B08000EC285 /* JWViewHolder.h */,
+				1B7587D21CB11B08000EC285 /* JWViewHolder.m */,
+				1B90982B1CC3C8AB000CAABF /* UIFont+JWUiCategory.h */,
+				1B90982C1CC3C8AB000CAABF /* UIFont+JWUiCategory.m */,
+				1B26E3D01CCA4E250066772A /* UIScrollView+JWUiCategory.h */,
+				1B26E3D11CCA4E250066772A /* UIScrollView+JWUiCategory.m */,
+				1B7587D51CB11B08000EC285 /* UIView+JWAdapterItemView.h */,
+				1B7587D61CB11B08000EC285 /* UIView+JWAdapterItemView.m */,
+			);
+			name = app.ui;
+			sourceTree = "<group>";
+		};
+		D721AE061A73AAD200DA9ACA /* app.ui.layout */ = {
+			isa = PBXGroup;
+			children = (
+				1B7587DD1CB11B5A000EC285 /* JWFrameLayout.h */,
+				1B7587DE1CB11B5A000EC285 /* JWFrameLayout.m */,
+				1B7587DF1CB11B5A000EC285 /* JWLayout.h */,
+				1B7587E01CB11B5A000EC285 /* JWLayout.m */,
+				1B7587E11CB11B5A000EC285 /* JWLayoutParams.h */,
+				1B7587E21CB11B5A000EC285 /* JWLayoutParams.m */,
+				1B7587E31CB11B5A000EC285 /* JWLinearLayout.h */,
+				1B7587E41CB11B5A000EC285 /* JWLinearLayout.m */,
+				1B7587E51CB11B5A000EC285 /* JWRelativeLayout.h */,
+				1B7587E61CB11B5A000EC285 /* JWRelativeLayout.m */,
+				1B7587E71CB11B5A000EC285 /* UIView+JWUiLayout.h */,
+				1B7587E81CB11B5A000EC285 /* UIView+JWUiLayout.m */,
+			);
+			name = app.ui.layout;
+			sourceTree = "<group>";
+		};
+		D7241E551A710B6900BEE609 = {
+			isa = PBXGroup;
+			children = (
+				D7241E601A710B6900BEE609 /* jw */,
+				D72420D21A711EF000BEE609 /* libs */,
+				D7241E5F1A710B6900BEE609 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D7241E5F1A710B6900BEE609 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D7241E5E1A710B6900BEE609 /* libjw_app.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D7241E601A710B6900BEE609 /* jw */ = {
+			isa = PBXGroup;
+			children = (
+				D721AE041A73AAC700DA9ACA /* app */,
+				D721AE051A73AACB00DA9ACA /* app.ui */,
+				1B7800AE1CC0EBDA00E8459F /* app.ui.effect */,
+				D721AE061A73AAD200DA9ACA /* app.ui.layout */,
+				1B7587EF1CB11B6E000EC285 /* jw_app.h */,
+				1B7587F01CB11B6E000EC285 /* jw_app.m */,
+			);
+			name = jw;
+			path = ctrlcv_app;
+			sourceTree = "<group>";
+		};
+		D72420D21A711EF000BEE609 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				D72420CD1A711E0000BEE609 /* UIKit.framework */,
+				D72420CB1A711DFB00BEE609 /* Foundation.framework */,
+			);
+			name = libs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D7241E5D1A710B6900BEE609 /* jw_app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7241E721A710B6900BEE609 /* Build configuration list for PBXNativeTarget "jw_app" */;
+			buildPhases = (
+				D7241E5A1A710B6900BEE609 /* Sources */,
+				D7241E5B1A710B6900BEE609 /* Frameworks */,
+				D7241E5C1A710B6900BEE609 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = jw_app;
+			productName = ctrlcv_app;
+			productReference = D7241E5E1A710B6900BEE609 /* libjw_app.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D7241E561A710B6900BEE609 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "luojunwen123@gmail.com";
+				TargetAttributes = {
+					D7241E5D1A710B6900BEE609 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+				};
+			};
+			buildConfigurationList = D7241E591A710B6900BEE609 /* Build configuration list for PBXProject "jw_app" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D7241E551A710B6900BEE609;
+			productRefGroup = D7241E5F1A710B6900BEE609 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D7241E5D1A710B6900BEE609 /* jw_app */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D7241E5A1A710B6900BEE609 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B7800B71CC0F8BE00E8459F /* UIView+JWUiEffect.m in Sources */,
+				1B7587C91CB11ACE000EC285 /* JWCollectionView.m in Sources */,
+				1B7588311CB11B85000EC285 /* JWGestureEvents.m in Sources */,
+				1B7587CA1CB11ACE000EC285 /* JWDialog.m in Sources */,
+				1B7588341CB11B85000EC285 /* JWViewEvents.m in Sources */,
+				1B7587DA1CB11B08000EC285 /* JWViewHolder.m in Sources */,
+				1B7587D91CB11B08000EC285 /* JWScrollView.m in Sources */,
+				1B7587F11CB11B6E000EC285 /* jw_app.m in Sources */,
+				1B7587C81CB11ACE000EC285 /* JWCameraView.m in Sources */,
+				1B7587EB1CB11B5A000EC285 /* JWLayoutParams.m in Sources */,
+				1B7588261CB11B85000EC285 /* AVCaptureDevice+JWAppCategory.m in Sources */,
+				1B7587C41CB11ACE000EC285 /* JWAdapterView.m in Sources */,
+				1B7587E91CB11B5A000EC285 /* JWFrameLayout.m in Sources */,
+				1B7588281CB11B85000EC285 /* JWAppEvents.m in Sources */,
+				1B7588271CB11B85000EC285 /* JWAppDelegate.m in Sources */,
+				1B7587C71CB11ACE000EC285 /* JWCameraLayer.m in Sources */,
+				1B75883C1CB11B85000EC285 /* UITapGestureRecognizer+JWAppCategory.m in Sources */,
+				1B7588381CB11B85000EC285 /* UIImageView+JWUiCategory.m in Sources */,
+				1B7588351CB11B85000EC285 /* NSBundle+JWUiCategory.m in Sources */,
+				1B7587DC1CB11B08000EC285 /* UIView+JWAdapterItemView.m in Sources */,
+				1B75882E1CB11B85000EC285 /* JWCommandMachine.m in Sources */,
+				1B26E3CF1CCA2C980066772A /* JWScrollBar.m in Sources */,
+				1B7587ED1CB11B5A000EC285 /* JWRelativeLayout.m in Sources */,
+				1B7588391CB11B85000EC285 /* UILabel+JWUiCategory.m in Sources */,
+				1B7587D81CB11B08000EC285 /* JWScaleView.m in Sources */,
+				1B7588331CB11B85000EC285 /* JWStateController.m in Sources */,
+				1B75883A1CB11B85000EC285 /* UILongPressGestureRecognizer+JWAppCategory.m in Sources */,
+				1B75883B1CB11B85000EC285 /* UIPanGestureRecognizer+JWAppCategory.m in Sources */,
+				1B75882F1CB11B85000EC285 /* JWControllerState.m in Sources */,
+				1B7587D71CB11B08000EC285 /* JWRadioViewGroup.m in Sources */,
+				1B7588291CB11B85000EC285 /* JWAppPredef.m in Sources */,
+				1B75883F1CB11B85000EC285 /* UIView+JWUiCategory.m in Sources */,
+				1B75882B1CB11B85000EC285 /* JWAppStateMachine.m in Sources */,
+				1B75882A1CB11B85000EC285 /* JWAppState.m in Sources */,
+				1B75883E1CB11B85000EC285 /* UITouch+JWAppCategory.m in Sources */,
+				1B75882D1CB11B85000EC285 /* JWCommand.m in Sources */,
+				1B75882C1CB11B85000EC285 /* JWCameraCapturer.m in Sources */,
+				1B75883D1CB11B85000EC285 /* UITextField+JWUiCategory.m in Sources */,
+				1B7587EA1CB11B5A000EC285 /* JWLayout.m in Sources */,
+				1B26E3D21CCA4E250066772A /* UIScrollView+JWUiCategory.m in Sources */,
+				1B7800AD1CC0E5E000E8459F /* JWLabel.m in Sources */,
+				1B7800EE1CC215C100E8459F /* JWUiCommon.m in Sources */,
+				1B7588301CB11B85000EC285 /* JWDataSet.m in Sources */,
+				1B7800F11CC21F6000E8459F /* JWImageView.m in Sources */,
+				1B7587EE1CB11B5A000EC285 /* UIView+JWUiLayout.m in Sources */,
+				1B7588361CB11B85000EC285 /* UIButton+JWUiCategory.m in Sources */,
+				1B7587C61CB11ACE000EC285 /* JWAppUtils.m in Sources */,
+				1B7588371CB11B85000EC285 /* UIControl+JWUiCategory.m in Sources */,
+				1B4C22551CC75C7C000BD81D /* JWPagingFlowLayout.m in Sources */,
+				1B7587C31CB11ACE000EC285 /* JWAdapter.m in Sources */,
+				1B78011C1CC38D8400E8459F /* JWUiEffectParams.m in Sources */,
+				80449C131CFE94AE002B493A /* UISlider+JWUiCategory.m in Sources */,
+				1B7587C51CB11ACE000EC285 /* JWAnalogStick.m in Sources */,
+				1B26E3C61CC8D7A40066772A /* JWPageControl.m in Sources */,
+				1B90982D1CC3C8AB000CAABF /* UIFont+JWUiCategory.m in Sources */,
+				1B7587EC1CB11B5A000EC285 /* JWLinearLayout.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D7241E701A710B6900BEE609 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D7241E711A710B6900BEE609 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D7241E731A710B6900BEE609 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/../jc_core",
+					"$(PROJECT_DIR)/../jc_core/jw",
+					"$(PROJECT_DIR)/../jw_core",
+					"$(PROJECT_DIR)/../jw_core/jw",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = jw_app;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D7241E741A710B6900BEE609 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/../jc_core",
+					"$(PROJECT_DIR)/../jc_core/jw",
+					"$(PROJECT_DIR)/../jw_core",
+					"$(PROJECT_DIR)/../jw_core/jw",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = jw_app;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D7241E591A710B6900BEE609 /* Build configuration list for PBXProject "jw_app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7241E701A710B6900BEE609 /* Debug */,
+				D7241E711A710B6900BEE609 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7241E721A710B6900BEE609 /* Build configuration list for PBXNativeTarget "jw_app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7241E731A710B6900BEE609 /* Debug */,
+				D7241E741A710B6900BEE609 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D7241E561A710B6900BEE609 /* Project object */;
+}

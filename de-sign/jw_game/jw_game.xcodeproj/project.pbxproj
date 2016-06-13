@@ -1,0 +1,918 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B7588421CB11D21000EC285 /* jw_game.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7588411CB11D21000EC285 /* jw_game.m */; };
+		1B75884D1CB11D37000EC285 /* JWAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7588441CB11D37000EC285 /* JWAnimation.m */; };
+		1B75884E1CB11D37000EC285 /* JWAnimationResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7588461CB11D37000EC285 /* JWAnimationResource.m */; };
+		1B75884F1CB11D37000EC285 /* JWAnimationResourceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7588481CB11D37000EC285 /* JWAnimationResourceManager.m */; };
+		1B7588501CB11D37000EC285 /* JWAnimationSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75884A1CB11D37000EC285 /* JWAnimationSet.m */; };
+		1B7588511CB11D37000EC285 /* JWAnimationTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75884C1CB11D37000EC285 /* JWAnimationTrack.m */; };
+		1B75885E1CB11D52000EC285 /* JWARCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7588531CB11D52000EC285 /* JWARCamera.m */; };
+		1B75885F1CB11D52000EC285 /* JWARDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7588551CB11D52000EC285 /* JWARDataSet.m */; };
+		1B7588601CB11D52000EC285 /* JWARDataSetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7588571CB11D52000EC285 /* JWARDataSetManager.m */; };
+		1B7588611CB11D52000EC285 /* JWARImageTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7588591CB11D52000EC285 /* JWARImageTarget.m */; };
+		1B7588621CB11D52000EC285 /* JWARImageTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75885B1CB11D52000EC285 /* JWARImageTracker.m */; };
+		1B7588631CB11D52000EC285 /* JWARSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75885D1CB11D52000EC285 /* JWARSystem.m */; };
+		1B7588681CB11D6A000EC285 /* JWGamepad.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7588651CB11D6A000EC285 /* JWGamepad.m */; };
+		1B7588691CB11D6A000EC285 /* JWGamepadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7588671CB11D6A000EC285 /* JWGamepadManager.m */; };
+		1B7588701CB11D83000EC285 /* JWParticle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75886B1CB11D83000EC285 /* JWParticle.m */; };
+		1B7588711CB11D83000EC285 /* JWParticleEmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75886D1CB11D83000EC285 /* JWParticleEmitter.m */; };
+		1B7588721CB11D83000EC285 /* JWParticleSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75886F1CB11D83000EC285 /* JWParticleSystem.m */; };
+		1B7588751CB11D97000EC285 /* JWPhysicalProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7588741CB11D97000EC285 /* JWPhysicalProperty.m */; };
+		1B7588821CB11DC7000EC285 /* JWARPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7588771CB11DC7000EC285 /* JWARPlugin.m */; };
+		1B7588831CB11DC7000EC285 /* JWGamePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7588791CB11DC7000EC285 /* JWGamePlugin.m */; };
+		1B7588841CB11DC7000EC285 /* JWGamePluginSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75887B1CB11DC7000EC285 /* JWGamePluginSystem.m */; };
+		1B7588851CB11DC7000EC285 /* JWInputPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75887D1CB11DC7000EC285 /* JWInputPlugin.m */; };
+		1B7588861CB11DC7000EC285 /* JWRenderPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75887F1CB11DC7000EC285 /* JWRenderPlugin.m */; };
+		1B7588871CB11DC7000EC285 /* JWScenePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7588811CB11DC7000EC285 /* JWScenePlugin.m */; };
+		1B7588A01CB11E1C000EC285 /* JWBirdCameraPrefab.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7588891CB11E1C000EC285 /* JWBirdCameraPrefab.m */; };
+		1B7588A11CB11E1C000EC285 /* JWCameraPrefab.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75888B1CB11E1C000EC285 /* JWCameraPrefab.m */; };
+		1B7588A21CB11E1C000EC285 /* JWCameraPrefabDefaultBehaviour.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75888D1CB11E1C000EC285 /* JWCameraPrefabDefaultBehaviour.m */; };
+		1B7588A31CB11E1C000EC285 /* JWCubicPanorama.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75888F1CB11E1C000EC285 /* JWCubicPanorama.m */; };
+		1B7588A41CB11E1C000EC285 /* JWDeviceMotionCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7588911CB11E1C000EC285 /* JWDeviceMotionCamera.m */; };
+		1B7588A51CB11E1C000EC285 /* JWEditorCameraPrefab.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7588931CB11E1C000EC285 /* JWEditorCameraPrefab.m */; };
+		1B7588A61CB11E1C000EC285 /* JWFPSCameraPrefab.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7588951CB11E1C000EC285 /* JWFPSCameraPrefab.m */; };
+		1B7588A71CB11E1C000EC285 /* JWPrefabUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7588971CB11E1C000EC285 /* JWPrefabUtils.m */; };
+		1B7588A81CB11E1C000EC285 /* JWRect4CornersDecals.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7588991CB11E1C000EC285 /* JWRect4CornersDecals.m */; };
+		1B7588A91CB11E1C000EC285 /* JWRectFrameDecals.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75889B1CB11E1C000EC285 /* JWRectFrameDecals.m */; };
+		1B7588AA1CB11E1C000EC285 /* JWVRDeviceCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75889D1CB11E1C000EC285 /* JWVRDeviceCamera.m */; };
+		1B7588AB1CB11E1C000EC285 /* JWVREditorCameraPrefab.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75889F1CB11E1C000EC285 /* JWVREditorCameraPrefab.m */; };
+		1B7589131CB11E47000EC285 /* JWBehaviour.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7588AD1CB11E46000EC285 /* JWBehaviour.m */; };
+		1B7589141CB11E47000EC285 /* JWBoundsQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7588AF1CB11E46000EC285 /* JWBoundsQuery.m */; };
+		1B7589151CB11E47000EC285 /* JWBoundsRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7588B11CB11E46000EC285 /* JWBoundsRenderer.m */; };
+		1B7589161CB11E47000EC285 /* JWCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7588B31CB11E46000EC285 /* JWCamera.m */; };
+		1B7589171CB11E47000EC285 /* JWComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7588B51CB11E46000EC285 /* JWComponent.m */; };
+		1B7589181CB11E47000EC285 /* JWCube.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7588B71CB11E46000EC285 /* JWCube.m */; };
+		1B7589191CB11E47000EC285 /* JWDeviceCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7588B91CB11E46000EC285 /* JWDeviceCamera.m */; };
+		1B75891A1CB11E47000EC285 /* JWEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7588BB1CB11E46000EC285 /* JWEffect.m */; };
+		1B75891B1CB11E47000EC285 /* JWEffectManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7588BD1CB11E46000EC285 /* JWEffectManager.m */; };
+		1B75891C1CB11E47000EC285 /* JWFrustum.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7588BF1CB11E46000EC285 /* JWFrustum.m */; };
+		1B75891D1CB11E47000EC285 /* JWGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7588C11CB11E46000EC285 /* JWGame.m */; };
+		1B75891E1CB11E47000EC285 /* JWGameContext.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1B7588C31CB11E46000EC285 /* JWGameContext.mm */; };
+		1B75891F1CB11E47000EC285 /* JWGameEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7588C51CB11E46000EC285 /* JWGameEngine.m */; };
+		1B7589201CB11E47000EC285 /* JWGameEvents.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7588C71CB11E46000EC285 /* JWGameEvents.m */; };
+		1B7589211CB11E47000EC285 /* JWGameFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7588C91CB11E46000EC285 /* JWGameFrame.m */; };
+		1B7589221CB11E47000EC285 /* JWGameFramework.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7588CB1CB11E46000EC285 /* JWGameFramework.m */; };
+		1B7589231CB11E47000EC285 /* JWGameObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7588CD1CB11E46000EC285 /* JWGameObject.m */; };
+		1B7589241CB11E47000EC285 /* JWGameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7588D01CB11E46000EC285 /* JWGameScene.m */; };
+		1B7589251CB11E47000EC285 /* JWGameWorld.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7588D21CB11E46000EC285 /* JWGameWorld.m */; };
+		1B7589261CB11E47000EC285 /* JWLight.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7588D41CB11E46000EC285 /* JWLight.m */; };
+		1B7589271CB11E47000EC285 /* JWMaterial.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7588D61CB11E46000EC285 /* JWMaterial.m */; };
+		1B7589281CB11E47000EC285 /* JWMaterialManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7588D81CB11E46000EC285 /* JWMaterialManager.m */; };
+		1B7589291CB11E47000EC285 /* JWMesh.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7588DA1CB11E46000EC285 /* JWMesh.m */; };
+		1B75892A1CB11E47000EC285 /* JWMeshManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7588DC1CB11E46000EC285 /* JWMeshManager.m */; };
+		1B75892B1CB11E47000EC285 /* JWMeshRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7588DE1CB11E46000EC285 /* JWMeshRenderer.m */; };
+		1B75892C1CB11E47000EC285 /* JWMultiCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7588E01CB11E46000EC285 /* JWMultiCamera.m */; };
+		1B75892D1CB11E47000EC285 /* JWObjectQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7588E21CB11E46000EC285 /* JWObjectQuery.m */; };
+		1B75892E1CB11E47000EC285 /* JWPointLight.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7588E41CB11E46000EC285 /* JWPointLight.m */; };
+		1B75892F1CB11E47000EC285 /* JWRayQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7588E61CB11E46000EC285 /* JWRayQuery.m */; };
+		1B7589301CB11E47000EC285 /* JWRenderable.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7588E81CB11E46000EC285 /* JWRenderable.m */; };
+		1B7589311CB11E47000EC285 /* JWRenderQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7588EA1CB11E46000EC285 /* JWRenderQueue.m */; };
+		1B7589321CB11E47000EC285 /* JWRenderTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7588EC1CB11E46000EC285 /* JWRenderTimer.m */; };
+		1B7589331CB11E47000EC285 /* JWResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7588EE1CB11E46000EC285 /* JWResource.m */; };
+		1B7589341CB11E47000EC285 /* JWResourceLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7588F01CB11E46000EC285 /* JWResourceLoader.m */; };
+		1B7589351CB11E47000EC285 /* JWResourceLoaderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7588F21CB11E46000EC285 /* JWResourceLoaderManager.m */; };
+		1B7589361CB11E47000EC285 /* JWResourceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7588F41CB11E46000EC285 /* JWResourceManager.m */; };
+		1B7589371CB11E47000EC285 /* JWSceneLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7588F61CB11E46000EC285 /* JWSceneLoader.m */; };
+		1B7589381CB11E47000EC285 /* JWSceneLoaderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7588F81CB11E46000EC285 /* JWSceneLoaderManager.m */; };
+		1B75893A1CB11E47000EC285 /* JWSceneQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7588FC1CB11E46000EC285 /* JWSceneQuery.m */; };
+		1B75893B1CB11E47000EC285 /* JWSkeleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7588FE1CB11E46000EC285 /* JWSkeleton.m */; };
+		1B75893C1CB11E47000EC285 /* JWSpotLight.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7589001CB11E46000EC285 /* JWSpotLight.m */; };
+		1B75893D1CB11E47000EC285 /* JWTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7589021CB11E47000EC285 /* JWTexture.m */; };
+		1B75893E1CB11E47000EC285 /* JWTextureAtlas.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7589041CB11E47000EC285 /* JWTextureAtlas.m */; };
+		1B75893F1CB11E47000EC285 /* JWTextureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7589061CB11E47000EC285 /* JWTextureManager.m */; };
+		1B7589401CB11E47000EC285 /* JWTransform.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7589081CB11E47000EC285 /* JWTransform.m */; };
+		1B7589411CB11E47000EC285 /* JWUpdateTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75890A1CB11E47000EC285 /* JWUpdateTimer.m */; };
+		1B7589421CB11E47000EC285 /* JWVideoTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75890C1CB11E47000EC285 /* JWVideoTexture.m */; };
+		1B7589431CB11E47000EC285 /* JWVideoTextureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75890E1CB11E47000EC285 /* JWVideoTextureManager.m */; };
+		1B7589441CB11E47000EC285 /* JWViewTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7589101CB11E47000EC285 /* JWViewTag.m */; };
+		1B7589451CB11E47000EC285 /* JWVRCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7589121CB11E47000EC285 /* JWVRCamera.m */; };
+		80541C981CB6319600CB6BBA /* JWBackgroundSpritePrefab.m in Sources */ = {isa = PBXBuildFile; fileRef = 80541C971CB6319600CB6BBA /* JWBackgroundSpritePrefab.m */; };
+		D71B81131ABEC4FA00BF81C7 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D71B81121ABEC4FA00BF81C7 /* CoreMotion.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D7241E7F1A710B7E00BEE609 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1B1EB7AD1CA41C7100E4AF15 /* CCVResourceLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCVResourceLoader.h; path = ctrlcv/CCVResourceLoader.h; sourceTree = "<group>"; };
+		1B1EB7AE1CA41C7100E4AF15 /* CCVResourceLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CCVResourceLoader.m; path = ctrlcv/CCVResourceLoader.m; sourceTree = "<group>"; };
+		1B1EB7B01CA41C8F00E4AF15 /* CCVResourceLoaderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCVResourceLoaderManager.h; path = ctrlcv/CCVResourceLoaderManager.h; sourceTree = "<group>"; };
+		1B1EB7B11CA41C8F00E4AF15 /* CCVResourceLoaderManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CCVResourceLoaderManager.m; path = ctrlcv/CCVResourceLoaderManager.m; sourceTree = "<group>"; };
+		1B1EB7B31CA41CB500E4AF15 /* CCVSceneLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCVSceneLoader.h; path = ctrlcv/CCVSceneLoader.h; sourceTree = "<group>"; };
+		1B1EB7B41CA41CB500E4AF15 /* CCVSceneLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CCVSceneLoader.m; path = ctrlcv/CCVSceneLoader.m; sourceTree = "<group>"; };
+		1B1EB7B51CA41CB500E4AF15 /* CCVSceneLoaderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCVSceneLoaderManager.h; path = ctrlcv/CCVSceneLoaderManager.h; sourceTree = "<group>"; };
+		1B1EB7B61CA41CB500E4AF15 /* CCVSceneLoaderManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CCVSceneLoaderManager.m; path = ctrlcv/CCVSceneLoaderManager.m; sourceTree = "<group>"; };
+		1B1EB7B71CA41CB500E4AF15 /* CCVSceneLoadExtra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCVSceneLoadExtra.h; path = ctrlcv/CCVSceneLoadExtra.h; sourceTree = "<group>"; };
+		1B1EB7B81CA41CB500E4AF15 /* CCVSceneLoadExtra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CCVSceneLoadExtra.m; path = ctrlcv/CCVSceneLoadExtra.m; sourceTree = "<group>"; };
+		1B7588401CB11D21000EC285 /* jw_game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = jw_game.h; path = jw/jw_game.h; sourceTree = SOURCE_ROOT; };
+		1B7588411CB11D21000EC285 /* jw_game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = jw_game.m; path = jw/jw_game.m; sourceTree = SOURCE_ROOT; };
+		1B7588431CB11D37000EC285 /* JWAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWAnimation.h; path = jw/JWAnimation.h; sourceTree = SOURCE_ROOT; };
+		1B7588441CB11D37000EC285 /* JWAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWAnimation.m; path = jw/JWAnimation.m; sourceTree = SOURCE_ROOT; };
+		1B7588451CB11D37000EC285 /* JWAnimationResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWAnimationResource.h; path = jw/JWAnimationResource.h; sourceTree = SOURCE_ROOT; };
+		1B7588461CB11D37000EC285 /* JWAnimationResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWAnimationResource.m; path = jw/JWAnimationResource.m; sourceTree = SOURCE_ROOT; };
+		1B7588471CB11D37000EC285 /* JWAnimationResourceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWAnimationResourceManager.h; path = jw/JWAnimationResourceManager.h; sourceTree = SOURCE_ROOT; };
+		1B7588481CB11D37000EC285 /* JWAnimationResourceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWAnimationResourceManager.m; path = jw/JWAnimationResourceManager.m; sourceTree = SOURCE_ROOT; };
+		1B7588491CB11D37000EC285 /* JWAnimationSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWAnimationSet.h; path = jw/JWAnimationSet.h; sourceTree = SOURCE_ROOT; };
+		1B75884A1CB11D37000EC285 /* JWAnimationSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWAnimationSet.m; path = jw/JWAnimationSet.m; sourceTree = SOURCE_ROOT; };
+		1B75884B1CB11D37000EC285 /* JWAnimationTrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWAnimationTrack.h; path = jw/JWAnimationTrack.h; sourceTree = SOURCE_ROOT; };
+		1B75884C1CB11D37000EC285 /* JWAnimationTrack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWAnimationTrack.m; path = jw/JWAnimationTrack.m; sourceTree = SOURCE_ROOT; };
+		1B7588521CB11D52000EC285 /* JWARCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWARCamera.h; path = jw/JWARCamera.h; sourceTree = SOURCE_ROOT; };
+		1B7588531CB11D52000EC285 /* JWARCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWARCamera.m; path = jw/JWARCamera.m; sourceTree = SOURCE_ROOT; };
+		1B7588541CB11D52000EC285 /* JWARDataSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWARDataSet.h; path = jw/JWARDataSet.h; sourceTree = SOURCE_ROOT; };
+		1B7588551CB11D52000EC285 /* JWARDataSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWARDataSet.m; path = jw/JWARDataSet.m; sourceTree = SOURCE_ROOT; };
+		1B7588561CB11D52000EC285 /* JWARDataSetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWARDataSetManager.h; path = jw/JWARDataSetManager.h; sourceTree = SOURCE_ROOT; };
+		1B7588571CB11D52000EC285 /* JWARDataSetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWARDataSetManager.m; path = jw/JWARDataSetManager.m; sourceTree = SOURCE_ROOT; };
+		1B7588581CB11D52000EC285 /* JWARImageTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWARImageTarget.h; path = jw/JWARImageTarget.h; sourceTree = SOURCE_ROOT; };
+		1B7588591CB11D52000EC285 /* JWARImageTarget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWARImageTarget.m; path = jw/JWARImageTarget.m; sourceTree = SOURCE_ROOT; };
+		1B75885A1CB11D52000EC285 /* JWARImageTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWARImageTracker.h; path = jw/JWARImageTracker.h; sourceTree = SOURCE_ROOT; };
+		1B75885B1CB11D52000EC285 /* JWARImageTracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWARImageTracker.m; path = jw/JWARImageTracker.m; sourceTree = SOURCE_ROOT; };
+		1B75885C1CB11D52000EC285 /* JWARSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWARSystem.h; path = jw/JWARSystem.h; sourceTree = SOURCE_ROOT; };
+		1B75885D1CB11D52000EC285 /* JWARSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWARSystem.m; path = jw/JWARSystem.m; sourceTree = SOURCE_ROOT; };
+		1B7588641CB11D6A000EC285 /* JWGamepad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWGamepad.h; path = jw/JWGamepad.h; sourceTree = SOURCE_ROOT; };
+		1B7588651CB11D6A000EC285 /* JWGamepad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWGamepad.m; path = jw/JWGamepad.m; sourceTree = SOURCE_ROOT; };
+		1B7588661CB11D6A000EC285 /* JWGamepadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWGamepadManager.h; path = jw/JWGamepadManager.h; sourceTree = SOURCE_ROOT; };
+		1B7588671CB11D6A000EC285 /* JWGamepadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWGamepadManager.m; path = jw/JWGamepadManager.m; sourceTree = SOURCE_ROOT; };
+		1B75886A1CB11D83000EC285 /* JWParticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWParticle.h; path = jw/JWParticle.h; sourceTree = SOURCE_ROOT; };
+		1B75886B1CB11D83000EC285 /* JWParticle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWParticle.m; path = jw/JWParticle.m; sourceTree = SOURCE_ROOT; };
+		1B75886C1CB11D83000EC285 /* JWParticleEmitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWParticleEmitter.h; path = jw/JWParticleEmitter.h; sourceTree = SOURCE_ROOT; };
+		1B75886D1CB11D83000EC285 /* JWParticleEmitter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWParticleEmitter.m; path = jw/JWParticleEmitter.m; sourceTree = SOURCE_ROOT; };
+		1B75886E1CB11D83000EC285 /* JWParticleSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWParticleSystem.h; path = jw/JWParticleSystem.h; sourceTree = SOURCE_ROOT; };
+		1B75886F1CB11D83000EC285 /* JWParticleSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWParticleSystem.m; path = jw/JWParticleSystem.m; sourceTree = SOURCE_ROOT; };
+		1B7588731CB11D97000EC285 /* JWPhysicalProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWPhysicalProperty.h; path = jw/JWPhysicalProperty.h; sourceTree = SOURCE_ROOT; };
+		1B7588741CB11D97000EC285 /* JWPhysicalProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWPhysicalProperty.m; path = jw/JWPhysicalProperty.m; sourceTree = SOURCE_ROOT; };
+		1B7588761CB11DC7000EC285 /* JWARPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWARPlugin.h; path = jw/JWARPlugin.h; sourceTree = SOURCE_ROOT; };
+		1B7588771CB11DC7000EC285 /* JWARPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWARPlugin.m; path = jw/JWARPlugin.m; sourceTree = SOURCE_ROOT; };
+		1B7588781CB11DC7000EC285 /* JWGamePlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWGamePlugin.h; path = jw/JWGamePlugin.h; sourceTree = SOURCE_ROOT; };
+		1B7588791CB11DC7000EC285 /* JWGamePlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWGamePlugin.m; path = jw/JWGamePlugin.m; sourceTree = SOURCE_ROOT; };
+		1B75887A1CB11DC7000EC285 /* JWGamePluginSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWGamePluginSystem.h; path = jw/JWGamePluginSystem.h; sourceTree = SOURCE_ROOT; };
+		1B75887B1CB11DC7000EC285 /* JWGamePluginSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWGamePluginSystem.m; path = jw/JWGamePluginSystem.m; sourceTree = SOURCE_ROOT; };
+		1B75887C1CB11DC7000EC285 /* JWInputPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWInputPlugin.h; path = jw/JWInputPlugin.h; sourceTree = SOURCE_ROOT; };
+		1B75887D1CB11DC7000EC285 /* JWInputPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWInputPlugin.m; path = jw/JWInputPlugin.m; sourceTree = SOURCE_ROOT; };
+		1B75887E1CB11DC7000EC285 /* JWRenderPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWRenderPlugin.h; path = jw/JWRenderPlugin.h; sourceTree = SOURCE_ROOT; };
+		1B75887F1CB11DC7000EC285 /* JWRenderPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWRenderPlugin.m; path = jw/JWRenderPlugin.m; sourceTree = SOURCE_ROOT; };
+		1B7588801CB11DC7000EC285 /* JWScenePlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWScenePlugin.h; path = jw/JWScenePlugin.h; sourceTree = SOURCE_ROOT; };
+		1B7588811CB11DC7000EC285 /* JWScenePlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWScenePlugin.m; path = jw/JWScenePlugin.m; sourceTree = SOURCE_ROOT; };
+		1B7588881CB11E1C000EC285 /* JWBirdCameraPrefab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWBirdCameraPrefab.h; path = jw/JWBirdCameraPrefab.h; sourceTree = SOURCE_ROOT; };
+		1B7588891CB11E1C000EC285 /* JWBirdCameraPrefab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWBirdCameraPrefab.m; path = jw/JWBirdCameraPrefab.m; sourceTree = SOURCE_ROOT; };
+		1B75888A1CB11E1C000EC285 /* JWCameraPrefab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWCameraPrefab.h; path = jw/JWCameraPrefab.h; sourceTree = SOURCE_ROOT; };
+		1B75888B1CB11E1C000EC285 /* JWCameraPrefab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWCameraPrefab.m; path = jw/JWCameraPrefab.m; sourceTree = SOURCE_ROOT; };
+		1B75888C1CB11E1C000EC285 /* JWCameraPrefabDefaultBehaviour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWCameraPrefabDefaultBehaviour.h; path = jw/JWCameraPrefabDefaultBehaviour.h; sourceTree = SOURCE_ROOT; };
+		1B75888D1CB11E1C000EC285 /* JWCameraPrefabDefaultBehaviour.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWCameraPrefabDefaultBehaviour.m; path = jw/JWCameraPrefabDefaultBehaviour.m; sourceTree = SOURCE_ROOT; };
+		1B75888E1CB11E1C000EC285 /* JWCubicPanorama.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWCubicPanorama.h; path = jw/JWCubicPanorama.h; sourceTree = SOURCE_ROOT; };
+		1B75888F1CB11E1C000EC285 /* JWCubicPanorama.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWCubicPanorama.m; path = jw/JWCubicPanorama.m; sourceTree = SOURCE_ROOT; };
+		1B7588901CB11E1C000EC285 /* JWDeviceMotionCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWDeviceMotionCamera.h; path = jw/JWDeviceMotionCamera.h; sourceTree = SOURCE_ROOT; };
+		1B7588911CB11E1C000EC285 /* JWDeviceMotionCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWDeviceMotionCamera.m; path = jw/JWDeviceMotionCamera.m; sourceTree = SOURCE_ROOT; };
+		1B7588921CB11E1C000EC285 /* JWEditorCameraPrefab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWEditorCameraPrefab.h; path = jw/JWEditorCameraPrefab.h; sourceTree = SOURCE_ROOT; };
+		1B7588931CB11E1C000EC285 /* JWEditorCameraPrefab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWEditorCameraPrefab.m; path = jw/JWEditorCameraPrefab.m; sourceTree = SOURCE_ROOT; };
+		1B7588941CB11E1C000EC285 /* JWFPSCameraPrefab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWFPSCameraPrefab.h; path = jw/JWFPSCameraPrefab.h; sourceTree = SOURCE_ROOT; };
+		1B7588951CB11E1C000EC285 /* JWFPSCameraPrefab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWFPSCameraPrefab.m; path = jw/JWFPSCameraPrefab.m; sourceTree = SOURCE_ROOT; };
+		1B7588961CB11E1C000EC285 /* JWPrefabUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWPrefabUtils.h; path = jw/JWPrefabUtils.h; sourceTree = SOURCE_ROOT; };
+		1B7588971CB11E1C000EC285 /* JWPrefabUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWPrefabUtils.m; path = jw/JWPrefabUtils.m; sourceTree = SOURCE_ROOT; };
+		1B7588981CB11E1C000EC285 /* JWRect4CornersDecals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWRect4CornersDecals.h; path = jw/JWRect4CornersDecals.h; sourceTree = SOURCE_ROOT; };
+		1B7588991CB11E1C000EC285 /* JWRect4CornersDecals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWRect4CornersDecals.m; path = jw/JWRect4CornersDecals.m; sourceTree = SOURCE_ROOT; };
+		1B75889A1CB11E1C000EC285 /* JWRectFrameDecals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWRectFrameDecals.h; path = jw/JWRectFrameDecals.h; sourceTree = SOURCE_ROOT; };
+		1B75889B1CB11E1C000EC285 /* JWRectFrameDecals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWRectFrameDecals.m; path = jw/JWRectFrameDecals.m; sourceTree = SOURCE_ROOT; };
+		1B75889C1CB11E1C000EC285 /* JWVRDeviceCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWVRDeviceCamera.h; path = jw/JWVRDeviceCamera.h; sourceTree = SOURCE_ROOT; };
+		1B75889D1CB11E1C000EC285 /* JWVRDeviceCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWVRDeviceCamera.m; path = jw/JWVRDeviceCamera.m; sourceTree = SOURCE_ROOT; };
+		1B75889E1CB11E1C000EC285 /* JWVREditorCameraPrefab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWVREditorCameraPrefab.h; path = jw/JWVREditorCameraPrefab.h; sourceTree = SOURCE_ROOT; };
+		1B75889F1CB11E1C000EC285 /* JWVREditorCameraPrefab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWVREditorCameraPrefab.m; path = jw/JWVREditorCameraPrefab.m; sourceTree = SOURCE_ROOT; };
+		1B7588AC1CB11E46000EC285 /* JWBehaviour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWBehaviour.h; path = jw/JWBehaviour.h; sourceTree = SOURCE_ROOT; };
+		1B7588AD1CB11E46000EC285 /* JWBehaviour.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWBehaviour.m; path = jw/JWBehaviour.m; sourceTree = SOURCE_ROOT; };
+		1B7588AE1CB11E46000EC285 /* JWBoundsQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWBoundsQuery.h; path = jw/JWBoundsQuery.h; sourceTree = SOURCE_ROOT; };
+		1B7588AF1CB11E46000EC285 /* JWBoundsQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWBoundsQuery.m; path = jw/JWBoundsQuery.m; sourceTree = SOURCE_ROOT; };
+		1B7588B01CB11E46000EC285 /* JWBoundsRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWBoundsRenderer.h; path = jw/JWBoundsRenderer.h; sourceTree = SOURCE_ROOT; };
+		1B7588B11CB11E46000EC285 /* JWBoundsRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWBoundsRenderer.m; path = jw/JWBoundsRenderer.m; sourceTree = SOURCE_ROOT; };
+		1B7588B21CB11E46000EC285 /* JWCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWCamera.h; path = jw/JWCamera.h; sourceTree = SOURCE_ROOT; };
+		1B7588B31CB11E46000EC285 /* JWCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWCamera.m; path = jw/JWCamera.m; sourceTree = SOURCE_ROOT; };
+		1B7588B41CB11E46000EC285 /* JWComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWComponent.h; path = jw/JWComponent.h; sourceTree = SOURCE_ROOT; };
+		1B7588B51CB11E46000EC285 /* JWComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWComponent.m; path = jw/JWComponent.m; sourceTree = SOURCE_ROOT; };
+		1B7588B61CB11E46000EC285 /* JWCube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWCube.h; path = jw/JWCube.h; sourceTree = SOURCE_ROOT; };
+		1B7588B71CB11E46000EC285 /* JWCube.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWCube.m; path = jw/JWCube.m; sourceTree = SOURCE_ROOT; };
+		1B7588B81CB11E46000EC285 /* JWDeviceCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWDeviceCamera.h; path = jw/JWDeviceCamera.h; sourceTree = SOURCE_ROOT; };
+		1B7588B91CB11E46000EC285 /* JWDeviceCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWDeviceCamera.m; path = jw/JWDeviceCamera.m; sourceTree = SOURCE_ROOT; };
+		1B7588BA1CB11E46000EC285 /* JWEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWEffect.h; path = jw/JWEffect.h; sourceTree = SOURCE_ROOT; };
+		1B7588BB1CB11E46000EC285 /* JWEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWEffect.m; path = jw/JWEffect.m; sourceTree = SOURCE_ROOT; };
+		1B7588BC1CB11E46000EC285 /* JWEffectManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWEffectManager.h; path = jw/JWEffectManager.h; sourceTree = SOURCE_ROOT; };
+		1B7588BD1CB11E46000EC285 /* JWEffectManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWEffectManager.m; path = jw/JWEffectManager.m; sourceTree = SOURCE_ROOT; };
+		1B7588BE1CB11E46000EC285 /* JWFrustum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWFrustum.h; path = jw/JWFrustum.h; sourceTree = SOURCE_ROOT; };
+		1B7588BF1CB11E46000EC285 /* JWFrustum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWFrustum.m; path = jw/JWFrustum.m; sourceTree = SOURCE_ROOT; };
+		1B7588C01CB11E46000EC285 /* JWGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWGame.h; path = jw/JWGame.h; sourceTree = SOURCE_ROOT; };
+		1B7588C11CB11E46000EC285 /* JWGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWGame.m; path = jw/JWGame.m; sourceTree = SOURCE_ROOT; };
+		1B7588C21CB11E46000EC285 /* JWGameContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWGameContext.h; path = jw/JWGameContext.h; sourceTree = SOURCE_ROOT; };
+		1B7588C31CB11E46000EC285 /* JWGameContext.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = JWGameContext.mm; path = jw/JWGameContext.mm; sourceTree = SOURCE_ROOT; };
+		1B7588C41CB11E46000EC285 /* JWGameEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWGameEngine.h; path = jw/JWGameEngine.h; sourceTree = SOURCE_ROOT; };
+		1B7588C51CB11E46000EC285 /* JWGameEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWGameEngine.m; path = jw/JWGameEngine.m; sourceTree = SOURCE_ROOT; };
+		1B7588C61CB11E46000EC285 /* JWGameEvents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWGameEvents.h; path = jw/JWGameEvents.h; sourceTree = SOURCE_ROOT; };
+		1B7588C71CB11E46000EC285 /* JWGameEvents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWGameEvents.m; path = jw/JWGameEvents.m; sourceTree = SOURCE_ROOT; };
+		1B7588C81CB11E46000EC285 /* JWGameFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWGameFrame.h; path = jw/JWGameFrame.h; sourceTree = SOURCE_ROOT; };
+		1B7588C91CB11E46000EC285 /* JWGameFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWGameFrame.m; path = jw/JWGameFrame.m; sourceTree = SOURCE_ROOT; };
+		1B7588CA1CB11E46000EC285 /* JWGameFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWGameFramework.h; path = jw/JWGameFramework.h; sourceTree = SOURCE_ROOT; };
+		1B7588CB1CB11E46000EC285 /* JWGameFramework.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWGameFramework.m; path = jw/JWGameFramework.m; sourceTree = SOURCE_ROOT; };
+		1B7588CC1CB11E46000EC285 /* JWGameObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWGameObject.h; path = jw/JWGameObject.h; sourceTree = SOURCE_ROOT; };
+		1B7588CD1CB11E46000EC285 /* JWGameObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWGameObject.m; path = jw/JWGameObject.m; sourceTree = SOURCE_ROOT; };
+		1B7588CE1CB11E46000EC285 /* JWGamePredef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWGamePredef.h; path = jw/JWGamePredef.h; sourceTree = SOURCE_ROOT; };
+		1B7588CF1CB11E46000EC285 /* JWGameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWGameScene.h; path = jw/JWGameScene.h; sourceTree = SOURCE_ROOT; };
+		1B7588D01CB11E46000EC285 /* JWGameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWGameScene.m; path = jw/JWGameScene.m; sourceTree = SOURCE_ROOT; };
+		1B7588D11CB11E46000EC285 /* JWGameWorld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWGameWorld.h; path = jw/JWGameWorld.h; sourceTree = SOURCE_ROOT; };
+		1B7588D21CB11E46000EC285 /* JWGameWorld.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWGameWorld.m; path = jw/JWGameWorld.m; sourceTree = SOURCE_ROOT; };
+		1B7588D31CB11E46000EC285 /* JWLight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWLight.h; path = jw/JWLight.h; sourceTree = SOURCE_ROOT; };
+		1B7588D41CB11E46000EC285 /* JWLight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWLight.m; path = jw/JWLight.m; sourceTree = SOURCE_ROOT; };
+		1B7588D51CB11E46000EC285 /* JWMaterial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWMaterial.h; path = jw/JWMaterial.h; sourceTree = SOURCE_ROOT; };
+		1B7588D61CB11E46000EC285 /* JWMaterial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWMaterial.m; path = jw/JWMaterial.m; sourceTree = SOURCE_ROOT; };
+		1B7588D71CB11E46000EC285 /* JWMaterialManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWMaterialManager.h; path = jw/JWMaterialManager.h; sourceTree = SOURCE_ROOT; };
+		1B7588D81CB11E46000EC285 /* JWMaterialManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWMaterialManager.m; path = jw/JWMaterialManager.m; sourceTree = SOURCE_ROOT; };
+		1B7588D91CB11E46000EC285 /* JWMesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWMesh.h; path = jw/JWMesh.h; sourceTree = SOURCE_ROOT; };
+		1B7588DA1CB11E46000EC285 /* JWMesh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWMesh.m; path = jw/JWMesh.m; sourceTree = SOURCE_ROOT; };
+		1B7588DB1CB11E46000EC285 /* JWMeshManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWMeshManager.h; path = jw/JWMeshManager.h; sourceTree = SOURCE_ROOT; };
+		1B7588DC1CB11E46000EC285 /* JWMeshManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWMeshManager.m; path = jw/JWMeshManager.m; sourceTree = SOURCE_ROOT; };
+		1B7588DD1CB11E46000EC285 /* JWMeshRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWMeshRenderer.h; path = jw/JWMeshRenderer.h; sourceTree = SOURCE_ROOT; };
+		1B7588DE1CB11E46000EC285 /* JWMeshRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWMeshRenderer.m; path = jw/JWMeshRenderer.m; sourceTree = SOURCE_ROOT; };
+		1B7588DF1CB11E46000EC285 /* JWMultiCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWMultiCamera.h; path = jw/JWMultiCamera.h; sourceTree = SOURCE_ROOT; };
+		1B7588E01CB11E46000EC285 /* JWMultiCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWMultiCamera.m; path = jw/JWMultiCamera.m; sourceTree = SOURCE_ROOT; };
+		1B7588E11CB11E46000EC285 /* JWObjectQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWObjectQuery.h; path = jw/JWObjectQuery.h; sourceTree = SOURCE_ROOT; };
+		1B7588E21CB11E46000EC285 /* JWObjectQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWObjectQuery.m; path = jw/JWObjectQuery.m; sourceTree = SOURCE_ROOT; };
+		1B7588E31CB11E46000EC285 /* JWPointLight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWPointLight.h; path = jw/JWPointLight.h; sourceTree = SOURCE_ROOT; };
+		1B7588E41CB11E46000EC285 /* JWPointLight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWPointLight.m; path = jw/JWPointLight.m; sourceTree = SOURCE_ROOT; };
+		1B7588E51CB11E46000EC285 /* JWRayQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWRayQuery.h; path = jw/JWRayQuery.h; sourceTree = SOURCE_ROOT; };
+		1B7588E61CB11E46000EC285 /* JWRayQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWRayQuery.m; path = jw/JWRayQuery.m; sourceTree = SOURCE_ROOT; };
+		1B7588E71CB11E46000EC285 /* JWRenderable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWRenderable.h; path = jw/JWRenderable.h; sourceTree = SOURCE_ROOT; };
+		1B7588E81CB11E46000EC285 /* JWRenderable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWRenderable.m; path = jw/JWRenderable.m; sourceTree = SOURCE_ROOT; };
+		1B7588E91CB11E46000EC285 /* JWRenderQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWRenderQueue.h; path = jw/JWRenderQueue.h; sourceTree = SOURCE_ROOT; };
+		1B7588EA1CB11E46000EC285 /* JWRenderQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWRenderQueue.m; path = jw/JWRenderQueue.m; sourceTree = SOURCE_ROOT; };
+		1B7588EB1CB11E46000EC285 /* JWRenderTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWRenderTimer.h; path = jw/JWRenderTimer.h; sourceTree = SOURCE_ROOT; };
+		1B7588EC1CB11E46000EC285 /* JWRenderTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWRenderTimer.m; path = jw/JWRenderTimer.m; sourceTree = SOURCE_ROOT; };
+		1B7588ED1CB11E46000EC285 /* JWResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWResource.h; path = jw/JWResource.h; sourceTree = SOURCE_ROOT; };
+		1B7588EE1CB11E46000EC285 /* JWResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWResource.m; path = jw/JWResource.m; sourceTree = SOURCE_ROOT; };
+		1B7588EF1CB11E46000EC285 /* JWResourceLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWResourceLoader.h; path = jw/JWResourceLoader.h; sourceTree = SOURCE_ROOT; };
+		1B7588F01CB11E46000EC285 /* JWResourceLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWResourceLoader.m; path = jw/JWResourceLoader.m; sourceTree = SOURCE_ROOT; };
+		1B7588F11CB11E46000EC285 /* JWResourceLoaderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWResourceLoaderManager.h; path = jw/JWResourceLoaderManager.h; sourceTree = SOURCE_ROOT; };
+		1B7588F21CB11E46000EC285 /* JWResourceLoaderManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWResourceLoaderManager.m; path = jw/JWResourceLoaderManager.m; sourceTree = SOURCE_ROOT; };
+		1B7588F31CB11E46000EC285 /* JWResourceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWResourceManager.h; path = jw/JWResourceManager.h; sourceTree = SOURCE_ROOT; };
+		1B7588F41CB11E46000EC285 /* JWResourceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWResourceManager.m; path = jw/JWResourceManager.m; sourceTree = SOURCE_ROOT; };
+		1B7588F51CB11E46000EC285 /* JWSceneLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWSceneLoader.h; path = jw/JWSceneLoader.h; sourceTree = SOURCE_ROOT; };
+		1B7588F61CB11E46000EC285 /* JWSceneLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWSceneLoader.m; path = jw/JWSceneLoader.m; sourceTree = SOURCE_ROOT; };
+		1B7588F71CB11E46000EC285 /* JWSceneLoaderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWSceneLoaderManager.h; path = jw/JWSceneLoaderManager.h; sourceTree = SOURCE_ROOT; };
+		1B7588F81CB11E46000EC285 /* JWSceneLoaderManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWSceneLoaderManager.m; path = jw/JWSceneLoaderManager.m; sourceTree = SOURCE_ROOT; };
+		1B7588FB1CB11E46000EC285 /* JWSceneQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWSceneQuery.h; path = jw/JWSceneQuery.h; sourceTree = SOURCE_ROOT; };
+		1B7588FC1CB11E46000EC285 /* JWSceneQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWSceneQuery.m; path = jw/JWSceneQuery.m; sourceTree = SOURCE_ROOT; };
+		1B7588FD1CB11E46000EC285 /* JWSkeleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWSkeleton.h; path = jw/JWSkeleton.h; sourceTree = SOURCE_ROOT; };
+		1B7588FE1CB11E46000EC285 /* JWSkeleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWSkeleton.m; path = jw/JWSkeleton.m; sourceTree = SOURCE_ROOT; };
+		1B7588FF1CB11E46000EC285 /* JWSpotLight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWSpotLight.h; path = jw/JWSpotLight.h; sourceTree = SOURCE_ROOT; };
+		1B7589001CB11E46000EC285 /* JWSpotLight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWSpotLight.m; path = jw/JWSpotLight.m; sourceTree = SOURCE_ROOT; };
+		1B7589011CB11E46000EC285 /* JWTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWTexture.h; path = jw/JWTexture.h; sourceTree = SOURCE_ROOT; };
+		1B7589021CB11E47000EC285 /* JWTexture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWTexture.m; path = jw/JWTexture.m; sourceTree = SOURCE_ROOT; };
+		1B7589031CB11E47000EC285 /* JWTextureAtlas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWTextureAtlas.h; path = jw/JWTextureAtlas.h; sourceTree = SOURCE_ROOT; };
+		1B7589041CB11E47000EC285 /* JWTextureAtlas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWTextureAtlas.m; path = jw/JWTextureAtlas.m; sourceTree = SOURCE_ROOT; };
+		1B7589051CB11E47000EC285 /* JWTextureManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWTextureManager.h; path = jw/JWTextureManager.h; sourceTree = SOURCE_ROOT; };
+		1B7589061CB11E47000EC285 /* JWTextureManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWTextureManager.m; path = jw/JWTextureManager.m; sourceTree = SOURCE_ROOT; };
+		1B7589071CB11E47000EC285 /* JWTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWTransform.h; path = jw/JWTransform.h; sourceTree = SOURCE_ROOT; };
+		1B7589081CB11E47000EC285 /* JWTransform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWTransform.m; path = jw/JWTransform.m; sourceTree = SOURCE_ROOT; };
+		1B7589091CB11E47000EC285 /* JWUpdateTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWUpdateTimer.h; path = jw/JWUpdateTimer.h; sourceTree = SOURCE_ROOT; };
+		1B75890A1CB11E47000EC285 /* JWUpdateTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWUpdateTimer.m; path = jw/JWUpdateTimer.m; sourceTree = SOURCE_ROOT; };
+		1B75890B1CB11E47000EC285 /* JWVideoTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWVideoTexture.h; path = jw/JWVideoTexture.h; sourceTree = SOURCE_ROOT; };
+		1B75890C1CB11E47000EC285 /* JWVideoTexture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWVideoTexture.m; path = jw/JWVideoTexture.m; sourceTree = SOURCE_ROOT; };
+		1B75890D1CB11E47000EC285 /* JWVideoTextureManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWVideoTextureManager.h; path = jw/JWVideoTextureManager.h; sourceTree = SOURCE_ROOT; };
+		1B75890E1CB11E47000EC285 /* JWVideoTextureManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWVideoTextureManager.m; path = jw/JWVideoTextureManager.m; sourceTree = SOURCE_ROOT; };
+		1B75890F1CB11E47000EC285 /* JWViewTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWViewTag.h; path = jw/JWViewTag.h; sourceTree = SOURCE_ROOT; };
+		1B7589101CB11E47000EC285 /* JWViewTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWViewTag.m; path = jw/JWViewTag.m; sourceTree = SOURCE_ROOT; };
+		1B7589111CB11E47000EC285 /* JWVRCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWVRCamera.h; path = jw/JWVRCamera.h; sourceTree = SOURCE_ROOT; };
+		1B7589121CB11E47000EC285 /* JWVRCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWVRCamera.m; path = jw/JWVRCamera.m; sourceTree = SOURCE_ROOT; };
+		80541C961CB6319600CB6BBA /* JWBackgroundSpritePrefab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWBackgroundSpritePrefab.h; path = jw/JWBackgroundSpritePrefab.h; sourceTree = SOURCE_ROOT; };
+		80541C971CB6319600CB6BBA /* JWBackgroundSpritePrefab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWBackgroundSpritePrefab.m; path = jw/JWBackgroundSpritePrefab.m; sourceTree = SOURCE_ROOT; };
+		D71B81121ABEC4FA00BF81C7 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		D7241E811A710B7E00BEE609 /* libjw_game.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libjw_game.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7241E921A710B7E00BEE609 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D7241E7E1A710B7E00BEE609 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D71B81131ABEC4FA00BF81C7 /* CoreMotion.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B1EB7AB1CA41C1E00E4AF15 /* game.loader */ = {
+			isa = PBXGroup;
+			children = (
+				1B1EB7AD1CA41C7100E4AF15 /* CCVResourceLoader.h */,
+				1B1EB7AE1CA41C7100E4AF15 /* CCVResourceLoader.m */,
+				1B1EB7B01CA41C8F00E4AF15 /* CCVResourceLoaderManager.h */,
+				1B1EB7B11CA41C8F00E4AF15 /* CCVResourceLoaderManager.m */,
+				1B1EB7B31CA41CB500E4AF15 /* CCVSceneLoader.h */,
+				1B1EB7B41CA41CB500E4AF15 /* CCVSceneLoader.m */,
+				1B1EB7B51CA41CB500E4AF15 /* CCVSceneLoaderManager.h */,
+				1B1EB7B61CA41CB500E4AF15 /* CCVSceneLoaderManager.m */,
+				1B1EB7B71CA41CB500E4AF15 /* CCVSceneLoadExtra.h */,
+				1B1EB7B81CA41CB500E4AF15 /* CCVSceneLoadExtra.m */,
+			);
+			name = game.loader;
+			sourceTree = "<group>";
+		};
+		1B23D9F81C8694A100E0CA22 /* game.anim */ = {
+			isa = PBXGroup;
+			children = (
+				1B7588431CB11D37000EC285 /* JWAnimation.h */,
+				1B7588441CB11D37000EC285 /* JWAnimation.m */,
+				1B7588451CB11D37000EC285 /* JWAnimationResource.h */,
+				1B7588461CB11D37000EC285 /* JWAnimationResource.m */,
+				1B7588471CB11D37000EC285 /* JWAnimationResourceManager.h */,
+				1B7588481CB11D37000EC285 /* JWAnimationResourceManager.m */,
+				1B7588491CB11D37000EC285 /* JWAnimationSet.h */,
+				1B75884A1CB11D37000EC285 /* JWAnimationSet.m */,
+				1B75884B1CB11D37000EC285 /* JWAnimationTrack.h */,
+				1B75884C1CB11D37000EC285 /* JWAnimationTrack.m */,
+			);
+			name = game.anim;
+			sourceTree = "<group>";
+		};
+		1B23D9F91C8694C200E0CA22 /* game.particle */ = {
+			isa = PBXGroup;
+			children = (
+				1B75886A1CB11D83000EC285 /* JWParticle.h */,
+				1B75886B1CB11D83000EC285 /* JWParticle.m */,
+				1B75886C1CB11D83000EC285 /* JWParticleEmitter.h */,
+				1B75886D1CB11D83000EC285 /* JWParticleEmitter.m */,
+				1B75886E1CB11D83000EC285 /* JWParticleSystem.h */,
+				1B75886F1CB11D83000EC285 /* JWParticleSystem.m */,
+			);
+			name = game.particle;
+			sourceTree = "<group>";
+		};
+		1B23DA071C86A8A500E0CA22 /* game.physics */ = {
+			isa = PBXGroup;
+			children = (
+				1B7588731CB11D97000EC285 /* JWPhysicalProperty.h */,
+				1B7588741CB11D97000EC285 /* JWPhysicalProperty.m */,
+			);
+			name = game.physics;
+			sourceTree = "<group>";
+		};
+		1B78004E1CBBBEAE00E8459F /* game.loader */ = {
+			isa = PBXGroup;
+			children = (
+				1B7588EF1CB11E46000EC285 /* JWResourceLoader.h */,
+				1B7588F01CB11E46000EC285 /* JWResourceLoader.m */,
+				1B7588F11CB11E46000EC285 /* JWResourceLoaderManager.h */,
+				1B7588F21CB11E46000EC285 /* JWResourceLoaderManager.m */,
+				1B7588F51CB11E46000EC285 /* JWSceneLoader.h */,
+				1B7588F61CB11E46000EC285 /* JWSceneLoader.m */,
+				1B7588F71CB11E46000EC285 /* JWSceneLoaderManager.h */,
+				1B7588F81CB11E46000EC285 /* JWSceneLoaderManager.m */,
+			);
+			name = game.loader;
+			sourceTree = "<group>";
+		};
+		1B7DB3DD1C9BE7F60097E40C /* game.input */ = {
+			isa = PBXGroup;
+			children = (
+				1B7588641CB11D6A000EC285 /* JWGamepad.h */,
+				1B7588651CB11D6A000EC285 /* JWGamepad.m */,
+				1B7588661CB11D6A000EC285 /* JWGamepadManager.h */,
+				1B7588671CB11D6A000EC285 /* JWGamepadManager.m */,
+			);
+			name = game.input;
+			sourceTree = "<group>";
+		};
+		D71B81141ABEC58D00BF81C7 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				D71B81121ABEC4FA00BF81C7 /* CoreMotion.framework */,
+			);
+			name = libs;
+			sourceTree = "<group>";
+		};
+		D721ADF91A73A82F00DA9ACA /* game.plugins */ = {
+			isa = PBXGroup;
+			children = (
+				1B7588761CB11DC7000EC285 /* JWARPlugin.h */,
+				1B7588771CB11DC7000EC285 /* JWARPlugin.m */,
+				1B7588781CB11DC7000EC285 /* JWGamePlugin.h */,
+				1B7588791CB11DC7000EC285 /* JWGamePlugin.m */,
+				1B75887A1CB11DC7000EC285 /* JWGamePluginSystem.h */,
+				1B75887B1CB11DC7000EC285 /* JWGamePluginSystem.m */,
+				1B75887C1CB11DC7000EC285 /* JWInputPlugin.h */,
+				1B75887D1CB11DC7000EC285 /* JWInputPlugin.m */,
+				1B75887E1CB11DC7000EC285 /* JWRenderPlugin.h */,
+				1B75887F1CB11DC7000EC285 /* JWRenderPlugin.m */,
+				1B7588801CB11DC7000EC285 /* JWScenePlugin.h */,
+				1B7588811CB11DC7000EC285 /* JWScenePlugin.m */,
+			);
+			name = game.plugins;
+			sourceTree = "<group>";
+		};
+		D721ADFA1A73A83700DA9ACA /* game.prefabs */ = {
+			isa = PBXGroup;
+			children = (
+				80541C961CB6319600CB6BBA /* JWBackgroundSpritePrefab.h */,
+				80541C971CB6319600CB6BBA /* JWBackgroundSpritePrefab.m */,
+				1B7588881CB11E1C000EC285 /* JWBirdCameraPrefab.h */,
+				1B7588891CB11E1C000EC285 /* JWBirdCameraPrefab.m */,
+				1B75888A1CB11E1C000EC285 /* JWCameraPrefab.h */,
+				1B75888B1CB11E1C000EC285 /* JWCameraPrefab.m */,
+				1B75888C1CB11E1C000EC285 /* JWCameraPrefabDefaultBehaviour.h */,
+				1B75888D1CB11E1C000EC285 /* JWCameraPrefabDefaultBehaviour.m */,
+				1B75888E1CB11E1C000EC285 /* JWCubicPanorama.h */,
+				1B75888F1CB11E1C000EC285 /* JWCubicPanorama.m */,
+				1B7588901CB11E1C000EC285 /* JWDeviceMotionCamera.h */,
+				1B7588911CB11E1C000EC285 /* JWDeviceMotionCamera.m */,
+				1B7588921CB11E1C000EC285 /* JWEditorCameraPrefab.h */,
+				1B7588931CB11E1C000EC285 /* JWEditorCameraPrefab.m */,
+				1B7588941CB11E1C000EC285 /* JWFPSCameraPrefab.h */,
+				1B7588951CB11E1C000EC285 /* JWFPSCameraPrefab.m */,
+				1B7588961CB11E1C000EC285 /* JWPrefabUtils.h */,
+				1B7588971CB11E1C000EC285 /* JWPrefabUtils.m */,
+				1B7588981CB11E1C000EC285 /* JWRect4CornersDecals.h */,
+				1B7588991CB11E1C000EC285 /* JWRect4CornersDecals.m */,
+				1B75889A1CB11E1C000EC285 /* JWRectFrameDecals.h */,
+				1B75889B1CB11E1C000EC285 /* JWRectFrameDecals.m */,
+				1B75889C1CB11E1C000EC285 /* JWVRDeviceCamera.h */,
+				1B75889D1CB11E1C000EC285 /* JWVRDeviceCamera.m */,
+				1B75889E1CB11E1C000EC285 /* JWVREditorCameraPrefab.h */,
+				1B75889F1CB11E1C000EC285 /* JWVREditorCameraPrefab.m */,
+			);
+			name = game.prefabs;
+			sourceTree = "<group>";
+		};
+		D721ADFC1A73A92A00DA9ACA /* game */ = {
+			isa = PBXGroup;
+			children = (
+				1B7588AC1CB11E46000EC285 /* JWBehaviour.h */,
+				1B7588AD1CB11E46000EC285 /* JWBehaviour.m */,
+				1B7588AE1CB11E46000EC285 /* JWBoundsQuery.h */,
+				1B7588AF1CB11E46000EC285 /* JWBoundsQuery.m */,
+				1B7588B01CB11E46000EC285 /* JWBoundsRenderer.h */,
+				1B7588B11CB11E46000EC285 /* JWBoundsRenderer.m */,
+				1B7588B21CB11E46000EC285 /* JWCamera.h */,
+				1B7588B31CB11E46000EC285 /* JWCamera.m */,
+				1B7588B41CB11E46000EC285 /* JWComponent.h */,
+				1B7588B51CB11E46000EC285 /* JWComponent.m */,
+				1B7588B61CB11E46000EC285 /* JWCube.h */,
+				1B7588B71CB11E46000EC285 /* JWCube.m */,
+				1B7588B81CB11E46000EC285 /* JWDeviceCamera.h */,
+				1B7588B91CB11E46000EC285 /* JWDeviceCamera.m */,
+				1B7588BA1CB11E46000EC285 /* JWEffect.h */,
+				1B7588BB1CB11E46000EC285 /* JWEffect.m */,
+				1B7588BC1CB11E46000EC285 /* JWEffectManager.h */,
+				1B7588BD1CB11E46000EC285 /* JWEffectManager.m */,
+				1B7588BE1CB11E46000EC285 /* JWFrustum.h */,
+				1B7588BF1CB11E46000EC285 /* JWFrustum.m */,
+				1B7588C01CB11E46000EC285 /* JWGame.h */,
+				1B7588C11CB11E46000EC285 /* JWGame.m */,
+				1B7588C21CB11E46000EC285 /* JWGameContext.h */,
+				1B7588C31CB11E46000EC285 /* JWGameContext.mm */,
+				1B7588C41CB11E46000EC285 /* JWGameEngine.h */,
+				1B7588C51CB11E46000EC285 /* JWGameEngine.m */,
+				1B7588C61CB11E46000EC285 /* JWGameEvents.h */,
+				1B7588C71CB11E46000EC285 /* JWGameEvents.m */,
+				1B7588C81CB11E46000EC285 /* JWGameFrame.h */,
+				1B7588C91CB11E46000EC285 /* JWGameFrame.m */,
+				1B7588CA1CB11E46000EC285 /* JWGameFramework.h */,
+				1B7588CB1CB11E46000EC285 /* JWGameFramework.m */,
+				1B7588CC1CB11E46000EC285 /* JWGameObject.h */,
+				1B7588CD1CB11E46000EC285 /* JWGameObject.m */,
+				1B7588CE1CB11E46000EC285 /* JWGamePredef.h */,
+				1B7588CF1CB11E46000EC285 /* JWGameScene.h */,
+				1B7588D01CB11E46000EC285 /* JWGameScene.m */,
+				1B7588D11CB11E46000EC285 /* JWGameWorld.h */,
+				1B7588D21CB11E46000EC285 /* JWGameWorld.m */,
+				1B7588D31CB11E46000EC285 /* JWLight.h */,
+				1B7588D41CB11E46000EC285 /* JWLight.m */,
+				1B7588D51CB11E46000EC285 /* JWMaterial.h */,
+				1B7588D61CB11E46000EC285 /* JWMaterial.m */,
+				1B7588D71CB11E46000EC285 /* JWMaterialManager.h */,
+				1B7588D81CB11E46000EC285 /* JWMaterialManager.m */,
+				1B7588D91CB11E46000EC285 /* JWMesh.h */,
+				1B7588DA1CB11E46000EC285 /* JWMesh.m */,
+				1B7588DB1CB11E46000EC285 /* JWMeshManager.h */,
+				1B7588DC1CB11E46000EC285 /* JWMeshManager.m */,
+				1B7588DD1CB11E46000EC285 /* JWMeshRenderer.h */,
+				1B7588DE1CB11E46000EC285 /* JWMeshRenderer.m */,
+				1B7588DF1CB11E46000EC285 /* JWMultiCamera.h */,
+				1B7588E01CB11E46000EC285 /* JWMultiCamera.m */,
+				1B7588E11CB11E46000EC285 /* JWObjectQuery.h */,
+				1B7588E21CB11E46000EC285 /* JWObjectQuery.m */,
+				1B7588E31CB11E46000EC285 /* JWPointLight.h */,
+				1B7588E41CB11E46000EC285 /* JWPointLight.m */,
+				1B7588E51CB11E46000EC285 /* JWRayQuery.h */,
+				1B7588E61CB11E46000EC285 /* JWRayQuery.m */,
+				1B7588E71CB11E46000EC285 /* JWRenderable.h */,
+				1B7588E81CB11E46000EC285 /* JWRenderable.m */,
+				1B7588E91CB11E46000EC285 /* JWRenderQueue.h */,
+				1B7588EA1CB11E46000EC285 /* JWRenderQueue.m */,
+				1B7588EB1CB11E46000EC285 /* JWRenderTimer.h */,
+				1B7588EC1CB11E46000EC285 /* JWRenderTimer.m */,
+				1B7588ED1CB11E46000EC285 /* JWResource.h */,
+				1B7588EE1CB11E46000EC285 /* JWResource.m */,
+				1B7588F31CB11E46000EC285 /* JWResourceManager.h */,
+				1B7588F41CB11E46000EC285 /* JWResourceManager.m */,
+				1B7588FB1CB11E46000EC285 /* JWSceneQuery.h */,
+				1B7588FC1CB11E46000EC285 /* JWSceneQuery.m */,
+				1B7588FD1CB11E46000EC285 /* JWSkeleton.h */,
+				1B7588FE1CB11E46000EC285 /* JWSkeleton.m */,
+				1B7588FF1CB11E46000EC285 /* JWSpotLight.h */,
+				1B7589001CB11E46000EC285 /* JWSpotLight.m */,
+				1B7589011CB11E46000EC285 /* JWTexture.h */,
+				1B7589021CB11E47000EC285 /* JWTexture.m */,
+				1B7589031CB11E47000EC285 /* JWTextureAtlas.h */,
+				1B7589041CB11E47000EC285 /* JWTextureAtlas.m */,
+				1B7589051CB11E47000EC285 /* JWTextureManager.h */,
+				1B7589061CB11E47000EC285 /* JWTextureManager.m */,
+				1B7589071CB11E47000EC285 /* JWTransform.h */,
+				1B7589081CB11E47000EC285 /* JWTransform.m */,
+				1B7589091CB11E47000EC285 /* JWUpdateTimer.h */,
+				1B75890A1CB11E47000EC285 /* JWUpdateTimer.m */,
+				1B75890B1CB11E47000EC285 /* JWVideoTexture.h */,
+				1B75890C1CB11E47000EC285 /* JWVideoTexture.m */,
+				1B75890D1CB11E47000EC285 /* JWVideoTextureManager.h */,
+				1B75890E1CB11E47000EC285 /* JWVideoTextureManager.m */,
+				1B75890F1CB11E47000EC285 /* JWViewTag.h */,
+				1B7589101CB11E47000EC285 /* JWViewTag.m */,
+				1B7589111CB11E47000EC285 /* JWVRCamera.h */,
+				1B7589121CB11E47000EC285 /* JWVRCamera.m */,
+			);
+			name = game;
+			sourceTree = "<group>";
+		};
+		D7241E781A710B7E00BEE609 = {
+			isa = PBXGroup;
+			children = (
+				D7241E831A710B7E00BEE609 /* jw */,
+				D7241E901A710B7E00BEE609 /* ctrlcv_gameTests */,
+				1B1EB7AB1CA41C1E00E4AF15 /* game.loader */,
+				D71B81141ABEC58D00BF81C7 /* libs */,
+				D7241E821A710B7E00BEE609 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D7241E821A710B7E00BEE609 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D7241E811A710B7E00BEE609 /* libjw_game.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D7241E831A710B7E00BEE609 /* jw */ = {
+			isa = PBXGroup;
+			children = (
+				D721ADFC1A73A92A00DA9ACA /* game */,
+				1B23D9F81C8694A100E0CA22 /* game.anim */,
+				D79143741AA834F2004B1444 /* game.ar */,
+				1B7DB3DD1C9BE7F60097E40C /* game.input */,
+				1B78004E1CBBBEAE00E8459F /* game.loader */,
+				1B23D9F91C8694C200E0CA22 /* game.particle */,
+				1B23DA071C86A8A500E0CA22 /* game.physics */,
+				D721ADF91A73A82F00DA9ACA /* game.plugins */,
+				D721ADFA1A73A83700DA9ACA /* game.prefabs */,
+				1B7588401CB11D21000EC285 /* jw_game.h */,
+				1B7588411CB11D21000EC285 /* jw_game.m */,
+			);
+			name = jw;
+			path = ctrlcv_game;
+			sourceTree = "<group>";
+		};
+		D7241E901A710B7E00BEE609 /* ctrlcv_gameTests */ = {
+			isa = PBXGroup;
+			children = (
+				D7241E911A710B7E00BEE609 /* Supporting Files */,
+			);
+			path = ctrlcv_gameTests;
+			sourceTree = "<group>";
+		};
+		D7241E911A710B7E00BEE609 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D7241E921A710B7E00BEE609 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D79143741AA834F2004B1444 /* game.ar */ = {
+			isa = PBXGroup;
+			children = (
+				1B7588521CB11D52000EC285 /* JWARCamera.h */,
+				1B7588531CB11D52000EC285 /* JWARCamera.m */,
+				1B7588541CB11D52000EC285 /* JWARDataSet.h */,
+				1B7588551CB11D52000EC285 /* JWARDataSet.m */,
+				1B7588561CB11D52000EC285 /* JWARDataSetManager.h */,
+				1B7588571CB11D52000EC285 /* JWARDataSetManager.m */,
+				1B7588581CB11D52000EC285 /* JWARImageTarget.h */,
+				1B7588591CB11D52000EC285 /* JWARImageTarget.m */,
+				1B75885A1CB11D52000EC285 /* JWARImageTracker.h */,
+				1B75885B1CB11D52000EC285 /* JWARImageTracker.m */,
+				1B75885C1CB11D52000EC285 /* JWARSystem.h */,
+				1B75885D1CB11D52000EC285 /* JWARSystem.m */,
+			);
+			name = game.ar;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D7241E801A710B7E00BEE609 /* jw_game */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7241E951A710B7E00BEE609 /* Build configuration list for PBXNativeTarget "jw_game" */;
+			buildPhases = (
+				D7241E7D1A710B7E00BEE609 /* Sources */,
+				D7241E7E1A710B7E00BEE609 /* Frameworks */,
+				D7241E7F1A710B7E00BEE609 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = jw_game;
+			productName = ctrlcv_game;
+			productReference = D7241E811A710B7E00BEE609 /* libjw_game.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D7241E791A710B7E00BEE609 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "luojunwen123@gmail.com";
+				TargetAttributes = {
+					D7241E801A710B7E00BEE609 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+				};
+			};
+			buildConfigurationList = D7241E7C1A710B7E00BEE609 /* Build configuration list for PBXProject "jw_game" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D7241E781A710B7E00BEE609;
+			productRefGroup = D7241E821A710B7E00BEE609 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D7241E801A710B7E00BEE609 /* jw_game */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D7241E7D1A710B7E00BEE609 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B75884D1CB11D37000EC285 /* JWAnimation.m in Sources */,
+				1B7589451CB11E47000EC285 /* JWVRCamera.m in Sources */,
+				1B7589221CB11E47000EC285 /* JWGameFramework.m in Sources */,
+				1B7588AA1CB11E1C000EC285 /* JWVRDeviceCamera.m in Sources */,
+				1B75884F1CB11D37000EC285 /* JWAnimationResourceManager.m in Sources */,
+				1B7588691CB11D6A000EC285 /* JWGamepadManager.m in Sources */,
+				1B7588A91CB11E1C000EC285 /* JWRectFrameDecals.m in Sources */,
+				1B75891B1CB11E47000EC285 /* JWEffectManager.m in Sources */,
+				1B7589321CB11E47000EC285 /* JWRenderTimer.m in Sources */,
+				1B7588861CB11DC7000EC285 /* JWRenderPlugin.m in Sources */,
+				1B7589251CB11E47000EC285 /* JWGameWorld.m in Sources */,
+				1B75891E1CB11E47000EC285 /* JWGameContext.mm in Sources */,
+				1B75891D1CB11E47000EC285 /* JWGame.m in Sources */,
+				1B75885E1CB11D52000EC285 /* JWARCamera.m in Sources */,
+				1B7589191CB11E47000EC285 /* JWDeviceCamera.m in Sources */,
+				1B7588A71CB11E1C000EC285 /* JWPrefabUtils.m in Sources */,
+				1B7588501CB11D37000EC285 /* JWAnimationSet.m in Sources */,
+				1B7588711CB11D83000EC285 /* JWParticleEmitter.m in Sources */,
+				1B75892F1CB11E47000EC285 /* JWRayQuery.m in Sources */,
+				1B75891C1CB11E47000EC285 /* JWFrustum.m in Sources */,
+				1B7589421CB11E47000EC285 /* JWVideoTexture.m in Sources */,
+				1B7588611CB11D52000EC285 /* JWARImageTarget.m in Sources */,
+				1B7589301CB11E47000EC285 /* JWRenderable.m in Sources */,
+				1B7589131CB11E47000EC285 /* JWBehaviour.m in Sources */,
+				1B7589151CB11E47000EC285 /* JWBoundsRenderer.m in Sources */,
+				1B75893A1CB11E47000EC285 /* JWSceneQuery.m in Sources */,
+				1B7589201CB11E47000EC285 /* JWGameEvents.m in Sources */,
+				1B7588421CB11D21000EC285 /* jw_game.m in Sources */,
+				1B75892D1CB11E47000EC285 /* JWObjectQuery.m in Sources */,
+				80541C981CB6319600CB6BBA /* JWBackgroundSpritePrefab.m in Sources */,
+				1B7589281CB11E47000EC285 /* JWMaterialManager.m in Sources */,
+				1B75884E1CB11D37000EC285 /* JWAnimationResource.m in Sources */,
+				1B7588681CB11D6A000EC285 /* JWGamepad.m in Sources */,
+				1B7589161CB11E47000EC285 /* JWCamera.m in Sources */,
+				1B7588601CB11D52000EC285 /* JWARDataSetManager.m in Sources */,
+				1B7589311CB11E47000EC285 /* JWRenderQueue.m in Sources */,
+				1B7588821CB11DC7000EC285 /* JWARPlugin.m in Sources */,
+				1B75893D1CB11E47000EC285 /* JWTexture.m in Sources */,
+				1B7588701CB11D83000EC285 /* JWParticle.m in Sources */,
+				1B7589261CB11E47000EC285 /* JWLight.m in Sources */,
+				1B7588A51CB11E1C000EC285 /* JWEditorCameraPrefab.m in Sources */,
+				1B7588871CB11DC7000EC285 /* JWScenePlugin.m in Sources */,
+				1B7588A11CB11E1C000EC285 /* JWCameraPrefab.m in Sources */,
+				1B75893F1CB11E47000EC285 /* JWTextureManager.m in Sources */,
+				1B75892C1CB11E47000EC285 /* JWMultiCamera.m in Sources */,
+				1B7588A01CB11E1C000EC285 /* JWBirdCameraPrefab.m in Sources */,
+				1B7589371CB11E47000EC285 /* JWSceneLoader.m in Sources */,
+				1B7589211CB11E47000EC285 /* JWGameFrame.m in Sources */,
+				1B7589241CB11E47000EC285 /* JWGameScene.m in Sources */,
+				1B7588851CB11DC7000EC285 /* JWInputPlugin.m in Sources */,
+				1B7589431CB11E47000EC285 /* JWVideoTextureManager.m in Sources */,
+				1B7589381CB11E47000EC285 /* JWSceneLoaderManager.m in Sources */,
+				1B7588A81CB11E1C000EC285 /* JWRect4CornersDecals.m in Sources */,
+				1B7588A61CB11E1C000EC285 /* JWFPSCameraPrefab.m in Sources */,
+				1B7589441CB11E47000EC285 /* JWViewTag.m in Sources */,
+				1B7588511CB11D37000EC285 /* JWAnimationTrack.m in Sources */,
+				1B7589141CB11E47000EC285 /* JWBoundsQuery.m in Sources */,
+				1B7589331CB11E47000EC285 /* JWResource.m in Sources */,
+				1B7589271CB11E47000EC285 /* JWMaterial.m in Sources */,
+				1B7589171CB11E47000EC285 /* JWComponent.m in Sources */,
+				1B7589341CB11E47000EC285 /* JWResourceLoader.m in Sources */,
+				1B7589361CB11E47000EC285 /* JWResourceManager.m in Sources */,
+				1B7589411CB11E47000EC285 /* JWUpdateTimer.m in Sources */,
+				1B75893E1CB11E47000EC285 /* JWTextureAtlas.m in Sources */,
+				1B7589231CB11E47000EC285 /* JWGameObject.m in Sources */,
+				1B75885F1CB11D52000EC285 /* JWARDataSet.m in Sources */,
+				1B7589291CB11E47000EC285 /* JWMesh.m in Sources */,
+				1B7589401CB11E47000EC285 /* JWTransform.m in Sources */,
+				1B75893B1CB11E47000EC285 /* JWSkeleton.m in Sources */,
+				1B7588751CB11D97000EC285 /* JWPhysicalProperty.m in Sources */,
+				1B7588AB1CB11E1C000EC285 /* JWVREditorCameraPrefab.m in Sources */,
+				1B75893C1CB11E47000EC285 /* JWSpotLight.m in Sources */,
+				1B7588831CB11DC7000EC285 /* JWGamePlugin.m in Sources */,
+				1B7588A21CB11E1C000EC285 /* JWCameraPrefabDefaultBehaviour.m in Sources */,
+				1B7588A31CB11E1C000EC285 /* JWCubicPanorama.m in Sources */,
+				1B7588A41CB11E1C000EC285 /* JWDeviceMotionCamera.m in Sources */,
+				1B75892B1CB11E47000EC285 /* JWMeshRenderer.m in Sources */,
+				1B7588621CB11D52000EC285 /* JWARImageTracker.m in Sources */,
+				1B7588841CB11DC7000EC285 /* JWGamePluginSystem.m in Sources */,
+				1B75892A1CB11E47000EC285 /* JWMeshManager.m in Sources */,
+				1B75891F1CB11E47000EC285 /* JWGameEngine.m in Sources */,
+				1B7588721CB11D83000EC285 /* JWParticleSystem.m in Sources */,
+				1B75891A1CB11E47000EC285 /* JWEffect.m in Sources */,
+				1B7589351CB11E47000EC285 /* JWResourceLoaderManager.m in Sources */,
+				1B75892E1CB11E47000EC285 /* JWPointLight.m in Sources */,
+				1B7588631CB11D52000EC285 /* JWARSystem.m in Sources */,
+				1B7589181CB11E47000EC285 /* JWCube.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D7241E931A710B7E00BEE609 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D7241E941A710B7E00BEE609 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D7241E961A710B7E00BEE609 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/../jc_core",
+					"$(PROJECT_DIR)/../jc_core/jw",
+					"$(PROJECT_DIR)/../jw_core",
+					"$(PROJECT_DIR)/../jw_core/jw",
+					"$(PROJECT_DIR)/../jw_app",
+					"$(PROJECT_DIR)/../jw_app/jw",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = jw_game;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D7241E971A710B7E00BEE609 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/../jc_core",
+					"$(PROJECT_DIR)/../jc_core/jw",
+					"$(PROJECT_DIR)/../jw_core",
+					"$(PROJECT_DIR)/../jw_core/jw",
+					"$(PROJECT_DIR)/../jw_app",
+					"$(PROJECT_DIR)/../jw_app/jw",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = jw_game;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D7241E7C1A710B7E00BEE609 /* Build configuration list for PBXProject "jw_game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7241E931A710B7E00BEE609 /* Debug */,
+				D7241E941A710B7E00BEE609 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7241E951A710B7E00BEE609 /* Build configuration list for PBXNativeTarget "jw_game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7241E961A710B7E00BEE609 /* Debug */,
+				D7241E971A710B7E00BEE609 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D7241E791A710B7E00BEE609 /* Project object */;
+}

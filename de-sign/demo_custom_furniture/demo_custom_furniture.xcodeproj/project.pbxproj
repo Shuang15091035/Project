@@ -1,0 +1,432 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1BF42A071CF821F2003B7DB7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF42A061CF821F2003B7DB7 /* main.m */; };
+		1BF42A0A1CF821F2003B7DB7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF42A091CF821F2003B7DB7 /* AppDelegate.m */; };
+		1BF42A0D1CF821F2003B7DB7 /* Showcase.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1BF42A0C1CF821F2003B7DB7 /* Showcase.mm */; };
+		1BF42A101CF821F2003B7DB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BF42A0E1CF821F2003B7DB7 /* Main.storyboard */; };
+		1BF42A121CF821F2003B7DB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BF42A111CF821F2003B7DB7 /* Assets.xcassets */; };
+		1BF42A151CF821F2003B7DB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BF42A131CF821F2003B7DB7 /* LaunchScreen.storyboard */; };
+		1BF42A1E1CF824D3003B7DB7 /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF42A1D1CF824D3003B7DB7 /* Common.m */; };
+		1BF42A2A1CF825FC003B7DB7 /* libjw_app.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BF42A221CF825FC003B7DB7 /* libjw_app.a */; };
+		1BF42A2B1CF825FC003B7DB7 /* libjw_core.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BF42A231CF825FC003B7DB7 /* libjw_core.a */; };
+		1BF42A2C1CF825FC003B7DB7 /* libjw_exr.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BF42A241CF825FC003B7DB7 /* libjw_exr.a */; };
+		1BF42A2D1CF825FC003B7DB7 /* libjw_game.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BF42A251CF825FC003B7DB7 /* libjw_game.a */; };
+		1BF42A321CF8264C003B7DB7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BF42A311CF8264C003B7DB7 /* Foundation.framework */; };
+		1BF42A341CF82661003B7DB7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BF42A331CF82661003B7DB7 /* UIKit.framework */; };
+		1BF42A361CF82666003B7DB7 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BF42A351CF82666003B7DB7 /* OpenGLES.framework */; };
+		1BF873F51CF85696005C3F45 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 1BF873F41CF85696005C3F45 /* assets */; };
+		804A6BD91CFC0D77003C1062 /* libjc_core.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 804A6BD81CFC0D77003C1062 /* libjc_core.a */; };
+		804A6BDB1CFC0D8D003C1062 /* libjc_opengl3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 804A6BDA1CFC0D8D003C1062 /* libjc_opengl3.a */; };
+		804A6BDD1CFC0D99003C1062 /* libjw_loader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 804A6BDC1CFC0D99003C1062 /* libjw_loader.a */; };
+		804A6BDF1CFC0DA2003C1062 /* libjw_opengl3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 804A6BDE1CFC0DA2003C1062 /* libjw_opengl3.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1BF42A021CF821F2003B7DB7 /* demo_custom_furniture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = demo_custom_furniture.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BF42A061CF821F2003B7DB7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1BF42A081CF821F2003B7DB7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1BF42A091CF821F2003B7DB7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1BF42A0B1CF821F2003B7DB7 /* Showcase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Showcase.h; sourceTree = "<group>"; };
+		1BF42A0C1CF821F2003B7DB7 /* Showcase.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Showcase.mm; sourceTree = "<group>"; };
+		1BF42A0F1CF821F2003B7DB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1BF42A111CF821F2003B7DB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1BF42A141CF821F2003B7DB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1BF42A161CF821F2003B7DB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BF42A1C1CF824D3003B7DB7 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		1BF42A1D1CF824D3003B7DB7 /* Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
+		1BF42A201CF825FC003B7DB7 /* libjc_core.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjc_core.a; path = "../../../../../../../Library/Developer/Xcode/DerivedData/projects-eymoiodwjpgqzqcssuoyncgsptbz/Build/Products/Debug-iphonesimulator/libjc_core.a"; sourceTree = "<group>"; };
+		1BF42A211CF825FC003B7DB7 /* libjc_opengl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjc_opengl.a; path = "../../../../../../../Library/Developer/Xcode/DerivedData/projects-eymoiodwjpgqzqcssuoyncgsptbz/Build/Products/Debug-iphonesimulator/libjc_opengl.a"; sourceTree = "<group>"; };
+		1BF42A221CF825FC003B7DB7 /* libjw_app.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjw_app.a; path = "../../../../../../../Library/Developer/Xcode/DerivedData/projects-eymoiodwjpgqzqcssuoyncgsptbz/Build/Products/Debug-iphonesimulator/libjw_app.a"; sourceTree = "<group>"; };
+		1BF42A231CF825FC003B7DB7 /* libjw_core.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjw_core.a; path = "../../../../../../../Library/Developer/Xcode/DerivedData/projects-eymoiodwjpgqzqcssuoyncgsptbz/Build/Products/Debug-iphonesimulator/libjw_core.a"; sourceTree = "<group>"; };
+		1BF42A241CF825FC003B7DB7 /* libjw_exr.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjw_exr.a; path = "../../../../../../../Library/Developer/Xcode/DerivedData/projects-eymoiodwjpgqzqcssuoyncgsptbz/Build/Products/Debug-iphonesimulator/libjw_exr.a"; sourceTree = "<group>"; };
+		1BF42A251CF825FC003B7DB7 /* libjw_game.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjw_game.a; path = "../../../../../../../Library/Developer/Xcode/DerivedData/projects-eymoiodwjpgqzqcssuoyncgsptbz/Build/Products/Debug-iphonesimulator/libjw_game.a"; sourceTree = "<group>"; };
+		1BF42A261CF825FC003B7DB7 /* libjw_loader.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjw_loader.a; path = "../../../../../../../Library/Developer/Xcode/DerivedData/projects-eymoiodwjpgqzqcssuoyncgsptbz/Build/Products/Debug-iphonesimulator/libjw_loader.a"; sourceTree = "<group>"; };
+		1BF42A271CF825FC003B7DB7 /* libjw_opengl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjw_opengl.a; path = "../../../../../../../Library/Developer/Xcode/DerivedData/projects-eymoiodwjpgqzqcssuoyncgsptbz/Build/Products/Debug-iphonesimulator/libjw_opengl.a"; sourceTree = "<group>"; };
+		1BF42A311CF8264C003B7DB7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1BF42A331CF82661003B7DB7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1BF42A351CF82666003B7DB7 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		1BF873F41CF85696005C3F45 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = "<group>"; };
+		804A6BD81CFC0D77003C1062 /* libjc_core.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjc_core.a; path = ../jc_core/universal/libjc_core.a; sourceTree = "<group>"; };
+		804A6BDA1CFC0D8D003C1062 /* libjc_opengl3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjc_opengl3.a; path = ../jc_opengl/universal/libjc_opengl3.a; sourceTree = "<group>"; };
+		804A6BDC1CFC0D99003C1062 /* libjw_loader.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjw_loader.a; path = ../jw_loader/universal/libjw_loader.a; sourceTree = "<group>"; };
+		804A6BDE1CFC0DA2003C1062 /* libjw_opengl3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjw_opengl3.a; path = ../jw_opengl/universal/libjw_opengl3.a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1BF429FF1CF821F2003B7DB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				804A6BDF1CFC0DA2003C1062 /* libjw_opengl3.a in Frameworks */,
+				804A6BDD1CFC0D99003C1062 /* libjw_loader.a in Frameworks */,
+				804A6BDB1CFC0D8D003C1062 /* libjc_opengl3.a in Frameworks */,
+				804A6BD91CFC0D77003C1062 /* libjc_core.a in Frameworks */,
+				1BF42A341CF82661003B7DB7 /* UIKit.framework in Frameworks */,
+				1BF42A321CF8264C003B7DB7 /* Foundation.framework in Frameworks */,
+				1BF42A361CF82666003B7DB7 /* OpenGLES.framework in Frameworks */,
+				1BF42A2A1CF825FC003B7DB7 /* libjw_app.a in Frameworks */,
+				1BF42A2B1CF825FC003B7DB7 /* libjw_core.a in Frameworks */,
+				1BF42A2C1CF825FC003B7DB7 /* libjw_exr.a in Frameworks */,
+				1BF42A2D1CF825FC003B7DB7 /* libjw_game.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1BF429F91CF821F2003B7DB7 = {
+			isa = PBXGroup;
+			children = (
+				804A6BDE1CFC0DA2003C1062 /* libjw_opengl3.a */,
+				804A6BDC1CFC0D99003C1062 /* libjw_loader.a */,
+				804A6BDA1CFC0D8D003C1062 /* libjc_opengl3.a */,
+				804A6BD81CFC0D77003C1062 /* libjc_core.a */,
+				1BF42A041CF821F2003B7DB7 /* demo_custom_furniture */,
+				1BF42A301CF82600003B7DB7 /* libs */,
+				1BF42A031CF821F2003B7DB7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1BF42A031CF821F2003B7DB7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1BF42A021CF821F2003B7DB7 /* demo_custom_furniture.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1BF42A041CF821F2003B7DB7 /* demo_custom_furniture */ = {
+			isa = PBXGroup;
+			children = (
+				1BF42A081CF821F2003B7DB7 /* AppDelegate.h */,
+				1BF42A091CF821F2003B7DB7 /* AppDelegate.m */,
+				1BF873F41CF85696005C3F45 /* assets */,
+				1BF42A111CF821F2003B7DB7 /* Assets.xcassets */,
+				1BF42A1C1CF824D3003B7DB7 /* Common.h */,
+				1BF42A1D1CF824D3003B7DB7 /* Common.m */,
+				1BF42A161CF821F2003B7DB7 /* Info.plist */,
+				1BF42A131CF821F2003B7DB7 /* LaunchScreen.storyboard */,
+				1BF42A0E1CF821F2003B7DB7 /* Main.storyboard */,
+				1BF42A0B1CF821F2003B7DB7 /* Showcase.h */,
+				1BF42A0C1CF821F2003B7DB7 /* Showcase.mm */,
+				1BF42A051CF821F2003B7DB7 /* Supporting Files */,
+			);
+			path = demo_custom_furniture;
+			sourceTree = "<group>";
+		};
+		1BF42A051CF821F2003B7DB7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1BF42A061CF821F2003B7DB7 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1BF42A301CF82600003B7DB7 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				1BF42A311CF8264C003B7DB7 /* Foundation.framework */,
+				1BF42A201CF825FC003B7DB7 /* libjc_core.a */,
+				1BF42A211CF825FC003B7DB7 /* libjc_opengl.a */,
+				1BF42A221CF825FC003B7DB7 /* libjw_app.a */,
+				1BF42A231CF825FC003B7DB7 /* libjw_core.a */,
+				1BF42A241CF825FC003B7DB7 /* libjw_exr.a */,
+				1BF42A251CF825FC003B7DB7 /* libjw_game.a */,
+				1BF42A261CF825FC003B7DB7 /* libjw_loader.a */,
+				1BF42A271CF825FC003B7DB7 /* libjw_opengl.a */,
+				1BF42A351CF82666003B7DB7 /* OpenGLES.framework */,
+				1BF42A331CF82661003B7DB7 /* UIKit.framework */,
+			);
+			name = libs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1BF42A011CF821F2003B7DB7 /* demo_custom_furniture */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BF42A191CF821F2003B7DB7 /* Build configuration list for PBXNativeTarget "demo_custom_furniture" */;
+			buildPhases = (
+				1BF429FE1CF821F2003B7DB7 /* Sources */,
+				1BF429FF1CF821F2003B7DB7 /* Frameworks */,
+				1BF42A001CF821F2003B7DB7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = demo_custom_furniture;
+			productName = demo_custom_furniture;
+			productReference = 1BF42A021CF821F2003B7DB7 /* demo_custom_furniture.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1BF429FA1CF821F2003B7DB7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "luojunwen123@gmail.com";
+				TargetAttributes = {
+					1BF42A011CF821F2003B7DB7 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 1BF429FD1CF821F2003B7DB7 /* Build configuration list for PBXProject "demo_custom_furniture" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1BF429F91CF821F2003B7DB7;
+			productRefGroup = 1BF42A031CF821F2003B7DB7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1BF42A011CF821F2003B7DB7 /* demo_custom_furniture */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1BF42A001CF821F2003B7DB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BF42A151CF821F2003B7DB7 /* LaunchScreen.storyboard in Resources */,
+				1BF873F51CF85696005C3F45 /* assets in Resources */,
+				1BF42A121CF821F2003B7DB7 /* Assets.xcassets in Resources */,
+				1BF42A101CF821F2003B7DB7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1BF429FE1CF821F2003B7DB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BF42A1E1CF824D3003B7DB7 /* Common.m in Sources */,
+				1BF42A0D1CF821F2003B7DB7 /* Showcase.mm in Sources */,
+				1BF42A0A1CF821F2003B7DB7 /* AppDelegate.m in Sources */,
+				1BF42A071CF821F2003B7DB7 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1BF42A0E1CF821F2003B7DB7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1BF42A0F1CF821F2003B7DB7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1BF42A131CF821F2003B7DB7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1BF42A141CF821F2003B7DB7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1BF42A171CF821F2003B7DB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1BF42A181CF821F2003B7DB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1BF42A1A1CF821F2003B7DB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/../jc_core",
+					"$(PROJECT_DIR)/../jc_core/jw",
+					"$(PROJECT_DIR)/../jw_core",
+					"$(PROJECT_DIR)/../jw_core/jw",
+					"$(PROJECT_DIR)/../jw_exr",
+					"$(PROJECT_DIR)/../jw_exr/jw",
+					"$(PROJECT_DIR)/../jw_app",
+					"$(PROJECT_DIR)/../jw_app/jw",
+					"$(PROJECT_DIR)/../jw_game",
+					"$(PROJECT_DIR)/../jw_game/jw",
+					"$(PROJECT_DIR)/../jw_loader",
+					"$(PROJECT_DIR)/../jw_opengl",
+					"$(PROJECT_DIR)/../jw_opengl/jw",
+					"$(PROJECT_DIR)/../jw_mojing",
+				);
+				INFOPLIST_FILE = demo_custom_furniture/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/../jc_core/universal",
+					"$(PROJECT_DIR)/../jc_opengl/universal",
+					"$(PROJECT_DIR)/../jw_opengl/universal",
+					"$(PROJECT_DIR)/../jw_loader/universal",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jw.lib.demo-custom-furniture";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1BF42A1B1CF821F2003B7DB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/../jc_core",
+					"$(PROJECT_DIR)/../jc_core/jw",
+					"$(PROJECT_DIR)/../jw_core",
+					"$(PROJECT_DIR)/../jw_core/jw",
+					"$(PROJECT_DIR)/../jw_exr",
+					"$(PROJECT_DIR)/../jw_exr/jw",
+					"$(PROJECT_DIR)/../jw_app",
+					"$(PROJECT_DIR)/../jw_app/jw",
+					"$(PROJECT_DIR)/../jw_game",
+					"$(PROJECT_DIR)/../jw_game/jw",
+					"$(PROJECT_DIR)/../jw_loader",
+					"$(PROJECT_DIR)/../jw_opengl",
+					"$(PROJECT_DIR)/../jw_opengl/jw",
+					"$(PROJECT_DIR)/../jw_mojing",
+				);
+				INFOPLIST_FILE = demo_custom_furniture/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/../jc_core/universal",
+					"$(PROJECT_DIR)/../jc_opengl/universal",
+					"$(PROJECT_DIR)/../jw_opengl/universal",
+					"$(PROJECT_DIR)/../jw_loader/universal",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jw.lib.demo-custom-furniture";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1BF429FD1CF821F2003B7DB7 /* Build configuration list for PBXProject "demo_custom_furniture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BF42A171CF821F2003B7DB7 /* Debug */,
+				1BF42A181CF821F2003B7DB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BF42A191CF821F2003B7DB7 /* Build configuration list for PBXNativeTarget "demo_custom_furniture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BF42A1A1CF821F2003B7DB7 /* Debug */,
+				1BF42A1B1CF821F2003B7DB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1BF429FA1CF821F2003B7DB7 /* Project object */;
+}

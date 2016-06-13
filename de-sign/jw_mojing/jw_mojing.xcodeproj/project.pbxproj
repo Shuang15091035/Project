@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B6648F81CB3951200A1FA4F /* Manufacturer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7589791CB12635000EC285 /* Manufacturer.m */; };
+		1B6648F91CB3951200A1FA4F /* Glass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7589771CB12635000EC285 /* Glass.m */; };
+		1B6648FA1CB3951200A1FA4F /* JWMojingManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1B75896C1CB12620000EC285 /* JWMojingManager.mm */; };
+		1B6648FB1CB3951200A1FA4F /* JWMojingGamepadManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1B7589681CB12620000EC285 /* JWMojingGamepadManager.mm */; };
+		1B6648FC1CB3951200A1FA4F /* JWMojingInputPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75896A1CB12620000EC285 /* JWMojingInputPlugin.m */; };
+		1B6648FD1CB3951200A1FA4F /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75897D1CB12635000EC285 /* Product.m */; };
+		1B6648FE1CB3951200A1FA4F /* jw_mojing.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7589621CB12620000EC285 /* jw_mojing.m */; };
+		1B6648FF1CB3951200A1FA4F /* JWMojingRenderPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75896E1CB12620000EC285 /* JWMojingRenderPlugin.m */; };
+		1B6649001CB3951200A1FA4F /* JWMojingGamepad.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1B7589661CB12620000EC285 /* JWMojingGamepad.mm */; };
+		1B6649011CB3951200A1FA4F /* JWMojingCamera.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1B7589641CB12620000EC285 /* JWMojingCamera.mm */; };
+		1B6649021CB3951200A1FA4F /* ManufacturerList.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75897B1CB12635000EC285 /* ManufacturerList.m */; };
+		1B6649041CB3951200A1FA4F /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 806982A31C8D7580003DC79E /* OpenGLES.framework */; };
+		1B6649051CB3951200A1FA4F /* MojingSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 804F6BB41C899B2D00D7AB22 /* MojingSDK.framework */; };
+		1B6649111CB3C16B00A1FA4F /* Manufacturer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7589791CB12635000EC285 /* Manufacturer.m */; };
+		1B6649121CB3C16B00A1FA4F /* Glass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7589771CB12635000EC285 /* Glass.m */; };
+		1B6649131CB3C16B00A1FA4F /* JWMojingManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1B75896C1CB12620000EC285 /* JWMojingManager.mm */; };
+		1B6649141CB3C16B00A1FA4F /* JWMojingGamepadManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1B7589681CB12620000EC285 /* JWMojingGamepadManager.mm */; };
+		1B6649151CB3C16B00A1FA4F /* JWMojingInputPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75896A1CB12620000EC285 /* JWMojingInputPlugin.m */; };
+		1B6649161CB3C16B00A1FA4F /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75897D1CB12635000EC285 /* Product.m */; };
+		1B6649171CB3C16B00A1FA4F /* jw_mojing.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7589621CB12620000EC285 /* jw_mojing.m */; };
+		1B6649181CB3C16B00A1FA4F /* JWMojingRenderPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75896E1CB12620000EC285 /* JWMojingRenderPlugin.m */; };
+		1B6649191CB3C16B00A1FA4F /* JWMojingGamepad.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1B7589661CB12620000EC285 /* JWMojingGamepad.mm */; };
+		1B66491A1CB3C16B00A1FA4F /* JWMojingCamera.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1B7589641CB12620000EC285 /* JWMojingCamera.mm */; };
+		1B66491B1CB3C16B00A1FA4F /* ManufacturerList.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75897B1CB12635000EC285 /* ManufacturerList.m */; };
+		1B66491D1CB3C16B00A1FA4F /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 806982A31C8D7580003DC79E /* OpenGLES.framework */; };
+		1B66491E1CB3C16B00A1FA4F /* MojingSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 804F6BB41C899B2D00D7AB22 /* MojingSDK.framework */; };
+		1B75896F1CB12620000EC285 /* jw_mojing.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7589621CB12620000EC285 /* jw_mojing.m */; };
+		1B7589701CB12620000EC285 /* JWMojingCamera.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1B7589641CB12620000EC285 /* JWMojingCamera.mm */; };
+		1B7589711CB12620000EC285 /* JWMojingGamepad.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1B7589661CB12620000EC285 /* JWMojingGamepad.mm */; };
+		1B7589721CB12620000EC285 /* JWMojingGamepadManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1B7589681CB12620000EC285 /* JWMojingGamepadManager.mm */; };
+		1B7589731CB12620000EC285 /* JWMojingInputPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75896A1CB12620000EC285 /* JWMojingInputPlugin.m */; };
+		1B7589741CB12620000EC285 /* JWMojingManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1B75896C1CB12620000EC285 /* JWMojingManager.mm */; };
+		1B7589751CB12620000EC285 /* JWMojingRenderPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75896E1CB12620000EC285 /* JWMojingRenderPlugin.m */; };
+		1B75897E1CB12635000EC285 /* Glass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7589771CB12635000EC285 /* Glass.m */; };
+		1B75897F1CB12635000EC285 /* Manufacturer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7589791CB12635000EC285 /* Manufacturer.m */; };
+		1B7589801CB12635000EC285 /* ManufacturerList.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75897B1CB12635000EC285 /* ManufacturerList.m */; };
+		1B7589811CB12635000EC285 /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75897D1CB12635000EC285 /* Product.m */; };
+		804F6BB51C899B2D00D7AB22 /* MojingSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 804F6BB41C899B2D00D7AB22 /* MojingSDK.framework */; };
+		806982A41C8D7580003DC79E /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 806982A31C8D7580003DC79E /* OpenGLES.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1B6649061CB3951200A1FA4F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B66491F1CB3C16B00A1FA4F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		804F6BA61C899B0100D7AB22 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1B66490A1CB3951200A1FA4F /* libjw_mojing_gl2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libjw_mojing_gl2.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B6649231CB3C16B00A1FA4F /* libjw_mojing_gl3.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libjw_mojing_gl3.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B7589611CB12620000EC285 /* jw_mojing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = jw_mojing.h; path = jw/jw_mojing.h; sourceTree = SOURCE_ROOT; };
+		1B7589621CB12620000EC285 /* jw_mojing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = jw_mojing.m; path = jw/jw_mojing.m; sourceTree = SOURCE_ROOT; };
+		1B7589631CB12620000EC285 /* JWMojingCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWMojingCamera.h; path = jw/JWMojingCamera.h; sourceTree = SOURCE_ROOT; };
+		1B7589641CB12620000EC285 /* JWMojingCamera.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = JWMojingCamera.mm; path = jw/JWMojingCamera.mm; sourceTree = SOURCE_ROOT; };
+		1B7589651CB12620000EC285 /* JWMojingGamepad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWMojingGamepad.h; path = jw/JWMojingGamepad.h; sourceTree = SOURCE_ROOT; };
+		1B7589661CB12620000EC285 /* JWMojingGamepad.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = JWMojingGamepad.mm; path = jw/JWMojingGamepad.mm; sourceTree = SOURCE_ROOT; };
+		1B7589671CB12620000EC285 /* JWMojingGamepadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWMojingGamepadManager.h; path = jw/JWMojingGamepadManager.h; sourceTree = SOURCE_ROOT; };
+		1B7589681CB12620000EC285 /* JWMojingGamepadManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = JWMojingGamepadManager.mm; path = jw/JWMojingGamepadManager.mm; sourceTree = SOURCE_ROOT; };
+		1B7589691CB12620000EC285 /* JWMojingInputPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWMojingInputPlugin.h; path = jw/JWMojingInputPlugin.h; sourceTree = SOURCE_ROOT; };
+		1B75896A1CB12620000EC285 /* JWMojingInputPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWMojingInputPlugin.m; path = jw/JWMojingInputPlugin.m; sourceTree = SOURCE_ROOT; };
+		1B75896B1CB12620000EC285 /* JWMojingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWMojingManager.h; path = jw/JWMojingManager.h; sourceTree = SOURCE_ROOT; };
+		1B75896C1CB12620000EC285 /* JWMojingManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = JWMojingManager.mm; path = jw/JWMojingManager.mm; sourceTree = SOURCE_ROOT; };
+		1B75896D1CB12620000EC285 /* JWMojingRenderPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWMojingRenderPlugin.h; path = jw/JWMojingRenderPlugin.h; sourceTree = SOURCE_ROOT; };
+		1B75896E1CB12620000EC285 /* JWMojingRenderPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWMojingRenderPlugin.m; path = jw/JWMojingRenderPlugin.m; sourceTree = SOURCE_ROOT; };
+		1B7589761CB12635000EC285 /* Glass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Glass.h; path = jw/Glass.h; sourceTree = SOURCE_ROOT; };
+		1B7589771CB12635000EC285 /* Glass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Glass.m; path = jw/Glass.m; sourceTree = SOURCE_ROOT; };
+		1B7589781CB12635000EC285 /* Manufacturer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Manufacturer.h; path = jw/Manufacturer.h; sourceTree = SOURCE_ROOT; };
+		1B7589791CB12635000EC285 /* Manufacturer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Manufacturer.m; path = jw/Manufacturer.m; sourceTree = SOURCE_ROOT; };
+		1B75897A1CB12635000EC285 /* ManufacturerList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ManufacturerList.h; path = jw/ManufacturerList.h; sourceTree = SOURCE_ROOT; };
+		1B75897B1CB12635000EC285 /* ManufacturerList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ManufacturerList.m; path = jw/ManufacturerList.m; sourceTree = SOURCE_ROOT; };
+		1B75897C1CB12635000EC285 /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Product.h; path = jw/Product.h; sourceTree = SOURCE_ROOT; };
+		1B75897D1CB12635000EC285 /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Product.m; path = jw/Product.m; sourceTree = SOURCE_ROOT; };
+		804F6BA81C899B0100D7AB22 /* libjw_mojing.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libjw_mojing.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		804F6BB41C899B2D00D7AB22 /* MojingSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MojingSDK.framework; path = ../3rd/MojingSDK.framework; sourceTree = "<group>"; };
+		806982A31C8D7580003DC79E /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1B6649031CB3951200A1FA4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B6649041CB3951200A1FA4F /* OpenGLES.framework in Frameworks */,
+				1B6649051CB3951200A1FA4F /* MojingSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B66491C1CB3C16B00A1FA4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B66491D1CB3C16B00A1FA4F /* OpenGLES.framework in Frameworks */,
+				1B66491E1CB3C16B00A1FA4F /* MojingSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		804F6BA51C899B0100D7AB22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				806982A41C8D7580003DC79E /* OpenGLES.framework in Frameworks */,
+				804F6BB51C899B2D00D7AB22 /* MojingSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B7DB3F01C9FC9350097E40C /* official */ = {
+			isa = PBXGroup;
+			children = (
+				1B7589761CB12635000EC285 /* Glass.h */,
+				1B7589771CB12635000EC285 /* Glass.m */,
+				1B7589781CB12635000EC285 /* Manufacturer.h */,
+				1B7589791CB12635000EC285 /* Manufacturer.m */,
+				1B75897A1CB12635000EC285 /* ManufacturerList.h */,
+				1B75897B1CB12635000EC285 /* ManufacturerList.m */,
+				1B75897C1CB12635000EC285 /* Product.h */,
+				1B75897D1CB12635000EC285 /* Product.m */,
+			);
+			name = official;
+			sourceTree = "<group>";
+		};
+		804F6B9F1C899B0100D7AB22 = {
+			isa = PBXGroup;
+			children = (
+				804F6BAA1C899B0100D7AB22 /* jw */,
+				804F6BB61C899B3100D7AB22 /* libs */,
+				804F6BA91C899B0100D7AB22 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		804F6BA91C899B0100D7AB22 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				804F6BA81C899B0100D7AB22 /* libjw_mojing.a */,
+				1B66490A1CB3951200A1FA4F /* libjw_mojing_gl2.a */,
+				1B6649231CB3C16B00A1FA4F /* libjw_mojing_gl3.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		804F6BAA1C899B0100D7AB22 /* jw */ = {
+			isa = PBXGroup;
+			children = (
+				1B7589611CB12620000EC285 /* jw_mojing.h */,
+				1B7589621CB12620000EC285 /* jw_mojing.m */,
+				1B7589631CB12620000EC285 /* JWMojingCamera.h */,
+				1B7589641CB12620000EC285 /* JWMojingCamera.mm */,
+				1B7589651CB12620000EC285 /* JWMojingGamepad.h */,
+				1B7589661CB12620000EC285 /* JWMojingGamepad.mm */,
+				1B7589671CB12620000EC285 /* JWMojingGamepadManager.h */,
+				1B7589681CB12620000EC285 /* JWMojingGamepadManager.mm */,
+				1B7589691CB12620000EC285 /* JWMojingInputPlugin.h */,
+				1B75896A1CB12620000EC285 /* JWMojingInputPlugin.m */,
+				1B75896B1CB12620000EC285 /* JWMojingManager.h */,
+				1B75896C1CB12620000EC285 /* JWMojingManager.mm */,
+				1B75896D1CB12620000EC285 /* JWMojingRenderPlugin.h */,
+				1B75896E1CB12620000EC285 /* JWMojingRenderPlugin.m */,
+				1B7DB3F01C9FC9350097E40C /* official */,
+			);
+			name = jw;
+			path = ctrlcv_mojing;
+			sourceTree = "<group>";
+		};
+		804F6BB61C899B3100D7AB22 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				806982A31C8D7580003DC79E /* OpenGLES.framework */,
+				804F6BB41C899B2D00D7AB22 /* MojingSDK.framework */,
+			);
+			name = libs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1B6648F61CB3951200A1FA4F /* jw_mojing_gl2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B6649071CB3951200A1FA4F /* Build configuration list for PBXNativeTarget "jw_mojing_gl2" */;
+			buildPhases = (
+				1B6648F71CB3951200A1FA4F /* Sources */,
+				1B6649031CB3951200A1FA4F /* Frameworks */,
+				1B6649061CB3951200A1FA4F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = jw_mojing_gl2;
+			productName = ctrlcv_mojing;
+			productReference = 1B66490A1CB3951200A1FA4F /* libjw_mojing_gl2.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		1B66490F1CB3C16B00A1FA4F /* jw_mojing_gl3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B6649201CB3C16B00A1FA4F /* Build configuration list for PBXNativeTarget "jw_mojing_gl3" */;
+			buildPhases = (
+				1B6649101CB3C16B00A1FA4F /* Sources */,
+				1B66491C1CB3C16B00A1FA4F /* Frameworks */,
+				1B66491F1CB3C16B00A1FA4F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = jw_mojing_gl3;
+			productName = ctrlcv_mojing;
+			productReference = 1B6649231CB3C16B00A1FA4F /* libjw_mojing_gl3.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		804F6BA71C899B0100D7AB22 /* jw_mojing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 804F6BB11C899B0100D7AB22 /* Build configuration list for PBXNativeTarget "jw_mojing" */;
+			buildPhases = (
+				804F6BA41C899B0100D7AB22 /* Sources */,
+				804F6BA51C899B0100D7AB22 /* Frameworks */,
+				804F6BA61C899B0100D7AB22 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = jw_mojing;
+			productName = ctrlcv_mojing;
+			productReference = 804F6BA81C899B0100D7AB22 /* libjw_mojing.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		804F6BA01C899B0100D7AB22 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "luojunwen123@gmail.com";
+				TargetAttributes = {
+					804F6BA71C899B0100D7AB22 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 8BNGGTUVLB;
+					};
+				};
+			};
+			buildConfigurationList = 804F6BA31C899B0100D7AB22 /* Build configuration list for PBXProject "jw_mojing" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 804F6B9F1C899B0100D7AB22;
+			productRefGroup = 804F6BA91C899B0100D7AB22 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				804F6BA71C899B0100D7AB22 /* jw_mojing */,
+				1B6648F61CB3951200A1FA4F /* jw_mojing_gl2 */,
+				1B66490F1CB3C16B00A1FA4F /* jw_mojing_gl3 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1B6648F71CB3951200A1FA4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B6648F81CB3951200A1FA4F /* Manufacturer.m in Sources */,
+				1B6648F91CB3951200A1FA4F /* Glass.m in Sources */,
+				1B6648FA1CB3951200A1FA4F /* JWMojingManager.mm in Sources */,
+				1B6648FB1CB3951200A1FA4F /* JWMojingGamepadManager.mm in Sources */,
+				1B6648FC1CB3951200A1FA4F /* JWMojingInputPlugin.m in Sources */,
+				1B6648FD1CB3951200A1FA4F /* Product.m in Sources */,
+				1B6648FE1CB3951200A1FA4F /* jw_mojing.m in Sources */,
+				1B6648FF1CB3951200A1FA4F /* JWMojingRenderPlugin.m in Sources */,
+				1B6649001CB3951200A1FA4F /* JWMojingGamepad.mm in Sources */,
+				1B6649011CB3951200A1FA4F /* JWMojingCamera.mm in Sources */,
+				1B6649021CB3951200A1FA4F /* ManufacturerList.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B6649101CB3C16B00A1FA4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B6649111CB3C16B00A1FA4F /* Manufacturer.m in Sources */,
+				1B6649121CB3C16B00A1FA4F /* Glass.m in Sources */,
+				1B6649131CB3C16B00A1FA4F /* JWMojingManager.mm in Sources */,
+				1B6649141CB3C16B00A1FA4F /* JWMojingGamepadManager.mm in Sources */,
+				1B6649151CB3C16B00A1FA4F /* JWMojingInputPlugin.m in Sources */,
+				1B6649161CB3C16B00A1FA4F /* Product.m in Sources */,
+				1B6649171CB3C16B00A1FA4F /* jw_mojing.m in Sources */,
+				1B6649181CB3C16B00A1FA4F /* JWMojingRenderPlugin.m in Sources */,
+				1B6649191CB3C16B00A1FA4F /* JWMojingGamepad.mm in Sources */,
+				1B66491A1CB3C16B00A1FA4F /* JWMojingCamera.mm in Sources */,
+				1B66491B1CB3C16B00A1FA4F /* ManufacturerList.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		804F6BA41C899B0100D7AB22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B75897F1CB12635000EC285 /* Manufacturer.m in Sources */,
+				1B75897E1CB12635000EC285 /* Glass.m in Sources */,
+				1B7589741CB12620000EC285 /* JWMojingManager.mm in Sources */,
+				1B7589721CB12620000EC285 /* JWMojingGamepadManager.mm in Sources */,
+				1B7589731CB12620000EC285 /* JWMojingInputPlugin.m in Sources */,
+				1B7589811CB12635000EC285 /* Product.m in Sources */,
+				1B75896F1CB12620000EC285 /* jw_mojing.m in Sources */,
+				1B7589751CB12620000EC285 /* JWMojingRenderPlugin.m in Sources */,
+				1B7589711CB12620000EC285 /* JWMojingGamepad.mm in Sources */,
+				1B7589701CB12620000EC285 /* JWMojingCamera.mm in Sources */,
+				1B7589801CB12635000EC285 /* ManufacturerList.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1B6649081CB3951200A1FA4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../3rd";
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"JW_OPENGL_VERSION=2",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/../jc_core",
+					"$(PROJECT_DIR)/../jc_opengl",
+					"$(PROJECT_DIR)/../jw_core",
+					"$(PROJECT_DIR)/../jw_app",
+					"$(PROJECT_DIR)/../jw_game",
+					"$(PROJECT_DIR)/../jw_opengl",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		1B6649091CB3951200A1FA4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../3rd";
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_PREPROCESSOR_DEFINITIONS = "JW_OPENGL_VERSION=2";
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/../jc_core",
+					"$(PROJECT_DIR)/../jc_opengl",
+					"$(PROJECT_DIR)/../jw_core",
+					"$(PROJECT_DIR)/../jw_app",
+					"$(PROJECT_DIR)/../jw_game",
+					"$(PROJECT_DIR)/../jw_opengl",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		1B6649211CB3C16B00A1FA4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../3rd";
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"JW_OPENGL_VERSION=3",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/../jc_core",
+					"$(PROJECT_DIR)/../jc_opengl",
+					"$(PROJECT_DIR)/../jw_core",
+					"$(PROJECT_DIR)/../jw_app",
+					"$(PROJECT_DIR)/../jw_game",
+					"$(PROJECT_DIR)/../jw_opengl",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		1B6649221CB3C16B00A1FA4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../3rd";
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_PREPROCESSOR_DEFINITIONS = "JW_OPENGL_VERSION=3";
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/../jc_core",
+					"$(PROJECT_DIR)/../jc_opengl",
+					"$(PROJECT_DIR)/../jw_core",
+					"$(PROJECT_DIR)/../jw_app",
+					"$(PROJECT_DIR)/../jw_game",
+					"$(PROJECT_DIR)/../jw_opengl",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		804F6BAF1C899B0100D7AB22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		804F6BB01C899B0100D7AB22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		804F6BB21C899B0100D7AB22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../3rd";
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/../jc_core",
+					"$(PROJECT_DIR)/../jc_opengl",
+					"$(PROJECT_DIR)/../jw_core",
+					"$(PROJECT_DIR)/../jw_app",
+					"$(PROJECT_DIR)/../jw_game",
+					"$(PROJECT_DIR)/../jw_opengl",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = jw_mojing;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		804F6BB31C899B0100D7AB22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../3rd";
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/../jc_core",
+					"$(PROJECT_DIR)/../jc_opengl",
+					"$(PROJECT_DIR)/../jw_core",
+					"$(PROJECT_DIR)/../jw_app",
+					"$(PROJECT_DIR)/../jw_game",
+					"$(PROJECT_DIR)/../jw_opengl",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = jw_mojing;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1B6649071CB3951200A1FA4F /* Build configuration list for PBXNativeTarget "jw_mojing_gl2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B6649081CB3951200A1FA4F /* Debug */,
+				1B6649091CB3951200A1FA4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1B6649201CB3C16B00A1FA4F /* Build configuration list for PBXNativeTarget "jw_mojing_gl3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B6649211CB3C16B00A1FA4F /* Debug */,
+				1B6649221CB3C16B00A1FA4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		804F6BA31C899B0100D7AB22 /* Build configuration list for PBXProject "jw_mojing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				804F6BAF1C899B0100D7AB22 /* Debug */,
+				804F6BB01C899B0100D7AB22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		804F6BB11C899B0100D7AB22 /* Build configuration list for PBXNativeTarget "jw_mojing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				804F6BB21C899B0100D7AB22 /* Debug */,
+				804F6BB31C899B0100D7AB22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 804F6BA01C899B0100D7AB22 /* Project object */;
+}

@@ -1,0 +1,821 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="1.4.1" xmlns="http://www.collada.org/2005/11/COLLADASchema">
+  <asset>
+    <up_axis>Y_UP</up_axis>
+    <unit meter="1" />
+  </asset>
+  <library_images>
+    <image id="t_bathroom_tiles001-tex">
+      <init_from>../texture/t_bathroom_tiles001.png</init_from>
+    </image>
+    <image id="t_marble001-tex">
+      <init_from>../texture/t_marble001.png</init_from>
+    </image>
+    <image id="t_bathroom_tiles002-tex">
+      <init_from>../texture/t_bathroom_tiles002.png</init_from>
+    </image>
+    <image id="t_outer_wa_ld-tex">
+      <init_from>../texture/t_outer_wa_ld.png</init_from>
+    </image>
+    <image id="t_bathroom_wood001-tex">
+      <init_from>../texture/t_bathroom_wood001.png</init_from>
+    </image>
+  </library_images>
+  <library_effects>
+    <effect id="bathroom_tiles002">
+      <profile_COMMON>
+        <newparam sid="t_bathroom_tiles001-surface">
+          <surface type="2D">
+            <init_from>t_bathroom_tiles001-tex</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="t_bathroom_tiles001-sampler">
+          <sampler2D>
+            <source>t_bathroom_tiles001-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <phong>
+            <diffuse>
+              <texture texture="t_bathroom_tiles001-sampler" texcoord="CHANNEL1" />
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="aosman_bathroom_fl">
+      <profile_COMMON>
+        <newparam sid="t_marble001-surface">
+          <surface type="2D">
+            <init_from>t_marble001-tex</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="t_marble001-sampler">
+          <sampler2D>
+            <source>t_marble001-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <phong>
+            <diffuse>
+              <texture texture="t_marble001-sampler" texcoord="CHANNEL1" />
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="yushi">
+      <profile_COMMON>
+        <newparam sid="t_bathroom_tiles002-surface">
+          <surface type="2D">
+            <init_from>t_bathroom_tiles002-tex</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="t_bathroom_tiles002-sampler">
+          <sampler2D>
+            <source>t_bathroom_tiles002-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <phong>
+            <diffuse>
+              <texture texture="t_bathroom_tiles002-sampler" texcoord="CHANNEL1" />
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="t_outer_wa_ld">
+      <profile_COMMON>
+        <newparam sid="t_outer_wa_ld-surface">
+          <surface type="2D">
+            <init_from>t_outer_wa_ld-tex</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="t_outer_wa_ld-sampler">
+          <sampler2D>
+            <source>t_outer_wa_ld-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="t_outer_wa_ld-surface">
+          <surface type="2D">
+            <init_from>t_outer_wa_ld-tex</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="t_outer_wa_ld-sampler">
+          <sampler2D>
+            <source>t_outer_wa_ld-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <phong>
+            <diffuse>
+              <texture texture="t_outer_wa_ld-sampler" texcoord="CHANNEL1" />
+            </diffuse>
+            <transparent>
+              <texture texture="t_outer_wa_ld-sampler" texcoord="CHANNEL1" />
+            </transparent>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="t_bathroom_wood001">
+      <profile_COMMON>
+        <newparam sid="t_bathroom_wood001-surface">
+          <surface type="2D">
+            <init_from>t_bathroom_wood001-tex</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="t_bathroom_wood001-sampler">
+          <sampler2D>
+            <source>t_bathroom_wood001-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <phong>
+            <diffuse>
+              <texture texture="t_bathroom_wood001-sampler" texcoord="CHANNEL1" />
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="villa_thickness_ld_mat">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <diffuse>
+              <color>0.99 0.99 0.99 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="bathroom_tiles002-material" name="bathroom_tiles002">
+      <instance_effect url="#bathroom_tiles002" />
+    </material>
+    <material id="aosman_bathroom_fl-material" name="aosman_bathroom_fl">
+      <instance_effect url="#aosman_bathroom_fl" />
+    </material>
+    <material id="yushi-material" name="yushi">
+      <instance_effect url="#yushi" />
+    </material>
+    <material id="t_outer_wa_ld-material" name="t_outer_wa_ld">
+      <instance_effect url="#t_outer_wa_ld" />
+    </material>
+    <material id="t_bathroom_wood001-material" name="t_bathroom_wood001">
+      <instance_effect url="#t_bathroom_wood001" />
+    </material>
+    <material id="villa_thickness_ld_mat-material" name="villa_thickness_ld_mat">
+      <instance_effect url="#villa_thickness_ld_mat" />
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="geom-fl_ground001_ld" name="fl_ground001_ld">
+      <mesh>
+        <source id="geom-fl_ground001_ld-positions">
+          <float_array id="geom-fl_ground001_ld-positions-array" count="18">0 9.17 9.534 0 -6.703 1.88 0 -6.703 9.534 0 -7.252 -4.757 0 9.17 -4.757 0 -7.252 1.88</float_array>
+          <technique_common>
+            <accessor source="#geom-fl_ground001_ld-positions-array" count="6" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-fl_ground001_ld-normals">
+          <float_array id="geom-fl_ground001_ld-normals-array" count="18">0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-fl_ground001_ld-normals-array" count="6" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-fl_ground001_ld-tangents">
+          <float_array id="geom-fl_ground001_ld-tangents-array" count="24">0.707 0 -0.707 -1 0.707 0 -0.707 -1 0.707 0 -0.707 -1 0.707 0 -0.707 -1 0.707 0 -0.707 -1 0.707 0 -0.707 -1</float_array>
+          <technique_common>
+            <accessor source="#geom-fl_ground001_ld-tangents-array" count="6" stride="4">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+              <param name="W" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-fl_ground001_ld-map1">
+          <float_array id="geom-fl_ground001_ld-map1-array" count="12">1.352 -1.844 1.463 1.419 3.038 -0.157 0.155 2.844 -1.591 1.099 1.521 1.477</float_array>
+          <technique_common>
+            <accessor source="#geom-fl_ground001_ld-map1-array" count="6" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-fl_ground001_ld-map2">
+          <float_array id="geom-fl_ground001_ld-map2-array" count="12">1 0 0.464 0.967 1 0.967 0 1 0 0 0.464 1</float_array>
+          <technique_common>
+            <accessor source="#geom-fl_ground001_ld-map2-array" count="6" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-fl_ground001_ld-vertices">
+          <input semantic="POSITION" source="#geom-fl_ground001_ld-positions" />
+        </vertices>
+        <triangles material="bathroom_tiles002" count="4">
+          <input semantic="VERTEX" source="#geom-fl_ground001_ld-vertices" offset="0" />
+          <input semantic="NORMAL" source="#geom-fl_ground001_ld-normals" offset="0" />
+          <input semantic="TANGENT" source="#geom-fl_ground001_ld-tangents" offset="0" />
+          <input semantic="TEXCOORD" source="#geom-fl_ground001_ld-map1" offset="0" set="0" />
+          <input semantic="TEXCOORD" source="#geom-fl_ground001_ld-map2" offset="0" set="1" />
+          <p>2 1 3 2 4 1 4 5 1 6 4 2</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-fl_ground002_ld" name="fl_ground002_ld">
+      <mesh>
+        <source id="geom-fl_ground002_ld-positions">
+          <float_array id="geom-fl_ground002_ld-positions-array" count="66">0 3.328 -5.212 0 3.328 -5.308 0 -1.608 -5.212 0 -1.608 -5.308 0 -7.252 -4.757 0 -7.919 -5.212 0 -7.919 -4.637 0 -7.252 1.88 0 -7.919 1.88 0 -8.668 1.88 0 -8.668 -4.637 0 -7.919 9.926 0 -6.703 9.534 0 -3.005 9.926 0 3.259 9.926 0 -3.005 10.564 0 3.259 10.564 0 9.17 9.534 0 10.11 9.926 0 9.17 -4.757 0 10.11 -5.212 0 -6.703 1.88</float_array>
+          <technique_common>
+            <accessor source="#geom-fl_ground002_ld-positions-array" count="22" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-fl_ground002_ld-normals">
+          <float_array id="geom-fl_ground002_ld-normals-array" count="66">0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-fl_ground002_ld-normals-array" count="22" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-fl_ground002_ld-tangents">
+          <float_array id="geom-fl_ground002_ld-tangents-array" count="88">1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1</float_array>
+          <technique_common>
+            <accessor source="#geom-fl_ground002_ld-tangents-array" count="22" stride="4">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+              <param name="W" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-fl_ground002_ld-map1">
+          <float_array id="geom-fl_ground002_ld-map1-array" count="44">-1.697 0.123 -1.724 0.123 -1.697 0.837 -1.724 0.837 -1.57 1.653 -1.697 1.75 -1.536 1.75 0.29 1.653 0.29 1.75 0.29 1.858 -1.536 1.858 2.545 1.75 2.436 1.574 2.545 1.039 2.545 0.133 2.724 1.039 2.724 0.133 2.436 -0.722 2.545 -0.858 -1.57 -0.722 -1.697 -0.858 0.29 1.574</float_array>
+          <technique_common>
+            <accessor source="#geom-fl_ground002_ld-map1-array" count="22" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-fl_ground002_ld-map2">
+          <float_array id="geom-fl_ground002_ld-map2-array" count="44">0.006 0.361 0 0.361 0.006 0.624 0 0.624 0.035 0.925 0.006 0.96 0.042 0.96 0.453 0.925 0.453 0.96 0.453 1 0.042 1 0.96 0.96 0.935 0.895 0.96 0.698 0.96 0.365 1 0.698 1 0.365 0.935 0.05 0.96 0 0.035 0.05 0.006 0 0.453 0.895</float_array>
+          <technique_common>
+            <accessor source="#geom-fl_ground002_ld-map2-array" count="22" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-fl_ground002_ld-vertices">
+          <input semantic="POSITION" source="#geom-fl_ground002_ld-positions" />
+        </vertices>
+        <triangles material="aosman_bathroom_fl" count="22">
+          <input semantic="VERTEX" source="#geom-fl_ground002_ld-vertices" offset="0" />
+          <input semantic="NORMAL" source="#geom-fl_ground002_ld-normals" offset="0" />
+          <input semantic="TANGENT" source="#geom-fl_ground002_ld-tangents" offset="0" />
+          <input semantic="TEXCOORD" source="#geom-fl_ground002_ld-map1" offset="0" set="0" />
+          <input semantic="TEXCOORD" source="#geom-fl_ground002_ld-map2" offset="0" set="1" />
+          <p>2 1 3 4 2 3 3 1 5 6 3 5 7 6 5 7 5 8 7 8 9 7 9 10 11 7 10 9 8 12 12 8 13 14 12 13 14 13 15 16 14 15 17 16 15 13 18 15 19 15 18 19 18 20 21 19 20 8 22 13 1 21 20 1 20 5</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-fl_ground003_ld" name="fl_ground003_ld">
+      <mesh>
+        <source id="geom-fl_ground003_ld-positions">
+          <float_array id="geom-fl_ground003_ld-positions-array" count="18">0 -9.833 -4.637 0 -9.833 -5.212 0 -18.656 -5.212 0 -18.656 1.88 0 -8.668 1.88 0 -8.668 -4.637</float_array>
+          <technique_common>
+            <accessor source="#geom-fl_ground003_ld-positions-array" count="6" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-fl_ground003_ld-normals">
+          <float_array id="geom-fl_ground003_ld-normals-array" count="18">0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-fl_ground003_ld-normals-array" count="6" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-fl_ground003_ld-tangents">
+          <float_array id="geom-fl_ground003_ld-tangents-array" count="24">1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1</float_array>
+          <technique_common>
+            <accessor source="#geom-fl_ground003_ld-tangents-array" count="6" stride="4">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+              <param name="W" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-fl_ground003_ld-map1">
+          <float_array id="geom-fl_ground003_ld-map1-array" count="12">-0.282 -0.033 -0.431 -0.033 -0.431 1.145 1.404 1.145 1.404 -0.189 -0.282 -0.189</float_array>
+          <technique_common>
+            <accessor source="#geom-fl_ground003_ld-map1-array" count="6" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-fl_ground003_ld-map2">
+          <float_array id="geom-fl_ground003_ld-map2-array" count="12">0.081 0.117 0 0.117 0 1 1 1 1 0 0.081 0</float_array>
+          <technique_common>
+            <accessor source="#geom-fl_ground003_ld-map2-array" count="6" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-fl_ground003_ld-vertices">
+          <input semantic="POSITION" source="#geom-fl_ground003_ld-positions" />
+        </vertices>
+        <triangles material="yushi" count="4">
+          <input semantic="VERTEX" source="#geom-fl_ground003_ld-vertices" offset="0" />
+          <input semantic="NORMAL" source="#geom-fl_ground003_ld-normals" offset="0" />
+          <input semantic="TANGENT" source="#geom-fl_ground003_ld-tangents" offset="0" />
+          <input semantic="TEXCOORD" source="#geom-fl_ground003_ld-map1" offset="0" set="0" />
+          <input semantic="TEXCOORD" source="#geom-fl_ground003_ld-map2" offset="0" set="1" />
+          <p>2 1 3 4 3 1 5 4 1 6 5 1</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-outer_wa_ld" name="outer_wa_ld">
+      <mesh>
+        <source id="geom-outer_wa_ld-positions">
+          <float_array id="geom-outer_wa_ld-positions-array" count="96">0 -19.869 2.518 26.043 -19.869 -0.681 0 -19.869 -6.033 26.043 -19.869 -3.061 62.871 -19.869 -6.033 50.571 -19.869 -3.061 50.571 -19.869 -0.681 62.871 -19.869 2.518 62.871 -9.222 10.564 62.871 -9.222 2.518 0 -9.222 10.564 0 -9.222 2.518 0 -9.222 2.518 62.871 -9.222 2.518 0 -19.869 2.518 62.871 -19.869 2.518 62.871 -19.869 -6.033 62.871 11.346 -6.033 0 -19.869 -6.033 0 11.346 -6.033 62.871 11.346 10.564 50.637 3.259 10.564 0 11.346 10.564 0 3.259 10.564 62.871 -9.222 10.564 50.637 -3.005 10.564 0 -9.222 10.564 0 -3.005 10.564 0 11.346 10.564 0 11.346 -6.033 62.871 11.346 10.564 62.871 11.346 -6.033</float_array>
+          <technique_common>
+            <accessor source="#geom-outer_wa_ld-positions-array" count="32" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-outer_wa_ld-normals">
+          <float_array id="geom-outer_wa_ld-normals-array" count="96">0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 1 0 0 1 0 0 1 0 0 1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 0 0 1 0 0 1 0 0 1 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#geom-outer_wa_ld-normals-array" count="32" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-outer_wa_ld-tangents">
+          <float_array id="geom-outer_wa_ld-tangents-array" count="128">-0.999 0.035 0 -1 -0.999 0.054 0 -1 -0.999 -0.04 0 -1 -0.997 -0.08 0 -1 -0.996 -0.093 0 -1 -0.99 -0.144 0 -1 -0.997 0.074 0 -1 -0.997 0.081 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 1 -1 0 0 1 -1 0 0 1 -1 0 0 1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 1 0 -1 0 1 0 -1 0 1 0 -1 0 1 0 -1</float_array>
+          <technique_common>
+            <accessor source="#geom-outer_wa_ld-tangents-array" count="32" stride="4">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+              <param name="W" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-outer_wa_ld-map1">
+          <float_array id="geom-outer_wa_ld-map1-array" count="64">0.219 0.154 0.424 0.421 0.767 0.154 0.576 0.421 0.766 0.846 0.576 0.674 0.424 0.674 0.219 0.846 0.389 0.846 1.16 0.846 0.389 0.154 1.16 0.154 0.324 0.154 0.324 0.846 0.676 0.154 0.676 0.846 -0.015 0.846 1.015 0.846 -0.015 0.154 1.015 0.154 -0.86 1.971 0.17 1.398 -0.86 -0.971 0.17 -0.971 1.86 1.971 1.111 1.398 1.86 -0.971 1.111 -0.971 0 0 0 1 0.609 0 0.609 1</float_array>
+          <technique_common>
+            <accessor source="#geom-outer_wa_ld-map1-array" count="32" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-outer_wa_ld-map2">
+          <float_array id="geom-outer_wa_ld-map2-array" count="64">0.005 0.657 0.118 0.783 0.287 0.657 0.196 0.783 0.287 0.993 0.196 0.896 0.118 0.896 0.005 0.993 0.991 0.304 0.991 0.006 0.715 0.304 0.715 0.006 0.581 0.006 0.581 0.447 0.7 0.006 0.7 0.447 0.991 0.993 0.991 0.524 0.715 0.993 0.715 0.524 0.118 0.783 0.118 0.783 0.118 0.783 0.118 0.783 0.118 0.783 0.118 0.783 0.118 0.783 0.118 0.783 0 0 0 1 0.609 0 0.609 1</float_array>
+          <technique_common>
+            <accessor source="#geom-outer_wa_ld-map2-array" count="32" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-outer_wa_ld-vertices">
+          <input semantic="POSITION" source="#geom-outer_wa_ld-positions" />
+        </vertices>
+        <triangles material="t_outer_wa_ld" count="22">
+          <input semantic="VERTEX" source="#geom-outer_wa_ld-vertices" offset="0" />
+          <input semantic="NORMAL" source="#geom-outer_wa_ld-normals" offset="0" />
+          <input semantic="TANGENT" source="#geom-outer_wa_ld-tangents" offset="0" />
+          <input semantic="TEXCOORD" source="#geom-outer_wa_ld-map1" offset="0" set="0" />
+          <input semantic="TEXCOORD" source="#geom-outer_wa_ld-map2" offset="0" set="1" />
+          <p>2 1 3 4 2 3 3 5 4 5 6 4 6 5 7 5 8 7 8 1 2 7 8 2 10 9 11 12 10 11 14 13 15 16 14 15 18 17 19 20 18 19 22 21 23 24 22 23 25 21 22 26 25 22 27 25 26 28 27 26 30 29 31 32 30 31</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-wa_bathroom001_ld" name="wa_bathroom001_ld">
+      <mesh>
+        <source id="geom-wa_bathroom001_ld-positions">
+          <float_array id="geom-wa_bathroom001_ld-positions-array" count="132">62.871 -9.833 -4.637 0 -9.833 -4.637 62.871 -7.919 -4.637 0 -7.919 -4.637 62.871 -9.833 -5.212 0 -9.833 -5.212 62.871 -9.833 -4.637 0 -9.833 -4.637 62.871 -7.919 -4.637 0 -7.919 -4.637 62.871 -7.919 -5.212 0 -7.919 -5.212 62.871 -7.919 -5.212 0 -7.919 -5.212 62.871 -1.608 -5.212 0 -1.608 -5.212 0 -1.608 -5.212 0 -1.608 -5.308 62.871 -1.608 -5.212 62.871 -1.608 -5.308 0 -7.919 1.88 62.871 -7.919 1.88 0 -7.919 9.926 62.871 -7.919 9.926 62.871 10.11 9.926 50.637 3.259 9.926 62.871 -7.919 9.926 50.637 -3.005 9.926 0 10.11 9.926 0 3.259 9.926 0 -7.919 9.926 0 -3.005 9.926 62.871 10.11 -5.212 0 10.11 -5.212 62.871 10.11 9.926 0 10.11 9.926 62.871 3.328 -5.212 0 3.328 -5.212 62.871 10.11 -5.212 0 10.11 -5.212 62.871 3.328 -5.212 62.871 3.328 -5.308 0 3.328 -5.212 0 3.328 -5.308</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_bathroom001_ld-positions-array" count="44" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_bathroom001_ld-normals">
+          <float_array id="geom-wa_bathroom001_ld-normals-array" count="132">1 0 0 1 0 0 1 0 0 1 0 0 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 1 0 0 1 0 0 1 0 0 1 1 0 0 1 0 0 1 0 0 1 0 0 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 0 0 -1 0 0 -1 0 0 -1 0 0 -1 1 0 0 1 0 0 1 0 0 1 0 0 0 0 -1 0 0 -1 0 0 -1 0 0 -1</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_bathroom001_ld-normals-array" count="44" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_bathroom001_ld-tangents">
+          <float_array id="geom-wa_bathroom001_ld-tangents-array" count="176">0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 0 0 1 -1 0 0 1 -1 0 0 1 -1 0 0 1 -1 0 0 1 -1 0 0 1 -1 0 0 1 -1 0 0 1 -1 0 1 0 -1 0 1 0 -1 0 1 0 -1 0 1 0 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_bathroom001_ld-tangents-array" count="44" stride="4">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+              <param name="W" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_bathroom001_ld-map1">
+          <float_array id="geom-wa_bathroom001_ld-map1-array" count="88">0.788 2.271 0.788 -0.671 0.501 2.271 0.501 -0.671 1.168 2.271 1.168 -0.671 1.001 2.271 1.001 -0.671 0.67 2.271 0.67 -0.671 0.503 2.271 0.503 -0.671 0.503 2.271 0.503 -0.671 -0.446 2.271 -0.446 -0.671 -0.446 -0.671 -0.474 -0.671 -0.446 2.271 -0.474 2.271 -0.5 -0.769 -0.5 2.173 1.843 -0.769 1.843 2.173 1.943 1.672 0.913 1.1 -0.767 1.672 -0.028 1.1 1.943 -1.27 0.913 -1.27 -0.767 -1.27 -0.028 -1.27 1.671 -1.905 -1.271 -1.905 1.671 2.502 -1.271 2.502 1.52 1.671 1.52 -1.271 0.501 1.671 0.501 -1.271 1.52 1.671 1.548 1.671 1.52 -1.271 1.548 -1.271</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_bathroom001_ld-map1-array" count="44" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_bathroom001_ld-map2">
+          <float_array id="geom-wa_bathroom001_ld-map2-array" count="88">0.942 0.994 0.942 0.437 0.871 0.994 0.871 0.437 0.995 0.994 0.995 0.437 0.948 0.994 0.948 0.437 0.432 0.994 0.432 0.653 0.395 0.994 0.395 0.653 0.395 0.994 0.395 0.653 0.02 0.994 0.02 0.653 0.02 0.653 0.005 0.653 0.02 0.994 0.005 0.994 0.442 0.437 0.442 0.994 0.865 0.437 0.865 0.994 0.836 0.432 0.686 0.351 0.442 0.432 0.549 0.351 0.836 0.004 0.686 0.004 0.442 0.004 0.549 0.004 0.434 0.004 0.005 0.004 0.434 0.646 0.005 0.646 0.99 0.432 0.99 0.004 0.841 0.432 0.841 0.004 0.99 0.432 0.998 0.432 0.99 0.004 0.998 0.004</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_bathroom001_ld-map2-array" count="44" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_bathroom001_ld-colors">
+          <float_array id="geom-wa_bathroom001_ld-colors-array" count="176">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_bathroom001_ld-colors-array" count="44" stride="4">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+              <param name="A" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-wa_bathroom001_ld-vertices">
+          <input semantic="POSITION" source="#geom-wa_bathroom001_ld-positions" />
+        </vertices>
+        <triangles material="bathroom_tiles002" count="24">
+          <input semantic="VERTEX" source="#geom-wa_bathroom001_ld-vertices" offset="0" />
+          <input semantic="NORMAL" source="#geom-wa_bathroom001_ld-normals" offset="0" />
+          <input semantic="TANGENT" source="#geom-wa_bathroom001_ld-tangents" offset="0" />
+          <input semantic="TEXCOORD" source="#geom-wa_bathroom001_ld-map1" offset="0" set="0" />
+          <input semantic="TEXCOORD" source="#geom-wa_bathroom001_ld-map2" offset="0" set="1" />
+          <input semantic="COLOR" source="#geom-wa_bathroom001_ld-colors" offset="0" />
+          <p>2 1 3 4 2 3 6 5 7 8 6 7 10 9 11 12 10 11 14 13 15 16 14 15 18 17 19 20 18 19 22 21 23 24 22 23 26 25 27 28 26 27 29 25 26 30 29 26 27 31 28 31 32 28 34 33 35 36 34 35 38 37 39 40 38 39 42 41 43 44 42 43</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-wa_bathroom002_ld" name="wa_bathroom002_ld">
+      <mesh>
+        <source id="geom-wa_bathroom002_ld-positions">
+          <float_array id="geom-wa_bathroom002_ld-positions-array" count="48">0 -18.656 1.88 26.086 -18.656 -0.681 62.871 -18.656 1.88 50.571 -18.656 -0.681 62.871 -18.656 -5.212 50.571 -18.656 -3.061 26.086 -18.656 -3.061 0 -18.656 -5.212 62.871 -18.656 -5.212 0 -18.656 -5.212 62.871 -9.833 -5.212 0 -9.833 -5.212 0 -18.656 1.88 62.871 -18.656 1.88 0 -7.919 1.88 62.871 -7.919 1.88</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_bathroom002_ld-positions-array" count="16" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_bathroom002_ld-normals">
+          <float_array id="geom-wa_bathroom002_ld-normals-array" count="48">0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 1 0 0 1 0 0 1 0 0 1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_bathroom002_ld-normals-array" count="16" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_bathroom002_ld-tangents">
+          <float_array id="geom-wa_bathroom002_ld-tangents-array" count="64">1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 1 -1 0 0 1 -1 0 0 1 -1 0 0 1 -1</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_bathroom002_ld-tangents-array" count="16" stride="4">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+              <param name="W" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_bathroom002_ld-map1">
+          <float_array id="geom-wa_bathroom002_ld-map1-array" count="32">1.452 -0.81 0.79 0.274 1.452 1.804 0.79 1.292 -0.382 1.804 0.174 1.292 0.174 0.274 -0.382 -0.81 -0.57 1.804 -0.57 -0.81 -1.748 1.804 -1.748 -0.81 -1.002 -0.771 -1.002 1.851 0.428 -0.771 0.428 1.851</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_bathroom002_ld-map1-array" count="16" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_bathroom002_ld-map2">
+          <float_array id="geom-wa_bathroom002_ld-map2-array" count="32">0.995 0.503 0.797 0.708 0.995 0.995 0.797 0.901 0.445 0.995 0.614 0.901 0.614 0.708 0.445 0.503 0.995 0.497 0.995 0.008 0.445 0.497 0.445 0.008 0.007 0.008 0.007 0.995 0.439 0.008 0.439 0.995</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_bathroom002_ld-map2-array" count="16" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_bathroom002_ld-colors">
+          <float_array id="geom-wa_bathroom002_ld-colors-array" count="64">0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_bathroom002_ld-colors-array" count="16" stride="4">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+              <param name="A" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-wa_bathroom002_ld-vertices">
+          <input semantic="POSITION" source="#geom-wa_bathroom002_ld-positions" />
+        </vertices>
+        <triangles material="yushi" count="12">
+          <input semantic="VERTEX" source="#geom-wa_bathroom002_ld-vertices" offset="0" />
+          <input semantic="NORMAL" source="#geom-wa_bathroom002_ld-normals" offset="0" />
+          <input semantic="TANGENT" source="#geom-wa_bathroom002_ld-tangents" offset="0" />
+          <input semantic="TEXCOORD" source="#geom-wa_bathroom002_ld-map1" offset="0" set="0" />
+          <input semantic="TEXCOORD" source="#geom-wa_bathroom002_ld-map2" offset="0" set="1" />
+          <input semantic="COLOR" source="#geom-wa_bathroom002_ld-colors" offset="0" />
+          <p>2 1 3 4 2 3 3 5 4 5 6 4 7 6 5 8 7 5 8 1 2 7 8 2 10 9 11 12 10 11 14 13 15 16 14 15</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-wa_bathroom003_ld" name="wa_bathroom003_ld">
+      <mesh>
+        <source id="geom-wa_bathroom003_ld-positions">
+          <float_array id="geom-wa_bathroom003_ld-positions-array" count="12">62.871 -1.608 -5.308 0 -1.608 -5.308 62.871 3.328 -5.308 0 3.328 -5.308</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_bathroom003_ld-positions-array" count="4" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_bathroom003_ld-normals">
+          <float_array id="geom-wa_bathroom003_ld-normals-array" count="12">1 0 0 1 0 0 1 0 0 1 0 0</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_bathroom003_ld-normals-array" count="4" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_bathroom003_ld-tangents">
+          <float_array id="geom-wa_bathroom003_ld-tangents-array" count="16">0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_bathroom003_ld-tangents-array" count="4" stride="4">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+              <param name="W" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wa_bathroom003_ld-map1">
+          <float_array id="geom-wa_bathroom003_ld-map1-array" count="8">0.764 1 0.764 0 0.236 1 0.236 0</float_array>
+          <technique_common>
+            <accessor source="#geom-wa_bathroom003_ld-map1-array" count="4" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-wa_bathroom003_ld-vertices">
+          <input semantic="POSITION" source="#geom-wa_bathroom003_ld-positions" />
+        </vertices>
+        <triangles material="t_bathroom_wood001" count="2">
+          <input semantic="VERTEX" source="#geom-wa_bathroom003_ld-vertices" offset="0" />
+          <input semantic="NORMAL" source="#geom-wa_bathroom003_ld-normals" offset="0" />
+          <input semantic="TANGENT" source="#geom-wa_bathroom003_ld-tangents" offset="0" />
+          <input semantic="TEXCOORD" source="#geom-wa_bathroom003_ld-map1" offset="0" set="0" />
+          <p>2 1 3 4 2 3</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-wall_thickness" name="wall_thickness">
+      <mesh>
+        <source id="geom-wall_thickness-positions">
+          <float_array id="geom-wall_thickness-positions-array" count="300">26.086 -18.656 -3.061 26.043 -19.869 -3.061 26.086 -18.656 -0.681 26.043 -19.869 -0.681 50.571 -18.656 -3.061 50.571 -19.869 -3.061 26.086 -18.656 -3.061 26.043 -19.869 -3.061 50.571 -18.656 -0.681 26.086 -18.656 -0.681 50.571 -19.869 -0.681 26.043 -19.869 -0.681 50.571 -19.869 -3.061 50.571 -18.656 -3.061 50.571 -19.869 -0.681 50.571 -18.656 -0.681 50.637 3.259 9.926 50.637 3.259 10.564 50.637 -3.005 9.926 50.637 -3.005 10.564 50.637 3.259 9.926 0 3.259 9.926 50.637 3.259 10.564 0 3.259 10.564 0 -3.005 10.564 0 -3.005 9.926 50.637 -3.005 10.564 50.637 -3.005 9.926 62.871 3.328 -5.212 62.871 10.11 -5.212 62.871 3.328 -5.308 62.871 11.346 -6.033 62.871 -1.608 -5.308 62.871 -19.869 -6.033 62.871 -7.919 -5.212 62.871 -9.833 -5.212 62.871 -18.656 -5.212 62.871 -1.608 -5.212 62.871 -9.833 -5.212 62.871 -9.833 -4.637 62.871 -7.919 -5.212 62.871 -7.919 -4.637 62.871 10.11 9.926 62.871 11.346 10.564 62.871 10.11 -5.212 62.871 11.346 -6.033 62.871 -18.656 1.88 62.871 -18.656 -5.212 62.871 -19.869 2.518 62.871 -19.869 -6.033 62.871 -7.919 1.88 62.871 -18.656 1.88 62.871 -9.222 2.518 62.871 -19.869 2.518 62.871 -7.919 1.88 62.871 -9.222 2.518 62.871 -7.919 9.926 62.871 -9.222 10.564 62.871 10.11 9.926 62.871 -7.919 9.926 62.871 11.346 10.564 62.871 -9.222 10.564 0 3.328 -5.212 0 10.11 -5.212 0 3.328 -5.308 0 11.346 -6.033 0 -1.608 -5.308 0 -19.869 -6.033 0 -7.919 -5.212 0 -9.833 -5.212 0 -18.656 -5.212 0 -1.608 -5.212 0 -9.833 -5.212 0 -9.833 -4.637 0 -7.919 -5.212 0 -7.919 -4.637 0 10.11 9.926 0 11.346 10.564 0 10.11 -5.212 0 11.346 -6.033 0 -18.656 1.88 0 -18.656 -5.212 0 -19.869 2.518 0 -19.869 -6.033 0 -7.919 1.88 0 -18.656 1.88 0 -9.222 2.518 0 -19.869 2.518 0 -7.919 1.88 0 -9.222 2.518 0 -7.919 9.926 0 -9.222 10.564 0 -3.005 9.926 0 -7.919 9.926 0 -3.005 10.564 0 -9.222 10.564 0 3.259 9.926 0 3.259 10.564 0 10.11 9.926 0 11.346 10.564</float_array>
+          <technique_common>
+            <accessor source="#geom-wall_thickness-positions-array" count="100" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wall_thickness-normals">
+          <float_array id="geom-wall_thickness-normals-array" count="300">0 1 -0.011 0 1 -0.011 0 1 -0.011 0 1 -0.011 1 0 0 1 0 0 1 0 0 1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 1 0 0 1 0 0 1 0 0 1 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-wall_thickness-normals-array" count="100" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wall_thickness-tangents">
+          <float_array id="geom-wall_thickness-tangents-array" count="400">-1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 0 0 -1 -1 0 -0.001 -1 -1 0 -0.01 -1 -1 0 -0.011 -1 -1 0 0 1 -1 0 0.01 1 -1 0 0.001 1 -1 0 0.011 1 -1 -1 0 0 1 -1 0 0 1 -1 0 0 1 -1 0 0 1 0.228 0 0.974 -1 0.228 0 0.974 -1 0.758 0 0.652 -1 0.759 0 0.651 -1 -0.173 -0.985 0 -1 -0.222 -0.975 0 -1 -0.174 -0.985 0 -1 -0.226 -0.974 0 -1 0.54 0.842 0 -1 0.531 0.847 0 -1 0.507 0.862 0 -1 0.502 0.865 0 -1 0 0 -1 -1 0.072 0 -0.997 -1 -0.052 0 -0.999 -1 0.048 0 -0.999 -1 -0.001 0 -1 -1 -0.002 0 -1 -1 -0.03 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 1 -1 0 0 1 -1 0 0 1 -1 0 0 1 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 0 0 1 -1 0 0 1 -1 0 0 1 -1 0 0 1 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 0 0 1 -1 0 0 1 -1 0 0 1 -1 0 0 1 -1 0 0 -1 -1 0.072 0 -0.997 -1 -0.052 0 -0.999 -1 0.048 0 -0.999 -1 -0.001 0 -1 -1 -0.002 0 -1 -1 -0.03 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 1 -1 0 0 1 -1 0 0 1 -1 0 0 1 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 -1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 0 0 1 -1 0 0 1 -1 0 0 1 -1 0 0 1 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 1 0 0 -1 0 0 1 -1 0 0 1 -1 0 0 1 -1 0 0 1 -1 0 0 1 -1 0 0 1 -1 0 0 1 -1 0 0 1 -1</float_array>
+          <technique_common>
+            <accessor source="#geom-wall_thickness-tangents-array" count="100" stride="4">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+              <param name="W" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wall_thickness-map1">
+          <float_array id="geom-wall_thickness-map1-array" count="200">2.988 0.141 3.168 0.141 3.168 0.141 2.988 0.141 2.988 1.595 3.168 1.595 2.988 0.141 3.168 0.141 3.168 1.595 3.168 0.141 2.988 1.595 2.988 0.141 3.168 1.595 2.988 1.595 2.988 1.595 3.168 1.595 -0.454 0.678 -0.43 0.547 -1.43 0.523 -1.4 0.403 -0.454 0.678 1.98 0.385 -0.43 0.547 1.993 0.302 -3.42 -0.264 -3.436 -0.183 -1.4 0.403 -1.43 0.523 0.234 0 0 0 0.241 0.451 0 1 0.416 0.306 1 1 0.626 0 0.69 0 1 0 0.405 0 0 0 0 1 1 0 1 1 0 0 0 1 1 0 1 1 1 0 0 0 1 1 0 1 1 0 0 0 1 1 0 1 0 0 0 1 1 0 1 1 1 0 0 0 1 1 0 1 0.234 0 0 0 0.241 0.451 0 1 0.416 0.306 1 1 0.626 0 0.69 0 1 0 0.405 0 0 0 0 1 1 0 1 1 0 0 0 1 1 0 1 1 1 0 0 0 1 1 0 1 1 0 0 0 1 1 0 1 0 0 0 1 1 0 1 1 0.303 0 0 0 0.303 1 0 1 0.608 0 0.608 1 1 0 1 1</float_array>
+          <technique_common>
+            <accessor source="#geom-wall_thickness-map1-array" count="100" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wall_thickness-colors">
+          <float_array id="geom-wall_thickness-colors-array" count="400">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 0.89 0.89 0.89 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#geom-wall_thickness-colors-array" count="100" stride="4">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+              <param name="A" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-wall_thickness-vertices">
+          <input semantic="POSITION" source="#geom-wall_thickness-positions" />
+        </vertices>
+        <triangles material="villa_thickness_ld_mat" count="56">
+          <input semantic="VERTEX" source="#geom-wall_thickness-vertices" offset="0" />
+          <input semantic="NORMAL" source="#geom-wall_thickness-normals" offset="0" />
+          <input semantic="TANGENT" source="#geom-wall_thickness-tangents" offset="0" />
+          <input semantic="TEXCOORD" source="#geom-wall_thickness-map1" offset="0" set="0" />
+          <input semantic="COLOR" source="#geom-wall_thickness-colors" offset="0" />
+          <p>2 1 3 4 2 3 6 5 7 8 6 7 10 9 11 12 10 11 14 13 15 16 14 15 18 17 19 20 18 19 22 21 23 24 22 23 26 25 27 28 26 27 30 29 31 32 30 31 31 33 32 34 32 33 35 34 33 36 34 35 34 36 37 38 35 33 40 39 41 42 40 41 44 43 45 46 44 45 48 47 49 50 48 49 52 51 53 54 52 53 56 55 57 58 56 57 60 59 61 62 60 61 64 63 65 66 64 65 65 67 66 68 66 67 69 68 67 70 68 69 68 70 71 72 69 67 74 73 75 76 74 75 78 77 79 80 78 79 82 81 83 84 82 83 86 85 87 88 86 87 90 89 91 92 90 91 94 93 95 96 94 95 98 97 99 100 98 99</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="aosman_bathroom">
+      <node id="node-aosman_bathroom" name="aosman_bathroom">
+        <scale>1 1 1</scale>
+        <node id="node-fl_ground001_ld" name="fl_ground001_ld">
+          <translate>0 0 0</translate>
+          <rotate>1 0 0 0</rotate>
+          <scale>1 1 1</scale>
+          <instance_geometry url="#geom-fl_ground001_ld">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="bathroom_tiles002" target="#bathroom_tiles002-material" />
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="node-fl_ground002_ld" name="fl_ground002_ld">
+          <translate>0 0 0</translate>
+          <rotate>1 0 0 0</rotate>
+          <scale>1 1 1</scale>
+          <instance_geometry url="#geom-fl_ground002_ld">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="aosman_bathroom_fl" target="#aosman_bathroom_fl-material">
+                  <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0" />
+                  <bind_vertex_input semantic="CHANNEL2" input_semantic="TEXCOORD" input_set="1" />
+                </instance_material>
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="node-fl_ground003_ld" name="fl_ground003_ld">
+          <translate>0 0 0</translate>
+          <rotate>1 0 0 0</rotate>
+          <scale>1 1 1</scale>
+          <instance_geometry url="#geom-fl_ground003_ld">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="yushi" target="#yushi-material" />
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="node-outer_wa_ld" name="outer_wa_ld">
+          <translate>0 0 0</translate>
+          <rotate>1 0 0 0</rotate>
+          <scale>1 1 1</scale>
+          <instance_geometry url="#geom-outer_wa_ld">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="t_outer_wa_ld" target="#t_outer_wa_ld-material">
+                  <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0" />
+                  <bind_vertex_input semantic="CHANNEL2" input_semantic="TEXCOORD" input_set="1" />
+                  <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0" />
+                </instance_material>
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="node-wa_bathroom001_ld" name="wa_bathroom001_ld">
+          <translate>0 0 0</translate>
+          <rotate>1 0 0 0</rotate>
+          <scale>1 1 1</scale>
+          <instance_geometry url="#geom-wa_bathroom001_ld">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="bathroom_tiles002" target="#bathroom_tiles002-material" />
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="node-wa_bathroom002_ld" name="wa_bathroom002_ld">
+          <translate>0 0 0</translate>
+          <rotate>1 0 0 0</rotate>
+          <scale>1 1 1</scale>
+          <instance_geometry url="#geom-wa_bathroom002_ld">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="yushi" target="#yushi-material" />
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="node-wa_bathroom003_ld" name="wa_bathroom003_ld">
+          <translate>0 0 0</translate>
+          <rotate>1 0 0 0</rotate>
+          <scale>1 1 1</scale>
+          <instance_geometry url="#geom-wa_bathroom003_ld">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="t_bathroom_wood001" target="#t_bathroom_wood001-material">
+                  <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0" />
+                  <bind_vertex_input semantic="CHANNEL2" input_semantic="TEXCOORD" input_set="1" />
+                </instance_material>
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="node-wall_thickness" name="wall_thickness">
+          <translate>0 0 0</translate>
+          <rotate>1 0 0 0</rotate>
+          <scale>1 1 1</scale>
+          <instance_geometry url="#geom-wall_thickness">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="villa_thickness_ld_mat" target="#villa_thickness_ld_mat-material" />
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#aosman_bathroom" />
+  </scene>
+</COLLADA>

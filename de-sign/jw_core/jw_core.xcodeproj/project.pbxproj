@@ -1,0 +1,1030 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B4C22521CC50C03000BD81D /* NSException+JWCoreCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B4C22511CC50C03000BD81D /* NSException+JWCoreCategory.m */; };
+		1B7586C01CB11423000EC285 /* JWAsyncEventHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7586B51CB11423000EC285 /* JWAsyncEventHandler.m */; };
+		1B7586C11CB11423000EC285 /* JWAsyncResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7586B71CB11423000EC285 /* JWAsyncResult.m */; };
+		1B7586C21CB11423000EC285 /* JWAsyncResultTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7586B91CB11423000EC285 /* JWAsyncResultTask.m */; };
+		1B7586C31CB11423000EC285 /* JWAsyncTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7586BB1CB11423000EC285 /* JWAsyncTask.m */; };
+		1B7586C41CB11423000EC285 /* JWAsyncTaskResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7586BD1CB11423000EC285 /* JWAsyncTaskResult.m */; };
+		1B7586C51CB11423000EC285 /* JWAsyncUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7586BF1CB11423000EC285 /* JWAsyncUtils.m */; };
+		1B7586E21CB11443000EC285 /* NSArray+JWCoreCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7586C71CB11443000EC285 /* NSArray+JWCoreCategory.m */; };
+		1B7586E31CB11443000EC285 /* NSBundle+JWCoreCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7586C91CB11443000EC285 /* NSBundle+JWCoreCategory.m */; };
+		1B7586E41CB11443000EC285 /* NSDictionary+JWCoreCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7586CB1CB11443000EC285 /* NSDictionary+JWCoreCategory.m */; };
+		1B7586E51CB11443000EC285 /* NSMapTable+JWCoreCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7586CD1CB11443000EC285 /* NSMapTable+JWCoreCategory.m */; };
+		1B7586E61CB11443000EC285 /* NSMutableArray+JWArrayList.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7586CF1CB11443000EC285 /* NSMutableArray+JWArrayList.m */; };
+		1B7586E71CB11443000EC285 /* NSMutableArray+JWMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7586D11CB11443000EC285 /* NSMutableArray+JWMutableArray.m */; };
+		1B7586E81CB11443000EC285 /* NSMutableDictionary+JWCoreCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7586D31CB11443000EC285 /* NSMutableDictionary+JWCoreCategory.m */; };
+		1B7586E91CB11443000EC285 /* NSString+JWCoreCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7586D51CB11443000EC285 /* NSString+JWCoreCategory.m */; };
+		1B7586EB1CB11443000EC285 /* UIColor+JWCoreCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7586D91CB11443000EC285 /* UIColor+JWCoreCategory.m */; };
+		1B7586EC1CB11443000EC285 /* UIDevice+JWCoreCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7586DB1CB11443000EC285 /* UIDevice+JWCoreCategory.m */; };
+		1B7586ED1CB11443000EC285 /* UIImage+JWImageUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7586DD1CB11443000EC285 /* UIImage+JWImageUtils.m */; };
+		1B7586EE1CB11443000EC285 /* UIImageImageCodec.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7586DF1CB11443000EC285 /* UIImageImageCodec.m */; };
+		1B7586EF1CB11443000EC285 /* UIScreen+JWCoreCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7586E11CB11443000EC285 /* UIScreen+JWCoreCategory.m */; };
+		1B7586F61CB11463000EC285 /* JWState.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7586F11CB11463000EC285 /* JWState.m */; };
+		1B7586F71CB11463000EC285 /* JWStateMachine.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7586F31CB11463000EC285 /* JWStateMachine.m */; };
+		1B7586F81CB11463000EC285 /* JWStateMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7586F51CB11463000EC285 /* JWStateMessage.m */; };
+		1B75870B1CB114B1000EC285 /* JWEXRImageCodec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1B7586FA1CB114B1000EC285 /* JWEXRImageCodec.mm */; };
+		1B75870C1CB114B1000EC285 /* JWImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7586FC1CB114B1000EC285 /* JWImageCache.m */; };
+		1B75870D1CB114B1000EC285 /* JWImageCacheGetAsyncTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7586FE1CB114B1000EC285 /* JWImageCacheGetAsyncTask.m */; };
+		1B75870E1CB114B1000EC285 /* JWImageCodec.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7587001CB114B1000EC285 /* JWImageCodec.m */; };
+		1B75870F1CB114B1000EC285 /* JWImageCodecManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7587021CB114B1000EC285 /* JWImageCodecManager.m */; };
+		1B7587101CB114B1000EC285 /* JWImageDecodeAsyncTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7587041CB114B1000EC285 /* JWImageDecodeAsyncTask.m */; };
+		1B7587111CB114B1000EC285 /* JWImageOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7587061CB114B1000EC285 /* JWImageOptions.m */; };
+		1B7587121CB114B1000EC285 /* JWImageSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7587081CB114B1000EC285 /* JWImageSystem.m */; };
+		1B7587131CB114B1000EC285 /* JWPVRImageCodec.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75870A1CB114B1000EC285 /* JWPVRImageCodec.m */; };
+		1B75871E1CB114E5000EC285 /* JWFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7587151CB114E5000EC285 /* JWFile.m */; };
+		1B75871F1CB114E5000EC285 /* JWFileCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7587171CB114E5000EC285 /* JWFileCache.m */; };
+		1B7587201CB114E5000EC285 /* JWFileDataAsyncTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7587191CB114E5000EC285 /* JWFileDataAsyncTask.m */; };
+		1B7587211CB114E5000EC285 /* JWFileTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75871B1CB114E5000EC285 /* JWFileTable.m */; };
+		1B7587221CB114E5000EC285 /* JWFileUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75871D1CB114E5000EC285 /* JWFileUtils.m */; };
+		1B75872D1CB1151A000EC285 /* JWColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7587241CB1151A000EC285 /* JWColor.m */; };
+		1B75872E1CB1151A000EC285 /* JWMatrix4.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7587261CB1151A000EC285 /* JWMatrix4.m */; };
+		1B75872F1CB1151A000EC285 /* JWVector2.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7587281CB1151A000EC285 /* JWVector2.m */; };
+		1B7587301CB1151A000EC285 /* JWVector3.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75872A1CB1151A000EC285 /* JWVector3.m */; };
+		1B7587311CB1151A000EC285 /* JWVector4.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75872C1CB1151A000EC285 /* JWVector4.m */; };
+		1B7587461CB1154F000EC285 /* JWClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7587331CB1154F000EC285 /* JWClient.m */; };
+		1B7587471CB1154F000EC285 /* JWHttp.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7587351CB1154F000EC285 /* JWHttp.m */; };
+		1B7587481CB1154F000EC285 /* JWHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7587371CB1154F000EC285 /* JWHttpClient.m */; };
+		1B7587491CB1154F000EC285 /* JWHttpMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7587391CB1154F000EC285 /* JWHttpMethod.m */; };
+		1B75874A1CB1154F000EC285 /* JWNetFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75873B1CB1154F000EC285 /* JWNetFormatter.m */; };
+		1B75874B1CB1154F000EC285 /* JWNetMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75873D1CB1154F000EC285 /* JWNetMessage.m */; };
+		1B75874C1CB1154F000EC285 /* JWNetUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75873F1CB1154F000EC285 /* JWNetUtils.m */; };
+		1B75874D1CB1154F000EC285 /* JWRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7587411CB1154F000EC285 /* JWRequest.m */; };
+		1B75874E1CB1154F000EC285 /* JWResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7587431CB1154F000EC285 /* JWResponse.m */; };
+		1B75874F1CB1154F000EC285 /* JWResponseStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7587451CB1154F000EC285 /* JWResponseStatus.m */; };
+		1B7587521CB11573000EC285 /* JWXmlParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7587511CB11573000EC285 /* JWXmlParser.m */; };
+		1B7587551CB11582000EC285 /* jw_core.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7587541CB11582000EC285 /* jw_core.m */; };
+		1B7587581CB1159F000EC285 /* CMDeviceMotion+JWCoreCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7587571CB1159F000EC285 /* CMDeviceMotion+JWCoreCategory.m */; };
+		1B7587901CB115CC000EC285 /* JWAssetsBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75875A1CB115CC000EC285 /* JWAssetsBundle.m */; };
+		1B7587911CB115CC000EC285 /* JWBoneInfluence.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75875C1CB115CC000EC285 /* JWBoneInfluence.m */; };
+		1B7587921CB115CC000EC285 /* JWCancellable.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75875E1CB115CC000EC285 /* JWCancellable.m */; };
+		1B7587931CB115CC000EC285 /* JWCategoryVariables.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7587601CB115CC000EC285 /* JWCategoryVariables.m */; };
+		1B7587941CB115CC000EC285 /* JWCorePluginSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7587631CB115CC000EC285 /* JWCorePluginSystem.m */; };
+		1B7587951CB115CC000EC285 /* JWCoreUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7587661CB115CC000EC285 /* JWCoreUtils.m */; };
+		1B7587961CB115CC000EC285 /* JWEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7587681CB115CC000EC285 /* JWEncoding.m */; };
+		1B7587971CB115CC000EC285 /* JWEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75876A1CB115CC000EC285 /* JWEntity.m */; };
+		1B7587981CB115CC000EC285 /* JWEventQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75876C1CB115CC000EC285 /* JWEventQueue.m */; };
+		1B7587991CB115CC000EC285 /* JWExceptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75876E1CB115CC000EC285 /* JWExceptions.m */; };
+		1B75879A1CB115CC000EC285 /* JWHashcode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7587701CB115CC000EC285 /* JWHashcode.m */; };
+		1B75879B1CB115CC000EC285 /* JWInertialNavigationSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7587721CB115CC000EC285 /* JWInertialNavigationSystem.m */; };
+		1B75879C1CB115CC000EC285 /* JWIOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7587741CB115CC000EC285 /* JWIOS.m */; };
+		1B75879D1CB115CC000EC285 /* JWJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7587761CB115CC000EC285 /* JWJson.m */; };
+		1B75879E1CB115CC000EC285 /* JWLifeCycle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7587781CB115CC000EC285 /* JWLifeCycle.m */; };
+		1B75879F1CB115CC000EC285 /* JWList.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75877A1CB115CC000EC285 /* JWList.m */; };
+		1B7587A01CB115CC000EC285 /* JWLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75877C1CB115CC000EC285 /* JWLog.m */; };
+		1B7587A11CB115CC000EC285 /* JWMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75877E1CB115CC000EC285 /* JWMutableArray.m */; };
+		1B7587A21CB115CC000EC285 /* JWNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7587801CB115CC000EC285 /* JWNode.m */; };
+		1B7587A31CB115CC000EC285 /* JWObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7587821CB115CC000EC285 /* JWObject.m */; };
+		1B7587A41CB115CC000EC285 /* JWPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7587841CB115CC000EC285 /* JWPlugin.m */; };
+		1B7587A51CB115CC000EC285 /* JWResourceBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7587861CB115CC000EC285 /* JWResourceBundle.m */; };
+		1B7587A61CB115CC000EC285 /* JWStringSerializable.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7587891CB115CC000EC285 /* JWStringSerializable.m */; };
+		1B7587A71CB115CC000EC285 /* JWTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75878B1CB115CC000EC285 /* JWTimer.m */; };
+		1B7587A81CB115CC000EC285 /* JWToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75878D1CB115CC000EC285 /* JWToast.m */; };
+		1B7587A91CB115CC000EC285 /* JWTransmitable.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75878F1CB115CC000EC285 /* JWTransmitable.m */; };
+		D7241F961A710F0F00BEE609 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = D7241F951A710F0F00BEE609 /* Reachability.m */; };
+		D724203F1A710F5500BEE609 /* etc1_utils.c in Sources */ = {isa = PBXBuildFile; fileRef = D7241FFA1A710F5500BEE609 /* etc1_utils.c */; };
+		D72420401A710F5500BEE609 /* image_DXT.c in Sources */ = {isa = PBXBuildFile; fileRef = D7241FFC1A710F5500BEE609 /* image_DXT.c */; };
+		D72420411A710F5500BEE609 /* image_helper.c in Sources */ = {isa = PBXBuildFile; fileRef = D7241FFE1A710F5500BEE609 /* image_helper.c */; };
+		D72420421A710F5500BEE609 /* SOIL2.c in Sources */ = {isa = PBXBuildFile; fileRef = D72420021A710F5500BEE609 /* SOIL2.c */; };
+		D72420431A710F5500BEE609 /* stb_image.c in Sources */ = {isa = PBXBuildFile; fileRef = D72420041A710F5500BEE609 /* stb_image.c */; };
+		D72420441A710F5500BEE609 /* stb_image_write.c in Sources */ = {isa = PBXBuildFile; fileRef = D72420061A710F5500BEE609 /* stb_image_write.c */; };
+		D72420451A710F5500BEE609 /* CJSONDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = D72420131A710F5500BEE609 /* CJSONDeserializer.m */; };
+		D72420461A710F5500BEE609 /* CJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = D72420151A710F5500BEE609 /* CJSONSerializer.m */; };
+		D72420471A710F5500BEE609 /* NSDictionary_JSONExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = D72420181A710F5500BEE609 /* NSDictionary_JSONExtensions.m */; };
+		D724218A1A7122EE00BEE609 /* libNinePatch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D72420501A710F6B00BEE609 /* libNinePatch.a */; };
+		D724218C1A7122F900BEE609 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D724218B1A7122F900BEE609 /* Foundation.framework */; };
+		D724218E1A7122FF00BEE609 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D724218D1A7122FF00BEE609 /* UIKit.framework */; };
+		D72A83181A72792300C454AD /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D72A83171A72792300C454AD /* MobileCoreServices.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D724204F1A710F6B00BEE609 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D724204B1A710F6B00BEE609 /* NinePatch.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = NinePatch;
+		};
+		D72421881A7122E800BEE609 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D724204B1A710F6B00BEE609 /* NinePatch.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = NinePatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D7241EA41A710BED00BEE609 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1B4C22501CC50C03000BD81D /* NSException+JWCoreCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSException+JWCoreCategory.h"; path = "jw/NSException+JWCoreCategory.h"; sourceTree = SOURCE_ROOT; };
+		1B4C22511CC50C03000BD81D /* NSException+JWCoreCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSException+JWCoreCategory.m"; path = "jw/NSException+JWCoreCategory.m"; sourceTree = SOURCE_ROOT; };
+		1B7586B41CB11423000EC285 /* JWAsyncEventHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWAsyncEventHandler.h; path = jw/JWAsyncEventHandler.h; sourceTree = SOURCE_ROOT; };
+		1B7586B51CB11423000EC285 /* JWAsyncEventHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWAsyncEventHandler.m; path = jw/JWAsyncEventHandler.m; sourceTree = SOURCE_ROOT; };
+		1B7586B61CB11423000EC285 /* JWAsyncResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWAsyncResult.h; path = jw/JWAsyncResult.h; sourceTree = SOURCE_ROOT; };
+		1B7586B71CB11423000EC285 /* JWAsyncResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWAsyncResult.m; path = jw/JWAsyncResult.m; sourceTree = SOURCE_ROOT; };
+		1B7586B81CB11423000EC285 /* JWAsyncResultTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWAsyncResultTask.h; path = jw/JWAsyncResultTask.h; sourceTree = SOURCE_ROOT; };
+		1B7586B91CB11423000EC285 /* JWAsyncResultTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWAsyncResultTask.m; path = jw/JWAsyncResultTask.m; sourceTree = SOURCE_ROOT; };
+		1B7586BA1CB11423000EC285 /* JWAsyncTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWAsyncTask.h; path = jw/JWAsyncTask.h; sourceTree = SOURCE_ROOT; };
+		1B7586BB1CB11423000EC285 /* JWAsyncTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWAsyncTask.m; path = jw/JWAsyncTask.m; sourceTree = SOURCE_ROOT; };
+		1B7586BC1CB11423000EC285 /* JWAsyncTaskResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWAsyncTaskResult.h; path = jw/JWAsyncTaskResult.h; sourceTree = SOURCE_ROOT; };
+		1B7586BD1CB11423000EC285 /* JWAsyncTaskResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWAsyncTaskResult.m; path = jw/JWAsyncTaskResult.m; sourceTree = SOURCE_ROOT; };
+		1B7586BE1CB11423000EC285 /* JWAsyncUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWAsyncUtils.h; path = jw/JWAsyncUtils.h; sourceTree = SOURCE_ROOT; };
+		1B7586BF1CB11423000EC285 /* JWAsyncUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWAsyncUtils.m; path = jw/JWAsyncUtils.m; sourceTree = SOURCE_ROOT; };
+		1B7586C61CB11443000EC285 /* NSArray+JWCoreCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+JWCoreCategory.h"; path = "jw/NSArray+JWCoreCategory.h"; sourceTree = SOURCE_ROOT; };
+		1B7586C71CB11443000EC285 /* NSArray+JWCoreCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+JWCoreCategory.m"; path = "jw/NSArray+JWCoreCategory.m"; sourceTree = SOURCE_ROOT; };
+		1B7586C81CB11443000EC285 /* NSBundle+JWCoreCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSBundle+JWCoreCategory.h"; path = "jw/NSBundle+JWCoreCategory.h"; sourceTree = SOURCE_ROOT; };
+		1B7586C91CB11443000EC285 /* NSBundle+JWCoreCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSBundle+JWCoreCategory.m"; path = "jw/NSBundle+JWCoreCategory.m"; sourceTree = SOURCE_ROOT; };
+		1B7586CA1CB11443000EC285 /* NSDictionary+JWCoreCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+JWCoreCategory.h"; path = "jw/NSDictionary+JWCoreCategory.h"; sourceTree = SOURCE_ROOT; };
+		1B7586CB1CB11443000EC285 /* NSDictionary+JWCoreCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+JWCoreCategory.m"; path = "jw/NSDictionary+JWCoreCategory.m"; sourceTree = SOURCE_ROOT; };
+		1B7586CC1CB11443000EC285 /* NSMapTable+JWCoreCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMapTable+JWCoreCategory.h"; path = "jw/NSMapTable+JWCoreCategory.h"; sourceTree = SOURCE_ROOT; };
+		1B7586CD1CB11443000EC285 /* NSMapTable+JWCoreCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMapTable+JWCoreCategory.m"; path = "jw/NSMapTable+JWCoreCategory.m"; sourceTree = SOURCE_ROOT; };
+		1B7586CE1CB11443000EC285 /* NSMutableArray+JWArrayList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableArray+JWArrayList.h"; path = "jw/NSMutableArray+JWArrayList.h"; sourceTree = SOURCE_ROOT; };
+		1B7586CF1CB11443000EC285 /* NSMutableArray+JWArrayList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMutableArray+JWArrayList.m"; path = "jw/NSMutableArray+JWArrayList.m"; sourceTree = SOURCE_ROOT; };
+		1B7586D01CB11443000EC285 /* NSMutableArray+JWMutableArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableArray+JWMutableArray.h"; path = "jw/NSMutableArray+JWMutableArray.h"; sourceTree = SOURCE_ROOT; };
+		1B7586D11CB11443000EC285 /* NSMutableArray+JWMutableArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMutableArray+JWMutableArray.m"; path = "jw/NSMutableArray+JWMutableArray.m"; sourceTree = SOURCE_ROOT; };
+		1B7586D21CB11443000EC285 /* NSMutableDictionary+JWCoreCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableDictionary+JWCoreCategory.h"; path = "jw/NSMutableDictionary+JWCoreCategory.h"; sourceTree = SOURCE_ROOT; };
+		1B7586D31CB11443000EC285 /* NSMutableDictionary+JWCoreCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMutableDictionary+JWCoreCategory.m"; path = "jw/NSMutableDictionary+JWCoreCategory.m"; sourceTree = SOURCE_ROOT; };
+		1B7586D41CB11443000EC285 /* NSString+JWCoreCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+JWCoreCategory.h"; path = "jw/NSString+JWCoreCategory.h"; sourceTree = SOURCE_ROOT; };
+		1B7586D51CB11443000EC285 /* NSString+JWCoreCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+JWCoreCategory.m"; path = "jw/NSString+JWCoreCategory.m"; sourceTree = SOURCE_ROOT; };
+		1B7586D81CB11443000EC285 /* UIColor+JWCoreCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+JWCoreCategory.h"; path = "jw/UIColor+JWCoreCategory.h"; sourceTree = SOURCE_ROOT; };
+		1B7586D91CB11443000EC285 /* UIColor+JWCoreCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+JWCoreCategory.m"; path = "jw/UIColor+JWCoreCategory.m"; sourceTree = SOURCE_ROOT; };
+		1B7586DA1CB11443000EC285 /* UIDevice+JWCoreCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIDevice+JWCoreCategory.h"; path = "jw/UIDevice+JWCoreCategory.h"; sourceTree = SOURCE_ROOT; };
+		1B7586DB1CB11443000EC285 /* UIDevice+JWCoreCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIDevice+JWCoreCategory.m"; path = "jw/UIDevice+JWCoreCategory.m"; sourceTree = SOURCE_ROOT; };
+		1B7586DC1CB11443000EC285 /* UIImage+JWImageUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+JWImageUtils.h"; path = "jw/UIImage+JWImageUtils.h"; sourceTree = SOURCE_ROOT; };
+		1B7586DD1CB11443000EC285 /* UIImage+JWImageUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+JWImageUtils.m"; path = "jw/UIImage+JWImageUtils.m"; sourceTree = SOURCE_ROOT; };
+		1B7586DE1CB11443000EC285 /* UIImageImageCodec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIImageImageCodec.h; path = jw/UIImageImageCodec.h; sourceTree = SOURCE_ROOT; };
+		1B7586DF1CB11443000EC285 /* UIImageImageCodec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIImageImageCodec.m; path = jw/UIImageImageCodec.m; sourceTree = SOURCE_ROOT; };
+		1B7586E01CB11443000EC285 /* UIScreen+JWCoreCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIScreen+JWCoreCategory.h"; path = "jw/UIScreen+JWCoreCategory.h"; sourceTree = SOURCE_ROOT; };
+		1B7586E11CB11443000EC285 /* UIScreen+JWCoreCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIScreen+JWCoreCategory.m"; path = "jw/UIScreen+JWCoreCategory.m"; sourceTree = SOURCE_ROOT; };
+		1B7586F01CB11463000EC285 /* JWState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWState.h; path = jw/JWState.h; sourceTree = SOURCE_ROOT; };
+		1B7586F11CB11463000EC285 /* JWState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWState.m; path = jw/JWState.m; sourceTree = SOURCE_ROOT; };
+		1B7586F21CB11463000EC285 /* JWStateMachine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWStateMachine.h; path = jw/JWStateMachine.h; sourceTree = SOURCE_ROOT; };
+		1B7586F31CB11463000EC285 /* JWStateMachine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWStateMachine.m; path = jw/JWStateMachine.m; sourceTree = SOURCE_ROOT; };
+		1B7586F41CB11463000EC285 /* JWStateMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWStateMessage.h; path = jw/JWStateMessage.h; sourceTree = SOURCE_ROOT; };
+		1B7586F51CB11463000EC285 /* JWStateMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWStateMessage.m; path = jw/JWStateMessage.m; sourceTree = SOURCE_ROOT; };
+		1B7586F91CB114B1000EC285 /* JWEXRImageCodec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWEXRImageCodec.h; path = jw/JWEXRImageCodec.h; sourceTree = SOURCE_ROOT; };
+		1B7586FA1CB114B1000EC285 /* JWEXRImageCodec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = JWEXRImageCodec.mm; path = jw/JWEXRImageCodec.mm; sourceTree = SOURCE_ROOT; };
+		1B7586FB1CB114B1000EC285 /* JWImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWImageCache.h; path = jw/JWImageCache.h; sourceTree = SOURCE_ROOT; };
+		1B7586FC1CB114B1000EC285 /* JWImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWImageCache.m; path = jw/JWImageCache.m; sourceTree = SOURCE_ROOT; };
+		1B7586FD1CB114B1000EC285 /* JWImageCacheGetAsyncTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWImageCacheGetAsyncTask.h; path = jw/JWImageCacheGetAsyncTask.h; sourceTree = SOURCE_ROOT; };
+		1B7586FE1CB114B1000EC285 /* JWImageCacheGetAsyncTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWImageCacheGetAsyncTask.m; path = jw/JWImageCacheGetAsyncTask.m; sourceTree = SOURCE_ROOT; };
+		1B7586FF1CB114B1000EC285 /* JWImageCodec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWImageCodec.h; path = jw/JWImageCodec.h; sourceTree = SOURCE_ROOT; };
+		1B7587001CB114B1000EC285 /* JWImageCodec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWImageCodec.m; path = jw/JWImageCodec.m; sourceTree = SOURCE_ROOT; };
+		1B7587011CB114B1000EC285 /* JWImageCodecManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWImageCodecManager.h; path = jw/JWImageCodecManager.h; sourceTree = SOURCE_ROOT; };
+		1B7587021CB114B1000EC285 /* JWImageCodecManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWImageCodecManager.m; path = jw/JWImageCodecManager.m; sourceTree = SOURCE_ROOT; };
+		1B7587031CB114B1000EC285 /* JWImageDecodeAsyncTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWImageDecodeAsyncTask.h; path = jw/JWImageDecodeAsyncTask.h; sourceTree = SOURCE_ROOT; };
+		1B7587041CB114B1000EC285 /* JWImageDecodeAsyncTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWImageDecodeAsyncTask.m; path = jw/JWImageDecodeAsyncTask.m; sourceTree = SOURCE_ROOT; };
+		1B7587051CB114B1000EC285 /* JWImageOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWImageOptions.h; path = jw/JWImageOptions.h; sourceTree = SOURCE_ROOT; };
+		1B7587061CB114B1000EC285 /* JWImageOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWImageOptions.m; path = jw/JWImageOptions.m; sourceTree = SOURCE_ROOT; };
+		1B7587071CB114B1000EC285 /* JWImageSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWImageSystem.h; path = jw/JWImageSystem.h; sourceTree = SOURCE_ROOT; };
+		1B7587081CB114B1000EC285 /* JWImageSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWImageSystem.m; path = jw/JWImageSystem.m; sourceTree = SOURCE_ROOT; };
+		1B7587091CB114B1000EC285 /* JWPVRImageCodec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWPVRImageCodec.h; path = jw/JWPVRImageCodec.h; sourceTree = SOURCE_ROOT; };
+		1B75870A1CB114B1000EC285 /* JWPVRImageCodec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWPVRImageCodec.m; path = jw/JWPVRImageCodec.m; sourceTree = SOURCE_ROOT; };
+		1B7587141CB114E5000EC285 /* JWFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWFile.h; path = jw/JWFile.h; sourceTree = SOURCE_ROOT; };
+		1B7587151CB114E5000EC285 /* JWFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWFile.m; path = jw/JWFile.m; sourceTree = SOURCE_ROOT; };
+		1B7587161CB114E5000EC285 /* JWFileCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWFileCache.h; path = jw/JWFileCache.h; sourceTree = SOURCE_ROOT; };
+		1B7587171CB114E5000EC285 /* JWFileCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWFileCache.m; path = jw/JWFileCache.m; sourceTree = SOURCE_ROOT; };
+		1B7587181CB114E5000EC285 /* JWFileDataAsyncTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWFileDataAsyncTask.h; path = jw/JWFileDataAsyncTask.h; sourceTree = SOURCE_ROOT; };
+		1B7587191CB114E5000EC285 /* JWFileDataAsyncTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWFileDataAsyncTask.m; path = jw/JWFileDataAsyncTask.m; sourceTree = SOURCE_ROOT; };
+		1B75871A1CB114E5000EC285 /* JWFileTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWFileTable.h; path = jw/JWFileTable.h; sourceTree = SOURCE_ROOT; };
+		1B75871B1CB114E5000EC285 /* JWFileTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWFileTable.m; path = jw/JWFileTable.m; sourceTree = SOURCE_ROOT; };
+		1B75871C1CB114E5000EC285 /* JWFileUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWFileUtils.h; path = jw/JWFileUtils.h; sourceTree = SOURCE_ROOT; };
+		1B75871D1CB114E5000EC285 /* JWFileUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWFileUtils.m; path = jw/JWFileUtils.m; sourceTree = SOURCE_ROOT; };
+		1B7587231CB1151A000EC285 /* JWColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWColor.h; path = jw/JWColor.h; sourceTree = SOURCE_ROOT; };
+		1B7587241CB1151A000EC285 /* JWColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWColor.m; path = jw/JWColor.m; sourceTree = SOURCE_ROOT; };
+		1B7587251CB1151A000EC285 /* JWMatrix4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWMatrix4.h; path = jw/JWMatrix4.h; sourceTree = SOURCE_ROOT; };
+		1B7587261CB1151A000EC285 /* JWMatrix4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWMatrix4.m; path = jw/JWMatrix4.m; sourceTree = SOURCE_ROOT; };
+		1B7587271CB1151A000EC285 /* JWVector2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWVector2.h; path = jw/JWVector2.h; sourceTree = SOURCE_ROOT; };
+		1B7587281CB1151A000EC285 /* JWVector2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWVector2.m; path = jw/JWVector2.m; sourceTree = SOURCE_ROOT; };
+		1B7587291CB1151A000EC285 /* JWVector3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWVector3.h; path = jw/JWVector3.h; sourceTree = SOURCE_ROOT; };
+		1B75872A1CB1151A000EC285 /* JWVector3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWVector3.m; path = jw/JWVector3.m; sourceTree = SOURCE_ROOT; };
+		1B75872B1CB1151A000EC285 /* JWVector4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWVector4.h; path = jw/JWVector4.h; sourceTree = SOURCE_ROOT; };
+		1B75872C1CB1151A000EC285 /* JWVector4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWVector4.m; path = jw/JWVector4.m; sourceTree = SOURCE_ROOT; };
+		1B7587321CB1154F000EC285 /* JWClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWClient.h; path = jw/JWClient.h; sourceTree = SOURCE_ROOT; };
+		1B7587331CB1154F000EC285 /* JWClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWClient.m; path = jw/JWClient.m; sourceTree = SOURCE_ROOT; };
+		1B7587341CB1154F000EC285 /* JWHttp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWHttp.h; path = jw/JWHttp.h; sourceTree = SOURCE_ROOT; };
+		1B7587351CB1154F000EC285 /* JWHttp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWHttp.m; path = jw/JWHttp.m; sourceTree = SOURCE_ROOT; };
+		1B7587361CB1154F000EC285 /* JWHttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWHttpClient.h; path = jw/JWHttpClient.h; sourceTree = SOURCE_ROOT; };
+		1B7587371CB1154F000EC285 /* JWHttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWHttpClient.m; path = jw/JWHttpClient.m; sourceTree = SOURCE_ROOT; };
+		1B7587381CB1154F000EC285 /* JWHttpMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWHttpMethod.h; path = jw/JWHttpMethod.h; sourceTree = SOURCE_ROOT; };
+		1B7587391CB1154F000EC285 /* JWHttpMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWHttpMethod.m; path = jw/JWHttpMethod.m; sourceTree = SOURCE_ROOT; };
+		1B75873A1CB1154F000EC285 /* JWNetFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWNetFormatter.h; path = jw/JWNetFormatter.h; sourceTree = SOURCE_ROOT; };
+		1B75873B1CB1154F000EC285 /* JWNetFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWNetFormatter.m; path = jw/JWNetFormatter.m; sourceTree = SOURCE_ROOT; };
+		1B75873C1CB1154F000EC285 /* JWNetMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWNetMessage.h; path = jw/JWNetMessage.h; sourceTree = SOURCE_ROOT; };
+		1B75873D1CB1154F000EC285 /* JWNetMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWNetMessage.m; path = jw/JWNetMessage.m; sourceTree = SOURCE_ROOT; };
+		1B75873E1CB1154F000EC285 /* JWNetUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWNetUtils.h; path = jw/JWNetUtils.h; sourceTree = SOURCE_ROOT; };
+		1B75873F1CB1154F000EC285 /* JWNetUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWNetUtils.m; path = jw/JWNetUtils.m; sourceTree = SOURCE_ROOT; };
+		1B7587401CB1154F000EC285 /* JWRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWRequest.h; path = jw/JWRequest.h; sourceTree = SOURCE_ROOT; };
+		1B7587411CB1154F000EC285 /* JWRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWRequest.m; path = jw/JWRequest.m; sourceTree = SOURCE_ROOT; };
+		1B7587421CB1154F000EC285 /* JWResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWResponse.h; path = jw/JWResponse.h; sourceTree = SOURCE_ROOT; };
+		1B7587431CB1154F000EC285 /* JWResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWResponse.m; path = jw/JWResponse.m; sourceTree = SOURCE_ROOT; };
+		1B7587441CB1154F000EC285 /* JWResponseStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWResponseStatus.h; path = jw/JWResponseStatus.h; sourceTree = SOURCE_ROOT; };
+		1B7587451CB1154F000EC285 /* JWResponseStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWResponseStatus.m; path = jw/JWResponseStatus.m; sourceTree = SOURCE_ROOT; };
+		1B7587501CB11573000EC285 /* JWXmlParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWXmlParser.h; path = jw/JWXmlParser.h; sourceTree = SOURCE_ROOT; };
+		1B7587511CB11573000EC285 /* JWXmlParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWXmlParser.m; path = jw/JWXmlParser.m; sourceTree = SOURCE_ROOT; };
+		1B7587531CB11582000EC285 /* jw_core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = jw_core.h; path = jw/jw_core.h; sourceTree = SOURCE_ROOT; };
+		1B7587541CB11582000EC285 /* jw_core.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = jw_core.m; path = jw/jw_core.m; sourceTree = SOURCE_ROOT; };
+		1B7587561CB1159F000EC285 /* CMDeviceMotion+JWCoreCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CMDeviceMotion+JWCoreCategory.h"; path = "jw/CMDeviceMotion+JWCoreCategory.h"; sourceTree = SOURCE_ROOT; };
+		1B7587571CB1159F000EC285 /* CMDeviceMotion+JWCoreCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "CMDeviceMotion+JWCoreCategory.m"; path = "jw/CMDeviceMotion+JWCoreCategory.m"; sourceTree = SOURCE_ROOT; };
+		1B7587591CB115CC000EC285 /* JWAssetsBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWAssetsBundle.h; path = jw/JWAssetsBundle.h; sourceTree = SOURCE_ROOT; };
+		1B75875A1CB115CC000EC285 /* JWAssetsBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWAssetsBundle.m; path = jw/JWAssetsBundle.m; sourceTree = SOURCE_ROOT; };
+		1B75875B1CB115CC000EC285 /* JWBoneInfluence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWBoneInfluence.h; path = jw/JWBoneInfluence.h; sourceTree = SOURCE_ROOT; };
+		1B75875C1CB115CC000EC285 /* JWBoneInfluence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWBoneInfluence.m; path = jw/JWBoneInfluence.m; sourceTree = SOURCE_ROOT; };
+		1B75875D1CB115CC000EC285 /* JWCancellable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWCancellable.h; path = jw/JWCancellable.h; sourceTree = SOURCE_ROOT; };
+		1B75875E1CB115CC000EC285 /* JWCancellable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWCancellable.m; path = jw/JWCancellable.m; sourceTree = SOURCE_ROOT; };
+		1B75875F1CB115CC000EC285 /* JWCategoryVariables.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWCategoryVariables.h; path = jw/JWCategoryVariables.h; sourceTree = SOURCE_ROOT; };
+		1B7587601CB115CC000EC285 /* JWCategoryVariables.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWCategoryVariables.m; path = jw/JWCategoryVariables.m; sourceTree = SOURCE_ROOT; };
+		1B7587611CB115CC000EC285 /* JWCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWCore.h; path = jw/JWCore.h; sourceTree = SOURCE_ROOT; };
+		1B7587621CB115CC000EC285 /* JWCorePluginSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWCorePluginSystem.h; path = jw/JWCorePluginSystem.h; sourceTree = SOURCE_ROOT; };
+		1B7587631CB115CC000EC285 /* JWCorePluginSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWCorePluginSystem.m; path = jw/JWCorePluginSystem.m; sourceTree = SOURCE_ROOT; };
+		1B7587641CB115CC000EC285 /* JWCorePredef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWCorePredef.h; path = jw/JWCorePredef.h; sourceTree = SOURCE_ROOT; };
+		1B7587651CB115CC000EC285 /* JWCoreUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWCoreUtils.h; path = jw/JWCoreUtils.h; sourceTree = SOURCE_ROOT; };
+		1B7587661CB115CC000EC285 /* JWCoreUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWCoreUtils.m; path = jw/JWCoreUtils.m; sourceTree = SOURCE_ROOT; };
+		1B7587671CB115CC000EC285 /* JWEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWEncoding.h; path = jw/JWEncoding.h; sourceTree = SOURCE_ROOT; };
+		1B7587681CB115CC000EC285 /* JWEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWEncoding.m; path = jw/JWEncoding.m; sourceTree = SOURCE_ROOT; };
+		1B7587691CB115CC000EC285 /* JWEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWEntity.h; path = jw/JWEntity.h; sourceTree = SOURCE_ROOT; };
+		1B75876A1CB115CC000EC285 /* JWEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWEntity.m; path = jw/JWEntity.m; sourceTree = SOURCE_ROOT; };
+		1B75876B1CB115CC000EC285 /* JWEventQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWEventQueue.h; path = jw/JWEventQueue.h; sourceTree = SOURCE_ROOT; };
+		1B75876C1CB115CC000EC285 /* JWEventQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWEventQueue.m; path = jw/JWEventQueue.m; sourceTree = SOURCE_ROOT; };
+		1B75876D1CB115CC000EC285 /* JWExceptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWExceptions.h; path = jw/JWExceptions.h; sourceTree = SOURCE_ROOT; };
+		1B75876E1CB115CC000EC285 /* JWExceptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWExceptions.m; path = jw/JWExceptions.m; sourceTree = SOURCE_ROOT; };
+		1B75876F1CB115CC000EC285 /* JWHashcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWHashcode.h; path = jw/JWHashcode.h; sourceTree = SOURCE_ROOT; };
+		1B7587701CB115CC000EC285 /* JWHashcode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWHashcode.m; path = jw/JWHashcode.m; sourceTree = SOURCE_ROOT; };
+		1B7587711CB115CC000EC285 /* JWInertialNavigationSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWInertialNavigationSystem.h; path = jw/JWInertialNavigationSystem.h; sourceTree = SOURCE_ROOT; };
+		1B7587721CB115CC000EC285 /* JWInertialNavigationSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWInertialNavigationSystem.m; path = jw/JWInertialNavigationSystem.m; sourceTree = SOURCE_ROOT; };
+		1B7587731CB115CC000EC285 /* JWIOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWIOS.h; path = jw/JWIOS.h; sourceTree = SOURCE_ROOT; };
+		1B7587741CB115CC000EC285 /* JWIOS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWIOS.m; path = jw/JWIOS.m; sourceTree = SOURCE_ROOT; };
+		1B7587751CB115CC000EC285 /* JWJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWJson.h; path = jw/JWJson.h; sourceTree = SOURCE_ROOT; };
+		1B7587761CB115CC000EC285 /* JWJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWJson.m; path = jw/JWJson.m; sourceTree = SOURCE_ROOT; };
+		1B7587771CB115CC000EC285 /* JWLifeCycle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWLifeCycle.h; path = jw/JWLifeCycle.h; sourceTree = SOURCE_ROOT; };
+		1B7587781CB115CC000EC285 /* JWLifeCycle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWLifeCycle.m; path = jw/JWLifeCycle.m; sourceTree = SOURCE_ROOT; };
+		1B7587791CB115CC000EC285 /* JWList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWList.h; path = jw/JWList.h; sourceTree = SOURCE_ROOT; };
+		1B75877A1CB115CC000EC285 /* JWList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWList.m; path = jw/JWList.m; sourceTree = SOURCE_ROOT; };
+		1B75877B1CB115CC000EC285 /* JWLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWLog.h; path = jw/JWLog.h; sourceTree = SOURCE_ROOT; };
+		1B75877C1CB115CC000EC285 /* JWLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWLog.m; path = jw/JWLog.m; sourceTree = SOURCE_ROOT; };
+		1B75877D1CB115CC000EC285 /* JWMutableArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWMutableArray.h; path = jw/JWMutableArray.h; sourceTree = SOURCE_ROOT; };
+		1B75877E1CB115CC000EC285 /* JWMutableArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWMutableArray.m; path = jw/JWMutableArray.m; sourceTree = SOURCE_ROOT; };
+		1B75877F1CB115CC000EC285 /* JWNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWNode.h; path = jw/JWNode.h; sourceTree = SOURCE_ROOT; };
+		1B7587801CB115CC000EC285 /* JWNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWNode.m; path = jw/JWNode.m; sourceTree = SOURCE_ROOT; };
+		1B7587811CB115CC000EC285 /* JWObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWObject.h; path = jw/JWObject.h; sourceTree = SOURCE_ROOT; };
+		1B7587821CB115CC000EC285 /* JWObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWObject.m; path = jw/JWObject.m; sourceTree = SOURCE_ROOT; };
+		1B7587831CB115CC000EC285 /* JWPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWPlugin.h; path = jw/JWPlugin.h; sourceTree = SOURCE_ROOT; };
+		1B7587841CB115CC000EC285 /* JWPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWPlugin.m; path = jw/JWPlugin.m; sourceTree = SOURCE_ROOT; };
+		1B7587851CB115CC000EC285 /* JWResourceBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWResourceBundle.h; path = jw/JWResourceBundle.h; sourceTree = SOURCE_ROOT; };
+		1B7587861CB115CC000EC285 /* JWResourceBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWResourceBundle.m; path = jw/JWResourceBundle.m; sourceTree = SOURCE_ROOT; };
+		1B7587871CB115CC000EC285 /* JWRunnable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWRunnable.h; path = jw/JWRunnable.h; sourceTree = SOURCE_ROOT; };
+		1B7587881CB115CC000EC285 /* JWStringSerializable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWStringSerializable.h; path = jw/JWStringSerializable.h; sourceTree = SOURCE_ROOT; };
+		1B7587891CB115CC000EC285 /* JWStringSerializable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWStringSerializable.m; path = jw/JWStringSerializable.m; sourceTree = SOURCE_ROOT; };
+		1B75878A1CB115CC000EC285 /* JWTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWTimer.h; path = jw/JWTimer.h; sourceTree = SOURCE_ROOT; };
+		1B75878B1CB115CC000EC285 /* JWTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWTimer.m; path = jw/JWTimer.m; sourceTree = SOURCE_ROOT; };
+		1B75878C1CB115CC000EC285 /* JWToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWToast.h; path = jw/JWToast.h; sourceTree = SOURCE_ROOT; };
+		1B75878D1CB115CC000EC285 /* JWToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWToast.m; path = jw/JWToast.m; sourceTree = SOURCE_ROOT; };
+		1B75878E1CB115CC000EC285 /* JWTransmitable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWTransmitable.h; path = jw/JWTransmitable.h; sourceTree = SOURCE_ROOT; };
+		1B75878F1CB115CC000EC285 /* JWTransmitable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWTransmitable.m; path = jw/JWTransmitable.m; sourceTree = SOURCE_ROOT; };
+		D7241EA61A710BED00BEE609 /* libjw_core.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libjw_core.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7241F911A710E9300BEE609 /* libctrlcc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libctrlcc.a; path = "../ctrlcc/build/Debug-iphoneos/libctrlcc.a"; sourceTree = "<group>"; };
+		D7241F941A710F0F00BEE609 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		D7241F951A710F0F00BEE609 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		D7241FFA1A710F5500BEE609 /* etc1_utils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = etc1_utils.c; sourceTree = "<group>"; };
+		D7241FFB1A710F5500BEE609 /* etc1_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = etc1_utils.h; sourceTree = "<group>"; };
+		D7241FFC1A710F5500BEE609 /* image_DXT.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = image_DXT.c; sourceTree = "<group>"; };
+		D7241FFD1A710F5500BEE609 /* image_DXT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = image_DXT.h; sourceTree = "<group>"; };
+		D7241FFE1A710F5500BEE609 /* image_helper.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = image_helper.c; sourceTree = "<group>"; };
+		D7241FFF1A710F5500BEE609 /* image_helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = image_helper.h; sourceTree = "<group>"; };
+		D72420001A710F5500BEE609 /* pkm_helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pkm_helper.h; sourceTree = "<group>"; };
+		D72420011A710F5500BEE609 /* pvr_helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pvr_helper.h; sourceTree = "<group>"; };
+		D72420021A710F5500BEE609 /* SOIL2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SOIL2.c; sourceTree = "<group>"; };
+		D72420031A710F5500BEE609 /* SOIL2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOIL2.h; sourceTree = "<group>"; };
+		D72420041A710F5500BEE609 /* stb_image.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stb_image.c; sourceTree = "<group>"; };
+		D72420051A710F5500BEE609 /* stb_image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_image.h; sourceTree = "<group>"; };
+		D72420061A710F5500BEE609 /* stb_image_write.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stb_image_write.c; sourceTree = "<group>"; };
+		D72420071A710F5500BEE609 /* stb_image_write.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_image_write.h; sourceTree = "<group>"; };
+		D72420081A710F5500BEE609 /* stbi_DDS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stbi_DDS.h; sourceTree = "<group>"; };
+		D72420091A710F5500BEE609 /* stbi_DDS_c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stbi_DDS_c.h; sourceTree = "<group>"; };
+		D724200A1A710F5500BEE609 /* stbi_ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stbi_ext.h; sourceTree = "<group>"; };
+		D724200B1A710F5500BEE609 /* stbi_ext_c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stbi_ext_c.h; sourceTree = "<group>"; };
+		D724200C1A710F5500BEE609 /* stbi_pkm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stbi_pkm.h; sourceTree = "<group>"; };
+		D724200D1A710F5500BEE609 /* stbi_pkm_c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stbi_pkm_c.h; sourceTree = "<group>"; };
+		D724200E1A710F5500BEE609 /* stbi_pvr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stbi_pvr.h; sourceTree = "<group>"; };
+		D724200F1A710F5500BEE609 /* stbi_pvr_c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stbi_pvr_c.h; sourceTree = "<group>"; };
+		D72420121A710F5500BEE609 /* CJSONDeserializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONDeserializer.h; sourceTree = "<group>"; };
+		D72420131A710F5500BEE609 /* CJSONDeserializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONDeserializer.m; sourceTree = "<group>"; };
+		D72420141A710F5500BEE609 /* CJSONSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONSerializer.h; sourceTree = "<group>"; };
+		D72420151A710F5500BEE609 /* CJSONSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONSerializer.m; sourceTree = "<group>"; };
+		D72420161A710F5500BEE609 /* JSONRepresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONRepresentation.h; sourceTree = "<group>"; };
+		D72420171A710F5500BEE609 /* NSDictionary_JSONExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDictionary_JSONExtensions.h; sourceTree = "<group>"; };
+		D72420181A710F5500BEE609 /* NSDictionary_JSONExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDictionary_JSONExtensions.m; sourceTree = "<group>"; };
+		D724204B1A710F6B00BEE609 /* NinePatch.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NinePatch.xcodeproj; path = NinePatch/NinePatch.xcodeproj; sourceTree = "<group>"; };
+		D724218B1A7122F900BEE609 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D724218D1A7122FF00BEE609 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D72A83171A72792300C454AD /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D7241EA31A710BED00BEE609 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D72A83181A72792300C454AD /* MobileCoreServices.framework in Frameworks */,
+				D724218C1A7122F900BEE609 /* Foundation.framework in Frameworks */,
+				D724218E1A7122FF00BEE609 /* UIKit.framework in Frameworks */,
+				D724218A1A7122EE00BEE609 /* libNinePatch.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1BA6F6301C83FC290081E97D /* core.ext */ = {
+			isa = PBXGroup;
+			children = (
+				1B7587561CB1159F000EC285 /* CMDeviceMotion+JWCoreCategory.h */,
+				1B7587571CB1159F000EC285 /* CMDeviceMotion+JWCoreCategory.m */,
+				1B7586C61CB11443000EC285 /* NSArray+JWCoreCategory.h */,
+				1B7586C71CB11443000EC285 /* NSArray+JWCoreCategory.m */,
+				1B7586C81CB11443000EC285 /* NSBundle+JWCoreCategory.h */,
+				1B7586C91CB11443000EC285 /* NSBundle+JWCoreCategory.m */,
+				1B7586CA1CB11443000EC285 /* NSDictionary+JWCoreCategory.h */,
+				1B7586CB1CB11443000EC285 /* NSDictionary+JWCoreCategory.m */,
+				1B7586CC1CB11443000EC285 /* NSMapTable+JWCoreCategory.h */,
+				1B7586CD1CB11443000EC285 /* NSMapTable+JWCoreCategory.m */,
+				1B7586CE1CB11443000EC285 /* NSMutableArray+JWArrayList.h */,
+				1B7586CF1CB11443000EC285 /* NSMutableArray+JWArrayList.m */,
+				1B7586D01CB11443000EC285 /* NSMutableArray+JWMutableArray.h */,
+				1B7586D11CB11443000EC285 /* NSMutableArray+JWMutableArray.m */,
+				1B7586D21CB11443000EC285 /* NSMutableDictionary+JWCoreCategory.h */,
+				1B7586D31CB11443000EC285 /* NSMutableDictionary+JWCoreCategory.m */,
+				1B7586D41CB11443000EC285 /* NSString+JWCoreCategory.h */,
+				1B7586D51CB11443000EC285 /* NSString+JWCoreCategory.m */,
+				1B7586D81CB11443000EC285 /* UIColor+JWCoreCategory.h */,
+				1B7586D91CB11443000EC285 /* UIColor+JWCoreCategory.m */,
+				1B7586DA1CB11443000EC285 /* UIDevice+JWCoreCategory.h */,
+				1B7586DB1CB11443000EC285 /* UIDevice+JWCoreCategory.m */,
+				1B7586E01CB11443000EC285 /* UIScreen+JWCoreCategory.h */,
+				1B7586E11CB11443000EC285 /* UIScreen+JWCoreCategory.m */,
+			);
+			name = core.ext;
+			sourceTree = "<group>";
+		};
+		1BA6F6311C83FC5B0081E97D /* core.xml */ = {
+			isa = PBXGroup;
+			children = (
+				1B7587501CB11573000EC285 /* JWXmlParser.h */,
+				1B7587511CB11573000EC285 /* JWXmlParser.m */,
+			);
+			name = core.xml;
+			sourceTree = "<group>";
+		};
+		1BA6F6321C83FC610081E97D /* core.fsm */ = {
+			isa = PBXGroup;
+			children = (
+				1B7586F01CB11463000EC285 /* JWState.h */,
+				1B7586F11CB11463000EC285 /* JWState.m */,
+				1B7586F21CB11463000EC285 /* JWStateMachine.h */,
+				1B7586F31CB11463000EC285 /* JWStateMachine.m */,
+				1B7586F41CB11463000EC285 /* JWStateMessage.h */,
+				1B7586F51CB11463000EC285 /* JWStateMessage.m */,
+			);
+			name = core.fsm;
+			sourceTree = "<group>";
+		};
+		1BA6F6331C83FC800081E97D /* core.async */ = {
+			isa = PBXGroup;
+			children = (
+				1B7586B41CB11423000EC285 /* JWAsyncEventHandler.h */,
+				1B7586B51CB11423000EC285 /* JWAsyncEventHandler.m */,
+				1B7586B61CB11423000EC285 /* JWAsyncResult.h */,
+				1B7586B71CB11423000EC285 /* JWAsyncResult.m */,
+				1B7586B81CB11423000EC285 /* JWAsyncResultTask.h */,
+				1B7586B91CB11423000EC285 /* JWAsyncResultTask.m */,
+				1B7586BA1CB11423000EC285 /* JWAsyncTask.h */,
+				1B7586BB1CB11423000EC285 /* JWAsyncTask.m */,
+				1B7586BC1CB11423000EC285 /* JWAsyncTaskResult.h */,
+				1B7586BD1CB11423000EC285 /* JWAsyncTaskResult.m */,
+				1B7586BE1CB11423000EC285 /* JWAsyncUtils.h */,
+				1B7586BF1CB11423000EC285 /* JWAsyncUtils.m */,
+			);
+			name = core.async;
+			sourceTree = "<group>";
+		};
+		D721ADFF1A73A9BF00DA9ACA /* core.net */ = {
+			isa = PBXGroup;
+			children = (
+				1B7587321CB1154F000EC285 /* JWClient.h */,
+				1B7587331CB1154F000EC285 /* JWClient.m */,
+				1B7587341CB1154F000EC285 /* JWHttp.h */,
+				1B7587351CB1154F000EC285 /* JWHttp.m */,
+				1B7587361CB1154F000EC285 /* JWHttpClient.h */,
+				1B7587371CB1154F000EC285 /* JWHttpClient.m */,
+				1B7587381CB1154F000EC285 /* JWHttpMethod.h */,
+				1B7587391CB1154F000EC285 /* JWHttpMethod.m */,
+				1B75873A1CB1154F000EC285 /* JWNetFormatter.h */,
+				1B75873B1CB1154F000EC285 /* JWNetFormatter.m */,
+				1B75873C1CB1154F000EC285 /* JWNetMessage.h */,
+				1B75873D1CB1154F000EC285 /* JWNetMessage.m */,
+				1B75873E1CB1154F000EC285 /* JWNetUtils.h */,
+				1B75873F1CB1154F000EC285 /* JWNetUtils.m */,
+				1B7587401CB1154F000EC285 /* JWRequest.h */,
+				1B7587411CB1154F000EC285 /* JWRequest.m */,
+				1B7587421CB1154F000EC285 /* JWResponse.h */,
+				1B7587431CB1154F000EC285 /* JWResponse.m */,
+				1B7587441CB1154F000EC285 /* JWResponseStatus.h */,
+				1B7587451CB1154F000EC285 /* JWResponseStatus.m */,
+			);
+			name = core.net;
+			sourceTree = "<group>";
+		};
+		D721AE001A73AA1500DA9ACA /* core.io */ = {
+			isa = PBXGroup;
+			children = (
+				1B7587141CB114E5000EC285 /* JWFile.h */,
+				1B7587151CB114E5000EC285 /* JWFile.m */,
+				1B7587161CB114E5000EC285 /* JWFileCache.h */,
+				1B7587171CB114E5000EC285 /* JWFileCache.m */,
+				1B7587181CB114E5000EC285 /* JWFileDataAsyncTask.h */,
+				1B7587191CB114E5000EC285 /* JWFileDataAsyncTask.m */,
+				1B75871A1CB114E5000EC285 /* JWFileTable.h */,
+				1B75871B1CB114E5000EC285 /* JWFileTable.m */,
+				1B75871C1CB114E5000EC285 /* JWFileUtils.h */,
+				1B75871D1CB114E5000EC285 /* JWFileUtils.m */,
+			);
+			name = core.io;
+			sourceTree = "<group>";
+		};
+		D721AE011A73AA1A00DA9ACA /* core.math */ = {
+			isa = PBXGroup;
+			children = (
+				1B7587231CB1151A000EC285 /* JWColor.h */,
+				1B7587241CB1151A000EC285 /* JWColor.m */,
+				1B7587251CB1151A000EC285 /* JWMatrix4.h */,
+				1B7587261CB1151A000EC285 /* JWMatrix4.m */,
+				1B7587271CB1151A000EC285 /* JWVector2.h */,
+				1B7587281CB1151A000EC285 /* JWVector2.m */,
+				1B7587291CB1151A000EC285 /* JWVector3.h */,
+				1B75872A1CB1151A000EC285 /* JWVector3.m */,
+				1B75872B1CB1151A000EC285 /* JWVector4.h */,
+				1B75872C1CB1151A000EC285 /* JWVector4.m */,
+			);
+			name = core.math;
+			sourceTree = "<group>";
+		};
+		D721AE021A73AA3D00DA9ACA /* core.image */ = {
+			isa = PBXGroup;
+			children = (
+				1B7586F91CB114B1000EC285 /* JWEXRImageCodec.h */,
+				1B7586FA1CB114B1000EC285 /* JWEXRImageCodec.mm */,
+				1B7586FB1CB114B1000EC285 /* JWImageCache.h */,
+				1B7586FC1CB114B1000EC285 /* JWImageCache.m */,
+				1B7586FD1CB114B1000EC285 /* JWImageCacheGetAsyncTask.h */,
+				1B7586FE1CB114B1000EC285 /* JWImageCacheGetAsyncTask.m */,
+				1B7586FF1CB114B1000EC285 /* JWImageCodec.h */,
+				1B7587001CB114B1000EC285 /* JWImageCodec.m */,
+				1B7587011CB114B1000EC285 /* JWImageCodecManager.h */,
+				1B7587021CB114B1000EC285 /* JWImageCodecManager.m */,
+				1B7587031CB114B1000EC285 /* JWImageDecodeAsyncTask.h */,
+				1B7587041CB114B1000EC285 /* JWImageDecodeAsyncTask.m */,
+				1B7587051CB114B1000EC285 /* JWImageOptions.h */,
+				1B7587061CB114B1000EC285 /* JWImageOptions.m */,
+				1B7587071CB114B1000EC285 /* JWImageSystem.h */,
+				1B7587081CB114B1000EC285 /* JWImageSystem.m */,
+				1B7587091CB114B1000EC285 /* JWPVRImageCodec.h */,
+				1B75870A1CB114B1000EC285 /* JWPVRImageCodec.m */,
+				1B7586DC1CB11443000EC285 /* UIImage+JWImageUtils.h */,
+				1B7586DD1CB11443000EC285 /* UIImage+JWImageUtils.m */,
+				1B7586DE1CB11443000EC285 /* UIImageImageCodec.h */,
+				1B7586DF1CB11443000EC285 /* UIImageImageCodec.m */,
+			);
+			name = core.image;
+			sourceTree = "<group>";
+		};
+		D721AE031A73AA4500DA9ACA /* core */ = {
+			isa = PBXGroup;
+			children = (
+				1B7587591CB115CC000EC285 /* JWAssetsBundle.h */,
+				1B75875A1CB115CC000EC285 /* JWAssetsBundle.m */,
+				1B75875B1CB115CC000EC285 /* JWBoneInfluence.h */,
+				1B75875C1CB115CC000EC285 /* JWBoneInfluence.m */,
+				1B75875D1CB115CC000EC285 /* JWCancellable.h */,
+				1B75875E1CB115CC000EC285 /* JWCancellable.m */,
+				1B75875F1CB115CC000EC285 /* JWCategoryVariables.h */,
+				1B7587601CB115CC000EC285 /* JWCategoryVariables.m */,
+				1B7587611CB115CC000EC285 /* JWCore.h */,
+				1B7587621CB115CC000EC285 /* JWCorePluginSystem.h */,
+				1B7587631CB115CC000EC285 /* JWCorePluginSystem.m */,
+				1B7587641CB115CC000EC285 /* JWCorePredef.h */,
+				1B7587651CB115CC000EC285 /* JWCoreUtils.h */,
+				1B7587661CB115CC000EC285 /* JWCoreUtils.m */,
+				1B7587671CB115CC000EC285 /* JWEncoding.h */,
+				1B7587681CB115CC000EC285 /* JWEncoding.m */,
+				1B7587691CB115CC000EC285 /* JWEntity.h */,
+				1B75876A1CB115CC000EC285 /* JWEntity.m */,
+				1B75876B1CB115CC000EC285 /* JWEventQueue.h */,
+				1B75876C1CB115CC000EC285 /* JWEventQueue.m */,
+				1B75876D1CB115CC000EC285 /* JWExceptions.h */,
+				1B75876E1CB115CC000EC285 /* JWExceptions.m */,
+				1B75876F1CB115CC000EC285 /* JWHashcode.h */,
+				1B7587701CB115CC000EC285 /* JWHashcode.m */,
+				1B7587711CB115CC000EC285 /* JWInertialNavigationSystem.h */,
+				1B7587721CB115CC000EC285 /* JWInertialNavigationSystem.m */,
+				1B7587731CB115CC000EC285 /* JWIOS.h */,
+				1B7587741CB115CC000EC285 /* JWIOS.m */,
+				1B7587751CB115CC000EC285 /* JWJson.h */,
+				1B7587761CB115CC000EC285 /* JWJson.m */,
+				1B7587771CB115CC000EC285 /* JWLifeCycle.h */,
+				1B7587781CB115CC000EC285 /* JWLifeCycle.m */,
+				1B7587791CB115CC000EC285 /* JWList.h */,
+				1B75877A1CB115CC000EC285 /* JWList.m */,
+				1B75877B1CB115CC000EC285 /* JWLog.h */,
+				1B75877C1CB115CC000EC285 /* JWLog.m */,
+				1B75877D1CB115CC000EC285 /* JWMutableArray.h */,
+				1B75877E1CB115CC000EC285 /* JWMutableArray.m */,
+				1B75877F1CB115CC000EC285 /* JWNode.h */,
+				1B7587801CB115CC000EC285 /* JWNode.m */,
+				1B7587811CB115CC000EC285 /* JWObject.h */,
+				1B7587821CB115CC000EC285 /* JWObject.m */,
+				1B7587831CB115CC000EC285 /* JWPlugin.h */,
+				1B7587841CB115CC000EC285 /* JWPlugin.m */,
+				1B7587851CB115CC000EC285 /* JWResourceBundle.h */,
+				1B7587861CB115CC000EC285 /* JWResourceBundle.m */,
+				1B7587871CB115CC000EC285 /* JWRunnable.h */,
+				1B7587881CB115CC000EC285 /* JWStringSerializable.h */,
+				1B7587891CB115CC000EC285 /* JWStringSerializable.m */,
+				1B75878A1CB115CC000EC285 /* JWTimer.h */,
+				1B75878B1CB115CC000EC285 /* JWTimer.m */,
+				1B75878C1CB115CC000EC285 /* JWToast.h */,
+				1B75878D1CB115CC000EC285 /* JWToast.m */,
+				1B75878E1CB115CC000EC285 /* JWTransmitable.h */,
+				1B75878F1CB115CC000EC285 /* JWTransmitable.m */,
+				1B4C22501CC50C03000BD81D /* NSException+JWCoreCategory.h */,
+				1B4C22511CC50C03000BD81D /* NSException+JWCoreCategory.m */,
+			);
+			name = core;
+			sourceTree = "<group>";
+		};
+		D7241E9D1A710BED00BEE609 = {
+			isa = PBXGroup;
+			children = (
+				D7241EA81A710BED00BEE609 /* jw */,
+				D7241F971A710F5500BEE609 /* 3rd */,
+				D7241F931A710F0F00BEE609 /* apple */,
+				D72420641A711BCA00BEE609 /* libs */,
+				D7241EA71A710BED00BEE609 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D7241EA71A710BED00BEE609 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D7241EA61A710BED00BEE609 /* libjw_core.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D7241EA81A710BED00BEE609 /* jw */ = {
+			isa = PBXGroup;
+			children = (
+				1B7587531CB11582000EC285 /* jw_core.h */,
+				1B7587541CB11582000EC285 /* jw_core.m */,
+				D721AE031A73AA4500DA9ACA /* core */,
+				1BA6F6331C83FC800081E97D /* core.async */,
+				1BA6F6301C83FC290081E97D /* core.ext */,
+				1BA6F6321C83FC610081E97D /* core.fsm */,
+				D721AE021A73AA3D00DA9ACA /* core.image */,
+				D721AE001A73AA1500DA9ACA /* core.io */,
+				D721AE011A73AA1A00DA9ACA /* core.math */,
+				D721ADFF1A73A9BF00DA9ACA /* core.net */,
+				1BA6F6311C83FC5B0081E97D /* core.xml */,
+			);
+			name = jw;
+			path = ctrlcv_core;
+			sourceTree = "<group>";
+		};
+		D7241F931A710F0F00BEE609 /* apple */ = {
+			isa = PBXGroup;
+			children = (
+				D7241F941A710F0F00BEE609 /* Reachability.h */,
+				D7241F951A710F0F00BEE609 /* Reachability.m */,
+			);
+			path = apple;
+			sourceTree = "<group>";
+		};
+		D7241F971A710F5500BEE609 /* 3rd */ = {
+			isa = PBXGroup;
+			children = (
+				D724204B1A710F6B00BEE609 /* NinePatch.xcodeproj */,
+				D7241FF91A710F5500BEE609 /* SOIL2 */,
+				D72420101A710F5500BEE609 /* TouchJSON */,
+			);
+			path = 3rd;
+			sourceTree = "<group>";
+		};
+		D7241FF91A710F5500BEE609 /* SOIL2 */ = {
+			isa = PBXGroup;
+			children = (
+				D7241FFA1A710F5500BEE609 /* etc1_utils.c */,
+				D7241FFB1A710F5500BEE609 /* etc1_utils.h */,
+				D7241FFC1A710F5500BEE609 /* image_DXT.c */,
+				D7241FFD1A710F5500BEE609 /* image_DXT.h */,
+				D7241FFE1A710F5500BEE609 /* image_helper.c */,
+				D7241FFF1A710F5500BEE609 /* image_helper.h */,
+				D72420001A710F5500BEE609 /* pkm_helper.h */,
+				D72420011A710F5500BEE609 /* pvr_helper.h */,
+				D72420021A710F5500BEE609 /* SOIL2.c */,
+				D72420031A710F5500BEE609 /* SOIL2.h */,
+				D72420041A710F5500BEE609 /* stb_image.c */,
+				D72420051A710F5500BEE609 /* stb_image.h */,
+				D72420061A710F5500BEE609 /* stb_image_write.c */,
+				D72420071A710F5500BEE609 /* stb_image_write.h */,
+				D72420081A710F5500BEE609 /* stbi_DDS.h */,
+				D72420091A710F5500BEE609 /* stbi_DDS_c.h */,
+				D724200A1A710F5500BEE609 /* stbi_ext.h */,
+				D724200B1A710F5500BEE609 /* stbi_ext_c.h */,
+				D724200C1A710F5500BEE609 /* stbi_pkm.h */,
+				D724200D1A710F5500BEE609 /* stbi_pkm_c.h */,
+				D724200E1A710F5500BEE609 /* stbi_pvr.h */,
+				D724200F1A710F5500BEE609 /* stbi_pvr_c.h */,
+			);
+			path = SOIL2;
+			sourceTree = "<group>";
+		};
+		D72420101A710F5500BEE609 /* TouchJSON */ = {
+			isa = PBXGroup;
+			children = (
+				D72420111A710F5500BEE609 /* Source */,
+			);
+			path = TouchJSON;
+			sourceTree = "<group>";
+		};
+		D72420111A710F5500BEE609 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				D72420121A710F5500BEE609 /* CJSONDeserializer.h */,
+				D72420131A710F5500BEE609 /* CJSONDeserializer.m */,
+				D72420141A710F5500BEE609 /* CJSONSerializer.h */,
+				D72420151A710F5500BEE609 /* CJSONSerializer.m */,
+				D72420161A710F5500BEE609 /* JSONRepresentation.h */,
+				D72420171A710F5500BEE609 /* NSDictionary_JSONExtensions.h */,
+				D72420181A710F5500BEE609 /* NSDictionary_JSONExtensions.m */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		D724204C1A710F6B00BEE609 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D72420501A710F6B00BEE609 /* libNinePatch.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D72420641A711BCA00BEE609 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				D724218B1A7122F900BEE609 /* Foundation.framework */,
+				D7241F911A710E9300BEE609 /* libctrlcc.a */,
+				D72A83171A72792300C454AD /* MobileCoreServices.framework */,
+				D724218D1A7122FF00BEE609 /* UIKit.framework */,
+			);
+			name = libs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D7241EA51A710BED00BEE609 /* jw_core */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7241EBA1A710BEE00BEE609 /* Build configuration list for PBXNativeTarget "jw_core" */;
+			buildPhases = (
+				D7241EA21A710BED00BEE609 /* Sources */,
+				D7241EA31A710BED00BEE609 /* Frameworks */,
+				D7241EA41A710BED00BEE609 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D72421891A7122E800BEE609 /* PBXTargetDependency */,
+			);
+			name = jw_core;
+			productName = ctrlcv_core;
+			productReference = D7241EA61A710BED00BEE609 /* libjw_core.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D7241E9E1A710BED00BEE609 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "luojunwen123@gmail.com";
+				TargetAttributes = {
+					D7241EA51A710BED00BEE609 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+				};
+			};
+			buildConfigurationList = D7241EA11A710BED00BEE609 /* Build configuration list for PBXProject "jw_core" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D7241E9D1A710BED00BEE609;
+			productRefGroup = D7241EA71A710BED00BEE609 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D724204C1A710F6B00BEE609 /* Products */;
+					ProjectRef = D724204B1A710F6B00BEE609 /* NinePatch.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				D7241EA51A710BED00BEE609 /* jw_core */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		D72420501A710F6B00BEE609 /* libNinePatch.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libNinePatch.a;
+			remoteRef = D724204F1A710F6B00BEE609 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D7241EA21A710BED00BEE609 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B7586E31CB11443000EC285 /* NSBundle+JWCoreCategory.m in Sources */,
+				1B7587A91CB115CC000EC285 /* JWTransmitable.m in Sources */,
+				1B75879E1CB115CC000EC285 /* JWLifeCycle.m in Sources */,
+				1B7587A61CB115CC000EC285 /* JWStringSerializable.m in Sources */,
+				1B7587471CB1154F000EC285 /* JWHttp.m in Sources */,
+				1B7586EE1CB11443000EC285 /* UIImageImageCodec.m in Sources */,
+				1B7587551CB11582000EC285 /* jw_core.m in Sources */,
+				1B7587A11CB115CC000EC285 /* JWMutableArray.m in Sources */,
+				1B75874C1CB1154F000EC285 /* JWNetUtils.m in Sources */,
+				D72420431A710F5500BEE609 /* stb_image.c in Sources */,
+				1B7586E51CB11443000EC285 /* NSMapTable+JWCoreCategory.m in Sources */,
+				1B7586C11CB11423000EC285 /* JWAsyncResult.m in Sources */,
+				1B7587201CB114E5000EC285 /* JWFileDataAsyncTask.m in Sources */,
+				1B7587A51CB115CC000EC285 /* JWResourceBundle.m in Sources */,
+				1B7587941CB115CC000EC285 /* JWCorePluginSystem.m in Sources */,
+				1B7586C31CB11423000EC285 /* JWAsyncTask.m in Sources */,
+				1B7586ED1CB11443000EC285 /* UIImage+JWImageUtils.m in Sources */,
+				1B7587221CB114E5000EC285 /* JWFileUtils.m in Sources */,
+				1B75879F1CB115CC000EC285 /* JWList.m in Sources */,
+				1B75874F1CB1154F000EC285 /* JWResponseStatus.m in Sources */,
+				1B75871E1CB114E5000EC285 /* JWFile.m in Sources */,
+				1B75874B1CB1154F000EC285 /* JWNetMessage.m in Sources */,
+				1B75874D1CB1154F000EC285 /* JWRequest.m in Sources */,
+				1B7587101CB114B1000EC285 /* JWImageDecodeAsyncTask.m in Sources */,
+				1B7586E21CB11443000EC285 /* NSArray+JWCoreCategory.m in Sources */,
+				1B7587961CB115CC000EC285 /* JWEncoding.m in Sources */,
+				1B7586EC1CB11443000EC285 /* UIDevice+JWCoreCategory.m in Sources */,
+				1B7586EF1CB11443000EC285 /* UIScreen+JWCoreCategory.m in Sources */,
+				1B75879C1CB115CC000EC285 /* JWIOS.m in Sources */,
+				1B7587121CB114B1000EC285 /* JWImageSystem.m in Sources */,
+				1B7587461CB1154F000EC285 /* JWClient.m in Sources */,
+				1B7587A41CB115CC000EC285 /* JWPlugin.m in Sources */,
+				1B7586C41CB11423000EC285 /* JWAsyncTaskResult.m in Sources */,
+				D7241F961A710F0F00BEE609 /* Reachability.m in Sources */,
+				1B7586F61CB11463000EC285 /* JWState.m in Sources */,
+				1B75874E1CB1154F000EC285 /* JWResponse.m in Sources */,
+				1B7587481CB1154F000EC285 /* JWHttpClient.m in Sources */,
+				1B7587131CB114B1000EC285 /* JWPVRImageCodec.m in Sources */,
+				1B7587111CB114B1000EC285 /* JWImageOptions.m in Sources */,
+				1B75871F1CB114E5000EC285 /* JWFileCache.m in Sources */,
+				1B75870B1CB114B1000EC285 /* JWEXRImageCodec.mm in Sources */,
+				1B7587991CB115CC000EC285 /* JWExceptions.m in Sources */,
+				D724203F1A710F5500BEE609 /* etc1_utils.c in Sources */,
+				1B7586EB1CB11443000EC285 /* UIColor+JWCoreCategory.m in Sources */,
+				1B75872F1CB1151A000EC285 /* JWVector2.m in Sources */,
+				1B4C22521CC50C03000BD81D /* NSException+JWCoreCategory.m in Sources */,
+				1B7586C01CB11423000EC285 /* JWAsyncEventHandler.m in Sources */,
+				1B75879B1CB115CC000EC285 /* JWInertialNavigationSystem.m in Sources */,
+				D72420441A710F5500BEE609 /* stb_image_write.c in Sources */,
+				1B7586F81CB11463000EC285 /* JWStateMessage.m in Sources */,
+				1B7586E91CB11443000EC285 /* NSString+JWCoreCategory.m in Sources */,
+				1B7587581CB1159F000EC285 /* CMDeviceMotion+JWCoreCategory.m in Sources */,
+				1B7587921CB115CC000EC285 /* JWCancellable.m in Sources */,
+				1B7587971CB115CC000EC285 /* JWEntity.m in Sources */,
+				1B75870C1CB114B1000EC285 /* JWImageCache.m in Sources */,
+				D72420461A710F5500BEE609 /* CJSONSerializer.m in Sources */,
+				1B75870F1CB114B1000EC285 /* JWImageCodecManager.m in Sources */,
+				1B7586E81CB11443000EC285 /* NSMutableDictionary+JWCoreCategory.m in Sources */,
+				1B7587301CB1151A000EC285 /* JWVector3.m in Sources */,
+				1B7587A21CB115CC000EC285 /* JWNode.m in Sources */,
+				D72420401A710F5500BEE609 /* image_DXT.c in Sources */,
+				1B7587211CB114E5000EC285 /* JWFileTable.m in Sources */,
+				1B7587A31CB115CC000EC285 /* JWObject.m in Sources */,
+				1B75872D1CB1151A000EC285 /* JWColor.m in Sources */,
+				1B7587981CB115CC000EC285 /* JWEventQueue.m in Sources */,
+				1B7586E61CB11443000EC285 /* NSMutableArray+JWArrayList.m in Sources */,
+				D72420451A710F5500BEE609 /* CJSONDeserializer.m in Sources */,
+				1B7586C21CB11423000EC285 /* JWAsyncResultTask.m in Sources */,
+				1B7586C51CB11423000EC285 /* JWAsyncUtils.m in Sources */,
+				D72420471A710F5500BEE609 /* NSDictionary_JSONExtensions.m in Sources */,
+				1B75870E1CB114B1000EC285 /* JWImageCodec.m in Sources */,
+				1B7587311CB1151A000EC285 /* JWVector4.m in Sources */,
+				1B75872E1CB1151A000EC285 /* JWMatrix4.m in Sources */,
+				1B7587951CB115CC000EC285 /* JWCoreUtils.m in Sources */,
+				1B75879D1CB115CC000EC285 /* JWJson.m in Sources */,
+				1B7587A71CB115CC000EC285 /* JWTimer.m in Sources */,
+				1B75879A1CB115CC000EC285 /* JWHashcode.m in Sources */,
+				1B75874A1CB1154F000EC285 /* JWNetFormatter.m in Sources */,
+				1B7587A81CB115CC000EC285 /* JWToast.m in Sources */,
+				1B7587A01CB115CC000EC285 /* JWLog.m in Sources */,
+				1B7586F71CB11463000EC285 /* JWStateMachine.m in Sources */,
+				1B7586E41CB11443000EC285 /* NSDictionary+JWCoreCategory.m in Sources */,
+				1B7587491CB1154F000EC285 /* JWHttpMethod.m in Sources */,
+				D72420411A710F5500BEE609 /* image_helper.c in Sources */,
+				1B7587901CB115CC000EC285 /* JWAssetsBundle.m in Sources */,
+				D72420421A710F5500BEE609 /* SOIL2.c in Sources */,
+				1B7587521CB11573000EC285 /* JWXmlParser.m in Sources */,
+				1B7586E71CB11443000EC285 /* NSMutableArray+JWMutableArray.m in Sources */,
+				1B7587911CB115CC000EC285 /* JWBoneInfluence.m in Sources */,
+				1B7587931CB115CC000EC285 /* JWCategoryVariables.m in Sources */,
+				1B75870D1CB114B1000EC285 /* JWImageCacheGetAsyncTask.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D72421891A7122E800BEE609 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NinePatch;
+			targetProxy = D72421881A7122E800BEE609 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D7241EB81A710BEE00BEE609 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D7241EB91A710BEE00BEE609 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D7241EBB1A710BEE00BEE609 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/../jc_core",
+					"$(PROJECT_DIR)/../jc_core/jw",
+					"$(PROJECT_DIR)/../jw_exr",
+					"$(PROJECT_DIR)/../jw_exr/jw",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/chaosaos/Documents/workspace/Git/iOS/ctrlcc/build/Debug-iphoneos",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = jw_core;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D7241EBC1A710BEE00BEE609 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/../jc_core",
+					"$(PROJECT_DIR)/../jc_core/jw",
+					"$(PROJECT_DIR)/../jw_exr",
+					"$(PROJECT_DIR)/../jw_exr/jw",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/chaosaos/Documents/workspace/Git/iOS/ctrlcc/build/Debug-iphoneos",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = jw_core;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D7241EA11A710BED00BEE609 /* Build configuration list for PBXProject "jw_core" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7241EB81A710BEE00BEE609 /* Debug */,
+				D7241EB91A710BEE00BEE609 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7241EBA1A710BEE00BEE609 /* Build configuration list for PBXNativeTarget "jw_core" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7241EBB1A710BEE00BEE609 /* Debug */,
+				D7241EBC1A710BEE00BEE609 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D7241E9E1A710BED00BEE609 /* Project object */;
+}
