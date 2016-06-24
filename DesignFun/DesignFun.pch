@@ -1,0 +1,34 @@
+//
+//  DesignFun.pch
+//  DesignFun
+//
+//  Created by qianfeng on 15/10/14.
+//  Copyright (c) 2015年 qianfeng. All rights reserved.
+//
+
+#ifndef DesignFun_DesignFun_pch
+#define DesignFun_DesignFun_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import "AppDelegate.h"
+#import "UIView+Common.h"
+#import <MJRefresh/MJRefresh.h>
+#import <MBProgressHUD/MBProgressHUD.h>
+#import <AFNetworking/AFNetworking.h>
+#import "MilitaryModel.h"
+#import "HeadDefine.h"
+#import "MilitaryTableViewCell.h"
+#import "WebViewController.h"
+#import "ImageTableViewCell.h"
+#import <UIImageView+WebCache.h>
+#import <UIButton+WebCache.h>
+#import "TextTableViewCell.h"
+#import "NSString+Tools.h"
+#import "CacheManager.h"
+#import "IanAlert.h"
+
+
+#define TableViewH height(self.view.frame)-49-50-64
+
+#endif
