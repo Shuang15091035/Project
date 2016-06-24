@@ -1,0 +1,19 @@
+dependencies: \
+  /Users/zdszkj_MacMini02/Desktop/MyGitHub/KSYMediaPlayer-iOS-SDK-master/KSYMediaPlayer/KSYMediaPlayer/KSYFFMrl.m \
+  /Users/zdszkj_MacMini02/Desktop/MyGitHub/KSYMediaPlayer-iOS-SDK-master/KSYMediaPlayer/KSYMediaPlayer/KSYFFMrl.h \
+  /Users/zdszkj_MacMini02/Desktop/MyGitHub/KSYMediaPlayer-iOS-SDK-master/KSYMediaPlayer/KSYMediaPlayer/KSYMediaUtils.h \
+  /Users/zdszkj_MacMini02/Desktop/MyGitHub/KSYMediaPlayer-iOS-SDK-master/KSYMediaPlayer/KSYMediaPlayer/ffmpeg/include/libavutil/base64.h \
+  /Users/zdszkj_MacMini02/Desktop/MyGitHub/KSYMediaPlayer-iOS-SDK-master/KSYMediaPlayer/KSYMediaPlayer/ffmpeg/include/libavutil/mem.h \
+  /Users/zdszkj_MacMini02/Desktop/MyGitHub/KSYMediaPlayer-iOS-SDK-master/KSYMediaPlayer/KSYMediaPlayer/ffmpeg/include/libavutil/attributes.h \
+  /Users/zdszkj_MacMini02/Desktop/MyGitHub/KSYMediaPlayer-iOS-SDK-master/KSYMediaPlayer/KSYMediaPlayer/ffmpeg/include/libavutil/error.h \
+  /Users/zdszkj_MacMini02/Desktop/MyGitHub/KSYMediaPlayer-iOS-SDK-master/KSYMediaPlayer/KSYMediaPlayer/ffmpeg/include/libavutil/avutil.h \
+  /Users/zdszkj_MacMini02/Desktop/MyGitHub/KSYMediaPlayer-iOS-SDK-master/KSYMediaPlayer/KSYMediaPlayer/ffmpeg/include/libavutil/common.h \
+  /Users/zdszkj_MacMini02/Desktop/MyGitHub/KSYMediaPlayer-iOS-SDK-master/KSYMediaPlayer/KSYMediaPlayer/ffmpeg/include/libavutil/version.h \
+  /Users/zdszkj_MacMini02/Desktop/MyGitHub/KSYMediaPlayer-iOS-SDK-master/KSYMediaPlayer/KSYMediaPlayer/ffmpeg/include/libavutil/macros.h \
+  /Users/zdszkj_MacMini02/Desktop/MyGitHub/KSYMediaPlayer-iOS-SDK-master/KSYMediaPlayer/KSYMediaPlayer/ffmpeg/include/libavutil/avconfig.h \
+  /Users/zdszkj_MacMini02/Desktop/MyGitHub/KSYMediaPlayer-iOS-SDK-master/KSYMediaPlayer/KSYMediaPlayer/ffmpeg/include/libavutil/rational.h \
+  /Users/zdszkj_MacMini02/Desktop/MyGitHub/KSYMediaPlayer-iOS-SDK-master/KSYMediaPlayer/KSYMediaPlayer/ffmpeg/include/libavutil/mathematics.h \
+  /Users/zdszkj_MacMini02/Desktop/MyGitHub/KSYMediaPlayer-iOS-SDK-master/KSYMediaPlayer/KSYMediaPlayer/ffmpeg/include/libavutil/intfloat.h \
+  /Users/zdszkj_MacMini02/Desktop/MyGitHub/KSYMediaPlayer-iOS-SDK-master/KSYMediaPlayer/KSYMediaPlayer/ffmpeg/include/libavutil/log.h \
+  /Users/zdszkj_MacMini02/Desktop/MyGitHub/KSYMediaPlayer-iOS-SDK-master/KSYMediaPlayer/KSYMediaPlayer/ffmpeg/include/libavutil/pixfmt.h \
+  /Users/zdszkj_MacMini02/Desktop/MyGitHub/KSYMediaPlayer-iOS-SDK-master/KSYMediaPlayer/KSYMediaPlayer/ffmpeg/include/libavutil/old_pix_fmts.h
